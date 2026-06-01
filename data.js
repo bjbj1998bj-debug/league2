@@ -424,7 +424,7 @@ window.INITIAL_DATA = {
       "elo": 1871,
       "win": 0,
       "lose": 0,
-      "winRate": 0,
+      "winRate": 0.0,
       "kda": 0.0,
       "k": 0,
       "d": 0,
@@ -450,7 +450,7 @@ window.INITIAL_DATA = {
       "elo": 1796,
       "win": 0,
       "lose": 0,
-      "winRate": 0,
+      "winRate": 0.0,
       "kda": 0.0,
       "k": 0,
       "d": 0,
@@ -476,7 +476,7 @@ window.INITIAL_DATA = {
       "elo": 1714,
       "win": 0,
       "lose": 0,
-      "winRate": 0,
+      "winRate": 0.0,
       "kda": 0.0,
       "k": 0,
       "d": 0,
@@ -502,7 +502,7 @@ window.INITIAL_DATA = {
       "elo": 1522,
       "win": 0,
       "lose": 0,
-      "winRate": 0,
+      "winRate": 0.0,
       "kda": 0.0,
       "k": 0,
       "d": 0,
@@ -515,7 +515,7 @@ window.INITIAL_DATA = {
       "elo": 1507,
       "win": 0,
       "lose": 0,
-      "winRate": 0,
+      "winRate": 0.0,
       "kda": 0.0,
       "k": 0,
       "d": 0,
@@ -528,7 +528,7 @@ window.INITIAL_DATA = {
       "elo": 1496,
       "win": 0,
       "lose": 0,
-      "winRate": 0,
+      "winRate": 0.0,
       "kda": 0.0,
       "k": 0,
       "d": 0,
@@ -554,7 +554,7 @@ window.INITIAL_DATA = {
       "elo": 1483,
       "win": 0,
       "lose": 0,
-      "winRate": 0,
+      "winRate": 0.0,
       "kda": 0.0,
       "k": 0,
       "d": 0,
@@ -567,7 +567,7 @@ window.INITIAL_DATA = {
       "elo": 1470,
       "win": 0,
       "lose": 0,
-      "winRate": 0,
+      "winRate": 0.0,
       "kda": 0.0,
       "k": 0,
       "d": 0,
@@ -593,7 +593,7 @@ window.INITIAL_DATA = {
       "elo": 1228,
       "win": 0,
       "lose": 0,
-      "winRate": 0,
+      "winRate": 0.0,
       "kda": 0.0,
       "k": 0,
       "d": 0,
@@ -606,7 +606,7 @@ window.INITIAL_DATA = {
       "elo": 1219,
       "win": 0,
       "lose": 0,
-      "winRate": 0,
+      "winRate": 0.0,
       "kda": 0.0,
       "k": 0,
       "d": 0,
@@ -619,7 +619,7 @@ window.INITIAL_DATA = {
       "elo": 1082,
       "win": 0,
       "lose": 0,
-      "winRate": 0,
+      "winRate": 0.0,
       "kda": 0.0,
       "k": 0,
       "d": 0,
@@ -632,7 +632,7 @@ window.INITIAL_DATA = {
       "elo": 987,
       "win": 0,
       "lose": 0,
-      "winRate": 0,
+      "winRate": 0.0,
       "kda": 0.0,
       "k": 0,
       "d": 0,
@@ -651,338 +651,6 @@ window.INITIAL_DATA = {
       "d": 89,
       "a": 83,
       "tier": "아이언 9"
-    }
-  ],
-  "playersRaw": [
-    {
-      "name": "유동혁",
-      "elo": 2117,
-      "win": 1,
-      "lose": 4,
-      "winRate": 20.0,
-      "kda": 1.91,
-      "k": 42,
-      "d": 32,
-      "a": 19
-    },
-    {
-      "name": "박명룡",
-      "elo": 2090,
-      "win": 2,
-      "lose": 4,
-      "winRate": 33.3,
-      "kda": 3.58,
-      "k": 50,
-      "d": 26,
-      "a": 43
-    },
-    {
-      "name": "안태인",
-      "elo": 2236,
-      "win": 8,
-      "lose": 7,
-      "winRate": 53.3,
-      "kda": 1.87,
-      "k": 139,
-      "d": 109,
-      "a": 65
-    },
-    {
-      "name": "지범준",
-      "elo": 2069,
-      "win": 9,
-      "lose": 5,
-      "winRate": 64.3,
-      "kda": 3.89,
-      "k": 77,
-      "d": 63,
-      "a": 168
-    },
-    {
-      "name": "김민서",
-      "elo": 1929,
-      "win": 3,
-      "lose": 2,
-      "winRate": 60.0,
-      "kda": 2.75,
-      "k": 31,
-      "d": 24,
-      "a": 35
-    },
-    {
-      "name": "허원석",
-      "elo": 1871,
-      "win": 0,
-      "lose": 0,
-      "winRate": 0,
-      "kda": 0,
-      "k": 0,
-      "d": 0,
-      "a": 0
-    },
-    {
-      "name": "안성진",
-      "elo": 1917,
-      "win": 6,
-      "lose": 9,
-      "winRate": 40.0,
-      "kda": 2.77,
-      "k": 86,
-      "d": 77,
-      "a": 127
-    },
-    {
-      "name": "윤선용",
-      "elo": 1796,
-      "win": 0,
-      "lose": 0,
-      "winRate": 0,
-      "kda": 0,
-      "k": 0,
-      "d": 0,
-      "a": 0
-    },
-    {
-      "name": "이준헌",
-      "elo": 1690,
-      "win": 6,
-      "lose": 3,
-      "winRate": 66.7,
-      "kda": 2.72,
-      "k": 36,
-      "d": 47,
-      "a": 92
-    },
-    {
-      "name": "김찬",
-      "elo": 1810,
-      "win": 6,
-      "lose": 9,
-      "winRate": 40.0,
-      "kda": 1.99,
-      "k": 79,
-      "d": 99,
-      "a": 118
-    },
-    {
-      "name": "유탁영",
-      "elo": 1714,
-      "win": 0,
-      "lose": 0,
-      "winRate": 0,
-      "kda": 0,
-      "k": 0,
-      "d": 0,
-      "a": 0
-    },
-    {
-      "name": "김시완",
-      "elo": 1789,
-      "win": 4,
-      "lose": 2,
-      "winRate": 66.7,
-      "kda": 2.49,
-      "k": 10,
-      "d": 35,
-      "a": 77
-    },
-    {
-      "name": "송승훈",
-      "elo": 1489,
-      "win": 6,
-      "lose": 9,
-      "winRate": 40.0,
-      "kda": 1.87,
-      "k": 51,
-      "d": 94,
-      "a": 125
-    },
-    {
-      "name": "양현규",
-      "elo": 1522,
-      "win": 0,
-      "lose": 0,
-      "winRate": 0,
-      "kda": 0,
-      "k": 0,
-      "d": 0,
-      "a": 0
-    },
-    {
-      "name": "김지우",
-      "elo": 1507,
-      "win": 0,
-      "lose": 0,
-      "winRate": 0,
-      "kda": 0,
-      "k": 0,
-      "d": 0,
-      "a": 0
-    },
-    {
-      "name": "조호진",
-      "elo": 1496,
-      "win": 0,
-      "lose": 0,
-      "winRate": 0,
-      "kda": 0,
-      "k": 0,
-      "d": 0,
-      "a": 0
-    },
-    {
-      "name": "전준형",
-      "elo": 1483,
-      "win": 0,
-      "lose": 0,
-      "winRate": 0,
-      "kda": 0,
-      "k": 0,
-      "d": 0,
-      "a": 0
-    },
-    {
-      "name": "이호재",
-      "elo": 1357,
-      "win": 8,
-      "lose": 6,
-      "winRate": 57.1,
-      "kda": 2.09,
-      "k": 58,
-      "d": 65,
-      "a": 78
-    },
-    {
-      "name": "박준혁",
-      "elo": 1228,
-      "win": 0,
-      "lose": 0,
-      "winRate": 0,
-      "kda": 0,
-      "k": 0,
-      "d": 0,
-      "a": 0
-    },
-    {
-      "name": "이권표",
-      "elo": 1219,
-      "win": 0,
-      "lose": 0,
-      "winRate": 0,
-      "kda": 0,
-      "k": 0,
-      "d": 0,
-      "a": 0
-    },
-    {
-      "name": "윤준석",
-      "elo": 1082,
-      "win": 0,
-      "lose": 0,
-      "winRate": 0,
-      "kda": 0,
-      "k": 0,
-      "d": 0,
-      "a": 0
-    },
-    {
-      "name": "최유진",
-      "elo": 987,
-      "win": 0,
-      "lose": 0,
-      "winRate": 0,
-      "kda": 0,
-      "k": 0,
-      "d": 0,
-      "a": 0
-    },
-    {
-      "name": "안우진",
-      "elo": 655,
-      "win": 5,
-      "lose": 10,
-      "winRate": 33.3,
-      "kda": 1.25,
-      "k": 28,
-      "d": 89,
-      "a": 83
-    },
-    {
-      "name": "강원준",
-      "elo": 1470,
-      "win": 0,
-      "lose": 0,
-      "winRate": 0,
-      "kda": 0,
-      "k": 0,
-      "d": 0,
-      "a": 0
-    },
-    {
-      "name": "최진우",
-      "elo": 2085,
-      "win": 4,
-      "lose": 2,
-      "winRate": 66.7,
-      "kda": 3.5,
-      "k": 63,
-      "d": 30,
-      "a": 42
-    },
-    {
-      "name": "이승배",
-      "elo": 1660,
-      "win": 0,
-      "lose": 0,
-      "winRate": 0,
-      "kda": 0,
-      "k": 0,
-      "d": 0,
-      "a": 0
-    },
-    {
-      "name": "정도영",
-      "elo": 1324,
-      "win": 0,
-      "lose": 0,
-      "winRate": 0,
-      "kda": 0,
-      "k": 0,
-      "d": 0,
-      "a": 0
-    },
-    {
-      "name": "짱구",
-      "elo": 1905,
-      "win": 1,
-      "lose": 1,
-      "winRate": 50.0,
-      "kda": 4.33,
-      "k": 11,
-      "d": 9,
-      "a": 28
-    },
-    {
-      "name": "김민준",
-      "elo": 1772,
-      "win": 3,
-      "lose": 1,
-      "winRate": 75.0,
-      "kda": 3.76,
-      "k": 39,
-      "d": 21,
-      "a": 40
-    },
-    {
-      "name": "김기중",
-      "elo": 1872,
-      "win": 3,
-      "lose": 1,
-      "winRate": 75.0,
-      "kda": 4.0,
-      "k": 35,
-      "d": 17,
-      "a": 33
     }
   ],
   "pairs": [
@@ -3941,9 +3609,9 @@ window.INITIAL_DATA = {
           "d": 1,
           "a": 2,
           "kda": 14.0,
-          "oldElo": 2051,
-          "newElo": 2069,
-          "delta": 18.3
+          "oldElo": 2050.8442514921735,
+          "newElo": 2069.1683388025335,
+          "delta": 18.324087310359893
         },
         {
           "result": "승리",
@@ -3953,9 +3621,9 @@ window.INITIAL_DATA = {
           "d": 2,
           "a": 6,
           "kda": 8.0,
-          "oldElo": 1892,
-          "newElo": 1929,
-          "delta": 36.6
+          "oldElo": 1891.8556608043887,
+          "newElo": 1928.5038354251085,
+          "delta": 36.648174620719786
         },
         {
           "result": "승리",
@@ -3965,9 +3633,9 @@ window.INITIAL_DATA = {
           "d": 2,
           "a": 4,
           "kda": 5.0,
-          "oldElo": 1339,
-          "newElo": 1357,
-          "delta": 18.3
+          "oldElo": 1338.5753908717022,
+          "newElo": 1356.899478182062,
+          "delta": 18.324087310359893
         },
         {
           "result": "승리",
@@ -3977,9 +3645,9 @@ window.INITIAL_DATA = {
           "d": 4,
           "a": 5,
           "kda": 1.75,
-          "oldElo": 2218,
-          "newElo": 2236,
-          "delta": 18.3
+          "oldElo": 2218.1481699379665,
+          "newElo": 2236.4722572483265,
+          "delta": 18.324087310359893
         },
         {
           "result": "승리",
@@ -3989,9 +3657,9 @@ window.INITIAL_DATA = {
           "d": 3,
           "a": 9,
           "kda": 3.33,
-          "oldElo": 1654,
-          "newElo": 1690,
-          "delta": 36.6
+          "oldElo": 1653.5883994598596,
+          "newElo": 1690.2365740805794,
+          "delta": 36.648174620719786
         },
         {
           "result": "패배",
@@ -4001,9 +3669,9 @@ window.INITIAL_DATA = {
           "d": 13,
           "a": 0,
           "kda": 0.0,
-          "oldElo": 1508,
-          "newElo": 1489,
-          "delta": -18.3
+          "oldElo": 1507.5849424779608,
+          "newElo": 1489.260855167601,
+          "delta": -18.324087310359893
         },
         {
           "result": "패배",
@@ -4013,9 +3681,9 @@ window.INITIAL_DATA = {
           "d": 5,
           "a": 2,
           "kda": 0.6,
-          "oldElo": 1828,
-          "newElo": 1810,
-          "delta": -18.3
+          "oldElo": 1828.4565526962128,
+          "newElo": 1810.132465385853,
+          "delta": -18.324087310359893
         },
         {
           "result": "패배",
@@ -4025,9 +3693,9 @@ window.INITIAL_DATA = {
           "d": 4,
           "a": 0,
           "kda": 1.0,
-          "oldElo": 674,
-          "newElo": 655,
-          "delta": -18.3
+          "oldElo": 673.6431865343151,
+          "newElo": 655.3190992239552,
+          "delta": -18.324087310359893
         },
         {
           "result": "패배",
@@ -4037,9 +3705,9 @@ window.INITIAL_DATA = {
           "d": 6,
           "a": 2,
           "kda": 1.33,
-          "oldElo": 2154,
-          "newElo": 2117,
-          "delta": -36.6
+          "oldElo": 2153.891552167945,
+          "newElo": 2117.2433775472255,
+          "delta": -36.648174620719786
         },
         {
           "result": "패배",
@@ -4049,9 +3717,9 @@ window.INITIAL_DATA = {
           "d": 3,
           "a": 6,
           "kda": 2.33,
-          "oldElo": 1935,
-          "newElo": 1917,
-          "delta": -18.3
+          "oldElo": 1935.2491736166849,
+          "newElo": 1916.925086306325,
+          "delta": -18.324087310359893
         }
       ]
     },
@@ -4082,9 +3750,9 @@ window.INITIAL_DATA = {
           "d": 3,
           "a": 10,
           "kda": 10.0,
-          "oldElo": 2027,
-          "newElo": 2051,
-          "delta": 23.8
+          "oldElo": 2027.0048882129718,
+          "newElo": 2050.8442514921735,
+          "delta": 23.839363279201955
         },
         {
           "result": "승리",
@@ -4094,9 +3762,9 @@ window.INITIAL_DATA = {
           "d": 6,
           "a": 11,
           "kda": 3.67,
-          "oldElo": 1844,
-          "newElo": 1892,
-          "delta": 47.7
+          "oldElo": 1844.1769342459847,
+          "newElo": 1891.8556608043887,
+          "delta": 47.67872655840391
         },
         {
           "result": "승리",
@@ -4106,9 +3774,9 @@ window.INITIAL_DATA = {
           "d": 8,
           "a": 15,
           "kda": 2.88,
-          "oldElo": 1315,
-          "newElo": 1339,
-          "delta": 23.8
+          "oldElo": 1314.7360275925002,
+          "newElo": 1338.5753908717022,
+          "delta": 23.839363279201955
         },
         {
           "result": "승리",
@@ -4118,9 +3786,9 @@ window.INITIAL_DATA = {
           "d": 11,
           "a": 12,
           "kda": 1.64,
-          "oldElo": 2194,
-          "newElo": 2218,
-          "delta": 23.8
+          "oldElo": 2194.3088066587648,
+          "newElo": 2218.1481699379665,
+          "delta": 23.839363279201955
         },
         {
           "result": "승리",
@@ -4130,9 +3798,9 @@ window.INITIAL_DATA = {
           "d": 6,
           "a": 17,
           "kda": 3.33,
-          "oldElo": 1606,
-          "newElo": 1654,
-          "delta": 47.7
+          "oldElo": 1605.9096729014557,
+          "newElo": 1653.5883994598596,
+          "delta": 47.67872655840391
         },
         {
           "result": "패배",
@@ -4142,9 +3810,9 @@ window.INITIAL_DATA = {
           "d": 9,
           "a": 2,
           "kda": 0.56,
-          "oldElo": 1531,
-          "newElo": 1508,
-          "delta": -23.8
+          "oldElo": 1531.4243057571628,
+          "newElo": 1507.5849424779608,
+          "delta": -23.839363279201955
         },
         {
           "result": "패배",
@@ -4154,9 +3822,9 @@ window.INITIAL_DATA = {
           "d": 10,
           "a": 12,
           "kda": 2.4,
-          "oldElo": 1852,
-          "newElo": 1828,
-          "delta": -23.8
+          "oldElo": 1852.2959159754148,
+          "newElo": 1828.4565526962128,
+          "delta": -23.839363279201955
         },
         {
           "result": "패배",
@@ -4166,9 +3834,9 @@ window.INITIAL_DATA = {
           "d": 13,
           "a": 11,
           "kda": 0.92,
-          "oldElo": 697,
-          "newElo": 674,
-          "delta": -23.8
+          "oldElo": 697.482549813517,
+          "newElo": 673.6431865343151,
+          "delta": -23.839363279201955
         },
         {
           "result": "패배",
@@ -4178,9 +3846,9 @@ window.INITIAL_DATA = {
           "d": 11,
           "a": 8,
           "kda": 2.09,
-          "oldElo": 2202,
-          "newElo": 2154,
-          "delta": -47.7
+          "oldElo": 2201.570278726349,
+          "newElo": 2153.891552167945,
+          "delta": -47.67872655840391
         },
         {
           "result": "패배",
@@ -4190,9 +3858,9 @@ window.INITIAL_DATA = {
           "d": 5,
           "a": 22,
           "kda": 5.0,
-          "oldElo": 1959,
-          "newElo": 1935,
-          "delta": -23.8
+          "oldElo": 1959.0885368958868,
+          "newElo": 1935.2491736166849,
+          "delta": -23.839363279201955
         }
       ]
     },
@@ -4223,9 +3891,9 @@ window.INITIAL_DATA = {
           "d": 7,
           "a": 3,
           "kda": 1.0,
-          "oldElo": 648,
-          "newElo": 697,
-          "delta": 49.2
+          "oldElo": 648.2701406242936,
+          "newElo": 697.482549813517,
+          "delta": 49.212409189223465
         },
         {
           "result": "승리",
@@ -4235,9 +3903,9 @@ window.INITIAL_DATA = {
           "d": 5,
           "a": 9,
           "kda": 4.4,
-          "oldElo": 2145,
-          "newElo": 2194,
-          "delta": 49.2
+          "oldElo": 2145.0963974695414,
+          "newElo": 2194.3088066587648,
+          "delta": 49.212409189223465
         },
         {
           "result": "승리",
@@ -4247,9 +3915,9 @@ window.INITIAL_DATA = {
           "d": 4,
           "a": 10,
           "kda": 4.5,
-          "oldElo": 1910,
-          "newElo": 1959,
-          "delta": 49.2
+          "oldElo": 1909.8761277066633,
+          "newElo": 1959.0885368958868,
+          "delta": 49.212409189223465
         },
         {
           "result": "승리",
@@ -4259,9 +3927,9 @@ window.INITIAL_DATA = {
           "d": 4,
           "a": 11,
           "kda": 5.75,
-          "oldElo": 1803,
-          "newElo": 1852,
-          "delta": 49.2
+          "oldElo": 1803.0835067861913,
+          "newElo": 1852.2959159754148,
+          "delta": 49.212409189223465
         },
         {
           "result": "승리",
@@ -4271,9 +3939,9 @@ window.INITIAL_DATA = {
           "d": 9,
           "a": 20,
           "kda": 3.0,
-          "oldElo": 1978,
-          "newElo": 2027,
-          "delta": 49.2
+          "oldElo": 1977.7924790237482,
+          "newElo": 2027.0048882129718,
+          "delta": 49.212409189223465
         },
         {
           "result": "패배",
@@ -4283,9 +3951,9 @@ window.INITIAL_DATA = {
           "d": 6,
           "a": 6,
           "kda": 1.67,
-          "oldElo": 1364,
-          "newElo": 1315,
-          "delta": -49.2
+          "oldElo": 1363.9484367817238,
+          "newElo": 1314.7360275925002,
+          "delta": -49.212409189223465
         },
         {
           "result": "패배",
@@ -4295,9 +3963,9 @@ window.INITIAL_DATA = {
           "d": 7,
           "a": 12,
           "kda": 2.43,
-          "oldElo": 1704,
-          "newElo": 1606,
-          "delta": -98.4
+          "oldElo": 1704.3344912799025,
+          "newElo": 1605.9096729014557,
+          "delta": -98.42481837844693
         },
         {
           "result": "패배",
@@ -4307,9 +3975,9 @@ window.INITIAL_DATA = {
           "d": 7,
           "a": 4,
           "kda": 2.0,
-          "oldElo": 2300,
-          "newElo": 2202,
-          "delta": -98.4
+          "oldElo": 2299.995097104796,
+          "newElo": 2201.570278726349,
+          "delta": -98.42481837844693
         },
         {
           "result": "패배",
@@ -4319,9 +3987,9 @@ window.INITIAL_DATA = {
           "d": 11,
           "a": 9,
           "kda": 0.91,
-          "oldElo": 1943,
-          "newElo": 1844,
-          "delta": -98.4
+          "oldElo": 1942.6017526244316,
+          "newElo": 1844.1769342459847,
+          "delta": -98.42481837844693
         },
         {
           "result": "패배",
@@ -4331,9 +3999,9 @@ window.INITIAL_DATA = {
           "d": 13,
           "a": 9,
           "kda": 1.38,
-          "oldElo": 1581,
-          "newElo": 1531,
-          "delta": -49.2
+          "oldElo": 1580.6367149463863,
+          "newElo": 1531.4243057571628,
+          "delta": -49.212409189223465
         }
       ]
     },
@@ -4364,9 +4032,9 @@ window.INITIAL_DATA = {
           "d": 2,
           "a": 1,
           "kda": 0.5,
-          "oldElo": 584,
-          "newElo": 648,
-          "delta": 64.6
+          "oldElo": 583.6389595841744,
+          "newElo": 648.2701406242936,
+          "delta": 64.63118104011923
         },
         {
           "result": "승리",
@@ -4376,9 +4044,9 @@ window.INITIAL_DATA = {
           "d": 2,
           "a": 7,
           "kda": 7.5,
-          "oldElo": 2080,
-          "newElo": 2145,
-          "delta": 64.6
+          "oldElo": 2080.465216429422,
+          "newElo": 2145.0963974695414,
+          "delta": 64.63118104011923
         },
         {
           "result": "승리",
@@ -4388,9 +4056,9 @@ window.INITIAL_DATA = {
           "d": 1,
           "a": 4,
           "kda": 9.0,
-          "oldElo": 1845,
-          "newElo": 1910,
-          "delta": 64.6
+          "oldElo": 1845.2449466665441,
+          "newElo": 1909.8761277066633,
+          "delta": 64.63118104011923
         },
         {
           "result": "승리",
@@ -4400,9 +4068,9 @@ window.INITIAL_DATA = {
           "d": 3,
           "a": 7,
           "kda": 5.33,
-          "oldElo": 1738,
-          "newElo": 1803,
-          "delta": 64.6
+          "oldElo": 1738.4523257460721,
+          "newElo": 1803.0835067861913,
+          "delta": 64.63118104011923
         },
         {
           "result": "승리",
@@ -4412,9 +4080,9 @@ window.INITIAL_DATA = {
           "d": 2,
           "a": 14,
           "kda": 7.5,
-          "oldElo": 1913,
-          "newElo": 1978,
-          "delta": 64.6
+          "oldElo": 1913.161297983629,
+          "newElo": 1977.7924790237482,
+          "delta": 64.63118104011923
         },
         {
           "result": "패배",
@@ -4424,9 +4092,9 @@ window.INITIAL_DATA = {
           "d": 2,
           "a": 0,
           "kda": 1.0,
-          "oldElo": 1429,
-          "newElo": 1364,
-          "delta": -64.6
+          "oldElo": 1428.579617821843,
+          "newElo": 1363.9484367817238,
+          "delta": -64.63118104011923
         },
         {
           "result": "패배",
@@ -4436,9 +4104,9 @@ window.INITIAL_DATA = {
           "d": 4,
           "a": 4,
           "kda": 1.25,
-          "oldElo": 1834,
-          "newElo": 1704,
-          "delta": -129.3
+          "oldElo": 1833.596853360141,
+          "newElo": 1704.3344912799025,
+          "delta": -129.26236208023846
         },
         {
           "result": "패배",
@@ -4448,9 +4116,9 @@ window.INITIAL_DATA = {
           "d": 5,
           "a": 3,
           "kda": 1.0,
-          "oldElo": 2429,
-          "newElo": 2300,
-          "delta": -129.3
+          "oldElo": 2429.2574591850343,
+          "newElo": 2299.995097104796,
+          "delta": -129.26236208023846
         },
         {
           "result": "패배",
@@ -4460,9 +4128,9 @@ window.INITIAL_DATA = {
           "d": 4,
           "a": 2,
           "kda": 1.25,
-          "oldElo": 2072,
-          "newElo": 1943,
-          "delta": -129.3
+          "oldElo": 2071.86411470467,
+          "newElo": 1942.6017526244316,
+          "delta": -129.26236208023846
         },
         {
           "result": "패배",
@@ -4472,9 +4140,9 @@ window.INITIAL_DATA = {
           "d": 8,
           "a": 4,
           "kda": 0.75,
-          "oldElo": 1645,
-          "newElo": 1581,
-          "delta": -64.6
+          "oldElo": 1645.2678959865054,
+          "newElo": 1580.6367149463863,
+          "delta": -64.63118104011923
         }
       ]
     },
@@ -4505,9 +4173,9 @@ window.INITIAL_DATA = {
           "d": 1,
           "a": 4,
           "kda": 12.0,
-          "oldElo": 1388,
-          "newElo": 1429,
-          "delta": 40.3
+          "oldElo": 1388.2690572381025,
+          "newElo": 1428.579617821843,
+          "delta": 40.31056058374047
         },
         {
           "result": "승리",
@@ -4517,9 +4185,9 @@ window.INITIAL_DATA = {
           "d": 2,
           "a": 13,
           "kda": 7.5,
-          "oldElo": 1793,
-          "newElo": 1834,
-          "delta": 40.3
+          "oldElo": 1793.2862927764006,
+          "newElo": 1833.596853360141,
+          "delta": 40.31056058374047
         },
         {
           "result": "승리",
@@ -4529,9 +4197,9 @@ window.INITIAL_DATA = {
           "d": 3,
           "a": 2,
           "kda": 3.67,
-          "oldElo": 2389,
-          "newElo": 2429,
-          "delta": 40.3
+          "oldElo": 2388.946898601294,
+          "newElo": 2429.2574591850343,
+          "delta": 40.31056058374047
         },
         {
           "result": "승리",
@@ -4541,9 +4209,9 @@ window.INITIAL_DATA = {
           "d": 1,
           "a": 7,
           "kda": 13.0,
-          "oldElo": 2032,
-          "newElo": 2072,
-          "delta": 40.3
+          "oldElo": 2031.5535541209294,
+          "newElo": 2071.86411470467,
+          "delta": 40.31056058374047
         },
         {
           "result": "승리",
@@ -4553,9 +4221,9 @@ window.INITIAL_DATA = {
           "d": 4,
           "a": 11,
           "kda": 3.5,
-          "oldElo": 1625,
-          "newElo": 1645,
-          "delta": 20.2
+          "oldElo": 1625.1126156946352,
+          "newElo": 1645.2678959865054,
+          "delta": 20.155280291870234
         },
         {
           "result": "패배",
@@ -4565,9 +4233,9 @@ window.INITIAL_DATA = {
           "d": 5,
           "a": 0,
           "kda": 0.2,
-          "oldElo": 604,
-          "newElo": 584,
-          "delta": -20.2
+          "oldElo": 603.7942398760446,
+          "newElo": 583.6389595841744,
+          "delta": -20.155280291870234
         },
         {
           "result": "패배",
@@ -4577,9 +4245,9 @@ window.INITIAL_DATA = {
           "d": 9,
           "a": 1,
           "kda": 0.56,
-          "oldElo": 2101,
-          "newElo": 2080,
-          "delta": -20.2
+          "oldElo": 2100.6204967212925,
+          "newElo": 2080.465216429422,
+          "delta": -20.155280291870234
         },
         {
           "result": "패배",
@@ -4589,9 +4257,9 @@ window.INITIAL_DATA = {
           "d": 6,
           "a": 5,
           "kda": 1.0,
-          "oldElo": 1865,
-          "newElo": 1845,
-          "delta": -20.2
+          "oldElo": 1865.4002269584144,
+          "newElo": 1845.2449466665441,
+          "delta": -20.155280291870234
         },
         {
           "result": "패배",
@@ -4601,9 +4269,9 @@ window.INITIAL_DATA = {
           "d": 5,
           "a": 4,
           "kda": 1.4,
-          "oldElo": 1759,
-          "newElo": 1738,
-          "delta": -20.2
+          "oldElo": 1758.6076060379423,
+          "newElo": 1738.4523257460721,
+          "delta": -20.155280291870234
         },
         {
           "result": "패배",
@@ -4613,9 +4281,9 @@ window.INITIAL_DATA = {
           "d": 4,
           "a": 7,
           "kda": 2.25,
-          "oldElo": 1953,
-          "newElo": 1913,
-          "delta": -40.3
+          "oldElo": 1953.4718585673695,
+          "newElo": 1913.161297983629,
+          "delta": -40.31056058374047
         }
       ]
     },
@@ -4646,9 +4314,9 @@ window.INITIAL_DATA = {
           "d": 5,
           "a": 9,
           "kda": 3.2,
-          "oldElo": 1310,
-          "newElo": 1388,
-          "delta": 77.8
+          "oldElo": 1310.4394855278304,
+          "newElo": 1388.2690572381025,
+          "delta": 77.82957171027223
         },
         {
           "result": "승리",
@@ -4658,9 +4326,9 @@ window.INITIAL_DATA = {
           "d": 5,
           "a": 15,
           "kda": 4.8,
-          "oldElo": 1876,
-          "newElo": 1953,
-          "delta": 77.8
+          "oldElo": 1875.6422868570974,
+          "newElo": 1953.4718585673695,
+          "delta": 77.82957171027223
         },
         {
           "result": "승리",
@@ -4670,9 +4338,9 @@ window.INITIAL_DATA = {
           "d": 6,
           "a": 15,
           "kda": 4.0,
-          "oldElo": 1715,
-          "newElo": 1793,
-          "delta": 77.8
+          "oldElo": 1715.4567210661285,
+          "newElo": 1793.2862927764006,
+          "delta": 77.82957171027223
         },
         {
           "result": "승리",
@@ -4682,9 +4350,9 @@ window.INITIAL_DATA = {
           "d": 3,
           "a": 19,
           "kda": 7.67,
-          "oldElo": 1794,
-          "newElo": 1872,
-          "delta": 77.8
+          "oldElo": 1794.143185240382,
+          "newElo": 1871.9727569506542,
+          "delta": 77.82957171027223
         },
         {
           "result": "승리",
@@ -4694,9 +4362,9 @@ window.INITIAL_DATA = {
           "d": 4,
           "a": 17,
           "kda": 8.0,
-          "oldElo": 1694,
-          "newElo": 1772,
-          "delta": 77.8
+          "oldElo": 1694.143185240382,
+          "newElo": 1771.9727569506542,
+          "delta": 77.82957171027223
         },
         {
           "result": "패배",
@@ -4706,9 +4374,9 @@ window.INITIAL_DATA = {
           "d": 10,
           "a": 6,
           "kda": 1.0,
-          "oldElo": 682,
-          "newElo": 604,
-          "delta": -77.8
+          "oldElo": 681.6238115863168,
+          "newElo": 603.7942398760446,
+          "delta": -77.82957171027223
         },
         {
           "result": "패배",
@@ -4718,9 +4386,9 @@ window.INITIAL_DATA = {
           "d": 7,
           "a": 11,
           "kda": 2.14,
-          "oldElo": 1943,
-          "newElo": 1865,
-          "delta": -77.8
+          "oldElo": 1943.2297986686865,
+          "newElo": 1865.4002269584144,
+          "delta": -77.82957171027223
         },
         {
           "result": "패배",
@@ -4730,9 +4398,9 @@ window.INITIAL_DATA = {
           "d": 7,
           "a": 4,
           "kda": 1.71,
-          "oldElo": 2178,
-          "newElo": 2101,
-          "delta": -77.8
+          "oldElo": 2178.450068431565,
+          "newElo": 2100.6204967212925,
+          "delta": -77.82957171027223
         },
         {
           "result": "패배",
@@ -4742,9 +4410,9 @@ window.INITIAL_DATA = {
           "d": 11,
           "a": 6,
           "kda": 1.18,
-          "oldElo": 1836,
-          "newElo": 1759,
-          "delta": -77.8
+          "oldElo": 1836.4371777482145,
+          "newElo": 1758.6076060379423,
+          "delta": -77.82957171027223
         },
         {
           "result": "패배",
@@ -4754,9 +4422,9 @@ window.INITIAL_DATA = {
           "d": 9,
           "a": 11,
           "kda": 1.22,
-          "oldElo": 1703,
-          "newElo": 1625,
-          "delta": -77.8
+          "oldElo": 1702.9421874049074,
+          "newElo": 1625.1126156946352,
+          "delta": -77.82957171027223
         }
       ]
     },
@@ -4787,9 +4455,9 @@ window.INITIAL_DATA = {
           "d": 1,
           "a": 8,
           "kda": 8.0,
-          "oldElo": 549,
-          "newElo": 682,
-          "delta": 132.7
+          "oldElo": 548.8982525698748,
+          "newElo": 681.6238115863168,
+          "delta": 132.72555901644202
         },
         {
           "result": "승리",
@@ -4799,9 +4467,9 @@ window.INITIAL_DATA = {
           "d": 0,
           "a": 20,
           "kda": 24.0,
-          "oldElo": 1811,
-          "newElo": 1943,
-          "delta": 132.7
+          "oldElo": 1810.5042396522445,
+          "newElo": 1943.2297986686865,
+          "delta": 132.72555901644202
         },
         {
           "result": "승리",
@@ -4811,9 +4479,9 @@ window.INITIAL_DATA = {
           "d": 4,
           "a": 3,
           "kda": 5.5,
-          "oldElo": 2046,
-          "newElo": 2178,
-          "delta": 132.7
+          "oldElo": 2045.724509415123,
+          "newElo": 2178.450068431565,
+          "delta": 132.72555901644202
         },
         {
           "result": "승리",
@@ -4823,9 +4491,9 @@ window.INITIAL_DATA = {
           "d": 5,
           "a": 14,
           "kda": 3.4,
-          "oldElo": 1704,
-          "newElo": 1836,
-          "delta": 132.7
+          "oldElo": 1703.7116187317724,
+          "newElo": 1836.4371777482145,
+          "delta": 132.72555901644202
         },
         {
           "result": "승리",
@@ -4835,9 +4503,9 @@ window.INITIAL_DATA = {
           "d": 5,
           "a": 9,
           "kda": 2.4,
-          "oldElo": 1570,
-          "newElo": 1703,
-          "delta": 132.7
+          "oldElo": 1570.2166283884653,
+          "newElo": 1702.9421874049074,
+          "delta": 132.72555901644202
         },
         {
           "result": "패배",
@@ -4847,9 +4515,9 @@ window.INITIAL_DATA = {
           "d": 3,
           "a": 2,
           "kda": 1.0,
-          "oldElo": 1443,
-          "newElo": 1310,
-          "delta": -132.7
+          "oldElo": 1443.1650445442724,
+          "newElo": 1310.4394855278304,
+          "delta": -132.72555901644202
         },
         {
           "result": "패배",
@@ -4859,9 +4527,9 @@ window.INITIAL_DATA = {
           "d": 7,
           "a": 3,
           "kda": 0.71,
-          "oldElo": 1927,
-          "newElo": 1794,
-          "delta": -132.7
+          "oldElo": 1926.8687442568241,
+          "newElo": 1794.143185240382,
+          "delta": -132.72555901644202
         },
         {
           "result": "패배",
@@ -4871,9 +4539,9 @@ window.INITIAL_DATA = {
           "d": 8,
           "a": 3,
           "kda": 0.75,
-          "oldElo": 1848,
-          "newElo": 1715,
-          "delta": -132.7
+          "oldElo": 1848.1822800825705,
+          "newElo": 1715.4567210661285,
+          "delta": -132.72555901644202
         },
         {
           "result": "패배",
@@ -4883,9 +4551,9 @@ window.INITIAL_DATA = {
           "d": 5,
           "a": 2,
           "kda": 2.0,
-          "oldElo": 1827,
-          "newElo": 1694,
-          "delta": -132.7
+          "oldElo": 1826.8687442568241,
+          "newElo": 1694.143185240382,
+          "delta": -132.72555901644202
         },
         {
           "result": "패배",
@@ -4895,9 +4563,9 @@ window.INITIAL_DATA = {
           "d": 6,
           "a": 10,
           "kda": 1.83,
-          "oldElo": 2008,
-          "newElo": 1876,
-          "delta": -132.7
+          "oldElo": 2008.3678458735394,
+          "newElo": 1875.6422868570974,
+          "delta": -132.72555901644202
         }
       ]
     },
@@ -4928,9 +4596,9 @@ window.INITIAL_DATA = {
           "d": 2,
           "a": 3,
           "kda": 5.5,
-          "oldElo": 1404,
-          "newElo": 1443,
-          "delta": 39.0
+          "oldElo": 1404.214158639833,
+          "newElo": 1443.1650445442724,
+          "delta": 38.95088590443937
         },
         {
           "result": "승리",
@@ -4940,9 +4608,9 @@ window.INITIAL_DATA = {
           "d": 7,
           "a": 5,
           "kda": 2.57,
-          "oldElo": 1888,
-          "newElo": 1927,
-          "delta": 39.0
+          "oldElo": 1887.9178583523847,
+          "newElo": 1926.8687442568241,
+          "delta": 38.95088590443937
         },
         {
           "result": "승리",
@@ -4952,9 +4620,9 @@ window.INITIAL_DATA = {
           "d": 10,
           "a": 9,
           "kda": 1.5,
-          "oldElo": 1809,
-          "newElo": 1848,
-          "delta": 39.0
+          "oldElo": 1809.231394178131,
+          "newElo": 1848.1822800825705,
+          "delta": 38.95088590443937
         },
         {
           "result": "승리",
@@ -4964,9 +4632,9 @@ window.INITIAL_DATA = {
           "d": 7,
           "a": 9,
           "kda": 2.14,
-          "oldElo": 1788,
-          "newElo": 1827,
-          "delta": 39.0
+          "oldElo": 1787.9178583523847,
+          "newElo": 1826.8687442568241,
+          "delta": 38.95088590443937
         },
         {
           "result": "승리",
@@ -4976,9 +4644,9 @@ window.INITIAL_DATA = {
           "d": 4,
           "a": 18,
           "kda": 4.75,
-          "oldElo": 1969,
-          "newElo": 2008,
-          "delta": 39.0
+          "oldElo": 1969.4169599691,
+          "newElo": 2008.3678458735394,
+          "delta": 38.95088590443937
         },
         {
           "result": "패배",
@@ -4988,9 +4656,9 @@ window.INITIAL_DATA = {
           "d": 6,
           "a": 6,
           "kda": 1.17,
-          "oldElo": 588,
-          "newElo": 549,
-          "delta": -39.0
+          "oldElo": 587.8491384743141,
+          "newElo": 548.8982525698748,
+          "delta": -38.95088590443937
         },
         {
           "result": "패배",
@@ -5000,9 +4668,9 @@ window.INITIAL_DATA = {
           "d": 6,
           "a": 10,
           "kda": 3.17,
-          "oldElo": 1849,
-          "newElo": 1811,
-          "delta": -39.0
+          "oldElo": 1849.455125556684,
+          "newElo": 1810.5042396522445,
+          "delta": -38.95088590443937
         },
         {
           "result": "패배",
@@ -5012,9 +4680,9 @@ window.INITIAL_DATA = {
           "d": 11,
           "a": 1,
           "kda": 1.18,
-          "oldElo": 2085,
-          "newElo": 2046,
-          "delta": -39.0
+          "oldElo": 2084.6753953195625,
+          "newElo": 2045.724509415123,
+          "delta": -38.95088590443937
         },
         {
           "result": "패배",
@@ -5024,9 +4692,9 @@ window.INITIAL_DATA = {
           "d": 6,
           "a": 11,
           "kda": 2.83,
-          "oldElo": 1743,
-          "newElo": 1704,
-          "delta": -39.0
+          "oldElo": 1742.662504636212,
+          "newElo": 1703.7116187317724,
+          "delta": -38.95088590443937
         },
         {
           "result": "패배",
@@ -5036,9 +4704,9 @@ window.INITIAL_DATA = {
           "d": 5,
           "a": 14,
           "kda": 3.2,
-          "oldElo": 1609,
-          "newElo": 1570,
-          "delta": -39.0
+          "oldElo": 1609.1675142929048,
+          "newElo": 1570.2166283884653,
+          "delta": -38.95088590443937
         }
       ]
     },
@@ -5069,9 +4737,9 @@ window.INITIAL_DATA = {
           "d": 1,
           "a": 15,
           "kda": 21.0,
-          "oldElo": 1571,
-          "newElo": 1609,
-          "delta": 37.9
+          "oldElo": 1571.2496559405201,
+          "newElo": 1609.1675142929048,
+          "delta": 37.91785835238475
         },
         {
           "result": "승리",
@@ -5081,9 +4749,9 @@ window.INITIAL_DATA = {
           "d": 1,
           "a": 10,
           "kda": 16.0,
-          "oldElo": 1771,
-          "newElo": 1809,
-          "delta": 37.9
+          "oldElo": 1771.3135358257464,
+          "newElo": 1809.231394178131,
+          "delta": 37.91785835238475
         },
         {
           "result": "승리",
@@ -5093,9 +4761,9 @@ window.INITIAL_DATA = {
           "d": 0,
           "a": 6,
           "kda": 22.0,
-          "oldElo": 1850,
-          "newElo": 1888,
-          "delta": 37.9
+          "oldElo": 1850.0,
+          "newElo": 1887.9178583523847,
+          "delta": 37.91785835238475
         },
         {
           "result": "승리",
@@ -5105,9 +4773,9 @@ window.INITIAL_DATA = {
           "d": 5,
           "a": 12,
           "kda": 4.4,
-          "oldElo": 1750,
-          "newElo": 1788,
-          "delta": 37.9
+          "oldElo": 1750.0,
+          "newElo": 1787.9178583523847,
+          "delta": 37.91785835238475
         },
         {
           "result": "승리",
@@ -5117,9 +4785,9 @@ window.INITIAL_DATA = {
           "d": 6,
           "a": 17,
           "kda": 3.67,
-          "oldElo": 1931,
-          "newElo": 1969,
-          "delta": 37.9
+          "oldElo": 1931.4991016167153,
+          "newElo": 1969.4169599691,
+          "delta": 37.91785835238475
         },
         {
           "result": "패배",
@@ -5129,9 +4797,9 @@ window.INITIAL_DATA = {
           "d": 8,
           "a": 2,
           "kda": 0.25,
-          "oldElo": 626,
-          "newElo": 588,
-          "delta": -37.9
+          "oldElo": 625.7669968266989,
+          "newElo": 587.8491384743141,
+          "delta": -37.91785835238475
         },
         {
           "result": "패배",
@@ -5141,9 +4809,9 @@ window.INITIAL_DATA = {
           "d": 6,
           "a": 4,
           "kda": 1.83,
-          "oldElo": 1887,
-          "newElo": 1849,
-          "delta": -37.9
+          "oldElo": 1887.3729839090686,
+          "newElo": 1849.455125556684,
+          "delta": -37.91785835238475
         },
         {
           "result": "패배",
@@ -5153,9 +4821,9 @@ window.INITIAL_DATA = {
           "d": 11,
           "a": 2,
           "kda": 0.18,
-          "oldElo": 1442,
-          "newElo": 1404,
-          "delta": -37.9
+          "oldElo": 1442.1320169922176,
+          "newElo": 1404.214158639833,
+          "delta": -37.91785835238475
         },
         {
           "result": "패배",
@@ -5165,9 +4833,9 @@ window.INITIAL_DATA = {
           "d": 11,
           "a": 5,
           "kda": 0.91,
-          "oldElo": 2123,
-          "newElo": 2085,
-          "delta": -37.9
+          "oldElo": 2122.5932536719474,
+          "newElo": 2084.6753953195625,
+          "delta": -37.91785835238475
         },
         {
           "result": "패배",
@@ -5177,9 +4845,9 @@ window.INITIAL_DATA = {
           "d": 7,
           "a": 10,
           "kda": 1.57,
-          "oldElo": 1781,
-          "newElo": 1743,
-          "delta": -37.9
+          "oldElo": 1780.5803629885966,
+          "newElo": 1742.662504636212,
+          "delta": -37.91785835238475
         }
       ]
     },
@@ -5210,9 +4878,9 @@ window.INITIAL_DATA = {
           "d": 7,
           "a": 6,
           "kda": 2.14,
-          "oldElo": 1794,
-          "newElo": 1887,
-          "delta": 93.2
+          "oldElo": 1794.2112043800803,
+          "newElo": 1887.3729839090686,
+          "delta": 93.16177952898829
         },
         {
           "result": "승리",
@@ -5222,9 +4890,9 @@ window.INITIAL_DATA = {
           "d": 5,
           "a": 12,
           "kda": 4.0,
-          "oldElo": 1992,
-          "newElo": 2085,
-          "delta": 93.2
+          "oldElo": 1991.722828671362,
+          "newElo": 2084.88460820035,
+          "delta": 93.16177952898829
         },
         {
           "result": "승리",
@@ -5234,9 +4902,9 @@ window.INITIAL_DATA = {
           "d": 2,
           "a": 14,
           "kda": 9.0,
-          "oldElo": 1349,
-          "newElo": 1442,
-          "delta": 93.2
+          "oldElo": 1348.9702374632293,
+          "newElo": 1442.1320169922176,
+          "delta": 93.16177952898829
         },
         {
           "result": "승리",
@@ -5246,9 +4914,9 @@ window.INITIAL_DATA = {
           "d": 8,
           "a": 6,
           "kda": 2.25,
-          "oldElo": 1687,
-          "newElo": 1781,
-          "delta": 93.2
+          "oldElo": 1687.4185834596083,
+          "newElo": 1780.5803629885966,
+          "delta": 93.16177952898829
         },
         {
           "result": "승리",
@@ -5258,9 +4926,9 @@ window.INITIAL_DATA = {
           "d": 6,
           "a": 16,
           "kda": 2.83,
-          "oldElo": 1696,
-          "newElo": 1789,
-          "delta": 93.2
+          "oldElo": 1695.7169053777893,
+          "newElo": 1788.8786849067776,
+          "delta": 93.16177952898829
         },
         {
           "result": "패배",
@@ -5270,9 +4938,9 @@ window.INITIAL_DATA = {
           "d": 5,
           "a": 5,
           "kda": 1.6,
-          "oldElo": 1664,
-          "newElo": 1571,
-          "delta": -93.2
+          "oldElo": 1664.4114354695084,
+          "newElo": 1571.2496559405201,
+          "delta": -93.16177952898829
         },
         {
           "result": "패배",
@@ -5282,9 +4950,9 @@ window.INITIAL_DATA = {
           "d": 12,
           "a": 3,
           "kda": 1.42,
-          "oldElo": 2216,
-          "newElo": 2123,
-          "delta": -93.2
+          "oldElo": 2215.7550332009355,
+          "newElo": 2122.5932536719474,
+          "delta": -93.16177952898829
         },
         {
           "result": "패배",
@@ -5294,9 +4962,9 @@ window.INITIAL_DATA = {
           "d": 8,
           "a": 5,
           "kda": 0.75,
-          "oldElo": 719,
-          "newElo": 626,
-          "delta": -93.2
+          "oldElo": 718.9287763556872,
+          "newElo": 625.7669968266989,
+          "delta": -93.16177952898829
         },
         {
           "result": "패배",
@@ -5306,9 +4974,9 @@ window.INITIAL_DATA = {
           "d": 3,
           "a": 13,
           "kda": 5.0,
-          "oldElo": 2183,
-          "newElo": 2090,
-          "delta": -93.2
+          "oldElo": 2182.709427337713,
+          "newElo": 2089.547647808725,
+          "delta": -93.16177952898829
         },
         {
           "result": "패배",
@@ -5318,9 +4986,9 @@ window.INITIAL_DATA = {
           "d": 6,
           "a": 6,
           "kda": 2.33,
-          "oldElo": 2025,
-          "newElo": 1931,
-          "delta": -93.2
+          "oldElo": 2024.6608811457036,
+          "newElo": 1931.4991016167153,
+          "delta": -93.16177952898829
         }
       ]
     },
@@ -5351,9 +5019,9 @@ window.INITIAL_DATA = {
           "d": 3,
           "a": 4,
           "kda": 7.33,
-          "oldElo": 2116,
-          "newElo": 2216,
-          "delta": 100.1
+          "oldElo": 2115.6304784254785,
+          "newElo": 2215.7550332009355,
+          "delta": 100.12455477545693
         },
         {
           "result": "승리",
@@ -5363,9 +5031,9 @@ window.INITIAL_DATA = {
           "d": 3,
           "a": 8,
           "kda": 5.67,
-          "oldElo": 1892,
-          "newElo": 1992,
-          "delta": 100.1
+          "oldElo": 1891.598273895905,
+          "newElo": 1991.722828671362,
+          "delta": 100.12455477545693
         },
         {
           "result": "승리",
@@ -5375,9 +5043,9 @@ window.INITIAL_DATA = {
           "d": 2,
           "a": 7,
           "kda": 5.0,
-          "oldElo": 1249,
-          "newElo": 1349,
-          "delta": 100.1
+          "oldElo": 1248.8456826877723,
+          "newElo": 1348.9702374632293,
+          "delta": 100.12455477545693
         },
         {
           "result": "승리",
@@ -5387,9 +5055,9 @@ window.INITIAL_DATA = {
           "d": 5,
           "a": 11,
           "kda": 2.6,
-          "oldElo": 1587,
-          "newElo": 1687,
-          "delta": 100.1
+          "oldElo": 1587.2940286841513,
+          "newElo": 1687.4185834596083,
+          "delta": 100.12455477545693
         },
         {
           "result": "승리",
@@ -5399,9 +5067,9 @@ window.INITIAL_DATA = {
           "d": 1,
           "a": 22,
           "kda": 23.0,
-          "oldElo": 1596,
-          "newElo": 1696,
-          "delta": 100.1
+          "oldElo": 1595.5923506023323,
+          "newElo": 1695.7169053777893,
+          "delta": 100.12455477545693
         },
         {
           "result": "패배",
@@ -5411,9 +5079,9 @@ window.INITIAL_DATA = {
           "d": 5,
           "a": 2,
           "kda": 0.6,
-          "oldElo": 1765,
-          "newElo": 1664,
-          "delta": -100.1
+          "oldElo": 1764.5359902449654,
+          "newElo": 1664.4114354695084,
+          "delta": -100.12455477545693
         },
         {
           "result": "패배",
@@ -5423,9 +5091,9 @@ window.INITIAL_DATA = {
           "d": 10,
           "a": 1,
           "kda": 0.7,
-          "oldElo": 1894,
-          "newElo": 1794,
-          "delta": -100.1
+          "oldElo": 1894.3357591555373,
+          "newElo": 1794.2112043800803,
+          "delta": -100.12455477545693
         },
         {
           "result": "패배",
@@ -5435,9 +5103,9 @@ window.INITIAL_DATA = {
           "d": 4,
           "a": 3,
           "kda": 0.75,
-          "oldElo": 819,
-          "newElo": 719,
-          "delta": -100.1
+          "oldElo": 819.0533311311441,
+          "newElo": 718.9287763556872,
+          "delta": -100.12455477545693
         },
         {
           "result": "패배",
@@ -5447,9 +5115,9 @@ window.INITIAL_DATA = {
           "d": 6,
           "a": 6,
           "kda": 1.33,
-          "oldElo": 2283,
-          "newElo": 2183,
-          "delta": -100.1
+          "oldElo": 2282.83398211317,
+          "newElo": 2182.709427337713,
+          "delta": -100.12455477545693
         },
         {
           "result": "패배",
@@ -5459,9 +5127,9 @@ window.INITIAL_DATA = {
           "d": 8,
           "a": 4,
           "kda": 1.12,
-          "oldElo": 2125,
-          "newElo": 2025,
-          "delta": -100.1
+          "oldElo": 2124.7854359211606,
+          "newElo": 2024.6608811457036,
+          "delta": -100.12455477545693
         }
       ]
     },
@@ -5492,9 +5160,9 @@ window.INITIAL_DATA = {
           "d": 2,
           "a": 3,
           "kda": 4.0,
-          "oldElo": 1657,
-          "newElo": 1765,
-          "delta": 107.9
+          "oldElo": 1656.6326705049019,
+          "newElo": 1764.5359902449654,
+          "delta": 107.90331974006368
         },
         {
           "result": "승리",
@@ -5504,9 +5172,9 @@ window.INITIAL_DATA = {
           "d": 0,
           "a": 4,
           "kda": 13.0,
-          "oldElo": 1786,
-          "newElo": 1894,
-          "delta": 107.9
+          "oldElo": 1786.4324394154737,
+          "newElo": 1894.3357591555373,
+          "delta": 107.90331974006368
         },
         {
           "result": "승리",
@@ -5516,9 +5184,9 @@ window.INITIAL_DATA = {
           "d": 3,
           "a": 8,
           "kda": 3.0,
-          "oldElo": 711,
-          "newElo": 819,
-          "delta": 107.9
+          "oldElo": 711.1500113910804,
+          "newElo": 819.0533311311441,
+          "delta": 107.90331974006368
         },
         {
           "result": "승리",
@@ -5528,9 +5196,9 @@ window.INITIAL_DATA = {
           "d": 0,
           "a": 3,
           "kda": 17.0,
-          "oldElo": 2175,
-          "newElo": 2283,
-          "delta": 107.9
+          "oldElo": 2174.9306623731063,
+          "newElo": 2282.83398211317,
+          "delta": 107.90331974006368
         },
         {
           "result": "승리",
@@ -5540,9 +5208,9 @@ window.INITIAL_DATA = {
           "d": 2,
           "a": 8,
           "kda": 5.5,
-          "oldElo": 2017,
-          "newElo": 2125,
-          "delta": 107.9
+          "oldElo": 2016.882116181097,
+          "newElo": 2124.7854359211606,
+          "delta": 107.90331974006368
         },
         {
           "result": "패배",
@@ -5552,9 +5220,9 @@ window.INITIAL_DATA = {
           "d": 6,
           "a": 0,
           "kda": 0.33,
-          "oldElo": 2224,
-          "newElo": 2116,
-          "delta": -107.9
+          "oldElo": 2223.533798165542,
+          "newElo": 2115.6304784254785,
+          "delta": -107.90331974006368
         },
         {
           "result": "패배",
@@ -5564,9 +5232,9 @@ window.INITIAL_DATA = {
           "d": 6,
           "a": 2,
           "kda": 0.5,
-          "oldElo": 2000,
-          "newElo": 1892,
-          "delta": -107.9
+          "oldElo": 1999.5015936359687,
+          "newElo": 1891.598273895905,
+          "delta": -107.90331974006368
         },
         {
           "result": "패배",
@@ -5576,9 +5244,9 @@ window.INITIAL_DATA = {
           "d": 6,
           "a": 1,
           "kda": 0.5,
-          "oldElo": 1357,
-          "newElo": 1249,
-          "delta": -107.9
+          "oldElo": 1356.7490024278359,
+          "newElo": 1248.8456826877723,
+          "delta": -107.90331974006368
         },
         {
           "result": "패배",
@@ -5588,9 +5256,9 @@ window.INITIAL_DATA = {
           "d": 8,
           "a": 0,
           "kda": 0.25,
-          "oldElo": 1695,
-          "newElo": 1587,
-          "delta": -107.9
+          "oldElo": 1695.1973484242149,
+          "newElo": 1587.2940286841513,
+          "delta": -107.90331974006368
         },
         {
           "result": "패배",
@@ -5600,9 +5268,9 @@ window.INITIAL_DATA = {
           "d": 6,
           "a": 2,
           "kda": 0.33,
-          "oldElo": 1703,
-          "newElo": 1596,
-          "delta": -107.9
+          "oldElo": 1703.495670342396,
+          "newElo": 1595.5923506023323,
+          "delta": -107.90331974006368
         }
       ]
     },
@@ -5633,9 +5301,9 @@ window.INITIAL_DATA = {
           "d": 5,
           "a": 2,
           "kda": 3.6,
-          "oldElo": 2130,
-          "newElo": 2224,
-          "delta": 94.0
+          "oldElo": 2129.502944976145,
+          "newElo": 2223.533798165542,
+          "delta": 94.03085318939708
         },
         {
           "result": "승리",
@@ -5645,9 +5313,9 @@ window.INITIAL_DATA = {
           "d": 3,
           "a": 6,
           "kda": 3.0,
-          "oldElo": 1905,
-          "newElo": 2000,
-          "delta": 94.0
+          "oldElo": 1905.4707404465717,
+          "newElo": 1999.5015936359687,
+          "delta": 94.03085318939708
         },
         {
           "result": "승리",
@@ -5657,9 +5325,9 @@ window.INITIAL_DATA = {
           "d": 4,
           "a": 2,
           "kda": 1.25,
-          "oldElo": 1263,
-          "newElo": 1357,
-          "delta": 94.0
+          "oldElo": 1262.7181492384389,
+          "newElo": 1356.7490024278359,
+          "delta": 94.03085318939708
         },
         {
           "result": "승리",
@@ -5669,9 +5337,9 @@ window.INITIAL_DATA = {
           "d": 2,
           "a": 6,
           "kda": 6.0,
-          "oldElo": 1601,
-          "newElo": 1695,
-          "delta": 94.0
+          "oldElo": 1601.1664952348178,
+          "newElo": 1695.1973484242149,
+          "delta": 94.03085318939708
         },
         {
           "result": "승리",
@@ -5681,9 +5349,9 @@ window.INITIAL_DATA = {
           "d": 8,
           "a": 11,
           "kda": 1.38,
-          "oldElo": 1609,
-          "newElo": 1703,
-          "delta": 94.0
+          "oldElo": 1609.4648171529989,
+          "newElo": 1703.495670342396,
+          "delta": 94.03085318939708
         },
         {
           "result": "패배",
@@ -5693,9 +5361,9 @@ window.INITIAL_DATA = {
           "d": 8,
           "a": 2,
           "kda": 0.88,
-          "oldElo": 1751,
-          "newElo": 1657,
-          "delta": -94.0
+          "oldElo": 1750.6635236942989,
+          "newElo": 1656.6326705049019,
+          "delta": -94.03085318939708
         },
         {
           "result": "패배",
@@ -5705,9 +5373,9 @@ window.INITIAL_DATA = {
           "d": 6,
           "a": 10,
           "kda": 2.33,
-          "oldElo": 1880,
-          "newElo": 1786,
-          "delta": -94.0
+          "oldElo": 1880.4632926048707,
+          "newElo": 1786.4324394154737,
+          "delta": -94.03085318939708
         },
         {
           "result": "패배",
@@ -5717,9 +5385,9 @@ window.INITIAL_DATA = {
           "d": 2,
           "a": 6,
           "kda": 4.0,
-          "oldElo": 805,
-          "newElo": 711,
-          "delta": -94.0
+          "oldElo": 805.1808645804774,
+          "newElo": 711.1500113910804,
+          "delta": -94.03085318939708
         },
         {
           "result": "패배",
@@ -5729,9 +5397,9 @@ window.INITIAL_DATA = {
           "d": 7,
           "a": 6,
           "kda": 2.0,
-          "oldElo": 2269,
-          "newElo": 2175,
-          "delta": -94.0
+          "oldElo": 2268.9615155625033,
+          "newElo": 2174.9306623731063,
+          "delta": -94.03085318939708
         },
         {
           "result": "패배",
@@ -5741,9 +5409,9 @@ window.INITIAL_DATA = {
           "d": 5,
           "a": 14,
           "kda": 3.4,
-          "oldElo": 2111,
-          "newElo": 2017,
-          "delta": -94.0
+          "oldElo": 2110.912969370494,
+          "newElo": 2016.882116181097,
+          "delta": -94.03085318939708
         }
       ]
     },
@@ -5774,9 +5442,9 @@ window.INITIAL_DATA = {
           "d": 10,
           "a": 7,
           "kda": 1.4,
-          "oldElo": 2029,
-          "newElo": 2130,
-          "delta": 100.4
+          "oldElo": 2029.0618285992582,
+          "newElo": 2129.502944976145,
+          "delta": 100.44111637688695
         },
         {
           "result": "승리",
@@ -5786,9 +5454,9 @@ window.INITIAL_DATA = {
           "d": 8,
           "a": 10,
           "kda": 3.0,
-          "oldElo": 1780,
-          "newElo": 1880,
-          "delta": 100.4
+          "oldElo": 1780.022176227984,
+          "newElo": 1880.4632926048707,
+          "delta": 100.44111637688695
         },
         {
           "result": "승리",
@@ -5798,9 +5466,9 @@ window.INITIAL_DATA = {
           "d": 7,
           "a": 20,
           "kda": 3.71,
-          "oldElo": 705,
-          "newElo": 805,
-          "delta": 100.4
+          "oldElo": 704.7397482035905,
+          "newElo": 805.1808645804774,
+          "delta": 100.44111637688695
         },
         {
           "result": "승리",
@@ -5810,9 +5478,9 @@ window.INITIAL_DATA = {
           "d": 3,
           "a": 12,
           "kda": 11.0,
-          "oldElo": 2169,
-          "newElo": 2269,
-          "delta": 100.4
+          "oldElo": 2168.5203991856165,
+          "newElo": 2268.9615155625033,
+          "delta": 100.44111637688695
         },
         {
           "result": "승리",
@@ -5822,9 +5490,9 @@ window.INITIAL_DATA = {
           "d": 4,
           "a": 26,
           "kda": 7.25,
-          "oldElo": 1650,
-          "newElo": 1751,
-          "delta": 100.4
+          "oldElo": 1650.222407317412,
+          "newElo": 1750.6635236942989,
+          "delta": 100.44111637688695
         },
         {
           "result": "패배",
@@ -5834,9 +5502,9 @@ window.INITIAL_DATA = {
           "d": 5,
           "a": 15,
           "kda": 4.4,
-          "oldElo": 2006,
-          "newElo": 1905,
-          "delta": -100.4
+          "oldElo": 2005.9118568234585,
+          "newElo": 1905.4707404465717,
+          "delta": -100.44111637688695
         },
         {
           "result": "패배",
@@ -5846,9 +5514,9 @@ window.INITIAL_DATA = {
           "d": 11,
           "a": 6,
           "kda": 2.36,
-          "oldElo": 2006,
-          "newElo": 1905,
-          "delta": -100.4
+          "oldElo": 2005.9118568234585,
+          "newElo": 1905.4707404465717,
+          "delta": -100.44111637688695
         },
         {
           "result": "패배",
@@ -5858,9 +5526,9 @@ window.INITIAL_DATA = {
           "d": 11,
           "a": 9,
           "kda": 1.0,
-          "oldElo": 1363,
-          "newElo": 1263,
-          "delta": -100.4
+          "oldElo": 1363.1592656153257,
+          "newElo": 1262.7181492384389,
+          "delta": -100.44111637688695
         },
         {
           "result": "패배",
@@ -5870,9 +5538,9 @@ window.INITIAL_DATA = {
           "d": 11,
           "a": 14,
           "kda": 1.45,
-          "oldElo": 1710,
-          "newElo": 1609,
-          "delta": -100.4
+          "oldElo": 1709.9059335298857,
+          "newElo": 1609.4648171529989,
+          "delta": -100.44111637688695
         },
         {
           "result": "패배",
@@ -5882,9 +5550,9 @@ window.INITIAL_DATA = {
           "d": 13,
           "a": 14,
           "kda": 1.15,
-          "oldElo": 1702,
-          "newElo": 1601,
-          "delta": -100.4
+          "oldElo": 1701.6076116117047,
+          "newElo": 1601.1664952348178,
+          "delta": -100.44111637688695
         }
       ]
     },
@@ -5915,9 +5583,9 @@ window.INITIAL_DATA = {
           "d": 4,
           "a": 13,
           "kda": 4.25,
-          "oldElo": 1950,
-          "newElo": 2006,
-          "delta": 55.9
+          "oldElo": 1950.0,
+          "newElo": 2005.9118568234585,
+          "delta": 55.91185682345859
         },
         {
           "result": "승리",
@@ -5927,9 +5595,9 @@ window.INITIAL_DATA = {
           "d": 2,
           "a": 8,
           "kda": 15.0,
-          "oldElo": 1950,
-          "newElo": 2006,
-          "delta": 55.9
+          "oldElo": 1950.0,
+          "newElo": 2005.9118568234585,
+          "delta": 55.91185682345859
         },
         {
           "result": "승리",
@@ -5939,9 +5607,9 @@ window.INITIAL_DATA = {
           "d": 3,
           "a": 12,
           "kda": 6.0,
-          "oldElo": 1594,
-          "newElo": 1650,
-          "delta": 55.9
+          "oldElo": 1594.3105504939535,
+          "newElo": 1650.222407317412,
+          "delta": 55.91185682345859
         },
         {
           "result": "승리",
@@ -5951,9 +5619,9 @@ window.INITIAL_DATA = {
           "d": 3,
           "a": 12,
           "kda": 6.0,
-          "oldElo": 1654,
-          "newElo": 1710,
-          "delta": 55.9
+          "oldElo": 1653.9940767064272,
+          "newElo": 1709.9059335298857,
+          "delta": 55.91185682345859
         },
         {
           "result": "승리",
@@ -5963,9 +5631,9 @@ window.INITIAL_DATA = {
           "d": 2,
           "a": 23,
           "kda": 11.5,
-          "oldElo": 2055,
-          "newElo": 2111,
-          "delta": 55.9
+          "oldElo": 2055.0011125470355,
+          "newElo": 2110.912969370494,
+          "delta": 55.91185682345859
         },
         {
           "result": "패배",
@@ -5975,9 +5643,9 @@ window.INITIAL_DATA = {
           "d": 9,
           "a": 2,
           "kda": 0.78,
-          "oldElo": 2085,
-          "newElo": 2029,
-          "delta": -55.9
+          "oldElo": 2084.9736854227167,
+          "newElo": 2029.0618285992582,
+          "delta": -55.91185682345859
         },
         {
           "result": "패배",
@@ -5987,9 +5655,9 @@ window.INITIAL_DATA = {
           "d": 8,
           "a": 4,
           "kda": 0.75,
-          "oldElo": 1836,
-          "newElo": 1780,
-          "delta": -55.9
+          "oldElo": 1835.9340330514424,
+          "newElo": 1780.022176227984,
+          "delta": -55.91185682345859
         },
         {
           "result": "패배",
@@ -5999,9 +5667,9 @@ window.INITIAL_DATA = {
           "d": 9,
           "a": 4,
           "kda": 0.78,
-          "oldElo": 761,
-          "newElo": 705,
-          "delta": -55.9
+          "oldElo": 760.6516050270491,
+          "newElo": 704.7397482035905,
+          "delta": -55.91185682345859
         },
         {
           "result": "패배",
@@ -6011,9 +5679,9 @@ window.INITIAL_DATA = {
           "d": 7,
           "a": 3,
           "kda": 0.86,
-          "oldElo": 2224,
-          "newElo": 2169,
-          "delta": -55.9
+          "oldElo": 2224.432256009075,
+          "newElo": 2168.5203991856165,
+          "delta": -55.91185682345859
         },
         {
           "result": "패배",
@@ -6023,9 +5691,9 @@ window.INITIAL_DATA = {
           "d": 7,
           "a": 4,
           "kda": 0.86,
-          "oldElo": 1758,
-          "newElo": 1702,
-          "delta": -55.9
+          "oldElo": 1757.5194684351632,
+          "newElo": 1701.6076116117047,
+          "delta": -55.91185682345859
         }
       ]
     },
@@ -6056,9 +5724,9 @@ window.INITIAL_DATA = {
           "d": 4,
           "a": 2,
           "kda": 1.0,
-          "oldElo": 463,
-          "newElo": 521,
-          "delta": 58.6
+          "oldElo": 462.68900379224203,
+          "newElo": 521.303210054098,
+          "delta": 58.61420626185597
         },
         {
           "result": "승리",
@@ -6068,9 +5736,9 @@ window.INITIAL_DATA = {
           "d": 2,
           "a": 8,
           "kda": 12.0,
-          "oldElo": 2519,
-          "newElo": 2578,
-          "delta": 58.6
+          "oldElo": 2519.279590940732,
+          "newElo": 2577.893797202588,
+          "delta": 58.61420626185597
         },
         {
           "result": "승리",
@@ -6080,9 +5748,9 @@ window.INITIAL_DATA = {
           "d": 5,
           "a": 9,
           "kda": 2.8,
-          "oldElo": 1743,
-          "newElo": 1772,
-          "delta": 29.3
+          "oldElo": 1742.560962971957,
+          "newElo": 1771.868066102885,
+          "delta": 29.307103130927985
         },
         {
           "result": "승리",
@@ -6092,9 +5760,9 @@ window.INITIAL_DATA = {
           "d": 2,
           "a": 7,
           "kda": 8.0,
-          "oldElo": 1297,
-          "newElo": 1415,
-          "delta": 117.2
+          "oldElo": 1297.4636187418616,
+          "newElo": 1414.6920312655736,
+          "delta": 117.22841252371194
         },
         {
           "result": "승리",
@@ -6104,9 +5772,9 @@ window.INITIAL_DATA = {
           "d": 1,
           "a": 18,
           "kda": 21.0,
-          "oldElo": 1709,
-          "newElo": 1739,
-          "delta": 29.3
+          "oldElo": 1709.3139978569793,
+          "newElo": 1738.6211009879073,
+          "delta": 29.307103130927985
         },
         {
           "result": "패배",
@@ -6116,9 +5784,9 @@ window.INITIAL_DATA = {
           "d": 5,
           "a": 2,
           "kda": 1.4,
-          "oldElo": 1265,
-          "newElo": 1148,
-          "delta": -117.2
+          "oldElo": 1265.4218434702057,
+          "newElo": 1148.1934309464937,
+          "delta": -117.22841252371194
         },
         {
           "result": "패배",
@@ -6128,9 +5796,9 @@ window.INITIAL_DATA = {
           "d": 7,
           "a": 0,
           "kda": 0.43,
-          "oldElo": 1999,
-          "newElo": 1970,
-          "delta": -29.3
+          "oldElo": 1999.254473976361,
+          "newElo": 1969.947370845433,
+          "delta": -29.307103130927985
         },
         {
           "result": "패배",
@@ -6140,9 +5808,9 @@ window.INITIAL_DATA = {
           "d": 9,
           "a": 0,
           "kda": 0.56,
-          "oldElo": 2142,
-          "newElo": 2113,
-          "delta": -29.3
+          "oldElo": 2142.4142113727867,
+          "newElo": 2113.107108241859,
+          "delta": -29.307103130927985
         },
         {
           "result": "패배",
@@ -6152,9 +5820,9 @@ window.INITIAL_DATA = {
           "d": 7,
           "a": 1,
           "kda": 0.14,
-          "oldElo": 1644,
-          "newElo": 1615,
-          "delta": -29.3
+          "oldElo": 1644.3460400012546,
+          "newElo": 1615.0389368703266,
+          "delta": -29.307103130927985
         },
         {
           "result": "패배",
@@ -6164,9 +5832,9 @@ window.INITIAL_DATA = {
           "d": 7,
           "a": 2,
           "kda": 0.43,
-          "oldElo": 1556,
-          "newElo": 1526,
-          "delta": -29.3
+          "oldElo": 1555.6256343615796,
+          "newElo": 1526.3185312306516,
+          "delta": -29.307103130927985
         }
       ]
     },
@@ -6197,9 +5865,9 @@ window.INITIAL_DATA = {
           "d": 5,
           "a": 13,
           "kda": 3.2,
-          "oldElo": 395,
-          "newElo": 463,
-          "delta": 67.7
+          "oldElo": 394.9395577336532,
+          "newElo": 462.68900379224203,
+          "delta": 67.74944605858884
         },
         {
           "result": "승리",
@@ -6209,9 +5877,9 @@ window.INITIAL_DATA = {
           "d": 11,
           "a": 13,
           "kda": 3.09,
-          "oldElo": 2452,
-          "newElo": 2519,
-          "delta": 67.7
+          "oldElo": 2451.530144882143,
+          "newElo": 2519.279590940732,
+          "delta": 67.74944605858884
         },
         {
           "result": "승리",
@@ -6221,9 +5889,9 @@ window.INITIAL_DATA = {
           "d": 4,
           "a": 20,
           "kda": 6.25,
-          "oldElo": 1709,
-          "newElo": 1743,
-          "delta": 33.9
+          "oldElo": 1708.6862399426625,
+          "newElo": 1742.560962971957,
+          "delta": 33.87472302929442
         },
         {
           "result": "승리",
@@ -6233,9 +5901,9 @@ window.INITIAL_DATA = {
           "d": 7,
           "a": 12,
           "kda": 3.29,
-          "oldElo": 1162,
-          "newElo": 1297,
-          "delta": 135.5
+          "oldElo": 1161.9647266246839,
+          "newElo": 1297.4636187418616,
+          "delta": 135.4988921171777
         },
         {
           "result": "승리",
@@ -6245,9 +5913,9 @@ window.INITIAL_DATA = {
           "d": 7,
           "a": 25,
           "kda": 3.86,
-          "oldElo": 1675,
-          "newElo": 1709,
-          "delta": 33.9
+          "oldElo": 1675.4392748276848,
+          "newElo": 1709.3139978569793,
+          "delta": 33.87472302929442
         },
         {
           "result": "패배",
@@ -6257,9 +5925,9 @@ window.INITIAL_DATA = {
           "d": 8,
           "a": 3,
           "kda": 0.5,
-          "oldElo": 1401,
-          "newElo": 1265,
-          "delta": -135.5
+          "oldElo": 1400.9207355873834,
+          "newElo": 1265.4218434702057,
+          "delta": -135.4988921171777
         },
         {
           "result": "패배",
@@ -6269,9 +5937,9 @@ window.INITIAL_DATA = {
           "d": 9,
           "a": 7,
           "kda": 2.33,
-          "oldElo": 2033,
-          "newElo": 1999,
-          "delta": -33.9
+          "oldElo": 2033.1291970056554,
+          "newElo": 1999.254473976361,
+          "delta": -33.87472302929442
         },
         {
           "result": "패배",
@@ -6281,9 +5949,9 @@ window.INITIAL_DATA = {
           "d": 7,
           "a": 8,
           "kda": 1.29,
-          "oldElo": 1590,
-          "newElo": 1556,
-          "delta": -33.9
+          "oldElo": 1589.5003573908741,
+          "newElo": 1555.6256343615796,
+          "delta": -33.87472302929442
         },
         {
           "result": "패배",
@@ -6293,9 +5961,9 @@ window.INITIAL_DATA = {
           "d": 7,
           "a": 5,
           "kda": 2.71,
-          "oldElo": 1678,
-          "newElo": 1644,
-          "delta": -33.9
+          "oldElo": 1678.220763030549,
+          "newElo": 1644.3460400012546,
+          "delta": -33.87472302929442
         },
         {
           "result": "패배",
@@ -6305,9 +5973,9 @@ window.INITIAL_DATA = {
           "d": 11,
           "a": 10,
           "kda": 1.27,
-          "oldElo": 2176,
-          "newElo": 2142,
-          "delta": -33.9
+          "oldElo": 2176.288934402081,
+          "newElo": 2142.4142113727867,
+          "delta": -33.87472302929442
         }
       ]
     },
@@ -6338,9 +6006,9 @@ window.INITIAL_DATA = {
           "d": 1,
           "a": 10,
           "kda": 14.0,
-          "oldElo": 1553,
-          "newElo": 1590,
-          "delta": 36.2
+          "oldElo": 1553.2936034865552,
+          "newElo": 1589.5003573908741,
+          "delta": 36.20675390431883
         },
         {
           "result": "승리",
@@ -6350,9 +6018,9 @@ window.INITIAL_DATA = {
           "d": 0,
           "a": 14,
           "kda": 23.0,
-          "oldElo": 2015,
-          "newElo": 2033,
-          "delta": 18.1
+          "oldElo": 2015.025820053496,
+          "newElo": 2033.1291970056554,
+          "delta": 18.103376952159415
         },
         {
           "result": "승리",
@@ -6362,9 +6030,9 @@ window.INITIAL_DATA = {
           "d": 3,
           "a": 4,
           "kda": 1.67,
-          "oldElo": 1329,
-          "newElo": 1401,
-          "delta": 72.4
+          "oldElo": 1328.5072277787458,
+          "newElo": 1400.9207355873834,
+          "delta": 72.41350780863766
         },
         {
           "result": "승리",
@@ -6374,9 +6042,9 @@ window.INITIAL_DATA = {
           "d": 2,
           "a": 6,
           "kda": 12.5,
-          "oldElo": 1660,
-          "newElo": 1678,
-          "delta": 18.1
+          "oldElo": 1660.1173860783897,
+          "newElo": 1678.220763030549,
+          "delta": 18.103376952159415
         },
         {
           "result": "승리",
@@ -6386,9 +6054,9 @@ window.INITIAL_DATA = {
           "d": 2,
           "a": 24,
           "kda": 12.0,
-          "oldElo": 2142,
-          "newElo": 2160,
-          "delta": 18.1
+          "oldElo": 2141.8988481419115,
+          "newElo": 2160.002225094071,
+          "delta": 18.103376952159415
         },
         {
           "result": "패배",
@@ -6398,9 +6066,9 @@ window.INITIAL_DATA = {
           "d": 7,
           "a": 0,
           "kda": 0.14,
-          "oldElo": 431,
-          "newElo": 395,
-          "delta": -36.2
+          "oldElo": 431.146311637972,
+          "newElo": 394.9395577336532,
+          "delta": -36.20675390431883
         },
         {
           "result": "패배",
@@ -6410,9 +6078,9 @@ window.INITIAL_DATA = {
           "d": 4,
           "a": 3,
           "kda": 1.0,
-          "oldElo": 1727,
-          "newElo": 1709,
-          "delta": -18.1
+          "oldElo": 1726.7896168948218,
+          "newElo": 1708.6862399426625,
+          "delta": -18.103376952159415
         },
         {
           "result": "패배",
@@ -6422,9 +6090,9 @@ window.INITIAL_DATA = {
           "d": 6,
           "a": 0,
           "kda": 0.5,
-          "oldElo": 2488,
-          "newElo": 2452,
-          "delta": -36.2
+          "oldElo": 2487.7368987864616,
+          "newElo": 2451.530144882143,
+          "delta": -36.20675390431883
         },
         {
           "result": "패배",
@@ -6434,9 +6102,9 @@ window.INITIAL_DATA = {
           "d": 9,
           "a": 3,
           "kda": 0.56,
-          "oldElo": 2194,
-          "newElo": 2176,
-          "delta": -18.1
+          "oldElo": 2194.3923113542405,
+          "newElo": 2176.288934402081,
+          "delta": -18.103376952159415
         },
         {
           "result": "패배",
@@ -6446,9 +6114,9 @@ window.INITIAL_DATA = {
           "d": 7,
           "a": 5,
           "kda": 0.86,
-          "oldElo": 1694,
-          "newElo": 1675,
-          "delta": -18.1
+          "oldElo": 1693.5426517798442,
+          "newElo": 1675.4392748276848,
+          "delta": -18.103376952159415
         }
       ]
     },
@@ -6479,9 +6147,9 @@ window.INITIAL_DATA = {
           "d": 5,
           "a": 6,
           "kda": 2.4,
-          "oldElo": 377,
-          "newElo": 431,
-          "delta": 54.4
+          "oldElo": 376.7434452898379,
+          "newElo": 431.146311637972,
+          "delta": 54.40286634813413
         },
         {
           "result": "승리",
@@ -6491,9 +6159,9 @@ window.INITIAL_DATA = {
           "d": 3,
           "a": 12,
           "kda": 6.0,
-          "oldElo": 1700,
-          "newElo": 1727,
-          "delta": 27.2
+          "oldElo": 1699.5881837207548,
+          "newElo": 1726.7896168948218,
+          "delta": 27.201433174067066
         },
         {
           "result": "승리",
@@ -6503,9 +6171,9 @@ window.INITIAL_DATA = {
           "d": 5,
           "a": 14,
           "kda": 3.4,
-          "oldElo": 2379,
-          "newElo": 2488,
-          "delta": 108.8
+          "oldElo": 2378.931166090193,
+          "newElo": 2487.7368987864616,
+          "delta": 108.80573269626827
         },
         {
           "result": "승리",
@@ -6515,9 +6183,9 @@ window.INITIAL_DATA = {
           "d": 5,
           "a": 9,
           "kda": 4.6,
-          "oldElo": 2167,
-          "newElo": 2194,
-          "delta": 27.2
+          "oldElo": 2167.1908781801735,
+          "newElo": 2194.3923113542405,
+          "delta": 27.201433174067066
         },
         {
           "result": "승리",
@@ -6527,9 +6195,9 @@ window.INITIAL_DATA = {
           "d": 4,
           "a": 14,
           "kda": 4.5,
-          "oldElo": 1666,
-          "newElo": 1694,
-          "delta": 27.2
+          "oldElo": 1666.3412186057772,
+          "newElo": 1693.5426517798442,
+          "delta": 27.201433174067066
         },
         {
           "result": "패배",
@@ -6539,9 +6207,9 @@ window.INITIAL_DATA = {
           "d": 6,
           "a": 3,
           "kda": 0.83,
-          "oldElo": 1608,
-          "newElo": 1553,
-          "delta": -54.4
+          "oldElo": 1607.6964698346894,
+          "newElo": 1553.2936034865552,
+          "delta": -54.40286634813413
         },
         {
           "result": "패배",
@@ -6551,9 +6219,9 @@ window.INITIAL_DATA = {
           "d": 8,
           "a": 8,
           "kda": 2.0,
-          "oldElo": 2042,
-          "newElo": 2015,
-          "delta": -27.2
+          "oldElo": 2042.227253227563,
+          "newElo": 2015.025820053496,
+          "delta": -27.201433174067066
         },
         {
           "result": "패배",
@@ -6563,9 +6231,9 @@ window.INITIAL_DATA = {
           "d": 7,
           "a": 2,
           "kda": 1.29,
-          "oldElo": 1437,
-          "newElo": 1329,
-          "delta": -108.8
+          "oldElo": 1437.312960475014,
+          "newElo": 1328.5072277787458,
+          "delta": -108.80573269626827
         },
         {
           "result": "패배",
@@ -6575,9 +6243,9 @@ window.INITIAL_DATA = {
           "d": 8,
           "a": 5,
           "kda": 1.12,
-          "oldElo": 1687,
-          "newElo": 1660,
-          "delta": -27.2
+          "oldElo": 1687.3188192524567,
+          "newElo": 1660.1173860783897,
+          "delta": -27.201433174067066
         },
         {
           "result": "패배",
@@ -6587,9 +6255,9 @@ window.INITIAL_DATA = {
           "d": 3,
           "a": 12,
           "kda": 4.33,
-          "oldElo": 2169,
-          "newElo": 2142,
-          "delta": -27.2
+          "oldElo": 2169.1002813159785,
+          "newElo": 2141.8988481419115,
+          "delta": -27.201433174067066
         }
       ]
     },
@@ -6620,9 +6288,9 @@ window.INITIAL_DATA = {
           "d": 4,
           "a": 5,
           "kda": 2.0,
-          "oldElo": 1601,
-          "newElo": 1608,
-          "delta": 6.8
+          "oldElo": 1600.8762535591172,
+          "newElo": 1607.6964698346894,
+          "delta": 6.820216275572237
         },
         {
           "result": "승리",
@@ -6632,9 +6300,9 @@ window.INITIAL_DATA = {
           "d": 4,
           "a": 5,
           "kda": 2.5,
-          "oldElo": 1663,
-          "newElo": 1666,
-          "delta": 3.4
+          "oldElo": 1662.931110467991,
+          "newElo": 1666.3412186057772,
+          "delta": 3.4101081377861187
         },
         {
           "result": "승리",
@@ -6644,9 +6312,9 @@ window.INITIAL_DATA = {
           "d": 8,
           "a": 13,
           "kda": 2.25,
-          "oldElo": 2166,
-          "newElo": 2169,
-          "delta": 3.4
+          "oldElo": 2165.6901731781923,
+          "newElo": 2169.1002813159785,
+          "delta": 3.4101081377861187
         },
         {
           "result": "승리",
@@ -6656,9 +6324,9 @@ window.INITIAL_DATA = {
           "d": 4,
           "a": 9,
           "kda": 7.75,
-          "oldElo": 2365,
-          "newElo": 2379,
-          "delta": 13.6
+          "oldElo": 2365.2907335390487,
+          "newElo": 2378.931166090193,
+          "delta": 13.640432551144475
         },
         {
           "result": "승리",
@@ -6668,9 +6336,9 @@ window.INITIAL_DATA = {
           "d": 6,
           "a": 28,
           "kda": 4.83,
-          "oldElo": 1684,
-          "newElo": 1687,
-          "delta": 3.4
+          "oldElo": 1683.9087111146705,
+          "newElo": 1687.3188192524567,
+          "delta": 3.4101081377861187
         },
         {
           "result": "패배",
@@ -6680,9 +6348,9 @@ window.INITIAL_DATA = {
           "d": 3,
           "a": 9,
           "kda": 3.67,
-          "oldElo": 384,
-          "newElo": 377,
-          "delta": -6.8
+          "oldElo": 383.56366156541014,
+          "newElo": 376.7434452898379,
+          "delta": -6.820216275572237
         },
         {
           "result": "패배",
@@ -6692,9 +6360,9 @@ window.INITIAL_DATA = {
           "d": 10,
           "a": 8,
           "kda": 1.3,
-          "oldElo": 2046,
-          "newElo": 2042,
-          "delta": -3.4
+          "oldElo": 2045.6373613653493,
+          "newElo": 2042.227253227563,
+          "delta": -3.4101081377861187
         },
         {
           "result": "패배",
@@ -6704,9 +6372,9 @@ window.INITIAL_DATA = {
           "d": 5,
           "a": 9,
           "kda": 4.0,
-          "oldElo": 1451,
-          "newElo": 1437,
-          "delta": -13.6
+          "oldElo": 1450.9533930261584,
+          "newElo": 1437.312960475014,
+          "delta": -13.640432551144475
         },
         {
           "result": "패배",
@@ -6716,9 +6384,9 @@ window.INITIAL_DATA = {
           "d": 11,
           "a": 10,
           "kda": 1.27,
-          "oldElo": 1834,
-          "newElo": 1828,
-          "delta": -6.8
+          "oldElo": 1834.3583243022208,
+          "newElo": 1827.5381080266486,
+          "delta": -6.820216275572237
         },
         {
           "result": "패배",
@@ -6728,9 +6396,9 @@ window.INITIAL_DATA = {
           "d": 8,
           "a": 13,
           "kda": 2.12,
-          "oldElo": 1703,
-          "newElo": 1700,
-          "delta": -3.4
+          "oldElo": 1702.998291858541,
+          "newElo": 1699.5881837207548,
+          "delta": -3.4101081377861187
         }
       ]
     },
@@ -6761,9 +6429,9 @@ window.INITIAL_DATA = {
           "d": 6,
           "a": 7,
           "kda": 1.33,
-          "oldElo": 1594,
-          "newElo": 1601,
-          "delta": 7.3
+          "oldElo": 1593.5383832486802,
+          "newElo": 1600.8762535591172,
+          "delta": 7.33787031043688
         },
         {
           "result": "승리",
@@ -6773,9 +6441,9 @@ window.INITIAL_DATA = {
           "d": 5,
           "a": 3,
           "kda": 1.6,
-          "oldElo": 1659,
-          "newElo": 1663,
-          "delta": 3.7
+          "oldElo": 1659.2621753127726,
+          "newElo": 1662.931110467991,
+          "delta": 3.66893515521844
         },
         {
           "result": "승리",
@@ -6785,9 +6453,9 @@ window.INITIAL_DATA = {
           "d": 5,
           "a": 9,
           "kda": 3.0,
-          "oldElo": 2162,
-          "newElo": 2166,
-          "delta": 3.7
+          "oldElo": 2162.0212380229736,
+          "newElo": 2165.6901731781923,
+          "delta": 3.66893515521844
         },
         {
           "result": "승리",
@@ -6797,9 +6465,9 @@ window.INITIAL_DATA = {
           "d": 3,
           "a": 9,
           "kda": 9.67,
-          "oldElo": 2351,
-          "newElo": 2365,
-          "delta": 14.7
+          "oldElo": 2350.6149929181747,
+          "newElo": 2365.2907335390487,
+          "delta": 14.67574062087376
         },
         {
           "result": "승리",
@@ -6809,9 +6477,9 @@ window.INITIAL_DATA = {
           "d": 6,
           "a": 22,
           "kda": 4.0,
-          "oldElo": 1680,
-          "newElo": 1684,
-          "delta": 3.7
+          "oldElo": 1680.2397759594521,
+          "newElo": 1683.9087111146705,
+          "delta": 3.66893515521844
         },
         {
           "result": "패배",
@@ -6821,9 +6489,9 @@ window.INITIAL_DATA = {
           "d": 5,
           "a": 2,
           "kda": 0.6,
-          "oldElo": 391,
-          "newElo": 384,
-          "delta": -7.3
+          "oldElo": 390.901531875847,
+          "newElo": 383.56366156541014,
+          "delta": -7.33787031043688
         },
         {
           "result": "패배",
@@ -6833,9 +6501,9 @@ window.INITIAL_DATA = {
           "d": 7,
           "a": 3,
           "kda": 2.57,
-          "oldElo": 2049,
-          "newElo": 2046,
-          "delta": -3.7
+          "oldElo": 2049.3062965205677,
+          "newElo": 2045.6373613653493,
+          "delta": -3.66893515521844
         },
         {
           "result": "패배",
@@ -6845,9 +6513,9 @@ window.INITIAL_DATA = {
           "d": 6,
           "a": 7,
           "kda": 2.0,
-          "oldElo": 1466,
-          "newElo": 1451,
-          "delta": -14.7
+          "oldElo": 1465.6291336470322,
+          "newElo": 1450.9533930261584,
+          "delta": -14.67574062087376
         },
         {
           "result": "패배",
@@ -6857,9 +6525,9 @@ window.INITIAL_DATA = {
           "d": 10,
           "a": 9,
           "kda": 1.1,
-          "oldElo": 1842,
-          "newElo": 1834,
-          "delta": -7.3
+          "oldElo": 1841.6961946126578,
+          "newElo": 1834.3583243022208,
+          "delta": -7.33787031043688
         },
         {
           "result": "패배",
@@ -6869,9 +6537,9 @@ window.INITIAL_DATA = {
           "d": 7,
           "a": 18,
           "kda": 2.86,
-          "oldElo": 1707,
-          "newElo": 1703,
-          "delta": -3.7
+          "oldElo": 1706.6672270137594,
+          "newElo": 1702.998291858541,
+          "delta": -3.66893515521844
         }
       ]
     },
@@ -6902,9 +6570,9 @@ window.INITIAL_DATA = {
           "d": 3,
           "a": 14,
           "kda": 6.0,
-          "oldElo": 1449,
-          "newElo": 1466,
-          "delta": 16.3
+          "oldElo": 1449.3760503490819,
+          "newElo": 1465.6291336470322,
+          "delta": 16.253083297950326
         },
         {
           "result": "승리",
@@ -6914,9 +6582,9 @@ window.INITIAL_DATA = {
           "d": 7,
           "a": 20,
           "kda": 4.14,
-          "oldElo": 1655,
-          "newElo": 1659,
-          "delta": 4.1
+          "oldElo": 1655.198904488285,
+          "newElo": 1659.2621753127726,
+          "delta": 4.0632708244875815
         },
         {
           "result": "승리",
@@ -6926,9 +6594,9 @@ window.INITIAL_DATA = {
           "d": 3,
           "a": 23,
           "kda": 8.33,
-          "oldElo": 2158,
-          "newElo": 2162,
-          "delta": 4.1
+          "oldElo": 2157.957967198486,
+          "newElo": 2162.0212380229736,
+          "delta": 4.0632708244875815
         },
         {
           "result": "승리",
@@ -6938,9 +6606,9 @@ window.INITIAL_DATA = {
           "d": 4,
           "a": 8,
           "kda": 6.75,
-          "oldElo": 1834,
-          "newElo": 1842,
-          "delta": 8.1
+          "oldElo": 1833.5696529636825,
+          "newElo": 1841.6961946126578,
+          "delta": 8.126541648975163
         },
         {
           "result": "승리",
@@ -6950,9 +6618,9 @@ window.INITIAL_DATA = {
           "d": 6,
           "a": 24,
           "kda": 4.17,
-          "oldElo": 1424,
-          "newElo": 1441,
-          "delta": 16.3
+          "oldElo": 1424.2725115236258,
+          "newElo": 1440.525594821576,
+          "delta": 16.253083297950326
         },
         {
           "result": "패배",
@@ -6962,9 +6630,9 @@ window.INITIAL_DATA = {
           "d": 7,
           "a": 2,
           "kda": 0.43,
-          "oldElo": 399,
-          "newElo": 391,
-          "delta": -8.1
+          "oldElo": 399.02807352482216,
+          "newElo": 390.901531875847,
+          "delta": -8.126541648975163
         },
         {
           "result": "패배",
@@ -6974,9 +6642,9 @@ window.INITIAL_DATA = {
           "d": 7,
           "a": 10,
           "kda": 2.29,
-          "oldElo": 1711,
-          "newElo": 1707,
-          "delta": -4.1
+          "oldElo": 1710.730497838247,
+          "newElo": 1706.6672270137594,
+          "delta": -4.0632708244875815
         },
         {
           "result": "패배",
@@ -6986,9 +6654,9 @@ window.INITIAL_DATA = {
           "d": 7,
           "a": 6,
           "kda": 1.86,
-          "oldElo": 1684,
-          "newElo": 1680,
-          "delta": -4.1
+          "oldElo": 1684.3030467839396,
+          "newElo": 1680.2397759594521,
+          "delta": -4.0632708244875815
         },
         {
           "result": "패배",
@@ -6998,9 +6666,9 @@ window.INITIAL_DATA = {
           "d": 5,
           "a": 4,
           "kda": 1.8,
-          "oldElo": 1246,
-          "newElo": 1238,
-          "delta": -8.1
+          "oldElo": 1246.466146043691,
+          "newElo": 1238.3396043947157,
+          "delta": -8.126541648975163
         },
         {
           "result": "패배",
@@ -7010,9 +6678,9 @@ window.INITIAL_DATA = {
           "d": 9,
           "a": 8,
           "kda": 1.22,
-          "oldElo": 1587,
-          "newElo": 1570,
-          "delta": -16.3
+          "oldElo": 1586.5217684920992,
+          "newElo": 1570.268685194149,
+          "delta": -16.253083297950326
         }
       ]
     },
@@ -7043,9 +6711,9 @@ window.INITIAL_DATA = {
           "d": 5,
           "a": 9,
           "kda": 3.0,
-          "oldElo": 1583,
-          "newElo": 1594,
-          "delta": 10.8
+          "oldElo": 1582.7727332458903,
+          "newElo": 1593.5383832486802,
+          "delta": 10.765650002789942
         },
         {
           "result": "승리",
@@ -7055,9 +6723,9 @@ window.INITIAL_DATA = {
           "d": 7,
           "a": 13,
           "kda": 3.57,
-          "oldElo": 2329,
-          "newElo": 2351,
-          "delta": 21.5
+          "oldElo": 2329.083692912595,
+          "newElo": 2350.6149929181747,
+          "delta": 21.531300005579883
         },
         {
           "result": "승리",
@@ -7067,9 +6735,9 @@ window.INITIAL_DATA = {
           "d": 6,
           "a": 10,
           "kda": 2.83,
-          "oldElo": 1650,
-          "newElo": 1655,
-          "delta": 5.4
+          "oldElo": 1649.81607948689,
+          "newElo": 1655.198904488285,
+          "delta": 5.382825001394971
         },
         {
           "result": "승리",
@@ -7079,9 +6747,9 @@ window.INITIAL_DATA = {
           "d": 5,
           "a": 13,
           "kda": 4.2,
-          "oldElo": 2153,
-          "newElo": 2158,
-          "delta": 5.4
+          "oldElo": 2152.5751421970913,
+          "newElo": 2157.957967198486,
+          "delta": 5.382825001394971
         },
         {
           "result": "승리",
@@ -7091,9 +6759,9 @@ window.INITIAL_DATA = {
           "d": 4,
           "a": 21,
           "kda": 6.25,
-          "oldElo": 1705,
-          "newElo": 1711,
-          "delta": 5.4
+          "oldElo": 1705.3476728368519,
+          "newElo": 1710.730497838247,
+          "delta": 5.382825001394971
         },
         {
           "result": "패배",
@@ -7103,9 +6771,9 @@ window.INITIAL_DATA = {
           "d": 7,
           "a": 4,
           "kda": 0.57,
-          "oldElo": 410,
-          "newElo": 399,
-          "delta": -10.8
+          "oldElo": 409.7937235276121,
+          "newElo": 399.02807352482216,
+          "delta": -10.765650002789942
         },
         {
           "result": "패배",
@@ -7115,9 +6783,9 @@ window.INITIAL_DATA = {
           "d": 8,
           "a": 9,
           "kda": 2.12,
-          "oldElo": 2055,
-          "newElo": 2049,
-          "delta": -5.4
+          "oldElo": 2054.6891215219625,
+          "newElo": 2049.3062965205677,
+          "delta": -5.382825001394971
         },
         {
           "result": "패배",
@@ -7127,9 +6795,9 @@ window.INITIAL_DATA = {
           "d": 5,
           "a": 5,
           "kda": 2.4,
-          "oldElo": 1471,
-          "newElo": 1449,
-          "delta": -21.5
+          "oldElo": 1470.9073503546617,
+          "newElo": 1449.3760503490819,
+          "delta": -21.531300005579883
         },
         {
           "result": "패배",
@@ -7139,9 +6807,9 @@ window.INITIAL_DATA = {
           "d": 9,
           "a": 5,
           "kda": 1.56,
-          "oldElo": 1695,
-          "newElo": 1684,
-          "delta": -10.8
+          "oldElo": 1695.0686967867296,
+          "newElo": 1684.3030467839396,
+          "delta": -10.765650002789942
         },
         {
           "result": "패배",
@@ -7151,9 +6819,9 @@ window.INITIAL_DATA = {
           "d": 8,
           "a": 15,
           "kda": 2.25,
-          "oldElo": 2173,
-          "newElo": 2167,
-          "delta": -5.4
+          "oldElo": 2172.5737031815684,
+          "newElo": 2167.1908781801735,
+          "delta": -5.382825001394971
         }
       ]
     },
@@ -7184,9 +6852,9 @@ window.INITIAL_DATA = {
           "d": 5,
           "a": 10,
           "kda": 3.4,
-          "oldElo": 2131,
-          "newElo": 2153,
-          "delta": 21.9
+          "oldElo": 2130.6374564392095,
+          "newElo": 2152.5751421970913,
+          "delta": 21.937685757881617
         },
         {
           "result": "승리",
@@ -7196,9 +6864,9 @@ window.INITIAL_DATA = {
           "d": 2,
           "a": 8,
           "kda": 9.5,
-          "oldElo": 1683,
-          "newElo": 1705,
-          "delta": 21.9
+          "oldElo": 1683.4099870789703,
+          "newElo": 1705.3476728368519,
+          "delta": 21.937685757881617
         },
         {
           "result": "승리",
@@ -7208,9 +6876,9 @@ window.INITIAL_DATA = {
           "d": 7,
           "a": 16,
           "kda": 3.14,
-          "oldElo": 1337,
-          "newElo": 1424,
-          "delta": 87.8
+          "oldElo": 1336.5217684920992,
+          "newElo": 1424.2725115236258,
+          "delta": 87.75074303152647
         },
         {
           "result": "승리",
@@ -7220,9 +6888,9 @@ window.INITIAL_DATA = {
           "d": 7,
           "a": 16,
           "kda": 3.14,
-          "oldElo": 1203,
-          "newElo": 1246,
-          "delta": 43.9
+          "oldElo": 1202.5907745279278,
+          "newElo": 1246.466146043691,
+          "delta": 43.875371515763234
         },
         {
           "result": "승리",
@@ -7232,9 +6900,9 @@ window.INITIAL_DATA = {
           "d": 8,
           "a": 13,
           "kda": 2.75,
-          "oldElo": 2151,
-          "newElo": 2173,
-          "delta": 21.9
+          "oldElo": 2150.6360174236866,
+          "newElo": 2172.5737031815684,
+          "delta": 21.937685757881617
         },
         {
           "result": "패배",
@@ -7244,9 +6912,9 @@ window.INITIAL_DATA = {
           "d": 10,
           "a": 4,
           "kda": 0.8,
-          "oldElo": 1627,
-          "newElo": 1583,
-          "delta": -43.9
+          "oldElo": 1626.6481047616535,
+          "newElo": 1582.7727332458903,
+          "delta": -43.875371515763234
         },
         {
           "result": "패배",
@@ -7256,9 +6924,9 @@ window.INITIAL_DATA = {
           "d": 7,
           "a": 5,
           "kda": 1.43,
-          "oldElo": 1739,
-          "newElo": 1695,
-          "delta": -43.9
+          "oldElo": 1738.9440683024927,
+          "newElo": 1695.0686967867296,
+          "delta": -43.875371515763234
         },
         {
           "result": "패배",
@@ -7268,9 +6936,9 @@ window.INITIAL_DATA = {
           "d": 6,
           "a": 6,
           "kda": 2.0,
-          "oldElo": 1559,
-          "newElo": 1471,
-          "delta": -87.8
+          "oldElo": 1558.6580933861883,
+          "newElo": 1470.9073503546617,
+          "delta": -87.75074303152647
         },
         {
           "result": "패배",
@@ -7280,9 +6948,9 @@ window.INITIAL_DATA = {
           "d": 9,
           "a": 5,
           "kda": 1.22,
-          "oldElo": 2077,
-          "newElo": 2055,
-          "delta": -21.9
+          "oldElo": 2076.6268072798443,
+          "newElo": 2054.6891215219625,
+          "delta": -21.937685757881617
         },
         {
           "result": "패배",
@@ -7292,9 +6960,9 @@ window.INITIAL_DATA = {
           "d": 7,
           "a": 11,
           "kda": 2.0,
-          "oldElo": 1672,
-          "newElo": 1650,
-          "delta": -21.9
+          "oldElo": 1671.7537652447716,
+          "newElo": 1649.81607948689,
+          "delta": -21.937685757881617
         }
       ]
     },
@@ -7325,9 +6993,9 @@ window.INITIAL_DATA = {
           "d": 7,
           "a": 15,
           "kda": 2.43,
-          "oldElo": 1587,
-          "newElo": 1627,
-          "delta": 39.7
+          "oldElo": 1586.9568242258738,
+          "newElo": 1626.6481047616535,
+          "delta": 39.69128053577967
         },
         {
           "result": "승리",
@@ -7337,9 +7005,9 @@ window.INITIAL_DATA = {
           "d": 9,
           "a": 17,
           "kda": 2.56,
-          "oldElo": 1664,
-          "newElo": 1683,
-          "delta": 19.8
+          "oldElo": 1663.5643468110804,
+          "newElo": 1683.4099870789703,
+          "delta": 19.845640267889834
         },
         {
           "result": "승리",
@@ -7349,9 +7017,9 @@ window.INITIAL_DATA = {
           "d": 7,
           "a": 7,
           "kda": 2.86,
-          "oldElo": 2057,
-          "newElo": 2077,
-          "delta": 19.8
+          "oldElo": 2056.7811670119545,
+          "newElo": 2076.6268072798443,
+          "delta": 19.845640267889834
         },
         {
           "result": "승리",
@@ -7361,9 +7029,9 @@ window.INITIAL_DATA = {
           "d": 5,
           "a": 14,
           "kda": 5.6,
-          "oldElo": 1699,
-          "newElo": 1739,
-          "delta": 39.7
+          "oldElo": 1699.252787766713,
+          "newElo": 1738.9440683024927,
+          "delta": 39.69128053577967
         },
         {
           "result": "승리",
@@ -7373,9 +7041,9 @@ window.INITIAL_DATA = {
           "d": 9,
           "a": 23,
           "kda": 3.33,
-          "oldElo": 1652,
-          "newElo": 1672,
-          "delta": 19.8
+          "oldElo": 1651.9081249768817,
+          "newElo": 1671.7537652447716,
+          "delta": 19.845640267889834
         },
         {
           "result": "패배",
@@ -7385,9 +7053,9 @@ window.INITIAL_DATA = {
           "d": 7,
           "a": 10,
           "kda": 3.14,
-          "oldElo": 2150,
-          "newElo": 2131,
-          "delta": -19.8
+          "oldElo": 2150.4830967070993,
+          "newElo": 2130.6374564392095,
+          "delta": -19.845640267889834
         },
         {
           "result": "패배",
@@ -7397,9 +7065,9 @@ window.INITIAL_DATA = {
           "d": 9,
           "a": 10,
           "kda": 2.22,
-          "oldElo": 2170,
-          "newElo": 2151,
-          "delta": -19.8
+          "oldElo": 2170.4816576915764,
+          "newElo": 2150.6360174236866,
+          "delta": -19.845640267889834
         },
         {
           "result": "패배",
@@ -7409,9 +7077,9 @@ window.INITIAL_DATA = {
           "d": 5,
           "a": 9,
           "kda": 3.4,
-          "oldElo": 1416,
-          "newElo": 1337,
-          "delta": -79.4
+          "oldElo": 1415.9043295636586,
+          "newElo": 1336.5217684920992,
+          "delta": -79.38256107155934
         },
         {
           "result": "패배",
@@ -7421,9 +7089,9 @@ window.INITIAL_DATA = {
           "d": 10,
           "a": 10,
           "kda": 1.4,
-          "oldElo": 1242,
-          "newElo": 1203,
-          "delta": -39.7
+          "oldElo": 1242.2820550637075,
+          "newElo": 1202.5907745279278,
+          "delta": -39.69128053577967
         },
         {
           "result": "패배",
@@ -7433,9 +7101,9 @@ window.INITIAL_DATA = {
           "d": 11,
           "a": 10,
           "kda": 1.18,
-          "oldElo": 1666,
-          "newElo": 1587,
-          "delta": -79.4
+          "oldElo": 1665.9043295636586,
+          "newElo": 1586.5217684920992,
+          "delta": -79.38256107155934
         }
       ]
     },
@@ -7444,7 +7112,7 @@ window.INITIAL_DATA = {
       "prob": "84.1%",
       "baseDelta": "6.4",
       "winTeam": [
-        "지범준",
+        "이호재",
         "안태인",
         "안성진",
         "김찬",
@@ -7461,14 +7129,14 @@ window.INITIAL_DATA = {
         {
           "result": "승리",
           "position": "탑",
-          "name": "지범준",
+          "name": "이호재",
           "k": 10,
           "d": 3,
           "a": 3,
           "kda": 4.33,
-          "oldElo": 2138,
-          "newElo": 2144,
-          "delta": 6.4
+          "oldElo": 2137.7643081820224,
+          "newElo": 2144.123702444561,
+          "delta": 6.359394262538274
         },
         {
           "result": "승리",
@@ -7478,9 +7146,9 @@ window.INITIAL_DATA = {
           "d": 5,
           "a": 4,
           "kda": 1.2,
-          "oldElo": 2050,
-          "newElo": 2057,
-          "delta": 6.4
+          "oldElo": 2050.421772749416,
+          "newElo": 2056.7811670119545,
+          "delta": 6.359394262538274
         },
         {
           "result": "승리",
@@ -7490,9 +7158,9 @@ window.INITIAL_DATA = {
           "d": 3,
           "a": 3,
           "kda": 4.0,
-          "oldElo": 1657,
-          "newElo": 1664,
-          "delta": 6.4
+          "oldElo": 1657.2049525485422,
+          "newElo": 1663.5643468110804,
+          "delta": 6.359394262538274
         },
         {
           "result": "승리",
@@ -7502,9 +7170,9 @@ window.INITIAL_DATA = {
           "d": 4,
           "a": 4,
           "kda": 2.0,
-          "oldElo": 1687,
-          "newElo": 1699,
-          "delta": 12.7
+          "oldElo": 1686.5339992416364,
+          "newElo": 1699.252787766713,
+          "delta": 12.718788525076548
         },
         {
           "result": "승리",
@@ -7514,9 +7182,9 @@ window.INITIAL_DATA = {
           "d": 7,
           "a": 4,
           "kda": 0.71,
-          "oldElo": 2144,
-          "newElo": 2150,
-          "delta": 6.4
+          "oldElo": 2144.123702444561,
+          "newElo": 2150.4830967070993,
+          "delta": 6.359394262538274
         },
         {
           "result": "패배",
@@ -7526,9 +7194,9 @@ window.INITIAL_DATA = {
           "d": 9,
           "a": 4,
           "kda": 0.56,
-          "oldElo": 1658,
-          "newElo": 1652,
-          "delta": -6.4
+          "oldElo": 1658.26751923942,
+          "newElo": 1651.9081249768817,
+          "delta": -6.359394262538274
         },
         {
           "result": "패배",
@@ -7538,9 +7206,9 @@ window.INITIAL_DATA = {
           "d": 3,
           "a": 6,
           "kda": 4.0,
-          "oldElo": 1441,
-          "newElo": 1416,
-          "delta": -25.4
+          "oldElo": 1441.3419066138117,
+          "newElo": 1415.9043295636586,
+          "delta": -25.437577050153095
         },
         {
           "result": "패배",
@@ -7550,9 +7218,9 @@ window.INITIAL_DATA = {
           "d": 7,
           "a": 5,
           "kda": 1.57,
-          "oldElo": 2177,
-          "newElo": 2170,
-          "delta": -6.4
+          "oldElo": 2176.841051954115,
+          "newElo": 2170.4816576915764,
+          "delta": -6.359394262538274
         },
         {
           "result": "패배",
@@ -7562,9 +7230,9 @@ window.INITIAL_DATA = {
           "d": 3,
           "a": 4,
           "kda": 3.67,
-          "oldElo": 1255,
-          "newElo": 1242,
-          "delta": -12.7
+          "oldElo": 1255.0008435887842,
+          "newElo": 1242.2820550637075,
+          "delta": -12.718788525076548
         },
         {
           "result": "패배",
@@ -7574,9 +7242,9 @@ window.INITIAL_DATA = {
           "d": 4,
           "a": 9,
           "kda": 2.75,
-          "oldElo": 1691,
-          "newElo": 1666,
-          "delta": -25.4
+          "oldElo": 1691.3419066138117,
+          "newElo": 1665.9043295636586,
+          "delta": -25.437577050153095
         }
       ]
     },
@@ -7607,9 +7275,9 @@ window.INITIAL_DATA = {
           "d": 3,
           "a": 12,
           "kda": 6.33,
-          "oldElo": 1558,
-          "newElo": 1587,
-          "delta": 29.3
+          "oldElo": 1557.6277775327796,
+          "newElo": 1586.9568242258738,
+          "delta": 29.329046693094114
         },
         {
           "result": "승리",
@@ -7619,9 +7287,9 @@ window.INITIAL_DATA = {
           "d": 10,
           "a": 12,
           "kda": 2.7,
-          "oldElo": 2036,
-          "newElo": 2050,
-          "delta": 14.7
+          "oldElo": 2035.757249402869,
+          "newElo": 2050.421772749416,
+          "delta": 14.664523346547057
         },
         {
           "result": "승리",
@@ -7631,9 +7299,9 @@ window.INITIAL_DATA = {
           "d": 10,
           "a": 11,
           "kda": 1.8,
-          "oldElo": 1500,
-          "newElo": 1559,
-          "delta": 58.7
+          "oldElo": 1500.0,
+          "newElo": 1558.6580933861883,
+          "delta": 58.65809338618823
         },
         {
           "result": "승리",
@@ -7643,9 +7311,9 @@ window.INITIAL_DATA = {
           "d": 6,
           "a": 14,
           "kda": 3.5,
-          "oldElo": 1657,
-          "newElo": 1687,
-          "delta": 29.3
+          "oldElo": 1657.2049525485422,
+          "newElo": 1686.5339992416364,
+          "delta": 29.329046693094114
         },
         {
           "result": "승리",
@@ -7655,9 +7323,9 @@ window.INITIAL_DATA = {
           "d": 3,
           "a": 24,
           "kda": 8.33,
-          "oldElo": 2123,
-          "newElo": 2138,
-          "delta": 14.7
+          "oldElo": 2123.0997848354755,
+          "newElo": 2137.7643081820224,
+          "delta": 14.664523346547057
         },
         {
           "result": "패배",
@@ -7667,9 +7335,9 @@ window.INITIAL_DATA = {
           "d": 8,
           "a": 8,
           "kda": 1.38,
-          "oldElo": 1673,
-          "newElo": 1658,
-          "delta": -14.7
+          "oldElo": 1672.9320425859669,
+          "newElo": 1658.26751923942,
+          "delta": -14.664523346547057
         },
         {
           "result": "패배",
@@ -7679,9 +7347,9 @@ window.INITIAL_DATA = {
           "d": 5,
           "a": 12,
           "kda": 3.0,
-          "oldElo": 1500,
-          "newElo": 1441,
-          "delta": -58.7
+          "oldElo": 1500.0,
+          "newElo": 1441.3419066138117,
+          "delta": -58.65809338618823
         },
         {
           "result": "패배",
@@ -7691,9 +7359,9 @@ window.INITIAL_DATA = {
           "d": 9,
           "a": 8,
           "kda": 2.56,
-          "oldElo": 2192,
-          "newElo": 2177,
-          "delta": -14.7
+          "oldElo": 2191.505575300662,
+          "newElo": 2176.841051954115,
+          "delta": -14.664523346547057
         },
         {
           "result": "패배",
@@ -7703,9 +7371,9 @@ window.INITIAL_DATA = {
           "d": 6,
           "a": 6,
           "kda": 2.67,
-          "oldElo": 1284,
-          "newElo": 1255,
-          "delta": -29.3
+          "oldElo": 1284.3298902818783,
+          "newElo": 1255.0008435887842,
+          "delta": -29.329046693094114
         },
         {
           "result": "패배",
@@ -7715,22 +7383,666 @@ window.INITIAL_DATA = {
           "d": 9,
           "a": 12,
           "kda": 1.44,
-          "oldElo": 1750,
-          "newElo": 1691,
-          "delta": -58.7
+          "oldElo": 1750.0,
+          "newElo": 1691.3419066138117,
+          "delta": -58.65809338618823
         }
       ]
     }
   ],
-  "meta": {
-    "source": "최신내전_시즌2.xlsx",
-    "sheets": [
-      "페어 승률",
-      "Summary-시즌1",
-      "Summary",
-      "플레이어",
-      "경기기록",
-      "경기"
-    ]
+  "recentMatchesSeason1": [],
+  "positionStats": {
+    "season1": {},
+    "season2": {
+      "이호재": [
+        {
+          "games": 15,
+          "win": 10,
+          "lose": 5,
+          "k": 69,
+          "d": 64,
+          "a": 92,
+          "position": "탑",
+          "winRate": 66.7,
+          "kda": 2.52
+        },
+        {
+          "games": 9,
+          "win": 5,
+          "lose": 4,
+          "k": 29,
+          "d": 53,
+          "a": 62,
+          "position": "미드",
+          "winRate": 55.6,
+          "kda": 1.72
+        },
+        {
+          "games": 1,
+          "win": 0,
+          "lose": 1,
+          "k": 1,
+          "d": 7,
+          "a": 2,
+          "position": "서폿",
+          "winRate": 0.0,
+          "kda": 0.43
+        }
+      ],
+      "안태인": [
+        {
+          "games": 5,
+          "win": 3,
+          "lose": 2,
+          "k": 48,
+          "d": 33,
+          "a": 15,
+          "position": "탑",
+          "winRate": 60.0,
+          "kda": 1.91
+        },
+        {
+          "games": 13,
+          "win": 5,
+          "lose": 8,
+          "k": 118,
+          "d": 92,
+          "a": 85,
+          "position": "정글",
+          "winRate": 38.5,
+          "kda": 2.21
+        },
+        {
+          "games": 4,
+          "win": 2,
+          "lose": 2,
+          "k": 52,
+          "d": 29,
+          "a": 15,
+          "position": "미드",
+          "winRate": 50.0,
+          "kda": 2.31
+        },
+        {
+          "games": 4,
+          "win": 2,
+          "lose": 2,
+          "k": 19,
+          "d": 35,
+          "a": 27,
+          "position": "원딜",
+          "winRate": 50.0,
+          "kda": 1.31
+        }
+      ],
+      "정도영": [
+        {
+          "games": 3,
+          "win": 1,
+          "lose": 2,
+          "k": 10,
+          "d": 16,
+          "a": 19,
+          "position": "탑",
+          "winRate": 33.3,
+          "kda": 1.81
+        },
+        {
+          "games": 7,
+          "win": 2,
+          "lose": 5,
+          "k": 44,
+          "d": 42,
+          "a": 44,
+          "position": "미드",
+          "winRate": 28.6,
+          "kda": 2.1
+        }
+      ],
+      "김찬": [
+        {
+          "games": 3,
+          "win": 0,
+          "lose": 3,
+          "k": 18,
+          "d": 22,
+          "a": 19,
+          "position": "정글",
+          "winRate": 0.0,
+          "kda": 1.68
+        },
+        {
+          "games": 1,
+          "win": 0,
+          "lose": 1,
+          "k": 7,
+          "d": 7,
+          "a": 6,
+          "position": "미드",
+          "winRate": 0.0,
+          "kda": 1.86
+        },
+        {
+          "games": 18,
+          "win": 10,
+          "lose": 8,
+          "k": 133,
+          "d": 105,
+          "a": 130,
+          "position": "원딜",
+          "winRate": 55.6,
+          "kda": 2.5
+        },
+        {
+          "games": 5,
+          "win": 2,
+          "lose": 3,
+          "k": 7,
+          "d": 39,
+          "a": 78,
+          "position": "서폿",
+          "winRate": 40.0,
+          "kda": 2.18
+        }
+      ],
+      "지범준": [
+        {
+          "games": 4,
+          "win": 3,
+          "lose": 1,
+          "k": 51,
+          "d": 16,
+          "a": 32,
+          "position": "탑",
+          "winRate": 75.0,
+          "kda": 5.19
+        },
+        {
+          "games": 1,
+          "win": 1,
+          "lose": 0,
+          "k": 9,
+          "d": 5,
+          "a": 15,
+          "position": "정글",
+          "winRate": 100.0,
+          "kda": 4.8
+        },
+        {
+          "games": 3,
+          "win": 3,
+          "lose": 0,
+          "k": 13,
+          "d": 16,
+          "a": 45,
+          "position": "미드",
+          "winRate": 100.0,
+          "kda": 3.62
+        },
+        {
+          "games": 1,
+          "win": 1,
+          "lose": 0,
+          "k": 8,
+          "d": 5,
+          "a": 13,
+          "position": "원딜",
+          "winRate": 100.0,
+          "kda": 4.2
+        },
+        {
+          "games": 15,
+          "win": 9,
+          "lose": 6,
+          "k": 39,
+          "d": 69,
+          "a": 205,
+          "position": "서폿",
+          "winRate": 60.0,
+          "kda": 3.54
+        }
+      ],
+      "송승훈": [
+        {
+          "games": 9,
+          "win": 2,
+          "lose": 7,
+          "k": 27,
+          "d": 60,
+          "a": 41,
+          "position": "탑",
+          "winRate": 22.2,
+          "kda": 1.13
+        },
+        {
+          "games": 3,
+          "win": 3,
+          "lose": 0,
+          "k": 19,
+          "d": 16,
+          "a": 28,
+          "position": "정글",
+          "winRate": 100.0,
+          "kda": 2.94
+        },
+        {
+          "games": 2,
+          "win": 2,
+          "lose": 0,
+          "k": 13,
+          "d": 9,
+          "a": 22,
+          "position": "미드",
+          "winRate": 100.0,
+          "kda": 3.89
+        },
+        {
+          "games": 13,
+          "win": 7,
+          "lose": 6,
+          "k": 42,
+          "d": 83,
+          "a": 180,
+          "position": "서폿",
+          "winRate": 53.8,
+          "kda": 2.67
+        }
+      ],
+      "강원준": [
+        {
+          "games": 2,
+          "win": 0,
+          "lose": 2,
+          "k": 9,
+          "d": 8,
+          "a": 18,
+          "position": "정글",
+          "winRate": 0.0,
+          "kda": 3.38
+        },
+        {
+          "games": 2,
+          "win": 1,
+          "lose": 1,
+          "k": 14,
+          "d": 12,
+          "a": 25,
+          "position": "미드",
+          "winRate": 50.0,
+          "kda": 3.25
+        },
+        {
+          "games": 1,
+          "win": 1,
+          "lose": 0,
+          "k": 1,
+          "d": 6,
+          "a": 24,
+          "position": "서폿",
+          "winRate": 100.0,
+          "kda": 4.17
+        }
+      ],
+      "김민서": [
+        {
+          "games": 3,
+          "win": 2,
+          "lose": 1,
+          "k": 31,
+          "d": 17,
+          "a": 27,
+          "position": "정글",
+          "winRate": 66.7,
+          "kda": 3.41
+        },
+        {
+          "games": 3,
+          "win": 0,
+          "lose": 3,
+          "k": 26,
+          "d": 25,
+          "a": 13,
+          "position": "미드",
+          "winRate": 0.0,
+          "kda": 1.56
+        },
+        {
+          "games": 5,
+          "win": 2,
+          "lose": 3,
+          "k": 26,
+          "d": 30,
+          "a": 30,
+          "position": "원딜",
+          "winRate": 40.0,
+          "kda": 1.87
+        },
+        {
+          "games": 3,
+          "win": 1,
+          "lose": 2,
+          "k": 16,
+          "d": 27,
+          "a": 38,
+          "position": "서폿",
+          "winRate": 33.3,
+          "kda": 2.0
+        }
+      ],
+      "이권표": [
+        {
+          "games": 5,
+          "win": 1,
+          "lose": 4,
+          "k": 32,
+          "d": 31,
+          "a": 40,
+          "position": "원딜",
+          "winRate": 20.0,
+          "kda": 2.32
+        }
+      ],
+      "이승배": [
+        {
+          "games": 4,
+          "win": 0,
+          "lose": 4,
+          "k": 9,
+          "d": 33,
+          "a": 39,
+          "position": "서폿",
+          "winRate": 0.0,
+          "kda": 1.45
+        }
+      ],
+      "안성진": [
+        {
+          "games": 1,
+          "win": 1,
+          "lose": 0,
+          "k": 9,
+          "d": 7,
+          "a": 6,
+          "position": "탑",
+          "winRate": 100.0,
+          "kda": 2.14
+        },
+        {
+          "games": 14,
+          "win": 6,
+          "lose": 8,
+          "k": 89,
+          "d": 76,
+          "a": 124,
+          "position": "정글",
+          "winRate": 42.9,
+          "kda": 2.8
+        },
+        {
+          "games": 6,
+          "win": 5,
+          "lose": 1,
+          "k": 33,
+          "d": 23,
+          "a": 51,
+          "position": "미드",
+          "winRate": 83.3,
+          "kda": 3.65
+        },
+        {
+          "games": 5,
+          "win": 1,
+          "lose": 4,
+          "k": 14,
+          "d": 27,
+          "a": 80,
+          "position": "서폿",
+          "winRate": 20.0,
+          "kda": 3.48
+        }
+      ],
+      "유동혁": [
+        {
+          "games": 3,
+          "win": 3,
+          "lose": 0,
+          "k": 49,
+          "d": 20,
+          "a": 34,
+          "position": "정글",
+          "winRate": 100.0,
+          "kda": 4.15
+        },
+        {
+          "games": 5,
+          "win": 2,
+          "lose": 3,
+          "k": 27,
+          "d": 26,
+          "a": 23,
+          "position": "미드",
+          "winRate": 40.0,
+          "kda": 1.92
+        },
+        {
+          "games": 4,
+          "win": 2,
+          "lose": 2,
+          "k": 63,
+          "d": 24,
+          "a": 28,
+          "position": "원딜",
+          "winRate": 50.0,
+          "kda": 3.79
+        }
+      ],
+      "안우진": [
+        {
+          "games": 15,
+          "win": 6,
+          "lose": 9,
+          "k": 26,
+          "d": 82,
+          "a": 64,
+          "position": "탑",
+          "winRate": 40.0,
+          "kda": 1.1
+        },
+        {
+          "games": 8,
+          "win": 2,
+          "lose": 6,
+          "k": 18,
+          "d": 50,
+          "a": 57,
+          "position": "미드",
+          "winRate": 25.0,
+          "kda": 1.5
+        }
+      ],
+      "유탁영": [
+        {
+          "games": 3,
+          "win": 1,
+          "lose": 2,
+          "k": 25,
+          "d": 25,
+          "a": 27,
+          "position": "원딜",
+          "winRate": 33.3,
+          "kda": 2.08
+        }
+      ],
+      "김지우": [
+        {
+          "games": 2,
+          "win": 2,
+          "lose": 0,
+          "k": 20,
+          "d": 9,
+          "a": 19,
+          "position": "원딜",
+          "winRate": 100.0,
+          "kda": 4.33
+        }
+      ],
+      "짱구": [
+        {
+          "games": 2,
+          "win": 1,
+          "lose": 1,
+          "k": 11,
+          "d": 9,
+          "a": 28,
+          "position": "탑",
+          "winRate": 50.0,
+          "kda": 4.33
+        }
+      ],
+      "최진우": [
+        {
+          "games": 6,
+          "win": 4,
+          "lose": 2,
+          "k": 63,
+          "d": 30,
+          "a": 42,
+          "position": "정글",
+          "winRate": 66.7,
+          "kda": 3.5
+        }
+      ],
+      "김시완": [
+        {
+          "games": 2,
+          "win": 1,
+          "lose": 1,
+          "k": 8,
+          "d": 14,
+          "a": 26,
+          "position": "원딜",
+          "winRate": 50.0,
+          "kda": 2.43
+        },
+        {
+          "games": 4,
+          "win": 3,
+          "lose": 1,
+          "k": 2,
+          "d": 21,
+          "a": 51,
+          "position": "서폿",
+          "winRate": 75.0,
+          "kda": 2.52
+        }
+      ],
+      "박명룡": [
+        {
+          "games": 6,
+          "win": 2,
+          "lose": 4,
+          "k": 50,
+          "d": 26,
+          "a": 43,
+          "position": "원딜",
+          "winRate": 33.3,
+          "kda": 3.58
+        }
+      ],
+      "이준헌": [
+        {
+          "games": 4,
+          "win": 2,
+          "lose": 2,
+          "k": 14,
+          "d": 14,
+          "a": 39,
+          "position": "정글",
+          "winRate": 50.0,
+          "kda": 3.79
+        },
+        {
+          "games": 3,
+          "win": 2,
+          "lose": 1,
+          "k": 18,
+          "d": 24,
+          "a": 27,
+          "position": "미드",
+          "winRate": 66.7,
+          "kda": 1.88
+        },
+        {
+          "games": 2,
+          "win": 2,
+          "lose": 0,
+          "k": 4,
+          "d": 9,
+          "a": 26,
+          "position": "서폿",
+          "winRate": 100.0,
+          "kda": 3.33
+        }
+      ],
+      "김기중": [
+        {
+          "games": 2,
+          "win": 1,
+          "lose": 1,
+          "k": 15,
+          "d": 14,
+          "a": 8,
+          "position": "정글",
+          "winRate": 50.0,
+          "kda": 1.64
+        },
+        {
+          "games": 1,
+          "win": 1,
+          "lose": 0,
+          "k": 16,
+          "d": 0,
+          "a": 6,
+          "position": "미드",
+          "winRate": 100.0,
+          "kda": 22
+        },
+        {
+          "games": 1,
+          "win": 1,
+          "lose": 0,
+          "k": 4,
+          "d": 3,
+          "a": 19,
+          "position": "원딜",
+          "winRate": 100.0,
+          "kda": 7.67
+        }
+      ],
+      "김민준": [
+        {
+          "games": 3,
+          "win": 2,
+          "lose": 1,
+          "k": 24,
+          "d": 17,
+          "a": 23,
+          "position": "원딜",
+          "winRate": 66.7,
+          "kda": 2.76
+        },
+        {
+          "games": 1,
+          "win": 1,
+          "lose": 0,
+          "k": 15,
+          "d": 4,
+          "a": 17,
+          "position": "서폿",
+          "winRate": 100.0,
+          "kda": 8.0
+        }
+      ]
+    }
   }
 };

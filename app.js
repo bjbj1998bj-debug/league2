@@ -1,5 +1,5 @@
 const DATA = window.INITIAL_DATA || {season1:[],season2:[],pairs:[],recentMatches:[]};
-let state = { tab: 'dashboard', season: 'season2', players: loadPlayers('season2') };
+let state = { tab: 'dashboard', season: 'season2', players: loadPlayers('season2'), selectedPlayer: null };
 let pairScope = 'total';
 
 // 저장 기능 비활성화 버전: 브라우저 localStorage를 사용하지 않고, 항상 엑셀 원본 기반 data.js만 읽습니다.
@@ -29,6 +29,8 @@ function kda(p){ return Number(p.kda || ((p.k+p.a)/Math.max(1,p.d)) || 0).toFixe
 function totalGames(p){ return Number(p.win||0)+Number(p.lose||0); }
 function winRate(p){ return totalGames(p) ? ((p.win/totalGames(p))*100).toFixed(1) : '0.0'; }
 function sectionTitle(icon, text){ return `<h1 class="title"><span>${icon}</span>${text}</h1>`; }
+function escAttr(v){ return String(v ?? '').replace(/&/g,'&amp;').replace(/'/g,'&#39;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+function openPlayer(name){ state.selectedPlayer = name; state.tab = 'player'; render(); window.scrollTo({top:0, behavior:'smooth'}); }
 
 function dashboard(){
   const players = byElo(state.players);
@@ -68,7 +70,7 @@ function renderRankTable(){
   const el=document.getElementById('rankTable'); if(!el) return;
   const q=(document.getElementById('rankSearch')?.value||'').trim();
   const rows=byElo(state.players).filter(p=>(!q||p.name.includes(q)) && (tierFilter==='전체'||String(p.tier||'').includes(tierFilter.replace('몬드',''))));
-  el.innerHTML = `<div class="table-wrap"><table><thead><tr>${['순위','플레이어','티어','ELO','승','패','승률','KDA','누적 K','누적 D','누적 A'].map(h=>`<th>${h}</th>`).join('')}</tr></thead><tbody>${rows.map((p,i)=>`<tr class="rank-${i+1}"><td><b>${i+1}</b></td><td><div class="player-cell"><span class="avatar">${p.name[0]||'?'}</span>${p.name}</div></td><td><span class="tier ${tierClass(p.tier)}">${p.tier||'언랭크'}</span></td><td class="gold"><b>${Math.round(p.elo||0)}</b></td><td class="cyan">${p.win||0}</td><td class="red">${p.lose||0}</td><td>${winRate(p)}%</td><td class="cyan"><b>${kda(p)}</b></td><td>${p.k||0}</td><td>${p.d||0}</td><td>${p.a||0}</td></tr>`).join('')}</tbody></table></div>`;
+  el.innerHTML = `<div class="table-wrap"><table><thead><tr>${['순위','플레이어','티어','ELO','승','패','승률','KDA','누적 K','누적 D','누적 A'].map(h=>`<th>${h}</th>`).join('')}</tr></thead><tbody>${rows.map((p,i)=>`<tr class="rank-${i+1}"><td><b>${i+1}</b></td><td><button class="player-cell player-link" onclick="openPlayer('${escAttr(p.name)}')"><span class="avatar">${p.name[0]||'?'}</span><span>${p.name}</span></button></td><td><span class="tier ${tierClass(p.tier)}">${p.tier||'언랭크'}</span></td><td class="gold"><b>${Math.round(p.elo||0)}</b></td><td class="cyan">${p.win||0}</td><td class="red">${p.lose||0}</td><td>${winRate(p)}%</td><td class="cyan"><b>${kda(p)}</b></td><td>${p.k||0}</td><td>${p.d||0}</td><td>${p.a||0}</td></tr>`).join('')}</tbody></table></div>`;
 }
 
 function pair(){
@@ -159,6 +161,58 @@ function fillSample(){
   ['win','lose'].forEach(side=>{ const arr=side==='win'?m.winTeam:m.loseTeam; arr.forEach((n,i)=>{ const e=document.getElementById(`${side}_name_${i}`); if(e) e.value=n; }); });
 }
 
+
+function playerDetail(){
+  const name = state.selectedPlayer;
+  if(!name) return `${sectionTitle('👤','플레이어 상세')}<div class="empty">선택된 플레이어가 없습니다.</div>`;
+  const p = getPlayerSnapshot(name);
+  const records = loadMatchRecords().filter(m=>[...(m.winTeam||[]), ...(m.loseTeam||[])].includes(name));
+  const posRows = (((DATA.positionStats||{})[state.season]||{})[name]||[]);
+  const pairScopeForSeason = state.season === 'season1' ? 'season1' : 'season2';
+  const pairRows = (DATA.pairs||[])
+    .filter(r=>r.p1===name||r.p2===name)
+    .map(r=>({...r, partner: r.p1===name ? r.p2 : r.p1, scoped: pairStats(r, pairScopeForSeason)}))
+    .filter(r=>r.scoped.games > 0);
+  const topPairs = [...pairRows].sort((a,b)=>(b.scoped.rate??-1)-(a.scoped.rate??-1) || b.scoped.games-a.scoped.games).slice(0,3);
+  const worstPairs = [...pairRows].sort((a,b)=>(a.scoped.rate??999)-(b.scoped.rate??999) || b.scoped.games-a.scoped.games).slice(0,3);
+  return `${sectionTitle('👤', `${name} 상세 정보`)}
+    <button class="btn ghost" onclick="state.tab='ranking'; render();">← 랭킹표로 돌아가기</button>
+    <div style="height:16px"></div>
+    <div class="player-hero card card-pad">
+      <div class="player-profile">
+        <span class="avatar big">${name[0]||'?'}</span>
+        <div><div class="profile-name">${name}</div><span class="tier ${tierClass(p.tier)}">${p.tier||'언랭크'}</span></div>
+      </div>
+      <div class="mini-stat"><span>ELO</span><b class="gold">${Math.round(p.elo||0)}</b></div>
+      <div class="mini-stat"><span>전적</span><b>${p.win||0}승 ${p.lose||0}패</b></div>
+      <div class="mini-stat"><span>승률</span><b class="cyan">${winRate(p)}%</b></div>
+      <div class="mini-stat"><span>KDA</span><b class="cyan">${kda(p)}</b></div>
+    </div>
+    <div class="detail-grid">
+      <div class="card card-pad"><div class="card-title">📌 최근 5게임 기록</div>${playerRecentTable(records.slice(0,5), name)}</div>
+      <div class="card card-pad"><div class="card-title">🎯 포지션별 KDA / 승률</div>${positionTable(posRows)}</div>
+    </div>
+    <div class="detail-grid">
+      <div class="card card-pad"><div class="card-title">🔥 함께 했을 때 승률 TOP 3 <span class="small">${scopeLabel(pairScopeForSeason)} 기준</span></div>${pairMiniTable(topPairs, true)}</div>
+      <div class="card card-pad"><div class="card-title">❄ 함께 했을 때 승률 WORST 3 <span class="small">${scopeLabel(pairScopeForSeason)} 기준</span></div>${pairMiniTable(worstPairs, false)}</div>
+    </div>`;
+}
+function playerRecentTable(records, name){
+  if(!records.length) return `<div class="empty small">최근 경기 기록이 없습니다.</div>`;
+  return `<div class="table-wrap"><table class="compact-table"><thead><tr>${['날짜','결과','포지션','K/D/A','KDA','ELO 변동'].map(h=>`<th>${h}</th>`).join('')}</tr></thead><tbody>${records.map(m=>{
+    const d=(m.details||[]).find(x=>x.name===name) || {};
+    return `<tr><td>${m.date||'-'}</td><td class="${d.result==='승리'?'cyan':'red'}"><b>${d.result||'-'}</b></td><td>${d.position||'-'}</td><td>${d.k??0}/${d.d??0}/${d.a??0}</td><td class="cyan"><b>${Number(d.kda||0).toFixed(2)}</b></td><td class="${Number(d.delta||0)>=0?'cyan':'red'}"><b>${Number(d.delta||0)>=0?'+':''}${Number(d.delta||0).toFixed(1)}</b></td></tr>`;
+  }).join('')}</tbody></table></div>`;
+}
+function positionTable(rows){
+  if(!rows.length) return `<div class="empty small">선택 시즌의 세부 경기기록 기반 포지션 통계가 없습니다.</div>`;
+  return `<div class="table-wrap"><table class="compact-table"><thead><tr>${['포지션','경기','승','패','승률','KDA','K','D','A'].map(h=>`<th>${h}</th>`).join('')}</tr></thead><tbody>${rows.map(r=>`<tr><td class="gold"><b>${r.position}</b></td><td>${r.games}</td><td class="cyan">${r.win}</td><td class="red">${r.lose}</td><td><b>${pct(r.winRate)}%</b></td><td class="cyan"><b>${Number(r.kda||0).toFixed(2)}</b></td><td>${r.k}</td><td>${r.d}</td><td>${r.a}</td></tr>`).join('')}</tbody></table></div>`;
+}
+function pairMiniTable(rows, high=true){
+  if(!rows.length) return `<div class="empty small">페어 기록이 없습니다.</div>`;
+  return `<div class="pair-mini-list">${rows.map((r,i)=>`<div class="pair-mini-row"><div><b class="${high?'cyan':'red'}">${i+1}. ${r.partner}</b><div class="small">${r.scoped.games}경기 · ${r.scoped.win}승 ${r.scoped.lose}패</div></div><div class="pair-mini-rate">${pct(r.scoped.rate||0)}%</div></div>`).join('')}</div>`;
+}
+
 function records(){
   const players = Array.from(new Set(loadMatchRecords().flatMap(m=>[...(m.winTeam||[]), ...(m.loseTeam||[])]))).sort((a,b)=>a.localeCompare(b,'ko'));
   return `${sectionTitle('📜','경기 기록')}
@@ -215,6 +269,7 @@ function render(){
   if(state.tab==='ranking') { target.innerHTML=ranking(); setTimeout(renderRankTable); }
   if(state.tab==='pair') { target.innerHTML=pair(); setTimeout(renderPairs); }
   if(state.tab==='records') { target.innerHTML=records(); setTimeout(renderRecords); }
+  if(state.tab==='player') target.innerHTML=playerDetail();
   if(state.tab==='match') target.innerHTML=match();
 }
 document.querySelectorAll('.nav-btn').forEach(btn=>btn.addEventListener('click',()=>{state.tab=btn.dataset.tab; render();}));
