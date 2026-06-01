@@ -27188,5 +27188,10 @@ window.INITIAL_DATA = {
     "season2From": "2026-05-23",
     "pastDataRows": 41,
     "mainRecordRows": 27
+  },
+  "sourceMeta": {
+    "rankingSeason1": "Summary-시즌1 시트 A:K 기준 25명",
+    "rankingSeason2": "시즌2 랭킹 30명 기준",
+    "fixedAt": "2026-06-01 season1-summary-rank-fix"
   }
 };

@@ -31,6 +31,92 @@ function tierClass(t){
 function kda(p){ return Number(p.kda || ((p.k+p.a)/Math.max(1,p.d)) || 0).toFixed(2); }
 function totalGames(p){ return Number(p.win||0)+Number(p.lose||0); }
 function winRate(p){ return totalGames(p) ? ((p.win/totalGames(p))*100).toFixed(1) : '0.0'; }
+
+function getAllPlayerNames(){
+  return Array.from(new Set([...(DATA.season1||[]), ...(DATA.season2||[]), ...(DATA.total||[]), ...loadMatchRecords('total').flatMap(m=>[...(m.winTeam||[]), ...(m.loseTeam||[])])].map(p=>typeof p==='string'?p:p.name).filter(Boolean))).sort((a,b)=>a.localeCompare(b,'ko'));
+}
+function recordDateValue(m){ return String(m.dateSort || m.date || ''); }
+function playerInMatch(m, name){ return (m.winTeam||[]).includes(name) || (m.loseTeam||[]).includes(name); }
+function playerWonMatch(m, name){ return (m.winTeam||[]).includes(name); }
+function getDetail(m, name){ return (m.details||[]).find(x=>x.name===name) || null; }
+function detailHasStats(d){ return !!d && d.hasDetail !== false && d.k !== undefined && d.k !== null; }
+function numDelta(d){ return Number((d && d.delta) || 0); }
+function recentPlayerMetrics(scope, lastN=5){
+  const map = {};
+  loadMatchRecords(scope).forEach(m=>{
+    [...(m.winTeam||[]), ...(m.loseTeam||[])].forEach(name=>{
+      if(!map[name]) map[name] = {name, games:0, win:0, lose:0, k:0, d:0, a:0, delta:0, records:[]};
+      const d = getDetail(m,name);
+      map[name].records.push({m,d});
+    });
+  });
+  Object.values(map).forEach(x=>{
+    x.records = x.records.sort((a,b)=>recordDateValue(b.m).localeCompare(recordDateValue(a.m))).slice(0,lastN);
+    x.games = x.records.length;
+    x.records.forEach(({m,d})=>{
+      if(playerWonMatch(m,x.name)) x.win++; else x.lose++;
+      if(detailHasStats(d)){ x.k += Number(d.k||0); x.d += Number(d.d||0); x.a += Number(d.a||0); x.delta += numDelta(d); }
+    });
+    x.kda = x.d === 0 ? (x.k + x.a) : (x.k + x.a) / x.d;
+    x.winRate = x.games ? x.win/x.games*100 : 0;
+  });
+  return Object.values(map).filter(x=>x.games>0);
+}
+function miniRankList(rows, opts={}){
+  const {valueKey='value', suffix='', decimals=1, high=true, sub=null} = opts;
+  if(!rows.length) return `<div class="empty small">데이터가 없습니다.</div>`;
+  return `<div class="metric-list">${rows.map((r,i)=>`<div class="metric-row"><div><b class="${high?'cyan':'red'}">${i+1}. ${r.name}</b><div class="small">${sub?sub(r):''}</div></div><div class="metric-value ${high?'cyan':'red'}">${Number(r[valueKey]||0).toFixed(decimals)}${suffix}</div></div>`).join('')}</div>`;
+}
+function opponentRows(name, scope){
+  const map = {};
+  loadMatchRecords(scope).forEach(m=>{
+    if(!playerInMatch(m,name)) return;
+    const opponents = playerWonMatch(m,name) ? (m.loseTeam||[]) : (m.winTeam||[]);
+    opponents.forEach(o=>{
+      if(!o || o===name) return;
+      if(!map[o]) map[o] = {name:o, games:0, win:0, lose:0};
+      map[o].games++;
+      if(playerWonMatch(m,name)) map[o].win++; else map[o].lose++;
+    });
+  });
+  return Object.values(map).map(r=>({...r, winRate: r.games? r.win/r.games*100:0})).filter(r=>r.games>0);
+}
+function opponentMiniTable(rows, good=true){
+  if(!rows.length) return `<div class="empty small">상대 전적 데이터가 없습니다.</div>`;
+  return `<div class="pair-mini-list">${rows.map((r,i)=>`<div class="pair-mini-row"><div><b class="${good?'cyan':'red'}">${i+1}. ${r.name}</b><div class="small">${r.games}경기 · ${r.win}승 ${r.lose}패</div></div><div class="pair-mini-rate">${pct(r.winRate)}%</div></div>`).join('')}</div>`;
+}
+function seasonChangeBlock(name){
+  const s1 = playerSnapshotForScope(name,'season1');
+  const s2 = playerSnapshotForScope(name,'season2');
+  const rows = [
+    {label:'ELO', before: Math.round(Number(s1.elo||0)), after: Math.round(Number(s2.elo||0)), diff: Number(s2.elo||0)-Number(s1.elo||0), unit:'', dec:0},
+    {label:'승률', before: Number(winRate(s1)), after: Number(winRate(s2)), diff: Number(winRate(s2))-Number(winRate(s1)), unit:'%p', dec:1},
+    {label:'KDA', before: Number(kda(s1)), after: Number(kda(s2)), diff: Number(kda(s2))-Number(kda(s1)), unit:'', dec:2},
+    {label:'경기 수', before: totalGames(s1), after: totalGames(s2), diff: totalGames(s2)-totalGames(s1), unit:'', dec:0},
+  ];
+  return `<div class="change-grid">${rows.map(r=>`<div class="change-card"><div class="small">${r.label}</div><div><b>${Number(r.before).toFixed(r.dec)}</b> → <b class="gold">${Number(r.after).toFixed(r.dec)}</b></div><div class="${r.diff>=0?'cyan':'red'}"><b>${r.diff>=0?'+':''}${Number(r.diff).toFixed(r.dec)}${r.unit}</b></div></div>`).join('')}</div>`;
+}
+function personalRecords(name, scope){
+  const rows=[];
+  loadMatchRecords(scope).forEach(m=>{
+    const d=getDetail(m,name);
+    if(detailHasStats(d)) rows.push({date:m.date||'-', result:d.result || (playerWonMatch(m,name)?'승리':'패배'), position:d.position||'-', k:Number(d.k||0), d:Number(d.d||0), a:Number(d.a||0), kda:Number(d.kda||0), delta:numDelta(d)});
+  });
+  if(!rows.length) return `<div class="empty small">세부 기록이 없습니다.</div>`;
+  const bestKda=[...rows].sort((a,b)=>b.kda-a.kda)[0];
+  const mostKill=[...rows].sort((a,b)=>b.k-a.k)[0];
+  const mostAssist=[...rows].sort((a,b)=>b.a-a.a)[0];
+  const bestDelta=[...rows].sort((a,b)=>b.delta-a.delta)[0];
+  const worstDelta=[...rows].sort((a,b)=>a.delta-b.delta)[0];
+  const card=(title,r,value,cls='cyan')=>`<div class="record-card"><div class="small">${title}</div><div class="record-main ${cls}">${value}</div><div>${r.date} · ${r.result} · ${r.position}</div><div class="small">K/D/A ${r.k}/${r.d}/${r.a} · KDA ${r.kda.toFixed(2)} · ELO ${r.delta>=0?'+':''}${r.delta.toFixed(1)}</div></div>`;
+  return `<div class="record-card-grid">${card('최고 KDA 경기',bestKda,bestKda.kda.toFixed(2))}${card('최다 킬 경기',mostKill,mostKill.k+'킬')}${card('최다 어시스트 경기',mostAssist,mostAssist.a+'어시')}${card('최대 ELO 상승',bestDelta,(bestDelta.delta>=0?'+':'')+bestDelta.delta.toFixed(1))}${card('최대 ELO 하락',worstDelta,worstDelta.delta.toFixed(1),'red')}</div>`;
+}
+function teamAvgElo(team){ return team.reduce((s,n)=>s+Number(playerSnapshotForScope(n,state.season).elo||1500),0)/Math.max(1,team.length); }
+function expectedFromAvg(a,b){ return 1/(1+Math.pow(10,(b-a)/400)); }
+function combinations(arr,k){
+  const res=[]; const rec=(start,combo)=>{ if(combo.length===k){res.push([...combo]); return;} for(let i=start;i<arr.length;i++){ combo.push(arr[i]); rec(i+1,combo); combo.pop(); } };
+  rec(0,[]); return res;
+}
 function sectionTitle(icon, text){ return `<h1 class="title"><span>${icon}</span>${text}</h1>`; }
 function escAttr(v){ return String(v ?? '').replace(/&/g,'&amp;').replace(/'/g,'&#39;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 function openPlayer(name){ state.selectedPlayer = name; state.tab = 'player'; render(); window.scrollTo({top:0, behavior:'smooth'}); }
@@ -38,17 +124,20 @@ function openPlayer(name){ state.selectedPlayer = name; state.tab = 'player'; re
 function dashboard(){
   const players = byElo(state.players);
   const top = players.slice(0,3);
-  const mostWins = [...players].sort((a,b)=>(b.win||0)-(a.win||0))[0] || {};
-  const bestKda = [...players].sort((a,b)=>Number(kda(b))-Number(kda(a)))[0] || {};
   const recent = loadMatchRecords();
+  const recentMetrics = recentPlayerMetrics(state.season, 5);
+  const recentKdaTop = [...recentMetrics].filter(x=>x.games>0).sort((a,b)=>b.kda-a.kda || b.games-a.games).slice(0,5).map(x=>({...x,value:x.kda}));
+  const deltaSorted = [...recentMetrics].filter(x=>x.games>0).sort((a,b)=>b.delta-a.delta);
+  const deltaTop = deltaSorted.slice(0,5).map(x=>({...x,value:x.delta}));
+  const deltaWorst = [...deltaSorted].reverse().slice(0,5).map(x=>({...x,value:x.delta}));
   return `${sectionTitle('⌚','대시보드')}
-  <div class="grid grid-3">
+  <div class="grid grid-3 dashboard-grid">
     <div class="card card-pad">
       <div class="card-title">👑 TOP 3 플레이어</div>
       <div class="top-list">${top.map((p,i)=>`<div class="top-row"><div class="top-left"><div class="rank-num">${i+1}</div><div><div class="name">${p.name}</div><div class="elo">${p.elo} ELO</div></div></div><div class="subtle"><div>${p.win}승 ${p.lose}패</div><div>승률 ${winRate(p)}%</div></div></div>`).join('')}</div>
     </div>
-    <div class="card card-pad"><div class="card-title">🔥 최다 승리자</div><div class="stat-body"><div class="stat-name">${mostWins.name||'-'}</div><div class="stat-main">${mostWins.win||0}승</div><div class="stat-sub">${mostWins.lose||0}패 / 승률 ${winRate(mostWins)}%</div></div></div>
-    <div class="card card-pad"><div class="card-title">⭐ KDA 최고</div><div class="stat-body"><div class="stat-name">${bestKda.name||'-'}</div><div class="stat-main">${kda(bestKda)}</div><div class="stat-sub">K ${bestKda.k||0} / D ${bestKda.d||0} / A ${bestKda.a||0}</div></div></div>
+    <div class="card card-pad"><div class="card-title">🔥 최근 5경기 KDA TOP 5</div>${miniRankList(recentKdaTop,{valueKey:'value',decimals:2,high:true,sub:r=>`${r.games}경기 · ${r.win}승 ${r.lose}패 · ${r.k}/${r.d}/${r.a}`})}</div>
+    <div class="card card-pad"><div class="card-title">📈 최근 5경기 ELO 변동</div><div class="split-metric"><div><div class="small gold">TOP 5</div>${miniRankList(deltaTop,{valueKey:'value',decimals:1,high:true,sub:r=>`${r.games}경기 · 승률 ${pct(r.winRate)}%`})}</div><div><div class="small red">WORST 5</div>${miniRankList(deltaWorst,{valueKey:'value',decimals:1,high:false,sub:r=>`${r.games}경기 · 승률 ${pct(r.winRate)}%`})}</div></div></div>
   </div>
   <div style="height:28px"></div>
   <div class="card card-pad"><div class="card-title">↻ 최근 경기 기록</div>
@@ -58,7 +147,9 @@ function dashboard(){
 
 function ranking(){
   const tiers = ['전체','그랜드 마스터','마스터','다이아몬드','플래티넘','골드','실버','브론즈','아이언'];
+  const rankSource = state.season === 'season1' ? '시즌1 랭킹 출처: Summary-시즌1 시트 기준 25명' : '시즌2 랭킹 출처: 최신 시즌2 랭킹 기준 30명';
   return `${sectionTitle('🏆','랭킹표')}
+    <div class="notice small">${rankSource}</div>
     <button class="btn" onclick="alert('정적 버전에서는 경기 입력 탭에서 신규 이름을 입력하면 자동 등록됩니다.')">👥 신규 플레이어 등록</button>
     <div style="height:16px"></div>
     <div class="card card-pad">
@@ -195,6 +286,9 @@ function playerDetail(){
     .filter(r=>r.scoped.games > 0);
   const topPairs = [...pairRows].sort((a,b)=>(b.scoped.rate??-1)-(a.scoped.rate??-1) || b.scoped.games-a.scoped.games).slice(0,3);
   const worstPairs = [...pairRows].sort((a,b)=>(a.scoped.rate??999)-(b.scoped.rate??999) || b.scoped.games-a.scoped.games).slice(0,3);
+  const opponents = opponentRows(name, scope);
+  const goodOpp = [...opponents].sort((a,b)=>b.winRate-a.winRate || b.games-a.games).slice(0,3);
+  const badOpp = [...opponents].sort((a,b)=>a.winRate-b.winRate || b.games-a.games).slice(0,3);
   return `${sectionTitle('👤', `${name} 상세 정보`)}
     <button class="btn ghost" onclick="state.tab='ranking'; render();">← 랭킹표로 돌아가기</button>
     <div style="height:16px"></div>
@@ -222,8 +316,15 @@ function playerDetail(){
     <div class="detail-grid">
       <div class="card card-pad"><div class="card-title">🔥 함께 했을 때 승률 TOP 3 <span class="small">${detailScopeLabel(scope)} 기준</span></div>${pairMiniTable(topPairs, true)}</div>
       <div class="card card-pad"><div class="card-title">❄ 함께 했을 때 승률 WORST 3 <span class="small">${detailScopeLabel(scope)} 기준</span></div>${pairMiniTable(worstPairs, false)}</div>
-    </div>`;
+    </div>
+    <div class="detail-grid">
+      <div class="card card-pad"><div class="card-title">🗡 잘 잡는 상대 TOP 3 <span class="small">${detailScopeLabel(scope)} 기준</span></div>${opponentMiniTable(goodOpp, true)}</div>
+      <div class="card card-pad"><div class="card-title">🛡 어려운 상대 TOP 3 <span class="small">${detailScopeLabel(scope)} 기준</span></div>${opponentMiniTable(badOpp, false)}</div>
+    </div>
+    <div class="card card-pad" style="margin-bottom:24px"><div class="card-title">📊 시즌1 → 시즌2 변화</div>${seasonChangeBlock(name)}</div>
+    <div class="card card-pad"><div class="card-title">🏅 개인 기록 <span class="small">${detailScopeLabel(scope)} 기준</span></div>${personalRecords(name, scope)}</div>`;
 }
+
 function playerRecentTable(records, name){
   if(!records.length) return `<div class="empty small">최근 경기 기록이 없습니다.</div>`;
   return `<div class="table-wrap"><table class="compact-table"><thead><tr>${['날짜','결과','포지션','K/D/A','KDA','ELO 변동'].map(h=>`<th>${h}</th>`).join('')}</tr></thead><tbody>${records.map(m=>{
@@ -289,6 +390,83 @@ function renderRecords(){
   el.innerHTML = rows.length ? rows.map((m,i)=>matchSummary(m,i)).join('') : `<div class="empty">경기 기록이 없습니다.</div>`;
 }
 
+
+function matchup(){
+  const names = getAllPlayerNames();
+  return `${sectionTitle('⚔','매치업 분석')}
+    <div class="card card-pad">
+      <div class="controls"><div><b class="gold">두 플레이어의 동팀/상대 전적 분석</b><div class="small">같은 팀일 때 승률, 서로 상대했을 때 승률, 평균 KDA를 확인합니다.</div></div></div>
+      <div class="analysis-controls">
+        <select class="select" id="matchupA">${names.map(n=>`<option>${n}</option>`).join('')}</select>
+        <span class="vs-label">VS</span>
+        <select class="select" id="matchupB">${names.map((n,i)=>`<option ${i===1?'selected':''}>${n}</option>`).join('')}</select>
+        <select class="select" id="matchupScope"><option value="total">전체 시즌</option><option value="season1">시즌1</option><option value="season2" selected>시즌2</option></select>
+        <button class="btn gold" onclick="renderMatchupResult()">분석하기</button>
+      </div>
+      <div id="matchupResult" style="margin-top:22px"></div>
+    </div>`;
+}
+function calcPlayerAvgInMatches(name, matches){
+  let k=0,d=0,a=0,delta=0,detailGames=0;
+  matches.forEach(m=>{ const x=getDetail(m,name); if(detailHasStats(x)){ k+=Number(x.k||0); d+=Number(x.d||0); a+=Number(x.a||0); delta+=numDelta(x); detailGames++; }});
+  return {detailGames,k,d,a,kda:d===0?k+a:(k+a)/d,delta};
+}
+function renderMatchupResult(){
+  const a=document.getElementById('matchupA')?.value, b=document.getElementById('matchupB')?.value, scope=document.getElementById('matchupScope')?.value||'total';
+  const el=document.getElementById('matchupResult'); if(!el) return;
+  if(!a || !b || a===b){ el.innerHTML='<div class="empty small">서로 다른 두 명을 선택해주세요.</div>'; return; }
+  const matches=loadMatchRecords(scope).filter(m=>playerInMatch(m,a)&&playerInMatch(m,b));
+  const same=matches.filter(m=>(m.winTeam||[]).includes(a)&&(m.winTeam||[]).includes(b) || (m.loseTeam||[]).includes(a)&&(m.loseTeam||[]).includes(b));
+  const versus=matches.filter(m=>!same.includes(m));
+  const sameWin=same.filter(m=>(m.winTeam||[]).includes(a)&&(m.winTeam||[]).includes(b)).length;
+  const aWin=versus.filter(m=>playerWonMatch(m,a)).length;
+  const bWin=versus.filter(m=>playerWonMatch(m,b)).length;
+  const aAvg=calcPlayerAvgInMatches(a,versus), bAvg=calcPlayerAvgInMatches(b,versus);
+  const sameAvgA=calcPlayerAvgInMatches(a,same), sameAvgB=calcPlayerAvgInMatches(b,same);
+  const recentRows=[...matches].sort((x,y)=>recordDateValue(y).localeCompare(recordDateValue(x))).slice(0,8);
+  el.innerHTML = `<div class="matchup-summary">
+      <div class="mini-stat"><span>같은 팀 전적</span><b class="cyan">${same.length?`${sameWin}승 ${same.length-sameWin}패`: '-'}</b><div class="small">승률 ${same.length?pct(sameWin/same.length*100)+'%':'-'}</div></div>
+      <div class="mini-stat"><span>상대 전적</span><b>${versus.length}경기</b><div class="small">${a} ${aWin}승 · ${b} ${bWin}승</div></div>
+      <div class="mini-stat"><span>${a} 상대 KDA</span><b class="cyan">${aAvg.detailGames?aAvg.kda.toFixed(2):'-'}</b><div class="small">ELO ${aAvg.delta>=0?'+':''}${aAvg.delta.toFixed(1)}</div></div>
+      <div class="mini-stat"><span>${b} 상대 KDA</span><b class="cyan">${bAvg.detailGames?bAvg.kda.toFixed(2):'-'}</b><div class="small">ELO ${bAvg.delta>=0?'+':''}${bAvg.delta.toFixed(1)}</div></div>
+    </div>
+    <div class="detail-grid" style="margin-top:22px">
+      <div class="card card-pad inner-card"><div class="card-title">🤝 같은 팀일 때 평균</div><div class="small">${a}: KDA ${sameAvgA.detailGames?sameAvgA.kda.toFixed(2):'-'} / ELO ${sameAvgA.delta>=0?'+':''}${sameAvgA.delta.toFixed(1)}<br>${b}: KDA ${sameAvgB.detailGames?sameAvgB.kda.toFixed(2):'-'} / ELO ${sameAvgB.delta>=0?'+':''}${sameAvgB.delta.toFixed(1)}</div></div>
+      <div class="card card-pad inner-card"><div class="card-title">⚔ 상대했을 때 승률</div><div class="small">${a} 승률 ${versus.length?pct(aWin/versus.length*100)+'%':'-'}<br>${b} 승률 ${versus.length?pct(bWin/versus.length*100)+'%':'-'}</div></div>
+    </div>
+    <div class="table-wrap"><table><thead><tr>${['날짜','관계','승리팀','패배팀','결과'].map(h=>`<th>${h}</th>`).join('')}</tr></thead><tbody>${recentRows.map(m=>{ const isSame=same.includes(m); const result=isSame?((m.winTeam||[]).includes(a)?'같은 팀 승리':'같은 팀 패배'):(playerWonMatch(m,a)?`${a} 승리`:`${b} 승리`); return `<tr><td>${m.date||'-'}</td><td class="gold"><b>${isSame?'같은 팀':'상대'}</b></td><td class="cyan">${(m.winTeam||[]).join(', ')}</td><td class="red">${(m.loseTeam||[]).join(', ')}</td><td><b>${result}</b></td></tr>`; }).join('')}</tbody></table></div>`;
+}
+function balance(){
+  const names=getAllPlayerNames();
+  return `${sectionTitle('⚖','팀 밸런스 계산기')}
+    <div class="card card-pad">
+      <div class="notice">참가자 10명을 선택하면 현재 선택된 시즌의 ELO를 기준으로 평균 ELO 차이가 가장 작은 5:5 조합을 추천합니다. 저장 기능은 없습니다.</div>
+      <div class="balance-top"><select class="select" id="balancePreset" onchange="applyBalancePreset()"><option value="">최근 경기 참가자 불러오기</option>${loadMatchRecords('total').slice(0,8).map((m,i)=>`<option value="${i}">${m.date} 경기 참가자</option>`).join('')}</select><button class="btn" onclick="clearBalanceChecks()">선택 초기화</button><button class="btn gold" onclick="renderBalanceResult()">팀 생성</button></div>
+      <div class="player-check-grid">${names.map(n=>`<label class="player-check"><input type="checkbox" value="${n}" onchange="updateBalanceCount()"><span>${n}</span><small>${Math.round(playerSnapshotForScope(n,state.season).elo||1500)} ELO</small></label>`).join('')}</div>
+      <div id="balanceCount" class="small" style="margin-top:14px">0명 선택</div>
+      <div id="balanceResult" style="margin-top:22px"></div>
+    </div>`;
+}
+function selectedBalancePlayers(){ return Array.from(document.querySelectorAll('.player-check input:checked')).map(x=>x.value); }
+function updateBalanceCount(){ const el=document.getElementById('balanceCount'); if(el) el.textContent=`${selectedBalancePlayers().length}명 선택`; }
+function clearBalanceChecks(){ document.querySelectorAll('.player-check input').forEach(x=>x.checked=false); updateBalanceCount(); document.getElementById('balanceResult').innerHTML=''; }
+function applyBalancePreset(){
+  const idx=document.getElementById('balancePreset')?.value; if(idx==='') return;
+  const m=loadMatchRecords('total')[Number(idx)]; if(!m) return;
+  const set=new Set([...(m.winTeam||[]), ...(m.loseTeam||[])]);
+  document.querySelectorAll('.player-check input').forEach(x=>x.checked=set.has(x.value)); updateBalanceCount();
+}
+function renderBalanceResult(){
+  const selected=selectedBalancePlayers(); const el=document.getElementById('balanceResult'); if(!el) return;
+  if(selected.length!==10){ el.innerHTML=`<div class="empty small">정확히 10명을 선택해주세요. 현재 ${selected.length}명 선택됨.</div>`; return; }
+  let best=null; combinations(selected,5).forEach(teamA=>{
+    const setA=new Set(teamA); const teamB=selected.filter(n=>!setA.has(n));
+    const avgA=teamAvgElo(teamA), avgB=teamAvgElo(teamB), diff=Math.abs(avgA-avgB);
+    if(!best || diff<best.diff) best={teamA,teamB,avgA,avgB,diff,probA:expectedFromAvg(avgA,avgB)};
+  });
+  const teamCard=(title,team,avg,prob,cls)=>`<div class="team-card"><div class="team-card-title ${cls}">${title}</div><div class="team-avg">${Math.round(avg)} ELO</div><div class="small">예상 승률 ${pct(prob*100)}%</div>${team.map(n=>`<div class="team-player"><span>${n}</span><b>${Math.round(playerSnapshotForScope(n,state.season).elo||1500)}</b></div>`).join('')}</div>`;
+  el.innerHTML=`<div class="notice"><b>추천 완료</b> · 평균 ELO 차이 ${best.diff.toFixed(1)} · ${state.season==='season1'?'시즌1':'시즌2'} 랭킹 ELO 기준</div><div class="balance-result-grid">${teamCard('1팀',best.teamA,best.avgA,best.probA,'cyan')}${teamCard('2팀',best.teamB,best.avgB,1-best.probA,'red')}</div>`;
+}
 function render(){
   document.querySelectorAll('.nav-btn').forEach(b=>b.classList.toggle('active', b.dataset.tab===state.tab));
   document.querySelectorAll('.season-btn').forEach(b=>b.classList.toggle('active', b.dataset.season===state.season));
@@ -300,7 +478,9 @@ function render(){
   if(state.tab==='records') { target.innerHTML=records(); setTimeout(renderRecords); }
   if(state.tab==='player') target.innerHTML=playerDetail();
   if(state.tab==='match') target.innerHTML=match();
+  if(state.tab==='matchup') target.innerHTML=matchup();
+  if(state.tab==='balance') target.innerHTML=balance();
 }
 document.querySelectorAll('.nav-btn').forEach(btn=>btn.addEventListener('click',()=>{state.tab=btn.dataset.tab; render();}));
-document.querySelectorAll('.season-btn').forEach(btn=>btn.addEventListener('click',()=>{state.season=btn.dataset.season; state.players=loadPlayers(state.season); render();}));
+document.querySelectorAll('.season-btn').forEach(btn=>btn.addEventListener('click',()=>{state.season=btn.dataset.season; state.players=loadPlayers(state.season); tierFilter='전체'; render();}));
 render();
