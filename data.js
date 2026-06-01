@@ -170,14 +170,14 @@ window.INITIAL_DATA = {
     },
     {
       "name": "이승배",
-      "elo": 1570.3,
+      "elo": 1660.1,
       "win": 0,
       "lose": 4,
       "k": 9,
       "d": 33,
       "a": 39,
       "detailGames": 4,
-      "tier": "골드 3",
+      "tier": "골드 1",
       "winRate": 0.0,
       "kda": 1.45,
       "rank": "13위"
@@ -351,6 +351,20 @@ window.INITIAL_DATA = {
       "rank": "25위"
     },
     {
+      "name": "정도영",
+      "elo": 1324.1,
+      "win": 3,
+      "lose": 7,
+      "k": 54,
+      "d": 58,
+      "a": 63,
+      "detailGames": 10,
+      "tier": "실버 4",
+      "winRate": 30.0,
+      "kda": 2.02,
+      "rank": "26위"
+    },
+    {
       "name": "박준혁",
       "elo": 1228.0,
       "win": 8,
@@ -362,7 +376,7 @@ window.INITIAL_DATA = {
       "tier": "브론즈 2",
       "winRate": 47.1,
       "kda": 0,
-      "rank": "26위"
+      "rank": "27위"
     },
     {
       "name": "이권표",
@@ -376,20 +390,6 @@ window.INITIAL_DATA = {
       "tier": "브론즈 2",
       "winRate": 44.0,
       "kda": 2.32,
-      "rank": "27위"
-    },
-    {
-      "name": "정도영",
-      "elo": 1148.2,
-      "win": 3,
-      "lose": 7,
-      "k": 54,
-      "d": 58,
-      "a": 63,
-      "detailGames": 10,
-      "tier": "브론즈 4",
-      "winRate": 30.0,
-      "kda": 2.02,
       "rank": "28위"
     },
     {
@@ -437,228 +437,394 @@ window.INITIAL_DATA = {
   ],
   "season2": [
     {
+      "rank": "1위",
       "name": "안태인",
       "elo": 2236.5,
       "win": 8,
       "lose": 7,
+      "winRate": 53.3,
+      "kda": 1.87,
       "k": 139,
       "d": 109,
       "a": 65,
-      "detailGames": 15,
-      "tier": "마스터",
-      "winRate": 53.3,
-      "kda": 1.87,
-      "rank": "1위"
+      "tier": "마스터"
     },
     {
+      "rank": "2위",
       "name": "유동혁",
       "elo": 2117.2,
       "win": 1,
       "lose": 4,
+      "winRate": 20.0,
+      "kda": 1.91,
       "k": 42,
       "d": 32,
       "a": 19,
-      "detailGames": 5,
-      "tier": "마스터",
-      "winRate": 20.0,
-      "kda": 1.91,
-      "rank": "2위"
+      "tier": "마스터"
     },
     {
+      "rank": "3위",
       "name": "박명룡",
       "elo": 2089.5,
       "win": 2,
       "lose": 4,
+      "winRate": 33.3,
+      "kda": 3.58,
       "k": 50,
       "d": 26,
       "a": 43,
-      "detailGames": 6,
-      "tier": "다이아몬드 1",
-      "winRate": 33.3,
-      "kda": 3.58,
-      "rank": "3위"
+      "tier": "다이아몬드 1"
     },
     {
+      "rank": "4위",
       "name": "최진우",
       "elo": 2084.9,
       "win": 4,
       "lose": 2,
+      "winRate": 66.7,
+      "kda": 3.5,
       "k": 63,
       "d": 30,
       "a": 42,
-      "detailGames": 6,
-      "tier": "다이아몬드 1",
-      "winRate": 66.7,
-      "kda": 3.5,
-      "rank": "4위"
+      "tier": "다이아몬드 1"
     },
     {
+      "rank": "5위",
       "name": "지범준",
       "elo": 2069.2,
       "win": 9,
       "lose": 5,
+      "winRate": 64.3,
+      "kda": 3.89,
       "k": 77,
       "d": 63,
       "a": 168,
-      "detailGames": 14,
-      "tier": "다이아몬드 1",
-      "winRate": 64.3,
-      "kda": 3.89,
-      "rank": "5위"
+      "tier": "다이아몬드 1"
     },
     {
+      "rank": "6위",
       "name": "김민서",
       "elo": 1928.5,
       "win": 3,
       "lose": 2,
+      "winRate": 60.0,
+      "kda": 2.75,
       "k": 31,
       "d": 24,
       "a": 35,
-      "detailGames": 5,
-      "tier": "다이아몬드 4",
-      "winRate": 60.0,
-      "kda": 2.75,
-      "rank": "6위"
+      "tier": "다이아몬드 4"
     },
     {
+      "rank": "7위",
       "name": "안성진",
       "elo": 1916.9,
       "win": 6,
       "lose": 9,
+      "winRate": 40.0,
+      "kda": 2.77,
       "k": 86,
       "d": 77,
       "a": 127,
-      "detailGames": 15,
-      "tier": "다이아몬드 4",
-      "winRate": 40.0,
-      "kda": 2.77,
-      "rank": "7위"
+      "tier": "다이아몬드 4"
     },
     {
+      "rank": "8위",
+      "name": "짱구",
+      "elo": 1905.5,
+      "win": 1,
+      "lose": 1,
+      "winRate": 50.0,
+      "kda": 4.33,
+      "k": 11,
+      "d": 9,
+      "a": 28,
+      "tier": "다이아몬드 4"
+    },
+    {
+      "rank": "9위",
+      "name": "김기중",
+      "elo": 1872.0,
+      "win": 3,
+      "lose": 1,
+      "winRate": 75.0,
+      "kda": 4.0,
+      "k": 35,
+      "d": 17,
+      "a": 33,
+      "tier": "플래티넘 1"
+    },
+    {
+      "rank": "10위",
+      "name": "허원석",
+      "elo": 1870.9,
+      "win": 0,
+      "lose": 0,
+      "winRate": 0.0,
+      "kda": 0.0,
+      "k": 0,
+      "d": 0,
+      "a": 0,
+      "tier": "플래티넘 1"
+    },
+    {
+      "rank": "11위",
       "name": "김찬",
       "elo": 1810.1,
       "win": 6,
       "lose": 9,
+      "winRate": 40.0,
+      "kda": 1.99,
       "k": 79,
       "d": 99,
       "a": 118,
-      "detailGames": 15,
-      "tier": "플래티넘 2",
-      "winRate": 40.0,
-      "kda": 1.99,
-      "rank": "8위"
+      "tier": "플래티넘 2"
     },
     {
+      "rank": "12위",
+      "name": "윤선용",
+      "elo": 1795.7,
+      "win": 0,
+      "lose": 0,
+      "winRate": 0.0,
+      "kda": 0.0,
+      "k": 0,
+      "d": 0,
+      "a": 0,
+      "tier": "플래티넘 3"
+    },
+    {
+      "rank": "13위",
       "name": "김시완",
       "elo": 1788.9,
       "win": 4,
       "lose": 2,
+      "winRate": 66.7,
+      "kda": 2.49,
       "k": 10,
       "d": 35,
       "a": 77,
-      "detailGames": 6,
-      "tier": "플래티넘 3",
-      "winRate": 66.7,
-      "kda": 2.49,
-      "rank": "9위"
+      "tier": "플래티넘 3"
     },
     {
+      "rank": "14위",
+      "name": "김민준",
+      "elo": 1772.0,
+      "win": 3,
+      "lose": 1,
+      "winRate": 75.0,
+      "kda": 3.76,
+      "k": 39,
+      "d": 21,
+      "a": 40,
+      "tier": "플래티넘 3"
+    },
+    {
+      "rank": "15위",
+      "name": "유탁영",
+      "elo": 1713.8,
+      "win": 0,
+      "lose": 0,
+      "winRate": 0.0,
+      "kda": 0.0,
+      "k": 0,
+      "d": 0,
+      "a": 0,
+      "tier": "플래티넘 4"
+    },
+    {
+      "rank": "16위",
       "name": "이준헌",
       "elo": 1690.2,
       "win": 6,
       "lose": 3,
+      "winRate": 66.7,
+      "kda": 2.72,
       "k": 36,
       "d": 47,
       "a": 92,
-      "detailGames": 9,
-      "tier": "골드 1",
-      "winRate": 66.7,
-      "kda": 2.72,
-      "rank": "10위"
+      "tier": "골드 1"
     },
     {
-      "name": "짱구",
-      "elo": 1500,
-      "win": 1,
-      "lose": 1,
-      "k": 11,
-      "d": 9,
-      "a": 28,
-      "detailGames": 2,
-      "tier": "언랭크",
-      "winRate": 50.0,
-      "kda": 4.33,
-      "rank": "11위"
+      "rank": "17위",
+      "name": "이승배",
+      "elo": 1660.1,
+      "win": 0,
+      "lose": 0,
+      "winRate": 0.0,
+      "kda": 0.0,
+      "k": 0,
+      "d": 0,
+      "a": 0,
+      "tier": "골드 1"
     },
     {
-      "name": "김기중",
-      "elo": 1500,
-      "win": 3,
-      "lose": 1,
-      "k": 35,
-      "d": 17,
-      "a": 33,
-      "detailGames": 4,
-      "tier": "언랭크",
-      "winRate": 75.0,
-      "kda": 4.0,
-      "rank": "12위"
+      "rank": "18위",
+      "name": "양현규",
+      "elo": 1521.8,
+      "win": 0,
+      "lose": 0,
+      "winRate": 0.0,
+      "kda": 0.0,
+      "k": 0,
+      "d": 0,
+      "a": 0,
+      "tier": "골드 4"
     },
     {
-      "name": "김민준",
-      "elo": 1500,
-      "win": 3,
-      "lose": 1,
-      "k": 39,
-      "d": 21,
-      "a": 40,
-      "detailGames": 4,
-      "tier": "언랭크",
-      "winRate": 75.0,
-      "kda": 3.76,
-      "rank": "13위"
+      "rank": "19위",
+      "name": "김지우",
+      "elo": 1507.3,
+      "win": 0,
+      "lose": 0,
+      "winRate": 0.0,
+      "kda": 0.0,
+      "k": 0,
+      "d": 0,
+      "a": 0,
+      "tier": "골드 4"
     },
     {
+      "rank": "20위",
+      "name": "조호진",
+      "elo": 1495.8,
+      "win": 0,
+      "lose": 0,
+      "winRate": 0.0,
+      "kda": 0.0,
+      "k": 0,
+      "d": 0,
+      "a": 0,
+      "tier": "실버 1"
+    },
+    {
+      "rank": "21위",
       "name": "송승훈",
       "elo": 1489.3,
       "win": 6,
       "lose": 9,
+      "winRate": 40.0,
+      "kda": 1.87,
       "k": 51,
       "d": 94,
       "a": 125,
-      "detailGames": 15,
-      "tier": "실버 1",
-      "winRate": 40.0,
-      "kda": 1.87,
-      "rank": "14위"
+      "tier": "실버 1"
     },
     {
+      "rank": "22위",
+      "name": "전준형",
+      "elo": 1482.6,
+      "win": 0,
+      "lose": 0,
+      "winRate": 0.0,
+      "kda": 0.0,
+      "k": 0,
+      "d": 0,
+      "a": 0,
+      "tier": "실버 1"
+    },
+    {
+      "rank": "23위",
+      "name": "강원준",
+      "elo": 1470.3,
+      "win": 0,
+      "lose": 0,
+      "winRate": 0.0,
+      "kda": 0.0,
+      "k": 0,
+      "d": 0,
+      "a": 0,
+      "tier": "실버 1"
+    },
+    {
+      "rank": "24위",
       "name": "이호재",
       "elo": 1356.9,
       "win": 8,
       "lose": 6,
+      "winRate": 57.1,
+      "kda": 2.09,
       "k": 58,
       "d": 65,
       "a": 78,
-      "detailGames": 14,
-      "tier": "실버 3",
-      "winRate": 57.1,
-      "kda": 2.09,
-      "rank": "15위"
+      "tier": "실버 3"
     },
     {
+      "rank": "25위",
+      "name": "정도영",
+      "elo": 1324.1,
+      "win": 0,
+      "lose": 0,
+      "winRate": 0.0,
+      "kda": 0.0,
+      "k": 0,
+      "d": 0,
+      "a": 0,
+      "tier": "실버 4"
+    },
+    {
+      "rank": "26위",
+      "name": "박준혁",
+      "elo": 1228.0,
+      "win": 0,
+      "lose": 0,
+      "winRate": 0.0,
+      "kda": 0.0,
+      "k": 0,
+      "d": 0,
+      "a": 0,
+      "tier": "브론즈 2"
+    },
+    {
+      "rank": "27위",
+      "name": "이권표",
+      "elo": 1219.2,
+      "win": 0,
+      "lose": 0,
+      "winRate": 0.0,
+      "kda": 0.0,
+      "k": 0,
+      "d": 0,
+      "a": 0,
+      "tier": "브론즈 2"
+    },
+    {
+      "rank": "28위",
+      "name": "윤준석",
+      "elo": 1081.9,
+      "win": 0,
+      "lose": 0,
+      "winRate": 0.0,
+      "kda": 0.0,
+      "k": 0,
+      "d": 0,
+      "a": 0,
+      "tier": "아이언 1"
+    },
+    {
+      "rank": "29위",
+      "name": "최유진",
+      "elo": 987.5,
+      "win": 0,
+      "lose": 0,
+      "winRate": 0.0,
+      "kda": 0.0,
+      "k": 0,
+      "d": 0,
+      "a": 0,
+      "tier": "아이언 3"
+    },
+    {
+      "rank": "30위",
       "name": "안우진",
       "elo": 655.3,
       "win": 5,
       "lose": 10,
+      "winRate": 33.3,
+      "kda": 1.25,
       "k": 28,
       "d": 89,
       "a": 83,
-      "detailGames": 15,
-      "tier": "아이언 9",
-      "winRate": 33.3,
-      "kda": 1.25,
-      "rank": "16위"
+      "tier": "아이언 9"
     }
   ],
   "total": [
@@ -761,6 +927,34 @@ window.INITIAL_DATA = {
       "rank": "7위"
     },
     {
+      "name": "짱구",
+      "elo": 1905.5,
+      "win": 1,
+      "lose": 1,
+      "k": 11,
+      "d": 9,
+      "a": 28,
+      "detailGames": 2,
+      "tier": "다이아몬드 4",
+      "winRate": 50.0,
+      "kda": 4.33,
+      "rank": "8위"
+    },
+    {
+      "name": "김기중",
+      "elo": 1872.0,
+      "win": 3,
+      "lose": 1,
+      "k": 35,
+      "d": 17,
+      "a": 33,
+      "detailGames": 4,
+      "tier": "플래티넘 1",
+      "winRate": 75.0,
+      "kda": 4.0,
+      "rank": "9위"
+    },
+    {
       "name": "허원석",
       "elo": 1870.9,
       "win": 5,
@@ -772,7 +966,7 @@ window.INITIAL_DATA = {
       "tier": "플래티넘 1",
       "winRate": 62.5,
       "kda": 0,
-      "rank": "8위"
+      "rank": "10위"
     },
     {
       "name": "김찬",
@@ -786,7 +980,7 @@ window.INITIAL_DATA = {
       "tier": "플래티넘 2",
       "winRate": 42.6,
       "kda": 2.3,
-      "rank": "9위"
+      "rank": "11위"
     },
     {
       "name": "윤선용",
@@ -800,7 +994,7 @@ window.INITIAL_DATA = {
       "tier": "플래티넘 3",
       "winRate": 30.0,
       "kda": 0,
-      "rank": "10위"
+      "rank": "12위"
     },
     {
       "name": "김시완",
@@ -814,7 +1008,21 @@ window.INITIAL_DATA = {
       "tier": "플래티넘 3",
       "winRate": 70.0,
       "kda": 2.49,
-      "rank": "11위"
+      "rank": "13위"
+    },
+    {
+      "name": "김민준",
+      "elo": 1772.0,
+      "win": 3,
+      "lose": 1,
+      "k": 39,
+      "d": 21,
+      "a": 40,
+      "detailGames": 4,
+      "tier": "플래티넘 3",
+      "winRate": 75.0,
+      "kda": 3.76,
+      "rank": "14위"
     },
     {
       "name": "유탁영",
@@ -828,7 +1036,7 @@ window.INITIAL_DATA = {
       "tier": "플래티넘 4",
       "winRate": 52.6,
       "kda": 2.08,
-      "rank": "12위"
+      "rank": "15위"
     },
     {
       "name": "이준헌",
@@ -842,21 +1050,21 @@ window.INITIAL_DATA = {
       "tier": "골드 1",
       "winRate": 54.1,
       "kda": 2.72,
-      "rank": "13위"
+      "rank": "16위"
     },
     {
       "name": "이승배",
-      "elo": 1570.3,
+      "elo": 1660.1,
       "win": 0,
       "lose": 4,
       "k": 9,
       "d": 33,
       "a": 39,
       "detailGames": 4,
-      "tier": "골드 3",
+      "tier": "골드 1",
       "winRate": 0.0,
       "kda": 1.45,
-      "rank": "14위"
+      "rank": "17위"
     },
     {
       "name": "양현규",
@@ -870,7 +1078,7 @@ window.INITIAL_DATA = {
       "tier": "골드 4",
       "winRate": 66.7,
       "kda": 0,
-      "rank": "15위"
+      "rank": "18위"
     },
     {
       "name": "김지우",
@@ -884,7 +1092,7 @@ window.INITIAL_DATA = {
       "tier": "골드 4",
       "winRate": 40.0,
       "kda": 4.33,
-      "rank": "16위"
+      "rank": "19위"
     },
     {
       "name": "외부인",
@@ -898,7 +1106,7 @@ window.INITIAL_DATA = {
       "tier": "언랭크",
       "winRate": 25.0,
       "kda": 0,
-      "rank": "17위"
+      "rank": "20위"
     },
     {
       "name": "송슿훈",
@@ -912,7 +1120,7 @@ window.INITIAL_DATA = {
       "tier": "언랭크",
       "winRate": 0.0,
       "kda": 0,
-      "rank": "18위"
+      "rank": "21위"
     },
     {
       "name": "안우진유동혁",
@@ -926,7 +1134,7 @@ window.INITIAL_DATA = {
       "tier": "언랭크",
       "winRate": 0.0,
       "kda": 0,
-      "rank": "19위"
+      "rank": "22위"
     },
     {
       "name": "앙현규",
@@ -940,7 +1148,7 @@ window.INITIAL_DATA = {
       "tier": "언랭크",
       "winRate": 100.0,
       "kda": 0,
-      "rank": "20위"
+      "rank": "23위"
     },
     {
       "name": "안정진",
@@ -954,48 +1162,6 @@ window.INITIAL_DATA = {
       "tier": "언랭크",
       "winRate": 0.0,
       "kda": 0,
-      "rank": "21위"
-    },
-    {
-      "name": "짱구",
-      "elo": 1500,
-      "win": 1,
-      "lose": 1,
-      "k": 11,
-      "d": 9,
-      "a": 28,
-      "detailGames": 2,
-      "tier": "언랭크",
-      "winRate": 50.0,
-      "kda": 4.33,
-      "rank": "22위"
-    },
-    {
-      "name": "김기중",
-      "elo": 1500,
-      "win": 3,
-      "lose": 1,
-      "k": 35,
-      "d": 17,
-      "a": 33,
-      "detailGames": 4,
-      "tier": "언랭크",
-      "winRate": 75.0,
-      "kda": 4.0,
-      "rank": "23위"
-    },
-    {
-      "name": "김민준",
-      "elo": 1500,
-      "win": 3,
-      "lose": 1,
-      "k": 39,
-      "d": 21,
-      "a": 40,
-      "detailGames": 4,
-      "tier": "언랭크",
-      "winRate": 75.0,
-      "kda": 3.76,
       "rank": "24위"
     },
     {
@@ -1069,6 +1235,20 @@ window.INITIAL_DATA = {
       "rank": "29위"
     },
     {
+      "name": "정도영",
+      "elo": 1324.1,
+      "win": 3,
+      "lose": 7,
+      "k": 54,
+      "d": 58,
+      "a": 63,
+      "detailGames": 10,
+      "tier": "실버 4",
+      "winRate": 30.0,
+      "kda": 2.02,
+      "rank": "30위"
+    },
+    {
       "name": "박준혁",
       "elo": 1228.0,
       "win": 8,
@@ -1080,7 +1260,7 @@ window.INITIAL_DATA = {
       "tier": "브론즈 2",
       "winRate": 47.1,
       "kda": 0,
-      "rank": "30위"
+      "rank": "31위"
     },
     {
       "name": "이권표",
@@ -1094,20 +1274,6 @@ window.INITIAL_DATA = {
       "tier": "브론즈 2",
       "winRate": 44.0,
       "kda": 2.32,
-      "rank": "31위"
-    },
-    {
-      "name": "정도영",
-      "elo": 1148.2,
-      "win": 3,
-      "lose": 7,
-      "k": 54,
-      "d": 58,
-      "a": 63,
-      "detailGames": 10,
-      "tier": "브론즈 4",
-      "winRate": 30.0,
-      "kda": 2.02,
       "rank": "32위"
     },
     {
