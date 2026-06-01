@@ -123,21 +123,21 @@ function openPlayer(name){ state.selectedPlayer = name; state.tab = 'player'; re
 
 function dashboard(){
   const players = byElo(state.players);
-  const top = players.slice(0,3);
+  const top = players.slice(0,5);
   const recent = loadMatchRecords();
   const recentMetrics = recentPlayerMetrics(state.season, 5);
   const recentKdaTop = [...recentMetrics].filter(x=>x.games>0).sort((a,b)=>b.kda-a.kda || b.games-a.games).slice(0,5).map(x=>({...x,value:x.kda}));
   const deltaSorted = [...recentMetrics].filter(x=>x.games>0).sort((a,b)=>b.delta-a.delta);
-  const deltaTop = deltaSorted.slice(0,5).map(x=>({...x,value:x.delta}));
-  const deltaWorst = [...deltaSorted].reverse().slice(0,5).map(x=>({...x,value:x.delta}));
+  const deltaTop = deltaSorted.slice(0,3).map(x=>({...x,value:x.delta}));
+  const deltaWorst = [...deltaSorted].reverse().slice(0,3).map(x=>({...x,value:x.delta}));
   return `${sectionTitle('⌚','대시보드')}
   <div class="grid grid-3 dashboard-grid">
     <div class="card card-pad">
-      <div class="card-title">👑 TOP 3 플레이어</div>
+      <div class="card-title">👑 TOP 5 플레이어</div>
       <div class="top-list">${top.map((p,i)=>`<div class="top-row"><div class="top-left"><div class="rank-num">${i+1}</div><div><div class="name">${p.name}</div><div class="elo">${p.elo} ELO</div></div></div><div class="subtle"><div>${p.win}승 ${p.lose}패</div><div>승률 ${winRate(p)}%</div></div></div>`).join('')}</div>
     </div>
     <div class="card card-pad"><div class="card-title">🔥 최근 5경기 KDA TOP 5</div>${miniRankList(recentKdaTop,{valueKey:'value',decimals:2,high:true,sub:r=>`${r.games}경기 · ${r.win}승 ${r.lose}패 · ${r.k}/${r.d}/${r.a}`})}</div>
-    <div class="card card-pad"><div class="card-title">📈 최근 5경기 ELO 변동</div><div class="split-metric"><div><div class="small gold">TOP 5</div>${miniRankList(deltaTop,{valueKey:'value',decimals:1,high:true,sub:r=>`${r.games}경기 · 승률 ${pct(r.winRate)}%`})}</div><div><div class="small red">WORST 5</div>${miniRankList(deltaWorst,{valueKey:'value',decimals:1,high:false,sub:r=>`${r.games}경기 · 승률 ${pct(r.winRate)}%`})}</div></div></div>
+    <div class="card card-pad"><div class="card-title">📈 최근 5경기 ELO 변동</div><div class="split-metric"><div><div class="small gold">TOP 3</div>${miniRankList(deltaTop,{valueKey:'value',decimals:1,high:true,sub:r=>`${r.games}경기 · 승률 ${pct(r.winRate)}%`})}</div><div><div class="small red">WORST 3</div>${miniRankList(deltaWorst,{valueKey:'value',decimals:1,high:false,sub:r=>`${r.games}경기 · 승률 ${pct(r.winRate)}%`})}</div></div></div>
   </div>
   <div style="height:28px"></div>
   <div class="card card-pad"><div class="card-title">↻ 최근 경기 기록</div>

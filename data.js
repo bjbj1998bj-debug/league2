@@ -807,13 +807,13 @@ window.INITIAL_DATA = {
       "name": "안성진",
       "elo": 1916.9,
       "win": 31,
-      "lose": 34,
+      "lose": 35,
       "k": 145,
       "d": 133,
       "a": 261,
       "detailGames": 26,
       "tier": "다이아몬드 4",
-      "winRate": 47.7,
+      "winRate": 47.0,
       "kda": 3.05,
       "rank": "7위"
     },
@@ -986,20 +986,6 @@ window.INITIAL_DATA = {
       "rank": "19위"
     },
     {
-      "name": "외부인",
-      "elo": 1500,
-      "win": 2,
-      "lose": 6,
-      "k": 0,
-      "d": 0,
-      "a": 0,
-      "detailGames": 0,
-      "tier": "언랭크",
-      "winRate": 25.0,
-      "kda": 0,
-      "rank": "20위"
-    },
-    {
       "name": "송슿훈",
       "elo": 1500,
       "win": 0,
@@ -1011,7 +997,7 @@ window.INITIAL_DATA = {
       "tier": "언랭크",
       "winRate": 0.0,
       "kda": 0,
-      "rank": "21위"
+      "rank": "20위"
     },
     {
       "name": "앙현규",
@@ -1025,21 +1011,7 @@ window.INITIAL_DATA = {
       "tier": "언랭크",
       "winRate": 100.0,
       "kda": 0,
-      "rank": "22위"
-    },
-    {
-      "name": "안정진",
-      "elo": 1500,
-      "win": 0,
-      "lose": 1,
-      "k": 0,
-      "d": 0,
-      "a": 0,
-      "detailGames": 0,
-      "tier": "언랭크",
-      "winRate": 0.0,
-      "kda": 0,
-      "rank": "23위"
+      "rank": "21위"
     },
     {
       "name": "조호진",
@@ -1053,7 +1025,7 @@ window.INITIAL_DATA = {
       "tier": "실버 1",
       "winRate": 50.0,
       "kda": 0,
-      "rank": "24위"
+      "rank": "22위"
     },
     {
       "name": "송승훈",
@@ -1067,7 +1039,7 @@ window.INITIAL_DATA = {
       "tier": "실버 1",
       "winRate": 57.9,
       "kda": 2.21,
-      "rank": "25위"
+      "rank": "23위"
     },
     {
       "name": "전준형",
@@ -1081,7 +1053,7 @@ window.INITIAL_DATA = {
       "tier": "실버 1",
       "winRate": 0.0,
       "kda": 0,
-      "rank": "26위"
+      "rank": "24위"
     },
     {
       "name": "강원준",
@@ -1095,7 +1067,7 @@ window.INITIAL_DATA = {
       "tier": "실버 1",
       "winRate": 40.0,
       "kda": 3.5,
-      "rank": "27위"
+      "rank": "25위"
     },
     {
       "name": "이호재",
@@ -1109,7 +1081,7 @@ window.INITIAL_DATA = {
       "tier": "실버 3",
       "winRate": 57.1,
       "kda": 2.06,
-      "rank": "28위"
+      "rank": "26위"
     },
     {
       "name": "정도영",
@@ -1123,7 +1095,7 @@ window.INITIAL_DATA = {
       "tier": "실버 4",
       "winRate": 30.0,
       "kda": 2.02,
-      "rank": "29위"
+      "rank": "27위"
     },
     {
       "name": "박준혁",
@@ -1137,7 +1109,7 @@ window.INITIAL_DATA = {
       "tier": "브론즈 2",
       "winRate": 47.1,
       "kda": 0,
-      "rank": "30위"
+      "rank": "28위"
     },
     {
       "name": "이권표",
@@ -1151,7 +1123,7 @@ window.INITIAL_DATA = {
       "tier": "브론즈 2",
       "winRate": 44.0,
       "kda": 2.32,
-      "rank": "31위"
+      "rank": "29위"
     },
     {
       "name": "윤준석",
@@ -1165,7 +1137,7 @@ window.INITIAL_DATA = {
       "tier": "아이언 1",
       "winRate": 37.5,
       "kda": 0,
-      "rank": "32위"
+      "rank": "30위"
     },
     {
       "name": "최유진",
@@ -1179,7 +1151,7 @@ window.INITIAL_DATA = {
       "tier": "아이언 3",
       "winRate": 40.0,
       "kda": 0,
-      "rank": "33위"
+      "rank": "31위"
     },
     {
       "name": "안우진",
@@ -1193,7 +1165,7 @@ window.INITIAL_DATA = {
       "tier": "아이언 9",
       "winRate": 30.3,
       "kda": 1.25,
-      "rank": "34위"
+      "rank": "32위"
     }
   ],
   "pairs": [
@@ -2558,22 +2530,6 @@ window.INITIAL_DATA = {
       "currentWinRate": 66.7
     },
     {
-      "p1": "안성진",
-      "p2": "지범준",
-      "games": 28,
-      "win": 16,
-      "lose": 12,
-      "winRate": 57.1,
-      "pastGames": 22,
-      "pastWin": 13,
-      "pastLose": 9,
-      "pastWinRate": 59.1,
-      "currentGames": 6,
-      "currentWin": 3,
-      "currentLose": 3,
-      "currentWinRate": 50.0
-    },
-    {
       "p1": "김민서",
       "p2": "김찬",
       "games": 7,
@@ -2684,6 +2640,22 @@ window.INITIAL_DATA = {
       "currentWin": 0,
       "currentLose": 0,
       "currentWinRate": null
+    },
+    {
+      "p1": "안성진",
+      "p2": "지범준",
+      "games": 29,
+      "win": 16,
+      "lose": 13,
+      "winRate": 55.2,
+      "pastGames": 23,
+      "pastWin": 13,
+      "pastLose": 10,
+      "pastWinRate": 56.5,
+      "currentGames": 6,
+      "currentWin": 3,
+      "currentLose": 3,
+      "currentWinRate": 50.0
     },
     {
       "p1": "김찬",
@@ -3230,22 +3202,6 @@ window.INITIAL_DATA = {
       "currentWinRate": null
     },
     {
-      "p1": "안성진",
-      "p2": "안태인",
-      "games": 24,
-      "win": 11,
-      "lose": 13,
-      "winRate": 45.8,
-      "pastGames": 15,
-      "pastWin": 7,
-      "pastLose": 8,
-      "pastWinRate": 46.7,
-      "currentGames": 9,
-      "currentWin": 4,
-      "currentLose": 5,
-      "currentWinRate": 44.4
-    },
-    {
       "p1": "송승훈",
       "p2": "이권표",
       "games": 9,
@@ -3276,6 +3232,22 @@ window.INITIAL_DATA = {
       "currentWin": 0,
       "currentLose": 0,
       "currentWinRate": null
+    },
+    {
+      "p1": "안성진",
+      "p2": "안태인",
+      "games": 25,
+      "win": 11,
+      "lose": 14,
+      "winRate": 44.0,
+      "pastGames": 16,
+      "pastWin": 7,
+      "pastLose": 9,
+      "pastWinRate": 43.8,
+      "currentGames": 9,
+      "currentWin": 4,
+      "currentLose": 5,
+      "currentWinRate": 44.4
     },
     {
       "p1": "김찬",
@@ -3726,22 +3698,6 @@ window.INITIAL_DATA = {
       "currentWinRate": null
     },
     {
-      "p1": "안성진",
-      "p2": "안우진",
-      "games": 26,
-      "win": 8,
-      "lose": 18,
-      "winRate": 30.8,
-      "pastGames": 12,
-      "pastWin": 3,
-      "pastLose": 9,
-      "pastWinRate": 25.0,
-      "currentGames": 14,
-      "currentWin": 5,
-      "currentLose": 9,
-      "currentWinRate": 35.7
-    },
-    {
       "p1": "안우진",
       "p2": "안태인",
       "games": 20,
@@ -3756,6 +3712,22 @@ window.INITIAL_DATA = {
       "currentWin": 4,
       "currentLose": 6,
       "currentWinRate": 40.0
+    },
+    {
+      "p1": "안성진",
+      "p2": "안우진",
+      "games": 27,
+      "win": 8,
+      "lose": 19,
+      "winRate": 29.6,
+      "pastGames": 13,
+      "pastWin": 3,
+      "pastLose": 10,
+      "pastWinRate": 23.1,
+      "currentGames": 14,
+      "currentWin": 5,
+      "currentLose": 9,
+      "currentWinRate": 35.7
     },
     {
       "p1": "김찬",
@@ -3982,6 +3954,22 @@ window.INITIAL_DATA = {
       "currentWinRate": null
     },
     {
+      "p1": "안성진",
+      "p2": "윤선용",
+      "games": 4,
+      "win": 0,
+      "lose": 4,
+      "winRate": 0.0,
+      "pastGames": 4,
+      "pastWin": 0,
+      "pastLose": 4,
+      "pastWinRate": 0.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
+    },
+    {
       "p1": "안우진",
       "p2": "윤선용",
       "games": 4,
@@ -4064,22 +4052,6 @@ window.INITIAL_DATA = {
     {
       "p1": "김찬",
       "p2": "최유진",
-      "games": 3,
-      "win": 0,
-      "lose": 3,
-      "winRate": 0.0,
-      "pastGames": 3,
-      "pastWin": 0,
-      "pastLose": 3,
-      "pastWinRate": 0.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentLose": 0,
-      "currentWinRate": null
-    },
-    {
-      "p1": "안성진",
-      "p2": "윤선용",
       "games": 3,
       "win": 0,
       "lose": 3,
@@ -4447,22 +4419,6 @@ window.INITIAL_DATA = {
     },
     {
       "p1": "안우진",
-      "p2": "안정진",
-      "games": 1,
-      "win": 0,
-      "lose": 1,
-      "winRate": 0.0,
-      "pastGames": 1,
-      "pastWin": 0,
-      "pastLose": 1,
-      "pastWinRate": 0.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentLose": 0,
-      "currentWinRate": null
-    },
-    {
-      "p1": "안우진",
       "p2": "이권표",
       "games": 1,
       "win": 0,
@@ -4508,54 +4464,6 @@ window.INITIAL_DATA = {
       "currentWin": 0,
       "currentLose": 1,
       "currentWinRate": 0.0
-    },
-    {
-      "p1": "안정진",
-      "p2": "안태인",
-      "games": 1,
-      "win": 0,
-      "lose": 1,
-      "winRate": 0.0,
-      "pastGames": 1,
-      "pastWin": 0,
-      "pastLose": 1,
-      "pastWinRate": 0.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentLose": 0,
-      "currentWinRate": null
-    },
-    {
-      "p1": "안정진",
-      "p2": "윤선용",
-      "games": 1,
-      "win": 0,
-      "lose": 1,
-      "winRate": 0.0,
-      "pastGames": 1,
-      "pastWin": 0,
-      "pastLose": 1,
-      "pastWinRate": 0.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentLose": 0,
-      "currentWinRate": null
-    },
-    {
-      "p1": "안정진",
-      "p2": "지범준",
-      "games": 1,
-      "win": 0,
-      "lose": 1,
-      "winRate": 0.0,
-      "pastGames": 1,
-      "pastWin": 0,
-      "pastLose": 1,
-      "pastWinRate": 0.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentLose": 0,
-      "currentWinRate": null
     },
     {
       "p1": "안태인",
@@ -10914,7 +10822,7 @@ window.INITIAL_DATA = {
       "loseTeam": [
         "지범준",
         "안태인",
-        "안정진",
+        "안성진",
         "안우진",
         "윤선용"
       ],
@@ -11013,7 +10921,7 @@ window.INITIAL_DATA = {
         {
           "result": "패배",
           "position": "-",
-          "name": "안정진",
+          "name": "안성진",
           "k": null,
           "d": null,
           "a": null,
@@ -11216,8 +11124,7 @@ window.INITIAL_DATA = {
         "안태인",
         "유동혁",
         "김시완",
-        "김찬",
-        "외부인"
+        "김찬"
       ],
       "loseTeam": [
         "지범준",
@@ -11270,19 +11177,6 @@ window.INITIAL_DATA = {
           "result": "승리",
           "position": "-",
           "name": "김찬",
-          "k": null,
-          "d": null,
-          "a": null,
-          "kda": null,
-          "oldElo": null,
-          "newElo": null,
-          "delta": null,
-          "hasDetail": false
-        },
-        {
-          "result": "승리",
-          "position": "-",
-          "name": "외부인",
           "k": null,
           "d": null,
           "a": null,
@@ -11377,8 +11271,7 @@ window.INITIAL_DATA = {
         "안태인",
         "유동혁",
         "김시완",
-        "김찬",
-        "외부인"
+        "김찬"
       ],
       "details": [
         {
@@ -11497,19 +11390,6 @@ window.INITIAL_DATA = {
           "newElo": null,
           "delta": null,
           "hasDetail": false
-        },
-        {
-          "result": "패배",
-          "position": "-",
-          "name": "외부인",
-          "k": null,
-          "d": null,
-          "a": null,
-          "kda": null,
-          "oldElo": null,
-          "newElo": null,
-          "delta": null,
-          "hasDetail": false
         }
       ]
     },
@@ -11524,8 +11404,7 @@ window.INITIAL_DATA = {
         "안태인",
         "유동혁",
         "김시완",
-        "김찬",
-        "외부인"
+        "김찬"
       ],
       "loseTeam": [
         "지범준",
@@ -11578,19 +11457,6 @@ window.INITIAL_DATA = {
           "result": "승리",
           "position": "-",
           "name": "김찬",
-          "k": null,
-          "d": null,
-          "a": null,
-          "kda": null,
-          "oldElo": null,
-          "newElo": null,
-          "delta": null,
-          "hasDetail": false
-        },
-        {
-          "result": "승리",
-          "position": "-",
-          "name": "외부인",
           "k": null,
           "d": null,
           "a": null,
@@ -13841,8 +13707,7 @@ window.INITIAL_DATA = {
         "윤선용",
         "안성진",
         "김찬",
-        "안우진",
-        "외부인"
+        "안우진"
       ],
       "details": [
         {
@@ -13953,19 +13818,6 @@ window.INITIAL_DATA = {
           "result": "패배",
           "position": "-",
           "name": "안우진",
-          "k": null,
-          "d": null,
-          "a": null,
-          "kda": null,
-          "oldElo": null,
-          "newElo": null,
-          "delta": null,
-          "hasDetail": false
-        },
-        {
-          "result": "패배",
-          "position": "-",
-          "name": "외부인",
           "k": null,
           "d": null,
           "a": null,
@@ -13995,8 +13847,7 @@ window.INITIAL_DATA = {
         "윤선용",
         "안성진",
         "김찬",
-        "안우진",
-        "외부인"
+        "안우진"
       ],
       "details": [
         {
@@ -14107,19 +13958,6 @@ window.INITIAL_DATA = {
           "result": "패배",
           "position": "-",
           "name": "안우진",
-          "k": null,
-          "d": null,
-          "a": null,
-          "kda": null,
-          "oldElo": null,
-          "newElo": null,
-          "delta": null,
-          "hasDetail": false
-        },
-        {
-          "result": "패배",
-          "position": "-",
-          "name": "외부인",
           "k": null,
           "d": null,
           "a": null,
@@ -14765,8 +14603,7 @@ window.INITIAL_DATA = {
         "지범준",
         "안성진",
         "김찬",
-        "최유진",
-        "외부인"
+        "최유진"
       ],
       "details": [
         {
@@ -14885,19 +14722,6 @@ window.INITIAL_DATA = {
           "newElo": null,
           "delta": null,
           "hasDetail": false
-        },
-        {
-          "result": "패배",
-          "position": "-",
-          "name": "외부인",
-          "k": null,
-          "d": null,
-          "a": null,
-          "kda": null,
-          "oldElo": null,
-          "newElo": null,
-          "delta": null,
-          "hasDetail": false
         }
       ]
     },
@@ -14918,8 +14742,7 @@ window.INITIAL_DATA = {
       "loseTeam": [
         "안태인",
         "김찬",
-        "최유진",
-        "외부인"
+        "최유진"
       ],
       "details": [
         {
@@ -15017,19 +14840,6 @@ window.INITIAL_DATA = {
           "result": "패배",
           "position": "-",
           "name": "최유진",
-          "k": null,
-          "d": null,
-          "a": null,
-          "kda": null,
-          "oldElo": null,
-          "newElo": null,
-          "delta": null,
-          "hasDetail": false
-        },
-        {
-          "result": "패배",
-          "position": "-",
-          "name": "외부인",
           "k": null,
           "d": null,
           "a": null,
@@ -15058,8 +14868,7 @@ window.INITIAL_DATA = {
       "loseTeam": [
         "안태인",
         "김찬",
-        "최유진",
-        "외부인"
+        "최유진"
       ],
       "details": [
         {
@@ -15157,19 +14966,6 @@ window.INITIAL_DATA = {
           "result": "패배",
           "position": "-",
           "name": "최유진",
-          "k": null,
-          "d": null,
-          "a": null,
-          "kda": null,
-          "oldElo": null,
-          "newElo": null,
-          "delta": null,
-          "hasDetail": false
-        },
-        {
-          "result": "패배",
-          "position": "-",
-          "name": "외부인",
           "k": null,
           "d": null,
           "a": null,
@@ -21360,7 +21156,7 @@ window.INITIAL_DATA = {
       "loseTeam": [
         "지범준",
         "안태인",
-        "안정진",
+        "안성진",
         "안우진",
         "윤선용"
       ],
@@ -21459,7 +21255,7 @@ window.INITIAL_DATA = {
         {
           "result": "패배",
           "position": "-",
-          "name": "안정진",
+          "name": "안성진",
           "k": null,
           "d": null,
           "a": null,
@@ -21662,8 +21458,7 @@ window.INITIAL_DATA = {
         "안태인",
         "유동혁",
         "김시완",
-        "김찬",
-        "외부인"
+        "김찬"
       ],
       "loseTeam": [
         "지범준",
@@ -21716,19 +21511,6 @@ window.INITIAL_DATA = {
           "result": "승리",
           "position": "-",
           "name": "김찬",
-          "k": null,
-          "d": null,
-          "a": null,
-          "kda": null,
-          "oldElo": null,
-          "newElo": null,
-          "delta": null,
-          "hasDetail": false
-        },
-        {
-          "result": "승리",
-          "position": "-",
-          "name": "외부인",
           "k": null,
           "d": null,
           "a": null,
@@ -21823,8 +21605,7 @@ window.INITIAL_DATA = {
         "안태인",
         "유동혁",
         "김시완",
-        "김찬",
-        "외부인"
+        "김찬"
       ],
       "details": [
         {
@@ -21943,19 +21724,6 @@ window.INITIAL_DATA = {
           "newElo": null,
           "delta": null,
           "hasDetail": false
-        },
-        {
-          "result": "패배",
-          "position": "-",
-          "name": "외부인",
-          "k": null,
-          "d": null,
-          "a": null,
-          "kda": null,
-          "oldElo": null,
-          "newElo": null,
-          "delta": null,
-          "hasDetail": false
         }
       ]
     },
@@ -21970,8 +21738,7 @@ window.INITIAL_DATA = {
         "안태인",
         "유동혁",
         "김시완",
-        "김찬",
-        "외부인"
+        "김찬"
       ],
       "loseTeam": [
         "지범준",
@@ -22024,19 +21791,6 @@ window.INITIAL_DATA = {
           "result": "승리",
           "position": "-",
           "name": "김찬",
-          "k": null,
-          "d": null,
-          "a": null,
-          "kda": null,
-          "oldElo": null,
-          "newElo": null,
-          "delta": null,
-          "hasDetail": false
-        },
-        {
-          "result": "승리",
-          "position": "-",
-          "name": "외부인",
           "k": null,
           "d": null,
           "a": null,
@@ -24287,8 +24041,7 @@ window.INITIAL_DATA = {
         "윤선용",
         "안성진",
         "김찬",
-        "안우진",
-        "외부인"
+        "안우진"
       ],
       "details": [
         {
@@ -24399,19 +24152,6 @@ window.INITIAL_DATA = {
           "result": "패배",
           "position": "-",
           "name": "안우진",
-          "k": null,
-          "d": null,
-          "a": null,
-          "kda": null,
-          "oldElo": null,
-          "newElo": null,
-          "delta": null,
-          "hasDetail": false
-        },
-        {
-          "result": "패배",
-          "position": "-",
-          "name": "외부인",
           "k": null,
           "d": null,
           "a": null,
@@ -24441,8 +24181,7 @@ window.INITIAL_DATA = {
         "윤선용",
         "안성진",
         "김찬",
-        "안우진",
-        "외부인"
+        "안우진"
       ],
       "details": [
         {
@@ -24553,19 +24292,6 @@ window.INITIAL_DATA = {
           "result": "패배",
           "position": "-",
           "name": "안우진",
-          "k": null,
-          "d": null,
-          "a": null,
-          "kda": null,
-          "oldElo": null,
-          "newElo": null,
-          "delta": null,
-          "hasDetail": false
-        },
-        {
-          "result": "패배",
-          "position": "-",
-          "name": "외부인",
           "k": null,
           "d": null,
           "a": null,
@@ -25211,8 +24937,7 @@ window.INITIAL_DATA = {
         "지범준",
         "안성진",
         "김찬",
-        "최유진",
-        "외부인"
+        "최유진"
       ],
       "details": [
         {
@@ -25331,19 +25056,6 @@ window.INITIAL_DATA = {
           "newElo": null,
           "delta": null,
           "hasDetail": false
-        },
-        {
-          "result": "패배",
-          "position": "-",
-          "name": "외부인",
-          "k": null,
-          "d": null,
-          "a": null,
-          "kda": null,
-          "oldElo": null,
-          "newElo": null,
-          "delta": null,
-          "hasDetail": false
         }
       ]
     },
@@ -25364,8 +25076,7 @@ window.INITIAL_DATA = {
       "loseTeam": [
         "안태인",
         "김찬",
-        "최유진",
-        "외부인"
+        "최유진"
       ],
       "details": [
         {
@@ -25463,19 +25174,6 @@ window.INITIAL_DATA = {
           "result": "패배",
           "position": "-",
           "name": "최유진",
-          "k": null,
-          "d": null,
-          "a": null,
-          "kda": null,
-          "oldElo": null,
-          "newElo": null,
-          "delta": null,
-          "hasDetail": false
-        },
-        {
-          "result": "패배",
-          "position": "-",
-          "name": "외부인",
           "k": null,
           "d": null,
           "a": null,
@@ -25504,8 +25202,7 @@ window.INITIAL_DATA = {
       "loseTeam": [
         "안태인",
         "김찬",
-        "최유진",
-        "외부인"
+        "최유진"
       ],
       "details": [
         {
@@ -25603,19 +25300,6 @@ window.INITIAL_DATA = {
           "result": "패배",
           "position": "-",
           "name": "최유진",
-          "k": null,
-          "d": null,
-          "a": null,
-          "kda": null,
-          "oldElo": null,
-          "newElo": null,
-          "delta": null,
-          "hasDetail": false
-        },
-        {
-          "result": "패배",
-          "position": "-",
-          "name": "외부인",
           "k": null,
           "d": null,
           "a": null,
@@ -27184,14 +26868,10 @@ window.INITIAL_DATA = {
     }
   },
   "seasonMeta": {
-    "season1": "과거데이터 + 경기기록 시트 2026-05-23 이전 경기",
+    "season1": "과거데이터(3) + 경기기록 시트 2026-05-23 이전 경기",
     "season2From": "2026-05-23",
     "pastDataRows": 41,
-    "mainRecordRows": 27
-  },
-  "sourceMeta": {
-    "rankingSeason1": "Summary-시즌1 시트 A:K 기준 25명",
-    "rankingSeason2": "시즌2 랭킹 30명 기준",
-    "fixedAt": "2026-06-01 season1-summary-rank-fix"
+    "mainRecordRows": 27,
+    "mercenaryIgnored": "과거데이터의 용병 항목은 플레이어/페어/매치업 통계에서 제외"
   }
 };
