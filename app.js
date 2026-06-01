@@ -1,10 +1,13 @@
-const DATA = window.INITIAL_DATA || {season1:[],season2:[],pairs:[],recentMatches:[]};
+const DATA = window.INITIAL_DATA || {season1:[],season2:[],total:[],pairs:[],recentMatches:[]};
 let state = { tab: 'dashboard', season: 'season2', players: loadPlayers('season2'), selectedPlayer: null };
 let pairScope = 'total';
+let detailScope = 'total';
 
 // 저장 기능 비활성화 버전: 브라우저 localStorage를 사용하지 않고, 항상 엑셀 원본 기반 data.js만 읽습니다.
-function loadMatchRecords(){
-  return state.season === 'season2' ? (DATA.recentMatches || []) : (DATA.recentMatchesSeason1 || []);
+function loadMatchRecords(scope){
+  const s = scope || state.season;
+  if(s === 'total') return DATA.recentMatchesTotal || [];
+  return s === 'season2' ? (DATA.recentMatches || []) : (DATA.recentMatchesSeason1 || []);
 }
 function loadPlayers(season){
   return JSON.parse(JSON.stringify(DATA[season] || []));
@@ -94,12 +97,12 @@ function pair(){
 }
 function pairStats(r, scope){
   if(scope === 'season1'){
-    const games = Number(r.pastGames || 0), win = Number(r.pastWin || 0);
-    return {games, win, lose: Math.max(0, games-win), rate: r.pastWinRate};
+    const games = Number(r.pastGames || 0), win = Number(r.pastWin || 0), lose = Number(r.pastLose ?? Math.max(0, games-win));
+    return {games, win, lose, rate: r.pastWinRate};
   }
   if(scope === 'season2'){
-    const games = Number(r.currentGames || 0), win = Number(r.currentWin || 0);
-    return {games, win, lose: Math.max(0, games-win), rate: r.currentWinRate};
+    const games = Number(r.currentGames || 0), win = Number(r.currentWin || 0), lose = Number(r.currentLose ?? Math.max(0, games-win));
+    return {games, win, lose, rate: r.currentWinRate};
   }
   return {games: Number(r.games || 0), win: Number(r.win || 0), lose: Number(r.lose || 0), rate: r.winRate};
 }
@@ -162,21 +165,45 @@ function fillSample(){
 }
 
 
+function setDetailScope(scope){
+  detailScope = scope;
+  render();
+}
+function playerSnapshotForScope(name, scope){
+  const arr = DATA[scope] || [];
+  const found = arr.find(x=>x.name===name);
+  if(found) return found;
+  const fallback = (DATA.season2||[]).find(x=>x.name===name) || (DATA.season1||[]).find(x=>x.name===name) || (DATA.total||[]).find(x=>x.name===name);
+  return fallback || {name, elo:0, win:0, lose:0, winRate:0, kda:0, k:0, d:0, a:0, tier:'언랭크'};
+}
+function detailScopeLabel(scope){ return scope === 'season1' ? '시즌1' : scope === 'season2' ? '시즌2' : '전체 시즌'; }
+function detailScopeNote(scope){
+  if(scope === 'season1') return '과거데이터 + 경기기록 시트 기준 2026-05-23 이전 경기';
+  if(scope === 'season2') return '경기기록 시트 기준 2026-05-23부터의 경기';
+  return '과거데이터와 경기기록 시트 전체 경기 통합';
+}
 function playerDetail(){
   const name = state.selectedPlayer;
   if(!name) return `${sectionTitle('👤','플레이어 상세')}<div class="empty">선택된 플레이어가 없습니다.</div>`;
-  const p = getPlayerSnapshot(name);
-  const records = loadMatchRecords().filter(m=>[...(m.winTeam||[]), ...(m.loseTeam||[])].includes(name));
-  const posRows = (((DATA.positionStats||{})[state.season]||{})[name]||[]);
-  const pairScopeForSeason = state.season === 'season1' ? 'season1' : 'season2';
+  const scope = detailScope || 'total';
+  const p = playerSnapshotForScope(name, scope);
+  const records = loadMatchRecords(scope).filter(m=>[...(m.winTeam||[]), ...(m.loseTeam||[])].includes(name));
+  const posRows = (((DATA.positionStats||{})[scope]||{})[name]||[]);
   const pairRows = (DATA.pairs||[])
     .filter(r=>r.p1===name||r.p2===name)
-    .map(r=>({...r, partner: r.p1===name ? r.p2 : r.p1, scoped: pairStats(r, pairScopeForSeason)}))
+    .map(r=>({...r, partner: r.p1===name ? r.p2 : r.p1, scoped: pairStats(r, scope)}))
     .filter(r=>r.scoped.games > 0);
   const topPairs = [...pairRows].sort((a,b)=>(b.scoped.rate??-1)-(a.scoped.rate??-1) || b.scoped.games-a.scoped.games).slice(0,3);
   const worstPairs = [...pairRows].sort((a,b)=>(a.scoped.rate??999)-(b.scoped.rate??999) || b.scoped.games-a.scoped.games).slice(0,3);
   return `${sectionTitle('👤', `${name} 상세 정보`)}
     <button class="btn ghost" onclick="state.tab='ranking'; render();">← 랭킹표로 돌아가기</button>
+    <div style="height:16px"></div>
+    <div class="scope-tabs detail-scope-tabs">
+      <button class="scope-btn ${scope==='total'?'active':''}" onclick="setDetailScope('total')">전체 시즌</button>
+      <button class="scope-btn ${scope==='season1'?'active':''}" onclick="setDetailScope('season1')">시즌1</button>
+      <button class="scope-btn ${scope==='season2'?'active':''}" onclick="setDetailScope('season2')">시즌2</button>
+    </div>
+    <div class="notice"><b>${detailScopeLabel(scope)}</b> · ${detailScopeNote(scope)}</div>
     <div style="height:16px"></div>
     <div class="player-hero card card-pad">
       <div class="player-profile">
@@ -189,19 +216,21 @@ function playerDetail(){
       <div class="mini-stat"><span>KDA</span><b class="cyan">${kda(p)}</b></div>
     </div>
     <div class="detail-grid">
-      <div class="card card-pad"><div class="card-title">📌 최근 5게임 기록</div>${playerRecentTable(records.slice(0,5), name)}</div>
-      <div class="card card-pad"><div class="card-title">🎯 포지션별 KDA / 승률</div>${positionTable(posRows)}</div>
+      <div class="card card-pad"><div class="card-title">📌 최근 5게임 기록 <span class="small">${detailScopeLabel(scope)} 기준</span></div>${playerRecentTable(records.slice(0,5), name)}</div>
+      <div class="card card-pad"><div class="card-title">🎯 포지션별 KDA / 승률 <span class="small">${detailScopeLabel(scope)} 기준</span></div>${positionTable(posRows)}</div>
     </div>
     <div class="detail-grid">
-      <div class="card card-pad"><div class="card-title">🔥 함께 했을 때 승률 TOP 3 <span class="small">${scopeLabel(pairScopeForSeason)} 기준</span></div>${pairMiniTable(topPairs, true)}</div>
-      <div class="card card-pad"><div class="card-title">❄ 함께 했을 때 승률 WORST 3 <span class="small">${scopeLabel(pairScopeForSeason)} 기준</span></div>${pairMiniTable(worstPairs, false)}</div>
+      <div class="card card-pad"><div class="card-title">🔥 함께 했을 때 승률 TOP 3 <span class="small">${detailScopeLabel(scope)} 기준</span></div>${pairMiniTable(topPairs, true)}</div>
+      <div class="card card-pad"><div class="card-title">❄ 함께 했을 때 승률 WORST 3 <span class="small">${detailScopeLabel(scope)} 기준</span></div>${pairMiniTable(worstPairs, false)}</div>
     </div>`;
 }
 function playerRecentTable(records, name){
   if(!records.length) return `<div class="empty small">최근 경기 기록이 없습니다.</div>`;
   return `<div class="table-wrap"><table class="compact-table"><thead><tr>${['날짜','결과','포지션','K/D/A','KDA','ELO 변동'].map(h=>`<th>${h}</th>`).join('')}</tr></thead><tbody>${records.map(m=>{
     const d=(m.details||[]).find(x=>x.name===name) || {};
-    return `<tr><td>${m.date||'-'}</td><td class="${d.result==='승리'?'cyan':'red'}"><b>${d.result||'-'}</b></td><td>${d.position||'-'}</td><td>${d.k??0}/${d.d??0}/${d.a??0}</td><td class="cyan"><b>${Number(d.kda||0).toFixed(2)}</b></td><td class="${Number(d.delta||0)>=0?'cyan':'red'}"><b>${Number(d.delta||0)>=0?'+':''}${Number(d.delta||0).toFixed(1)}</b></td></tr>`;
+    const inferredResult = d.result || ((m.winTeam||[]).includes(name) ? '승리' : ((m.loseTeam||[]).includes(name) ? '패배' : '-'));
+    const hasStat = d.hasDetail !== false && d.k !== undefined && d.k !== null;
+    return `<tr><td>${m.date||'-'}</td><td class="${inferredResult==='승리'?'cyan':'red'}"><b>${inferredResult}</b></td><td>${hasStat ? (d.position||'-') : '기록 없음'}</td><td>${hasStat ? `${d.k??0}/${d.d??0}/${d.a??0}` : '-'}</td><td class="cyan"><b>${hasStat ? Number(d.kda||0).toFixed(2) : '-'}</b></td><td class="${Number(d.delta||0)>=0?'cyan':'red'}"><b>${hasStat ? `${Number(d.delta||0)>=0?'+':''}${Number(d.delta||0).toFixed(1)}` : '-'}</b></td></tr>`;
   }).join('')}</tbody></table></div>`;
 }
 function positionTable(rows){

@@ -1,673 +1,1159 @@
 window.INITIAL_DATA = {
   "season1": [
     {
-      "rank": "1위",
+      "name": "안태인",
+      "elo": 2236.5,
+      "win": 22,
+      "lose": 27,
+      "k": 98,
+      "d": 80,
+      "a": 77,
+      "detailGames": 11,
+      "tier": "마스터",
+      "winRate": 44.9,
+      "kda": 2.19,
+      "rank": "1위"
+    },
+    {
       "name": "유동혁",
-      "elo": 2578,
+      "elo": 2117.2,
       "win": 10,
-      "lose": 3,
-      "winRate": 76.9,
-      "kda": 4.29,
+      "lose": 2,
       "k": 97,
       "d": 38,
       "a": 66,
-      "tier": "그랜드 마스터"
+      "detailGames": 7,
+      "tier": "마스터",
+      "winRate": 83.3,
+      "kda": 4.29,
+      "rank": "2위"
     },
     {
-      "rank": "2위",
       "name": "박명룡",
-      "elo": 2249,
+      "elo": 2089.5,
       "win": 1,
       "lose": 2,
-      "winRate": 33.3,
-      "kda": 0.0,
       "k": 0,
       "d": 0,
       "a": 0,
-      "tier": "마스터"
+      "detailGames": 0,
+      "tier": "다이아몬드 1",
+      "winRate": 33.3,
+      "kda": 0,
+      "rank": "3위"
     },
     {
-      "rank": "3위",
       "name": "지범준",
-      "elo": 2160,
-      "win": 30,
+      "elo": 2069.2,
+      "win": 29,
       "lose": 20,
-      "winRate": 60.0,
-      "kda": 4.0,
-      "k": 122,
-      "d": 102,
-      "a": 286,
-      "tier": "마스터"
+      "k": 43,
+      "d": 48,
+      "a": 142,
+      "detailGames": 10,
+      "tier": "다이아몬드 1",
+      "winRate": 59.2,
+      "kda": 3.85,
+      "rank": "4위"
     },
     {
-      "rank": "4위",
       "name": "김민서",
-      "elo": 2113,
+      "elo": 1928.5,
       "win": 27,
       "lose": 22,
+      "k": 68,
+      "d": 75,
+      "a": 73,
+      "detailGames": 9,
+      "tier": "다이아몬드 4",
       "winRate": 55.1,
-      "kda": 2.18,
-      "k": 149,
-      "d": 141,
-      "a": 158,
-      "tier": "마스터"
+      "kda": 1.88,
+      "rank": "5위"
     },
     {
-      "rank": "5위",
+      "name": "안성진",
+      "elo": 1916.9,
+      "win": 25,
+      "lose": 25,
+      "k": 59,
+      "d": 56,
+      "a": 134,
+      "detailGames": 11,
+      "tier": "다이아몬드 4",
+      "winRate": 50.0,
+      "kda": 3.45,
+      "rank": "6위"
+    },
+    {
       "name": "허원석",
-      "elo": 1992,
+      "elo": 1870.9,
       "win": 5,
       "lose": 3,
+      "k": 0,
+      "d": 0,
+      "a": 0,
+      "detailGames": 0,
+      "tier": "플래티넘 1",
       "winRate": 62.5,
-      "kda": 0.0,
-      "k": 0,
-      "d": 0,
-      "a": 0,
-      "tier": "다이아몬드 3"
+      "kda": 0,
+      "rank": "7위"
     },
     {
-      "rank": "6위",
-      "name": "안태인",
-      "elo": 1970,
-      "win": 22,
-      "lose": 27,
-      "winRate": 44.9,
-      "kda": 2.29,
-      "k": 208,
-      "d": 161,
-      "a": 161,
-      "tier": "다이아몬드 3"
-    },
-    {
-      "rank": "7위",
-      "name": "유탁영",
-      "elo": 1828,
-      "win": 10,
-      "lose": 9,
-      "winRate": 52.6,
-      "kda": 2.08,
-      "k": 25,
-      "d": 25,
-      "a": 27,
-      "tier": "플래티넘 2"
-    },
-    {
-      "rank": "8위",
-      "name": "이준헌",
-      "elo": 1793,
-      "win": 14,
-      "lose": 14,
-      "winRate": 50.0,
-      "kda": 0.0,
-      "k": 0,
-      "d": 0,
-      "a": 0,
-      "tier": "플래티넘 3"
-    },
-    {
-      "rank": "9위",
-      "name": "안성진",
-      "elo": 1772,
-      "win": 25,
-      "lose": 26,
-      "winRate": 49.0,
-      "kda": 3.12,
-      "k": 147,
-      "d": 120,
-      "a": 228,
-      "tier": "플래티넘 3"
-    },
-    {
-      "rank": "10위",
-      "name": "송승훈",
-      "elo": 1739,
-      "win": 27,
-      "lose": 15,
-      "winRate": 64.3,
-      "kda": 2.69,
-      "k": 190,
-      "d": 206,
-      "a": 364,
-      "tier": "플래티넘 4"
-    },
-    {
-      "rank": "11위",
-      "name": "김시완",
-      "elo": 1708,
-      "win": 3,
-      "lose": 1,
-      "winRate": 75.0,
-      "kda": 0.0,
-      "k": 0,
-      "d": 0,
-      "a": 0,
-      "tier": "플래티넘 4"
-    },
-    {
-      "rank": "12위",
-      "name": "윤선용",
-      "elo": 1641,
-      "win": 3,
-      "lose": 7,
-      "winRate": 30.0,
-      "kda": 0.0,
-      "k": 0,
-      "d": 0,
-      "a": 0,
-      "tier": "골드 2"
-    },
-    {
-      "rank": "13위",
       "name": "김찬",
-      "elo": 1615,
+      "elo": 1810.1,
       "win": 14,
       "lose": 18,
-      "winRate": 43.8,
-      "kda": 2.72,
       "k": 86,
       "d": 74,
       "a": 115,
-      "tier": "골드 2"
+      "detailGames": 12,
+      "tier": "플래티넘 2",
+      "winRate": 43.8,
+      "kda": 2.72,
+      "rank": "8위"
     },
     {
-      "rank": "14위",
+      "name": "윤선용",
+      "elo": 1795.7,
+      "win": 3,
+      "lose": 7,
+      "k": 0,
+      "d": 0,
+      "a": 0,
+      "detailGames": 0,
+      "tier": "플래티넘 3",
+      "winRate": 30.0,
+      "kda": 0,
+      "rank": "9위"
+    },
+    {
+      "name": "김시완",
+      "elo": 1788.9,
+      "win": 3,
+      "lose": 1,
+      "k": 0,
+      "d": 0,
+      "a": 0,
+      "detailGames": 0,
+      "tier": "플래티넘 3",
+      "winRate": 75.0,
+      "kda": 0,
+      "rank": "10위"
+    },
+    {
+      "name": "유탁영",
+      "elo": 1713.8,
+      "win": 10,
+      "lose": 9,
+      "k": 25,
+      "d": 25,
+      "a": 27,
+      "detailGames": 3,
+      "tier": "플래티넘 4",
+      "winRate": 52.6,
+      "kda": 2.08,
+      "rank": "11위"
+    },
+    {
+      "name": "이준헌",
+      "elo": 1690.2,
+      "win": 14,
+      "lose": 14,
+      "k": 0,
+      "d": 0,
+      "a": 0,
+      "detailGames": 0,
+      "tier": "골드 1",
+      "winRate": 50.0,
+      "kda": 0,
+      "rank": "12위"
+    },
+    {
       "name": "이승배",
-      "elo": 1570,
+      "elo": 1570.3,
       "win": 0,
       "lose": 4,
-      "winRate": 0.0,
-      "kda": 1.45,
       "k": 9,
       "d": 33,
       "a": 39,
-      "tier": "골드 3"
-    },
-    {
-      "rank": "15위",
-      "name": "이호재",
-      "elo": 1526,
-      "win": 15,
-      "lose": 12,
-      "winRate": 55.6,
-      "kda": 1.89,
-      "k": 31,
-      "d": 56,
-      "a": 75,
-      "tier": "골드 4"
-    },
-    {
-      "rank": "16위",
-      "name": "조호진",
-      "elo": 1492,
-      "win": 6,
-      "lose": 6,
-      "winRate": 50.0,
-      "kda": 0.0,
-      "k": 0,
-      "d": 0,
-      "a": 0,
-      "tier": "실버 1"
-    },
-    {
-      "rank": "17위",
-      "name": "전준형",
-      "elo": 1465,
-      "win": 0,
-      "lose": 1,
+      "detailGames": 4,
+      "tier": "골드 3",
       "winRate": 0.0,
-      "kda": 0.0,
+      "kda": 1.45,
+      "rank": "13위"
+    },
+    {
+      "name": "양현규",
+      "elo": 1521.8,
+      "win": 12,
+      "lose": 6,
       "k": 0,
       "d": 0,
       "a": 0,
-      "tier": "실버 1"
+      "detailGames": 0,
+      "tier": "골드 4",
+      "winRate": 66.7,
+      "kda": 0,
+      "rank": "14위"
     },
     {
-      "rank": "18위",
-      "name": "강원준",
-      "elo": 1441,
-      "win": 2,
-      "lose": 3,
-      "winRate": 40.0,
-      "kda": 3.5,
-      "k": 24,
-      "d": 26,
-      "a": 67,
-      "tier": "실버 2"
-    },
-    {
-      "rank": "19위",
       "name": "김지우",
-      "elo": 1415,
+      "elo": 1507.3,
       "win": 4,
       "lose": 6,
-      "winRate": 40.0,
-      "kda": 4.33,
       "k": 20,
       "d": 9,
       "a": 19,
-      "tier": "실버 2"
+      "detailGames": 2,
+      "tier": "골드 4",
+      "winRate": 40.0,
+      "kda": 4.33,
+      "rank": "15위"
     },
     {
-      "rank": "20위",
-      "name": "박준혁",
-      "elo": 1356,
-      "win": 8,
-      "lose": 9,
-      "winRate": 47.1,
-      "kda": 0.0,
+      "name": "외부인",
+      "elo": 1500,
+      "win": 2,
+      "lose": 6,
       "k": 0,
       "d": 0,
       "a": 0,
-      "tier": "실버 3"
+      "detailGames": 0,
+      "tier": "언랭크",
+      "winRate": 25.0,
+      "kda": 0,
+      "rank": "16위"
     },
     {
-      "rank": "21위",
+      "name": "송슿훈",
+      "elo": 1500,
+      "win": 0,
+      "lose": 1,
+      "k": 0,
+      "d": 0,
+      "a": 0,
+      "detailGames": 0,
+      "tier": "언랭크",
+      "winRate": 0.0,
+      "kda": 0,
+      "rank": "17위"
+    },
+    {
+      "name": "안우진유동혁",
+      "elo": 1500,
+      "win": 0,
+      "lose": 1,
+      "k": 0,
+      "d": 0,
+      "a": 0,
+      "detailGames": 0,
+      "tier": "언랭크",
+      "winRate": 0.0,
+      "kda": 0,
+      "rank": "18위"
+    },
+    {
+      "name": "앙현규",
+      "elo": 1500,
+      "win": 1,
+      "lose": 0,
+      "k": 0,
+      "d": 0,
+      "a": 0,
+      "detailGames": 0,
+      "tier": "언랭크",
+      "winRate": 100.0,
+      "kda": 0,
+      "rank": "19위"
+    },
+    {
+      "name": "안정진",
+      "elo": 1500,
+      "win": 0,
+      "lose": 1,
+      "k": 0,
+      "d": 0,
+      "a": 0,
+      "detailGames": 0,
+      "tier": "언랭크",
+      "winRate": 0.0,
+      "kda": 0,
+      "rank": "20위"
+    },
+    {
+      "name": "조호진",
+      "elo": 1495.8,
+      "win": 6,
+      "lose": 6,
+      "k": 0,
+      "d": 0,
+      "a": 0,
+      "detailGames": 0,
+      "tier": "실버 1",
+      "winRate": 50.0,
+      "kda": 0,
+      "rank": "21위"
+    },
+    {
+      "name": "송승훈",
+      "elo": 1489.3,
+      "win": 27,
+      "lose": 15,
+      "k": 50,
+      "d": 74,
+      "a": 146,
+      "detailGames": 12,
+      "tier": "실버 1",
+      "winRate": 64.3,
+      "kda": 2.65,
+      "rank": "22위"
+    },
+    {
+      "name": "전준형",
+      "elo": 1482.6,
+      "win": 0,
+      "lose": 1,
+      "k": 0,
+      "d": 0,
+      "a": 0,
+      "detailGames": 0,
+      "tier": "실버 1",
+      "winRate": 0.0,
+      "kda": 0,
+      "rank": "23위"
+    },
+    {
+      "name": "강원준",
+      "elo": 1470.3,
+      "win": 2,
+      "lose": 3,
+      "k": 24,
+      "d": 26,
+      "a": 67,
+      "detailGames": 5,
+      "tier": "실버 1",
+      "winRate": 40.0,
+      "kda": 3.5,
+      "rank": "24위"
+    },
+    {
+      "name": "이호재",
+      "elo": 1356.9,
+      "win": 16,
+      "lose": 12,
+      "k": 41,
+      "d": 59,
+      "a": 78,
+      "detailGames": 11,
+      "tier": "실버 3",
+      "winRate": 57.1,
+      "kda": 2.02,
+      "rank": "25위"
+    },
+    {
+      "name": "박준혁",
+      "elo": 1228.0,
+      "win": 8,
+      "lose": 9,
+      "k": 0,
+      "d": 0,
+      "a": 0,
+      "detailGames": 0,
+      "tier": "브론즈 2",
+      "winRate": 47.1,
+      "kda": 0,
+      "rank": "26위"
+    },
+    {
       "name": "이권표",
-      "elo": 1238,
+      "elo": 1219.2,
       "win": 11,
       "lose": 14,
+      "k": 32,
+      "d": 31,
+      "a": 40,
+      "detailGames": 5,
+      "tier": "브론즈 2",
       "winRate": 44.0,
-      "kda": 1.79,
-      "k": 82,
-      "d": 106,
-      "a": 108,
-      "tier": "브론즈 2"
+      "kda": 2.32,
+      "rank": "27위"
     },
     {
-      "rank": "22위",
       "name": "정도영",
-      "elo": 1148,
+      "elo": 1148.2,
       "win": 3,
       "lose": 7,
-      "winRate": 30.0,
-      "kda": 2.02,
       "k": 54,
       "d": 58,
       "a": 63,
-      "tier": "브론즈 4"
+      "detailGames": 10,
+      "tier": "브론즈 4",
+      "winRate": 30.0,
+      "kda": 2.02,
+      "rank": "28위"
     },
     {
-      "rank": "23위",
       "name": "윤준석",
-      "elo": 1064,
+      "elo": 1081.9,
       "win": 3,
       "lose": 5,
-      "winRate": 37.5,
-      "kda": 0.0,
       "k": 0,
       "d": 0,
       "a": 0,
-      "tier": "아이언 1"
+      "detailGames": 0,
+      "tier": "아이언 1",
+      "winRate": 37.5,
+      "kda": 0,
+      "rank": "29위"
     },
     {
-      "rank": "24위",
       "name": "최유진",
-      "elo": 975,
+      "elo": 987.5,
       "win": 2,
       "lose": 3,
-      "winRate": 40.0,
-      "kda": 0.0,
       "k": 0,
       "d": 0,
       "a": 0,
-      "tier": "아이언 3"
+      "detailGames": 0,
+      "tier": "아이언 3",
+      "winRate": 40.0,
+      "kda": 0,
+      "rank": "30위"
     },
     {
-      "rank": "25위",
       "name": "안우진",
-      "elo": 521,
+      "elo": 655.3,
       "win": 5,
-      "lose": 13,
-      "winRate": 27.8,
-      "kda": 1.26,
+      "lose": 12,
       "k": 16,
       "d": 43,
       "a": 38,
-      "tier": "아이언 12"
+      "detailGames": 8,
+      "tier": "아이언 9",
+      "winRate": 29.4,
+      "kda": 1.26,
+      "rank": "31위"
     }
   ],
   "season2": [
     {
-      "rank": "1위",
       "name": "안태인",
-      "elo": 2236,
+      "elo": 2236.5,
       "win": 8,
       "lose": 7,
-      "winRate": 53.3,
-      "kda": 1.87,
       "k": 139,
       "d": 109,
       "a": 65,
-      "tier": "마스터"
+      "detailGames": 15,
+      "tier": "마스터",
+      "winRate": 53.3,
+      "kda": 1.87,
+      "rank": "1위"
     },
     {
-      "rank": "2위",
       "name": "유동혁",
-      "elo": 2117,
+      "elo": 2117.2,
       "win": 1,
       "lose": 4,
-      "winRate": 20.0,
-      "kda": 1.91,
       "k": 42,
       "d": 32,
       "a": 19,
-      "tier": "마스터"
+      "detailGames": 5,
+      "tier": "마스터",
+      "winRate": 20.0,
+      "kda": 1.91,
+      "rank": "2위"
     },
     {
-      "rank": "3위",
       "name": "박명룡",
-      "elo": 2090,
+      "elo": 2089.5,
       "win": 2,
       "lose": 4,
-      "winRate": 33.3,
-      "kda": 3.58,
       "k": 50,
       "d": 26,
       "a": 43,
-      "tier": "다이아몬드 1"
+      "detailGames": 6,
+      "tier": "다이아몬드 1",
+      "winRate": 33.3,
+      "kda": 3.58,
+      "rank": "3위"
     },
     {
-      "rank": "4위",
       "name": "최진우",
-      "elo": 2085,
+      "elo": 2084.9,
       "win": 4,
       "lose": 2,
-      "winRate": 66.7,
-      "kda": 3.5,
       "k": 63,
       "d": 30,
       "a": 42,
-      "tier": "다이아몬드 1"
+      "detailGames": 6,
+      "tier": "다이아몬드 1",
+      "winRate": 66.7,
+      "kda": 3.5,
+      "rank": "4위"
     },
     {
-      "rank": "5위",
       "name": "지범준",
-      "elo": 2069,
+      "elo": 2069.2,
       "win": 9,
       "lose": 5,
-      "winRate": 64.3,
-      "kda": 3.89,
       "k": 77,
       "d": 63,
       "a": 168,
-      "tier": "다이아몬드 1"
+      "detailGames": 14,
+      "tier": "다이아몬드 1",
+      "winRate": 64.3,
+      "kda": 3.89,
+      "rank": "5위"
     },
     {
-      "rank": "6위",
       "name": "김민서",
-      "elo": 1929,
+      "elo": 1928.5,
       "win": 3,
       "lose": 2,
-      "winRate": 60.0,
-      "kda": 2.75,
       "k": 31,
       "d": 24,
       "a": 35,
-      "tier": "다이아몬드 4"
+      "detailGames": 5,
+      "tier": "다이아몬드 4",
+      "winRate": 60.0,
+      "kda": 2.75,
+      "rank": "6위"
     },
     {
-      "rank": "7위",
       "name": "안성진",
-      "elo": 1917,
+      "elo": 1916.9,
       "win": 6,
       "lose": 9,
-      "winRate": 40.0,
-      "kda": 2.77,
       "k": 86,
       "d": 77,
       "a": 127,
-      "tier": "다이아몬드 4"
+      "detailGames": 15,
+      "tier": "다이아몬드 4",
+      "winRate": 40.0,
+      "kda": 2.77,
+      "rank": "7위"
     },
     {
-      "rank": "8위",
-      "name": "허원석",
-      "elo": 1871,
-      "win": 0,
-      "lose": 0,
-      "winRate": 0.0,
-      "kda": 0.0,
-      "k": 0,
-      "d": 0,
-      "a": 0,
-      "tier": "플래티넘 1"
-    },
-    {
-      "rank": "9위",
       "name": "김찬",
-      "elo": 1810,
+      "elo": 1810.1,
       "win": 6,
       "lose": 9,
-      "winRate": 40.0,
-      "kda": 1.99,
       "k": 79,
       "d": 99,
       "a": 118,
-      "tier": "플래티넘 2"
+      "detailGames": 15,
+      "tier": "플래티넘 2",
+      "winRate": 40.0,
+      "kda": 1.99,
+      "rank": "8위"
     },
     {
-      "rank": "10위",
-      "name": "윤선용",
-      "elo": 1796,
-      "win": 0,
-      "lose": 0,
-      "winRate": 0.0,
-      "kda": 0.0,
-      "k": 0,
-      "d": 0,
-      "a": 0,
-      "tier": "플래티넘 3"
-    },
-    {
-      "rank": "11위",
       "name": "김시완",
-      "elo": 1789,
+      "elo": 1788.9,
       "win": 4,
       "lose": 2,
-      "winRate": 66.7,
-      "kda": 2.49,
       "k": 10,
       "d": 35,
       "a": 77,
-      "tier": "플래티넘 3"
+      "detailGames": 6,
+      "tier": "플래티넘 3",
+      "winRate": 66.7,
+      "kda": 2.49,
+      "rank": "9위"
     },
     {
-      "rank": "12위",
-      "name": "유탁영",
-      "elo": 1714,
-      "win": 0,
-      "lose": 0,
-      "winRate": 0.0,
-      "kda": 0.0,
-      "k": 0,
-      "d": 0,
-      "a": 0,
-      "tier": "플래티넘 4"
-    },
-    {
-      "rank": "13위",
       "name": "이준헌",
-      "elo": 1690,
+      "elo": 1690.2,
       "win": 6,
       "lose": 3,
-      "winRate": 66.7,
-      "kda": 2.72,
       "k": 36,
       "d": 47,
       "a": 92,
-      "tier": "골드 1"
+      "detailGames": 9,
+      "tier": "골드 1",
+      "winRate": 66.7,
+      "kda": 2.72,
+      "rank": "10위"
     },
     {
-      "rank": "14위",
-      "name": "양현규",
-      "elo": 1522,
-      "win": 0,
-      "lose": 0,
-      "winRate": 0.0,
-      "kda": 0.0,
-      "k": 0,
-      "d": 0,
-      "a": 0,
-      "tier": "골드 4"
+      "name": "짱구",
+      "elo": 1500,
+      "win": 1,
+      "lose": 1,
+      "k": 11,
+      "d": 9,
+      "a": 28,
+      "detailGames": 2,
+      "tier": "언랭크",
+      "winRate": 50.0,
+      "kda": 4.33,
+      "rank": "11위"
     },
     {
-      "rank": "15위",
-      "name": "김지우",
-      "elo": 1507,
-      "win": 0,
-      "lose": 0,
-      "winRate": 0.0,
-      "kda": 0.0,
-      "k": 0,
-      "d": 0,
-      "a": 0,
-      "tier": "골드 4"
+      "name": "김기중",
+      "elo": 1500,
+      "win": 3,
+      "lose": 1,
+      "k": 35,
+      "d": 17,
+      "a": 33,
+      "detailGames": 4,
+      "tier": "언랭크",
+      "winRate": 75.0,
+      "kda": 4.0,
+      "rank": "12위"
     },
     {
-      "rank": "16위",
-      "name": "조호진",
-      "elo": 1496,
-      "win": 0,
-      "lose": 0,
-      "winRate": 0.0,
-      "kda": 0.0,
-      "k": 0,
-      "d": 0,
-      "a": 0,
-      "tier": "실버 1"
+      "name": "김민준",
+      "elo": 1500,
+      "win": 3,
+      "lose": 1,
+      "k": 39,
+      "d": 21,
+      "a": 40,
+      "detailGames": 4,
+      "tier": "언랭크",
+      "winRate": 75.0,
+      "kda": 3.76,
+      "rank": "13위"
     },
     {
-      "rank": "17위",
       "name": "송승훈",
-      "elo": 1489,
+      "elo": 1489.3,
       "win": 6,
       "lose": 9,
-      "winRate": 40.0,
-      "kda": 1.87,
       "k": 51,
       "d": 94,
       "a": 125,
-      "tier": "실버 1"
+      "detailGames": 15,
+      "tier": "실버 1",
+      "winRate": 40.0,
+      "kda": 1.87,
+      "rank": "14위"
     },
     {
-      "rank": "18위",
-      "name": "전준형",
-      "elo": 1483,
-      "win": 0,
-      "lose": 0,
-      "winRate": 0.0,
-      "kda": 0.0,
-      "k": 0,
-      "d": 0,
-      "a": 0,
-      "tier": "실버 1"
-    },
-    {
-      "rank": "19위",
-      "name": "강원준",
-      "elo": 1470,
-      "win": 0,
-      "lose": 0,
-      "winRate": 0.0,
-      "kda": 0.0,
-      "k": 0,
-      "d": 0,
-      "a": 0,
-      "tier": "실버 1"
-    },
-    {
-      "rank": "20위",
       "name": "이호재",
-      "elo": 1357,
+      "elo": 1356.9,
       "win": 8,
       "lose": 6,
-      "winRate": 57.1,
-      "kda": 2.09,
       "k": 58,
       "d": 65,
       "a": 78,
-      "tier": "실버 3"
+      "detailGames": 14,
+      "tier": "실버 3",
+      "winRate": 57.1,
+      "kda": 2.09,
+      "rank": "15위"
     },
     {
-      "rank": "21위",
-      "name": "박준혁",
-      "elo": 1228,
-      "win": 0,
-      "lose": 0,
-      "winRate": 0.0,
-      "kda": 0.0,
-      "k": 0,
-      "d": 0,
-      "a": 0,
-      "tier": "브론즈 2"
-    },
-    {
-      "rank": "22위",
-      "name": "이권표",
-      "elo": 1219,
-      "win": 0,
-      "lose": 0,
-      "winRate": 0.0,
-      "kda": 0.0,
-      "k": 0,
-      "d": 0,
-      "a": 0,
-      "tier": "브론즈 2"
-    },
-    {
-      "rank": "23위",
-      "name": "윤준석",
-      "elo": 1082,
-      "win": 0,
-      "lose": 0,
-      "winRate": 0.0,
-      "kda": 0.0,
-      "k": 0,
-      "d": 0,
-      "a": 0,
-      "tier": "아이언 1"
-    },
-    {
-      "rank": "24위",
-      "name": "최유진",
-      "elo": 987,
-      "win": 0,
-      "lose": 0,
-      "winRate": 0.0,
-      "kda": 0.0,
-      "k": 0,
-      "d": 0,
-      "a": 0,
-      "tier": "아이언 3"
-    },
-    {
-      "rank": "25위",
       "name": "안우진",
-      "elo": 655,
+      "elo": 655.3,
       "win": 5,
       "lose": 10,
-      "winRate": 33.3,
-      "kda": 1.25,
       "k": 28,
       "d": 89,
       "a": 83,
-      "tier": "아이언 9"
+      "detailGames": 15,
+      "tier": "아이언 9",
+      "winRate": 33.3,
+      "kda": 1.25,
+      "rank": "16위"
+    }
+  ],
+  "total": [
+    {
+      "name": "안태인",
+      "elo": 2236.5,
+      "win": 30,
+      "lose": 34,
+      "k": 237,
+      "d": 189,
+      "a": 142,
+      "detailGames": 26,
+      "tier": "마스터",
+      "winRate": 46.9,
+      "kda": 2.01,
+      "rank": "1위"
+    },
+    {
+      "name": "유동혁",
+      "elo": 2117.2,
+      "win": 11,
+      "lose": 6,
+      "k": 139,
+      "d": 70,
+      "a": 85,
+      "detailGames": 12,
+      "tier": "마스터",
+      "winRate": 64.7,
+      "kda": 3.2,
+      "rank": "2위"
+    },
+    {
+      "name": "박명룡",
+      "elo": 2089.5,
+      "win": 3,
+      "lose": 6,
+      "k": 50,
+      "d": 26,
+      "a": 43,
+      "detailGames": 6,
+      "tier": "다이아몬드 1",
+      "winRate": 33.3,
+      "kda": 3.58,
+      "rank": "3위"
+    },
+    {
+      "name": "최진우",
+      "elo": 2084.9,
+      "win": 4,
+      "lose": 2,
+      "k": 63,
+      "d": 30,
+      "a": 42,
+      "detailGames": 6,
+      "tier": "다이아몬드 1",
+      "winRate": 66.7,
+      "kda": 3.5,
+      "rank": "4위"
+    },
+    {
+      "name": "지범준",
+      "elo": 2069.2,
+      "win": 38,
+      "lose": 25,
+      "k": 120,
+      "d": 111,
+      "a": 310,
+      "detailGames": 24,
+      "tier": "다이아몬드 1",
+      "winRate": 60.3,
+      "kda": 3.87,
+      "rank": "5위"
+    },
+    {
+      "name": "김민서",
+      "elo": 1928.5,
+      "win": 30,
+      "lose": 24,
+      "k": 99,
+      "d": 99,
+      "a": 108,
+      "detailGames": 14,
+      "tier": "다이아몬드 4",
+      "winRate": 55.6,
+      "kda": 2.09,
+      "rank": "6위"
+    },
+    {
+      "name": "안성진",
+      "elo": 1916.9,
+      "win": 31,
+      "lose": 34,
+      "k": 145,
+      "d": 133,
+      "a": 261,
+      "detailGames": 26,
+      "tier": "다이아몬드 4",
+      "winRate": 47.7,
+      "kda": 3.05,
+      "rank": "7위"
+    },
+    {
+      "name": "허원석",
+      "elo": 1870.9,
+      "win": 5,
+      "lose": 3,
+      "k": 0,
+      "d": 0,
+      "a": 0,
+      "detailGames": 0,
+      "tier": "플래티넘 1",
+      "winRate": 62.5,
+      "kda": 0,
+      "rank": "8위"
+    },
+    {
+      "name": "김찬",
+      "elo": 1810.1,
+      "win": 20,
+      "lose": 27,
+      "k": 165,
+      "d": 173,
+      "a": 233,
+      "detailGames": 27,
+      "tier": "플래티넘 2",
+      "winRate": 42.6,
+      "kda": 2.3,
+      "rank": "9위"
+    },
+    {
+      "name": "윤선용",
+      "elo": 1795.7,
+      "win": 3,
+      "lose": 7,
+      "k": 0,
+      "d": 0,
+      "a": 0,
+      "detailGames": 0,
+      "tier": "플래티넘 3",
+      "winRate": 30.0,
+      "kda": 0,
+      "rank": "10위"
+    },
+    {
+      "name": "김시완",
+      "elo": 1788.9,
+      "win": 7,
+      "lose": 3,
+      "k": 10,
+      "d": 35,
+      "a": 77,
+      "detailGames": 6,
+      "tier": "플래티넘 3",
+      "winRate": 70.0,
+      "kda": 2.49,
+      "rank": "11위"
+    },
+    {
+      "name": "유탁영",
+      "elo": 1713.8,
+      "win": 10,
+      "lose": 9,
+      "k": 25,
+      "d": 25,
+      "a": 27,
+      "detailGames": 3,
+      "tier": "플래티넘 4",
+      "winRate": 52.6,
+      "kda": 2.08,
+      "rank": "12위"
+    },
+    {
+      "name": "이준헌",
+      "elo": 1690.2,
+      "win": 20,
+      "lose": 17,
+      "k": 36,
+      "d": 47,
+      "a": 92,
+      "detailGames": 9,
+      "tier": "골드 1",
+      "winRate": 54.1,
+      "kda": 2.72,
+      "rank": "13위"
+    },
+    {
+      "name": "이승배",
+      "elo": 1570.3,
+      "win": 0,
+      "lose": 4,
+      "k": 9,
+      "d": 33,
+      "a": 39,
+      "detailGames": 4,
+      "tier": "골드 3",
+      "winRate": 0.0,
+      "kda": 1.45,
+      "rank": "14위"
+    },
+    {
+      "name": "양현규",
+      "elo": 1521.8,
+      "win": 12,
+      "lose": 6,
+      "k": 0,
+      "d": 0,
+      "a": 0,
+      "detailGames": 0,
+      "tier": "골드 4",
+      "winRate": 66.7,
+      "kda": 0,
+      "rank": "15위"
+    },
+    {
+      "name": "김지우",
+      "elo": 1507.3,
+      "win": 4,
+      "lose": 6,
+      "k": 20,
+      "d": 9,
+      "a": 19,
+      "detailGames": 2,
+      "tier": "골드 4",
+      "winRate": 40.0,
+      "kda": 4.33,
+      "rank": "16위"
+    },
+    {
+      "name": "외부인",
+      "elo": 1500,
+      "win": 2,
+      "lose": 6,
+      "k": 0,
+      "d": 0,
+      "a": 0,
+      "detailGames": 0,
+      "tier": "언랭크",
+      "winRate": 25.0,
+      "kda": 0,
+      "rank": "17위"
+    },
+    {
+      "name": "송슿훈",
+      "elo": 1500,
+      "win": 0,
+      "lose": 1,
+      "k": 0,
+      "d": 0,
+      "a": 0,
+      "detailGames": 0,
+      "tier": "언랭크",
+      "winRate": 0.0,
+      "kda": 0,
+      "rank": "18위"
+    },
+    {
+      "name": "안우진유동혁",
+      "elo": 1500,
+      "win": 0,
+      "lose": 1,
+      "k": 0,
+      "d": 0,
+      "a": 0,
+      "detailGames": 0,
+      "tier": "언랭크",
+      "winRate": 0.0,
+      "kda": 0,
+      "rank": "19위"
+    },
+    {
+      "name": "앙현규",
+      "elo": 1500,
+      "win": 1,
+      "lose": 0,
+      "k": 0,
+      "d": 0,
+      "a": 0,
+      "detailGames": 0,
+      "tier": "언랭크",
+      "winRate": 100.0,
+      "kda": 0,
+      "rank": "20위"
+    },
+    {
+      "name": "안정진",
+      "elo": 1500,
+      "win": 0,
+      "lose": 1,
+      "k": 0,
+      "d": 0,
+      "a": 0,
+      "detailGames": 0,
+      "tier": "언랭크",
+      "winRate": 0.0,
+      "kda": 0,
+      "rank": "21위"
+    },
+    {
+      "name": "짱구",
+      "elo": 1500,
+      "win": 1,
+      "lose": 1,
+      "k": 11,
+      "d": 9,
+      "a": 28,
+      "detailGames": 2,
+      "tier": "언랭크",
+      "winRate": 50.0,
+      "kda": 4.33,
+      "rank": "22위"
+    },
+    {
+      "name": "김기중",
+      "elo": 1500,
+      "win": 3,
+      "lose": 1,
+      "k": 35,
+      "d": 17,
+      "a": 33,
+      "detailGames": 4,
+      "tier": "언랭크",
+      "winRate": 75.0,
+      "kda": 4.0,
+      "rank": "23위"
+    },
+    {
+      "name": "김민준",
+      "elo": 1500,
+      "win": 3,
+      "lose": 1,
+      "k": 39,
+      "d": 21,
+      "a": 40,
+      "detailGames": 4,
+      "tier": "언랭크",
+      "winRate": 75.0,
+      "kda": 3.76,
+      "rank": "24위"
+    },
+    {
+      "name": "조호진",
+      "elo": 1495.8,
+      "win": 6,
+      "lose": 6,
+      "k": 0,
+      "d": 0,
+      "a": 0,
+      "detailGames": 0,
+      "tier": "실버 1",
+      "winRate": 50.0,
+      "kda": 0,
+      "rank": "25위"
+    },
+    {
+      "name": "송승훈",
+      "elo": 1489.3,
+      "win": 33,
+      "lose": 24,
+      "k": 101,
+      "d": 168,
+      "a": 271,
+      "detailGames": 27,
+      "tier": "실버 1",
+      "winRate": 57.9,
+      "kda": 2.21,
+      "rank": "26위"
+    },
+    {
+      "name": "전준형",
+      "elo": 1482.6,
+      "win": 0,
+      "lose": 1,
+      "k": 0,
+      "d": 0,
+      "a": 0,
+      "detailGames": 0,
+      "tier": "실버 1",
+      "winRate": 0.0,
+      "kda": 0,
+      "rank": "27위"
+    },
+    {
+      "name": "강원준",
+      "elo": 1470.3,
+      "win": 2,
+      "lose": 3,
+      "k": 24,
+      "d": 26,
+      "a": 67,
+      "detailGames": 5,
+      "tier": "실버 1",
+      "winRate": 40.0,
+      "kda": 3.5,
+      "rank": "28위"
+    },
+    {
+      "name": "이호재",
+      "elo": 1356.9,
+      "win": 24,
+      "lose": 18,
+      "k": 99,
+      "d": 124,
+      "a": 156,
+      "detailGames": 25,
+      "tier": "실버 3",
+      "winRate": 57.1,
+      "kda": 2.06,
+      "rank": "29위"
+    },
+    {
+      "name": "박준혁",
+      "elo": 1228.0,
+      "win": 8,
+      "lose": 9,
+      "k": 0,
+      "d": 0,
+      "a": 0,
+      "detailGames": 0,
+      "tier": "브론즈 2",
+      "winRate": 47.1,
+      "kda": 0,
+      "rank": "30위"
+    },
+    {
+      "name": "이권표",
+      "elo": 1219.2,
+      "win": 11,
+      "lose": 14,
+      "k": 32,
+      "d": 31,
+      "a": 40,
+      "detailGames": 5,
+      "tier": "브론즈 2",
+      "winRate": 44.0,
+      "kda": 2.32,
+      "rank": "31위"
+    },
+    {
+      "name": "정도영",
+      "elo": 1148.2,
+      "win": 3,
+      "lose": 7,
+      "k": 54,
+      "d": 58,
+      "a": 63,
+      "detailGames": 10,
+      "tier": "브론즈 4",
+      "winRate": 30.0,
+      "kda": 2.02,
+      "rank": "32위"
+    },
+    {
+      "name": "윤준석",
+      "elo": 1081.9,
+      "win": 3,
+      "lose": 5,
+      "k": 0,
+      "d": 0,
+      "a": 0,
+      "detailGames": 0,
+      "tier": "아이언 1",
+      "winRate": 37.5,
+      "kda": 0,
+      "rank": "33위"
+    },
+    {
+      "name": "최유진",
+      "elo": 987.5,
+      "win": 2,
+      "lose": 3,
+      "k": 0,
+      "d": 0,
+      "a": 0,
+      "detailGames": 0,
+      "tier": "아이언 3",
+      "winRate": 40.0,
+      "kda": 0,
+      "rank": "34위"
+    },
+    {
+      "name": "안우진",
+      "elo": 655.3,
+      "win": 10,
+      "lose": 22,
+      "k": 44,
+      "d": 132,
+      "a": 121,
+      "detailGames": 23,
+      "tier": "아이언 9",
+      "winRate": 31.2,
+      "kda": 1.25,
+      "rank": "35위"
     }
   ],
   "pairs": [
-    {
-      "p1": "김찬",
-      "p2": "양현규",
-      "games": 3,
-      "win": 3,
-      "lose": 0,
-      "winRate": 100.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
-      "pastGames": 3,
-      "pastWin": 3,
-      "pastWinRate": 100.0
-    },
     {
       "p1": "유동혁",
       "p2": "지범준",
@@ -675,12 +1161,14 @@ window.INITIAL_DATA = {
       "win": 3,
       "lose": 0,
       "winRate": 100.0,
-      "currentGames": 3,
-      "currentWin": 3,
-      "currentWinRate": 100.0,
-      "pastGames": 0,
-      "pastWin": 0,
-      "pastWinRate": null
+      "pastGames": 3,
+      "pastWin": 3,
+      "pastLose": 0,
+      "pastWinRate": 100.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "김민서",
@@ -689,12 +1177,14 @@ window.INITIAL_DATA = {
       "win": 2,
       "lose": 0,
       "winRate": 100.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 2,
       "pastWin": 2,
-      "pastWinRate": 100.0
+      "pastLose": 0,
+      "pastWinRate": 100.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "김시완",
@@ -703,12 +1193,14 @@ window.INITIAL_DATA = {
       "win": 2,
       "lose": 0,
       "winRate": 100.0,
-      "currentGames": 1,
-      "currentWin": 1,
-      "currentWinRate": 100.0,
       "pastGames": 1,
       "pastWin": 1,
-      "pastWinRate": 100.0
+      "pastLose": 0,
+      "pastWinRate": 100.0,
+      "currentGames": 1,
+      "currentWin": 1,
+      "currentLose": 0,
+      "currentWinRate": 100.0
     },
     {
       "p1": "김시완",
@@ -717,12 +1209,14 @@ window.INITIAL_DATA = {
       "win": 2,
       "lose": 0,
       "winRate": 100.0,
-      "currentGames": 1,
-      "currentWin": 1,
-      "currentWinRate": 100.0,
       "pastGames": 1,
       "pastWin": 1,
-      "pastWinRate": 100.0
+      "pastLose": 0,
+      "pastWinRate": 100.0,
+      "currentGames": 1,
+      "currentWin": 1,
+      "currentLose": 0,
+      "currentWinRate": 100.0
     },
     {
       "p1": "김지우",
@@ -731,12 +1225,14 @@ window.INITIAL_DATA = {
       "win": 2,
       "lose": 0,
       "winRate": 100.0,
-      "currentGames": 2,
-      "currentWin": 2,
-      "currentWinRate": 100.0,
-      "pastGames": 0,
-      "pastWin": 0,
-      "pastWinRate": null
+      "pastGames": 2,
+      "pastWin": 2,
+      "pastLose": 0,
+      "pastWinRate": 100.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "김지우",
@@ -745,12 +1241,30 @@ window.INITIAL_DATA = {
       "win": 2,
       "lose": 0,
       "winRate": 100.0,
-      "currentGames": 2,
-      "currentWin": 2,
-      "currentWinRate": 100.0,
-      "pastGames": 0,
-      "pastWin": 0,
-      "pastWinRate": null
+      "pastGames": 2,
+      "pastWin": 2,
+      "pastLose": 0,
+      "pastWinRate": 100.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
+    },
+    {
+      "p1": "김찬",
+      "p2": "양현규",
+      "games": 2,
+      "win": 2,
+      "lose": 0,
+      "winRate": 100.0,
+      "pastGames": 2,
+      "pastWin": 2,
+      "pastLose": 0,
+      "pastWinRate": 100.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "송승훈",
@@ -759,26 +1273,14 @@ window.INITIAL_DATA = {
       "win": 2,
       "lose": 0,
       "winRate": 100.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 2,
       "pastWin": 2,
-      "pastWinRate": 100.0
-    },
-    {
-      "p1": "양현규",
-      "p2": "유동혁",
-      "games": 2,
-      "win": 2,
-      "lose": 0,
-      "winRate": 100.0,
+      "pastLose": 0,
+      "pastWinRate": 100.0,
       "currentGames": 0,
       "currentWin": 0,
-      "currentWinRate": null,
-      "pastGames": 2,
-      "pastWin": 2,
-      "pastWinRate": 100.0
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "윤선용",
@@ -787,12 +1289,14 @@ window.INITIAL_DATA = {
       "win": 2,
       "lose": 0,
       "winRate": 100.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 2,
       "pastWin": 2,
-      "pastWinRate": 100.0
+      "pastLose": 0,
+      "pastWinRate": 100.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "이호재",
@@ -801,12 +1305,14 @@ window.INITIAL_DATA = {
       "win": 2,
       "lose": 0,
       "winRate": 100.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 2,
       "pastWin": 2,
-      "pastWinRate": 100.0
+      "pastLose": 0,
+      "pastWinRate": 100.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "강원준",
@@ -815,12 +1321,14 @@ window.INITIAL_DATA = {
       "win": 1,
       "lose": 0,
       "winRate": 100.0,
-      "currentGames": 1,
-      "currentWin": 1,
-      "currentWinRate": 100.0,
-      "pastGames": 0,
-      "pastWin": 0,
-      "pastWinRate": null
+      "pastGames": 1,
+      "pastWin": 1,
+      "pastLose": 0,
+      "pastWinRate": 100.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "강원준",
@@ -829,12 +1337,14 @@ window.INITIAL_DATA = {
       "win": 1,
       "lose": 0,
       "winRate": 100.0,
-      "currentGames": 1,
-      "currentWin": 1,
-      "currentWinRate": 100.0,
-      "pastGames": 0,
-      "pastWin": 0,
-      "pastWinRate": null
+      "pastGames": 1,
+      "pastWin": 1,
+      "pastLose": 0,
+      "pastWinRate": 100.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "강원준",
@@ -843,12 +1353,14 @@ window.INITIAL_DATA = {
       "win": 1,
       "lose": 0,
       "winRate": 100.0,
-      "currentGames": 1,
-      "currentWin": 1,
-      "currentWinRate": 100.0,
-      "pastGames": 0,
-      "pastWin": 0,
-      "pastWinRate": null
+      "pastGames": 1,
+      "pastWin": 1,
+      "pastLose": 0,
+      "pastWinRate": 100.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "김기중",
@@ -857,12 +1369,14 @@ window.INITIAL_DATA = {
       "win": 1,
       "lose": 0,
       "winRate": 100.0,
-      "currentGames": 1,
-      "currentWin": 1,
-      "currentWinRate": 100.0,
       "pastGames": 0,
       "pastWin": 0,
-      "pastWinRate": null
+      "pastLose": 0,
+      "pastWinRate": null,
+      "currentGames": 1,
+      "currentWin": 1,
+      "currentLose": 0,
+      "currentWinRate": 100.0
     },
     {
       "p1": "김민서",
@@ -871,12 +1385,30 @@ window.INITIAL_DATA = {
       "win": 1,
       "lose": 0,
       "winRate": 100.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 1,
       "pastWin": 1,
-      "pastWinRate": 100.0
+      "pastLose": 0,
+      "pastWinRate": 100.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
+    },
+    {
+      "p1": "김민서",
+      "p2": "앙현규",
+      "games": 1,
+      "win": 1,
+      "lose": 0,
+      "winRate": 100.0,
+      "pastGames": 1,
+      "pastWin": 1,
+      "pastLose": 0,
+      "pastWinRate": 100.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "김민준",
@@ -885,12 +1417,14 @@ window.INITIAL_DATA = {
       "win": 1,
       "lose": 0,
       "winRate": 100.0,
-      "currentGames": 1,
-      "currentWin": 1,
-      "currentWinRate": 100.0,
       "pastGames": 0,
       "pastWin": 0,
-      "pastWinRate": null
+      "pastLose": 0,
+      "pastWinRate": null,
+      "currentGames": 1,
+      "currentWin": 1,
+      "currentLose": 0,
+      "currentWinRate": 100.0
     },
     {
       "p1": "김시완",
@@ -899,12 +1433,30 @@ window.INITIAL_DATA = {
       "win": 1,
       "lose": 0,
       "winRate": 100.0,
-      "currentGames": 1,
-      "currentWin": 1,
-      "currentWinRate": 100.0,
       "pastGames": 0,
       "pastWin": 0,
-      "pastWinRate": null
+      "pastLose": 0,
+      "pastWinRate": null,
+      "currentGames": 1,
+      "currentWin": 1,
+      "currentLose": 0,
+      "currentWinRate": 100.0
+    },
+    {
+      "p1": "김찬",
+      "p2": "앙현규",
+      "games": 1,
+      "win": 1,
+      "lose": 0,
+      "winRate": 100.0,
+      "pastGames": 1,
+      "pastWin": 1,
+      "pastLose": 0,
+      "pastWinRate": 100.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "박준혁",
@@ -913,12 +1465,30 @@ window.INITIAL_DATA = {
       "win": 1,
       "lose": 0,
       "winRate": 100.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 1,
       "pastWin": 1,
-      "pastWinRate": 100.0
+      "pastLose": 0,
+      "pastWinRate": 100.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
+    },
+    {
+      "p1": "송승훈",
+      "p2": "앙현규",
+      "games": 1,
+      "win": 1,
+      "lose": 0,
+      "winRate": 100.0,
+      "pastGames": 1,
+      "pastWin": 1,
+      "pastLose": 0,
+      "pastWinRate": 100.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "송승훈",
@@ -927,12 +1497,14 @@ window.INITIAL_DATA = {
       "win": 1,
       "lose": 0,
       "winRate": 100.0,
-      "currentGames": 1,
-      "currentWin": 1,
-      "currentWinRate": 100.0,
       "pastGames": 0,
       "pastWin": 0,
-      "pastWinRate": null
+      "pastLose": 0,
+      "pastWinRate": null,
+      "currentGames": 1,
+      "currentWin": 1,
+      "currentLose": 0,
+      "currentWinRate": 100.0
     },
     {
       "p1": "송승훈",
@@ -941,12 +1513,14 @@ window.INITIAL_DATA = {
       "win": 1,
       "lose": 0,
       "winRate": 100.0,
-      "currentGames": 1,
-      "currentWin": 1,
-      "currentWinRate": 100.0,
       "pastGames": 0,
       "pastWin": 0,
-      "pastWinRate": null
+      "pastLose": 0,
+      "pastWinRate": null,
+      "currentGames": 1,
+      "currentWin": 1,
+      "currentLose": 0,
+      "currentWinRate": 100.0
     },
     {
       "p1": "안성진",
@@ -955,12 +1529,14 @@ window.INITIAL_DATA = {
       "win": 1,
       "lose": 0,
       "winRate": 100.0,
-      "currentGames": 1,
-      "currentWin": 1,
-      "currentWinRate": 100.0,
       "pastGames": 0,
       "pastWin": 0,
-      "pastWinRate": null
+      "pastLose": 0,
+      "pastWinRate": null,
+      "currentGames": 1,
+      "currentWin": 1,
+      "currentLose": 0,
+      "currentWinRate": 100.0
     },
     {
       "p1": "안성진",
@@ -969,12 +1545,46 @@ window.INITIAL_DATA = {
       "win": 1,
       "lose": 0,
       "winRate": 100.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 1,
       "pastWin": 1,
-      "pastWinRate": 100.0
+      "pastLose": 0,
+      "pastWinRate": 100.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
+    },
+    {
+      "p1": "앙현규",
+      "p2": "유동혁",
+      "games": 1,
+      "win": 1,
+      "lose": 0,
+      "winRate": 100.0,
+      "pastGames": 1,
+      "pastWin": 1,
+      "pastLose": 0,
+      "pastWinRate": 100.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
+    },
+    {
+      "p1": "양현규",
+      "p2": "유동혁",
+      "games": 1,
+      "win": 1,
+      "lose": 0,
+      "winRate": 100.0,
+      "pastGames": 1,
+      "pastWin": 1,
+      "pastLose": 0,
+      "pastWinRate": 100.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "양현규",
@@ -983,12 +1593,14 @@ window.INITIAL_DATA = {
       "win": 1,
       "lose": 0,
       "winRate": 100.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 1,
       "pastWin": 1,
-      "pastWinRate": 100.0
+      "pastLose": 0,
+      "pastWinRate": 100.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "윤선용",
@@ -997,12 +1609,14 @@ window.INITIAL_DATA = {
       "win": 1,
       "lose": 0,
       "winRate": 100.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 1,
       "pastWin": 1,
-      "pastWinRate": 100.0
+      "pastLose": 0,
+      "pastWinRate": 100.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "이호재",
@@ -1011,12 +1625,14 @@ window.INITIAL_DATA = {
       "win": 1,
       "lose": 0,
       "winRate": 100.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 1,
       "pastWin": 1,
-      "pastWinRate": 100.0
+      "pastLose": 0,
+      "pastWinRate": 100.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "지범준",
@@ -1025,12 +1641,14 @@ window.INITIAL_DATA = {
       "win": 1,
       "lose": 0,
       "winRate": 100.0,
-      "currentGames": 1,
-      "currentWin": 1,
-      "currentWinRate": 100.0,
       "pastGames": 0,
       "pastWin": 0,
-      "pastWinRate": null
+      "pastLose": 0,
+      "pastWinRate": null,
+      "currentGames": 1,
+      "currentWin": 1,
+      "currentLose": 0,
+      "currentWinRate": 100.0
     },
     {
       "p1": "지범준",
@@ -1039,12 +1657,14 @@ window.INITIAL_DATA = {
       "win": 1,
       "lose": 0,
       "winRate": 100.0,
-      "currentGames": 1,
-      "currentWin": 1,
-      "currentWinRate": 100.0,
       "pastGames": 0,
       "pastWin": 0,
-      "pastWinRate": null
+      "pastLose": 0,
+      "pastWinRate": null,
+      "currentGames": 1,
+      "currentWin": 1,
+      "currentLose": 0,
+      "currentWinRate": 100.0
     },
     {
       "p1": "지범준",
@@ -1053,40 +1673,30 @@ window.INITIAL_DATA = {
       "win": 1,
       "lose": 0,
       "winRate": 100.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 1,
       "pastWin": 1,
-      "pastWinRate": 100.0
+      "pastLose": 0,
+      "pastWinRate": 100.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "송승훈",
       "p2": "양현규",
-      "games": 8,
-      "win": 7,
+      "games": 7,
+      "win": 6,
       "lose": 1,
-      "winRate": 87.5,
+      "winRate": 85.7,
+      "pastGames": 7,
+      "pastWin": 6,
+      "pastLose": 1,
+      "pastWinRate": 85.7,
       "currentGames": 0,
       "currentWin": 0,
-      "currentWinRate": null,
-      "pastGames": 8,
-      "pastWin": 7,
-      "pastWinRate": 87.5
-    },
-    {
-      "p1": "김민서",
-      "p2": "양현규",
-      "games": 10,
-      "win": 8,
-      "lose": 2,
-      "winRate": 80.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
-      "pastGames": 10,
-      "pastWin": 8,
-      "pastWinRate": 80.0
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "이권표",
@@ -1095,26 +1705,46 @@ window.INITIAL_DATA = {
       "win": 4,
       "lose": 1,
       "winRate": 80.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 5,
       "pastWin": 4,
-      "pastWinRate": 80.0
+      "pastLose": 1,
+      "pastWinRate": 80.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "이호재",
       "p2": "지범준",
-      "games": 17,
-      "win": 13,
+      "games": 18,
+      "win": 14,
       "lose": 4,
-      "winRate": 76.5,
-      "currentGames": 11,
-      "currentWin": 9,
-      "currentWinRate": 81.8,
-      "pastGames": 6,
-      "pastWin": 4,
-      "pastWinRate": 66.7
+      "winRate": 77.8,
+      "pastGames": 13,
+      "pastWin": 10,
+      "pastLose": 3,
+      "pastWinRate": 76.9,
+      "currentGames": 5,
+      "currentWin": 4,
+      "currentLose": 1,
+      "currentWinRate": 80.0
+    },
+    {
+      "p1": "김민서",
+      "p2": "양현규",
+      "games": 9,
+      "win": 7,
+      "lose": 2,
+      "winRate": 77.8,
+      "pastGames": 9,
+      "pastWin": 7,
+      "pastLose": 2,
+      "pastWinRate": 77.8,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "김기중",
@@ -1123,12 +1753,14 @@ window.INITIAL_DATA = {
       "win": 3,
       "lose": 1,
       "winRate": 75.0,
-      "currentGames": 4,
-      "currentWin": 3,
-      "currentWinRate": 75.0,
       "pastGames": 0,
       "pastWin": 0,
-      "pastWinRate": null
+      "pastLose": 0,
+      "pastWinRate": null,
+      "currentGames": 4,
+      "currentWin": 3,
+      "currentLose": 1,
+      "currentWinRate": 75.0
     },
     {
       "p1": "김기중",
@@ -1137,12 +1769,14 @@ window.INITIAL_DATA = {
       "win": 3,
       "lose": 1,
       "winRate": 75.0,
-      "currentGames": 4,
-      "currentWin": 3,
-      "currentWinRate": 75.0,
       "pastGames": 0,
       "pastWin": 0,
-      "pastWinRate": null
+      "pastLose": 0,
+      "pastWinRate": null,
+      "currentGames": 4,
+      "currentWin": 3,
+      "currentLose": 1,
+      "currentWinRate": 75.0
     },
     {
       "p1": "김기중",
@@ -1151,12 +1785,14 @@ window.INITIAL_DATA = {
       "win": 3,
       "lose": 1,
       "winRate": 75.0,
-      "currentGames": 4,
-      "currentWin": 3,
-      "currentWinRate": 75.0,
       "pastGames": 0,
       "pastWin": 0,
-      "pastWinRate": null
+      "pastLose": 0,
+      "pastWinRate": null,
+      "currentGames": 4,
+      "currentWin": 3,
+      "currentLose": 1,
+      "currentWinRate": 75.0
     },
     {
       "p1": "김민준",
@@ -1165,12 +1801,14 @@ window.INITIAL_DATA = {
       "win": 3,
       "lose": 1,
       "winRate": 75.0,
-      "currentGames": 4,
-      "currentWin": 3,
-      "currentWinRate": 75.0,
       "pastGames": 0,
       "pastWin": 0,
-      "pastWinRate": null
+      "pastLose": 0,
+      "pastWinRate": null,
+      "currentGames": 4,
+      "currentWin": 3,
+      "currentLose": 1,
+      "currentWinRate": 75.0
     },
     {
       "p1": "김민준",
@@ -1179,12 +1817,14 @@ window.INITIAL_DATA = {
       "win": 3,
       "lose": 1,
       "winRate": 75.0,
-      "currentGames": 4,
-      "currentWin": 3,
-      "currentWinRate": 75.0,
       "pastGames": 0,
       "pastWin": 0,
-      "pastWinRate": null
+      "pastLose": 0,
+      "pastWinRate": null,
+      "currentGames": 4,
+      "currentWin": 3,
+      "currentLose": 1,
+      "currentWinRate": 75.0
     },
     {
       "p1": "송승훈",
@@ -1193,12 +1833,14 @@ window.INITIAL_DATA = {
       "win": 3,
       "lose": 1,
       "winRate": 75.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 4,
       "pastWin": 3,
-      "pastWinRate": 75.0
+      "pastLose": 1,
+      "pastWinRate": 75.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "양현규",
@@ -1207,12 +1849,14 @@ window.INITIAL_DATA = {
       "win": 3,
       "lose": 1,
       "winRate": 75.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 4,
       "pastWin": 3,
-      "pastWinRate": 75.0
+      "pastLose": 1,
+      "pastWinRate": 75.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "정도영",
@@ -1221,12 +1865,14 @@ window.INITIAL_DATA = {
       "win": 3,
       "lose": 1,
       "winRate": 75.0,
-      "currentGames": 4,
-      "currentWin": 3,
-      "currentWinRate": 75.0,
-      "pastGames": 0,
-      "pastWin": 0,
-      "pastWinRate": null
+      "pastGames": 4,
+      "pastWin": 3,
+      "pastLose": 1,
+      "pastWinRate": 75.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "송승훈",
@@ -1235,12 +1881,14 @@ window.INITIAL_DATA = {
       "win": 5,
       "lose": 2,
       "winRate": 71.4,
-      "currentGames": 1,
-      "currentWin": 1,
-      "currentWinRate": 100.0,
-      "pastGames": 6,
-      "pastWin": 4,
-      "pastWinRate": 66.7
+      "pastGames": 7,
+      "pastWin": 5,
+      "pastLose": 2,
+      "pastWinRate": 71.4,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "김민서",
@@ -1249,12 +1897,14 @@ window.INITIAL_DATA = {
       "win": 14,
       "lose": 6,
       "winRate": 70.0,
-      "currentGames": 4,
-      "currentWin": 3,
-      "currentWinRate": 75.0,
-      "pastGames": 16,
-      "pastWin": 11,
-      "pastWinRate": 68.8
+      "pastGames": 18,
+      "pastWin": 12,
+      "pastLose": 6,
+      "pastWinRate": 66.7,
+      "currentGames": 2,
+      "currentWin": 2,
+      "currentLose": 0,
+      "currentWinRate": 100.0
     },
     {
       "p1": "김민서",
@@ -1263,12 +1913,14 @@ window.INITIAL_DATA = {
       "win": 9,
       "lose": 4,
       "winRate": 69.2,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 13,
       "pastWin": 9,
-      "pastWinRate": 69.2
+      "pastLose": 4,
+      "pastWinRate": 69.2,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "송승훈",
@@ -1277,12 +1929,14 @@ window.INITIAL_DATA = {
       "win": 18,
       "lose": 9,
       "winRate": 66.7,
-      "currentGames": 10,
-      "currentWin": 7,
-      "currentWinRate": 70.0,
-      "pastGames": 17,
-      "pastWin": 11,
-      "pastWinRate": 64.7
+      "pastGames": 21,
+      "pastWin": 15,
+      "pastLose": 6,
+      "pastWinRate": 71.4,
+      "currentGames": 6,
+      "currentWin": 3,
+      "currentLose": 3,
+      "currentWinRate": 50.0
     },
     {
       "p1": "김시완",
@@ -1291,12 +1945,14 @@ window.INITIAL_DATA = {
       "win": 6,
       "lose": 3,
       "winRate": 66.7,
-      "currentGames": 5,
-      "currentWin": 3,
-      "currentWinRate": 60.0,
       "pastGames": 4,
       "pastWin": 3,
-      "pastWinRate": 75.0
+      "pastLose": 1,
+      "pastWinRate": 75.0,
+      "currentGames": 5,
+      "currentWin": 3,
+      "currentLose": 2,
+      "currentWinRate": 60.0
     },
     {
       "p1": "김찬",
@@ -1305,12 +1961,14 @@ window.INITIAL_DATA = {
       "win": 6,
       "lose": 3,
       "winRate": 66.7,
-      "currentGames": 4,
-      "currentWin": 2,
-      "currentWinRate": 50.0,
-      "pastGames": 5,
-      "pastWin": 4,
-      "pastWinRate": 80.0
+      "pastGames": 7,
+      "pastWin": 6,
+      "pastLose": 1,
+      "pastWinRate": 85.7,
+      "currentGames": 2,
+      "currentWin": 0,
+      "currentLose": 2,
+      "currentWinRate": 0.0
     },
     {
       "p1": "양현규",
@@ -1319,12 +1977,14 @@ window.INITIAL_DATA = {
       "win": 6,
       "lose": 3,
       "winRate": 66.7,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 9,
       "pastWin": 6,
-      "pastWinRate": 66.7
+      "pastLose": 3,
+      "pastWinRate": 66.7,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "김시완",
@@ -1333,12 +1993,14 @@ window.INITIAL_DATA = {
       "win": 4,
       "lose": 2,
       "winRate": 66.7,
-      "currentGames": 3,
-      "currentWin": 2,
-      "currentWinRate": 66.7,
       "pastGames": 3,
       "pastWin": 2,
-      "pastWinRate": 66.7
+      "pastLose": 1,
+      "pastWinRate": 66.7,
+      "currentGames": 3,
+      "currentWin": 2,
+      "currentLose": 1,
+      "currentWinRate": 66.7
     },
     {
       "p1": "김시완",
@@ -1347,12 +2009,14 @@ window.INITIAL_DATA = {
       "win": 4,
       "lose": 2,
       "winRate": 66.7,
-      "currentGames": 6,
-      "currentWin": 4,
-      "currentWinRate": 66.7,
       "pastGames": 0,
       "pastWin": 0,
-      "pastWinRate": null
+      "pastLose": 0,
+      "pastWinRate": null,
+      "currentGames": 6,
+      "currentWin": 4,
+      "currentLose": 2,
+      "currentWinRate": 66.7
     },
     {
       "p1": "안태인",
@@ -1361,12 +2025,14 @@ window.INITIAL_DATA = {
       "win": 4,
       "lose": 2,
       "winRate": 66.7,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 6,
       "pastWin": 4,
-      "pastWinRate": 66.7
+      "pastLose": 2,
+      "pastWinRate": 66.7,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "유동혁",
@@ -1375,12 +2041,14 @@ window.INITIAL_DATA = {
       "win": 4,
       "lose": 2,
       "winRate": 66.7,
-      "currentGames": 6,
-      "currentWin": 4,
-      "currentWinRate": 66.7,
-      "pastGames": 0,
-      "pastWin": 0,
-      "pastWinRate": null
+      "pastGames": 3,
+      "pastWin": 3,
+      "pastLose": 0,
+      "pastWinRate": 100.0,
+      "currentGames": 3,
+      "currentWin": 1,
+      "currentLose": 2,
+      "currentWinRate": 33.3
     },
     {
       "p1": "유탁영",
@@ -1389,12 +2057,14 @@ window.INITIAL_DATA = {
       "win": 4,
       "lose": 2,
       "winRate": 66.7,
-      "currentGames": 1,
-      "currentWin": 1,
-      "currentWinRate": 100.0,
-      "pastGames": 5,
-      "pastWin": 3,
-      "pastWinRate": 60.0
+      "pastGames": 6,
+      "pastWin": 4,
+      "pastLose": 2,
+      "pastWinRate": 66.7,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "이준헌",
@@ -1403,12 +2073,14 @@ window.INITIAL_DATA = {
       "win": 4,
       "lose": 2,
       "winRate": 66.7,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 6,
       "pastWin": 4,
-      "pastWinRate": 66.7
+      "pastLose": 2,
+      "pastWinRate": 66.7,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "강원준",
@@ -1417,12 +2089,14 @@ window.INITIAL_DATA = {
       "win": 2,
       "lose": 1,
       "winRate": 66.7,
-      "currentGames": 3,
-      "currentWin": 2,
-      "currentWinRate": 66.7,
-      "pastGames": 0,
-      "pastWin": 0,
-      "pastWinRate": null
+      "pastGames": 3,
+      "pastWin": 2,
+      "pastLose": 1,
+      "pastWinRate": 66.7,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "김기중",
@@ -1431,12 +2105,14 @@ window.INITIAL_DATA = {
       "win": 2,
       "lose": 1,
       "winRate": 66.7,
-      "currentGames": 3,
-      "currentWin": 2,
-      "currentWinRate": 66.7,
       "pastGames": 0,
       "pastWin": 0,
-      "pastWinRate": null
+      "pastLose": 0,
+      "pastWinRate": null,
+      "currentGames": 3,
+      "currentWin": 2,
+      "currentLose": 1,
+      "currentWinRate": 66.7
     },
     {
       "p1": "김민준",
@@ -1445,12 +2121,14 @@ window.INITIAL_DATA = {
       "win": 2,
       "lose": 1,
       "winRate": 66.7,
-      "currentGames": 3,
-      "currentWin": 2,
-      "currentWinRate": 66.7,
       "pastGames": 0,
       "pastWin": 0,
-      "pastWinRate": null
+      "pastLose": 0,
+      "pastWinRate": null,
+      "currentGames": 3,
+      "currentWin": 2,
+      "currentLose": 1,
+      "currentWinRate": 66.7
     },
     {
       "p1": "김시완",
@@ -1459,12 +2137,30 @@ window.INITIAL_DATA = {
       "win": 2,
       "lose": 1,
       "winRate": 66.7,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 3,
       "pastWin": 2,
-      "pastWinRate": 66.7
+      "pastLose": 1,
+      "pastWinRate": 66.7,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
+    },
+    {
+      "p1": "안태인",
+      "p2": "유동혁",
+      "games": 3,
+      "win": 2,
+      "lose": 1,
+      "winRate": 66.7,
+      "pastGames": 3,
+      "pastWin": 2,
+      "pastLose": 1,
+      "pastWinRate": 66.7,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "안태인",
@@ -1473,12 +2169,14 @@ window.INITIAL_DATA = {
       "win": 2,
       "lose": 1,
       "winRate": 66.7,
-      "currentGames": 3,
-      "currentWin": 2,
-      "currentWinRate": 66.7,
       "pastGames": 0,
       "pastWin": 0,
-      "pastWinRate": null
+      "pastLose": 0,
+      "pastWinRate": null,
+      "currentGames": 3,
+      "currentWin": 2,
+      "currentLose": 1,
+      "currentWinRate": 66.7
     },
     {
       "p1": "안태인",
@@ -1487,12 +2185,14 @@ window.INITIAL_DATA = {
       "win": 2,
       "lose": 1,
       "winRate": 66.7,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 3,
       "pastWin": 2,
-      "pastWinRate": 66.7
+      "pastLose": 1,
+      "pastWinRate": 66.7,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "윤준석",
@@ -1501,12 +2201,14 @@ window.INITIAL_DATA = {
       "win": 2,
       "lose": 1,
       "winRate": 66.7,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 3,
       "pastWin": 2,
-      "pastWinRate": 66.7
+      "pastLose": 1,
+      "pastWinRate": 66.7,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "윤준석",
@@ -1515,12 +2217,14 @@ window.INITIAL_DATA = {
       "win": 2,
       "lose": 1,
       "winRate": 66.7,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 3,
       "pastWin": 2,
-      "pastWinRate": 66.7
+      "pastLose": 1,
+      "pastWinRate": 66.7,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "이권표",
@@ -1529,12 +2233,14 @@ window.INITIAL_DATA = {
       "win": 2,
       "lose": 1,
       "winRate": 66.7,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 3,
       "pastWin": 2,
-      "pastWinRate": 66.7
+      "pastLose": 1,
+      "pastWinRate": 66.7,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "지범준",
@@ -1543,12 +2249,30 @@ window.INITIAL_DATA = {
       "win": 2,
       "lose": 1,
       "winRate": 66.7,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 3,
       "pastWin": 2,
-      "pastWinRate": 66.7
+      "pastLose": 1,
+      "pastWinRate": 66.7,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
+    },
+    {
+      "p1": "송승훈",
+      "p2": "유동혁",
+      "games": 14,
+      "win": 9,
+      "lose": 5,
+      "winRate": 64.3,
+      "pastGames": 9,
+      "pastWin": 8,
+      "pastLose": 1,
+      "pastWinRate": 88.9,
+      "currentGames": 5,
+      "currentWin": 1,
+      "currentLose": 4,
+      "currentWinRate": 20.0
     },
     {
       "p1": "송승훈",
@@ -1557,12 +2281,14 @@ window.INITIAL_DATA = {
       "win": 7,
       "lose": 4,
       "winRate": 63.6,
-      "currentGames": 4,
-      "currentWin": 2,
-      "currentWinRate": 50.0,
       "pastGames": 7,
       "pastWin": 5,
-      "pastWinRate": 71.4
+      "pastLose": 2,
+      "pastWinRate": 71.4,
+      "currentGames": 4,
+      "currentWin": 2,
+      "currentLose": 2,
+      "currentWinRate": 50.0
     },
     {
       "p1": "안태인",
@@ -1571,12 +2297,14 @@ window.INITIAL_DATA = {
       "win": 7,
       "lose": 4,
       "winRate": 63.6,
-      "currentGames": 2,
-      "currentWin": 2,
-      "currentWinRate": 100.0,
       "pastGames": 9,
       "pastWin": 5,
-      "pastWinRate": 55.6
+      "pastLose": 4,
+      "pastWinRate": 55.6,
+      "currentGames": 2,
+      "currentWin": 2,
+      "currentLose": 0,
+      "currentWinRate": 100.0
     },
     {
       "p1": "김민서",
@@ -1585,12 +2313,14 @@ window.INITIAL_DATA = {
       "win": 10,
       "lose": 6,
       "winRate": 62.5,
-      "currentGames": 7,
-      "currentWin": 3,
-      "currentWinRate": 42.9,
-      "pastGames": 9,
+      "pastGames": 11,
       "pastWin": 7,
-      "pastWinRate": 77.8
+      "pastLose": 4,
+      "pastWinRate": 63.6,
+      "currentGames": 5,
+      "currentWin": 3,
+      "currentLose": 2,
+      "currentWinRate": 60.0
     },
     {
       "p1": "안태인",
@@ -1599,12 +2329,14 @@ window.INITIAL_DATA = {
       "win": 13,
       "lose": 8,
       "winRate": 61.9,
-      "currentGames": 10,
-      "currentWin": 7,
-      "currentWinRate": 70.0,
-      "pastGames": 11,
-      "pastWin": 6,
-      "pastWinRate": 54.5
+      "pastGames": 15,
+      "pastWin": 9,
+      "pastLose": 6,
+      "pastWinRate": 60.0,
+      "currentGames": 6,
+      "currentWin": 4,
+      "currentLose": 2,
+      "currentWinRate": 66.7
     },
     {
       "p1": "송승훈",
@@ -1613,12 +2345,14 @@ window.INITIAL_DATA = {
       "win": 8,
       "lose": 5,
       "winRate": 61.5,
-      "currentGames": 8,
-      "currentWin": 5,
-      "currentWinRate": 62.5,
-      "pastGames": 5,
-      "pastWin": 3,
-      "pastWinRate": 60.0
+      "pastGames": 10,
+      "pastWin": 7,
+      "pastLose": 3,
+      "pastWinRate": 70.0,
+      "currentGames": 3,
+      "currentWin": 1,
+      "currentLose": 2,
+      "currentWinRate": 33.3
     },
     {
       "p1": "안성진",
@@ -1627,12 +2361,30 @@ window.INITIAL_DATA = {
       "win": 8,
       "lose": 5,
       "winRate": 61.5,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 13,
       "pastWin": 8,
-      "pastWinRate": 61.5
+      "pastLose": 5,
+      "pastWinRate": 61.5,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
+    },
+    {
+      "p1": "안성진",
+      "p2": "이호재",
+      "games": 13,
+      "win": 8,
+      "lose": 5,
+      "winRate": 61.5,
+      "pastGames": 11,
+      "pastWin": 7,
+      "pastLose": 4,
+      "pastWinRate": 63.6,
+      "currentGames": 2,
+      "currentWin": 1,
+      "currentLose": 1,
+      "currentWinRate": 50.0
     },
     {
       "p1": "김민서",
@@ -1641,26 +2393,14 @@ window.INITIAL_DATA = {
       "win": 14,
       "lose": 9,
       "winRate": 60.9,
-      "currentGames": 3,
-      "currentWin": 2,
-      "currentWinRate": 66.7,
-      "pastGames": 20,
-      "pastWin": 12,
-      "pastWinRate": 60.0
-    },
-    {
-      "p1": "송승훈",
-      "p2": "유동혁",
-      "games": 15,
-      "win": 9,
-      "lose": 6,
-      "winRate": 60.0,
-      "currentGames": 12,
-      "currentWin": 7,
-      "currentWinRate": 58.3,
-      "pastGames": 3,
-      "pastWin": 2,
-      "pastWinRate": 66.7
+      "pastGames": 23,
+      "pastWin": 14,
+      "pastLose": 9,
+      "pastWinRate": 60.9,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "김시완",
@@ -1669,12 +2409,14 @@ window.INITIAL_DATA = {
       "win": 3,
       "lose": 2,
       "winRate": 60.0,
-      "currentGames": 5,
-      "currentWin": 3,
-      "currentWinRate": 60.0,
       "pastGames": 0,
       "pastWin": 0,
-      "pastWinRate": null
+      "pastLose": 0,
+      "pastWinRate": null,
+      "currentGames": 5,
+      "currentWin": 3,
+      "currentLose": 2,
+      "currentWinRate": 60.0
     },
     {
       "p1": "김찬",
@@ -1683,12 +2425,14 @@ window.INITIAL_DATA = {
       "win": 3,
       "lose": 2,
       "winRate": 60.0,
-      "currentGames": 5,
-      "currentWin": 3,
-      "currentWinRate": 60.0,
       "pastGames": 0,
       "pastWin": 0,
-      "pastWinRate": null
+      "pastLose": 0,
+      "pastWinRate": null,
+      "currentGames": 5,
+      "currentWin": 3,
+      "currentLose": 2,
+      "currentWinRate": 60.0
     },
     {
       "p1": "박준혁",
@@ -1697,12 +2441,14 @@ window.INITIAL_DATA = {
       "win": 3,
       "lose": 2,
       "winRate": 60.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 5,
       "pastWin": 3,
-      "pastWinRate": 60.0
+      "pastLose": 2,
+      "pastWinRate": 60.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "박준혁",
@@ -1711,12 +2457,14 @@ window.INITIAL_DATA = {
       "win": 3,
       "lose": 2,
       "winRate": 60.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 5,
       "pastWin": 3,
-      "pastWinRate": 60.0
+      "pastLose": 2,
+      "pastWinRate": 60.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "이호재",
@@ -1725,12 +2473,14 @@ window.INITIAL_DATA = {
       "win": 3,
       "lose": 2,
       "winRate": 60.0,
-      "currentGames": 5,
-      "currentWin": 3,
-      "currentWinRate": 60.0,
       "pastGames": 0,
       "pastWin": 0,
-      "pastWinRate": null
+      "pastLose": 0,
+      "pastWinRate": null,
+      "currentGames": 5,
+      "currentWin": 3,
+      "currentLose": 2,
+      "currentWinRate": 60.0
     },
     {
       "p1": "김민서",
@@ -1739,12 +2489,14 @@ window.INITIAL_DATA = {
       "win": 14,
       "lose": 10,
       "winRate": 58.3,
-      "currentGames": 7,
-      "currentWin": 2,
-      "currentWinRate": 28.6,
-      "pastGames": 17,
-      "pastWin": 12,
-      "pastWinRate": 70.6
+      "pastGames": 21,
+      "pastWin": 13,
+      "pastLose": 8,
+      "pastWinRate": 61.9,
+      "currentGames": 3,
+      "currentWin": 1,
+      "currentLose": 2,
+      "currentWinRate": 33.3
     },
     {
       "p1": "이준헌",
@@ -1753,26 +2505,14 @@ window.INITIAL_DATA = {
       "win": 14,
       "lose": 10,
       "winRate": 58.3,
-      "currentGames": 6,
-      "currentWin": 5,
-      "currentWinRate": 83.3,
       "pastGames": 18,
       "pastWin": 9,
-      "pastWinRate": 50.0
-    },
-    {
-      "p1": "안성진",
-      "p2": "이호재",
-      "games": 12,
-      "win": 7,
-      "lose": 5,
-      "winRate": 58.3,
-      "currentGames": 4,
-      "currentWin": 3,
-      "currentWinRate": 75.0,
-      "pastGames": 8,
-      "pastWin": 4,
-      "pastWinRate": 50.0
+      "pastLose": 9,
+      "pastWinRate": 50.0,
+      "currentGames": 6,
+      "currentWin": 5,
+      "currentLose": 1,
+      "currentWinRate": 83.3
     },
     {
       "p1": "김찬",
@@ -1781,12 +2521,30 @@ window.INITIAL_DATA = {
       "win": 11,
       "lose": 8,
       "winRate": 57.9,
-      "currentGames": 9,
-      "currentWin": 7,
-      "currentWinRate": 77.8,
-      "pastGames": 10,
-      "pastWin": 4,
-      "pastWinRate": 40.0
+      "pastGames": 16,
+      "pastWin": 9,
+      "pastLose": 7,
+      "pastWinRate": 56.2,
+      "currentGames": 3,
+      "currentWin": 2,
+      "currentLose": 1,
+      "currentWinRate": 66.7
+    },
+    {
+      "p1": "안성진",
+      "p2": "지범준",
+      "games": 28,
+      "win": 16,
+      "lose": 12,
+      "winRate": 57.1,
+      "pastGames": 22,
+      "pastWin": 13,
+      "pastLose": 9,
+      "pastWinRate": 59.1,
+      "currentGames": 6,
+      "currentWin": 3,
+      "currentLose": 3,
+      "currentWinRate": 50.0
     },
     {
       "p1": "김민서",
@@ -1795,12 +2553,14 @@ window.INITIAL_DATA = {
       "win": 4,
       "lose": 3,
       "winRate": 57.1,
-      "currentGames": 3,
-      "currentWin": 0,
-      "currentWinRate": 0.0,
-      "pastGames": 4,
+      "pastGames": 7,
       "pastWin": 4,
-      "pastWinRate": 100.0
+      "pastLose": 3,
+      "pastWinRate": 57.1,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "김민서",
@@ -1809,12 +2569,14 @@ window.INITIAL_DATA = {
       "win": 4,
       "lose": 3,
       "winRate": 57.1,
-      "currentGames": 5,
-      "currentWin": 2,
-      "currentWinRate": 40.0,
-      "pastGames": 2,
-      "pastWin": 2,
-      "pastWinRate": 100.0
+      "pastGames": 4,
+      "pastWin": 3,
+      "pastLose": 1,
+      "pastWinRate": 75.0,
+      "currentGames": 3,
+      "currentWin": 1,
+      "currentLose": 2,
+      "currentWinRate": 33.3
     },
     {
       "p1": "박준혁",
@@ -1823,12 +2585,30 @@ window.INITIAL_DATA = {
       "win": 4,
       "lose": 3,
       "winRate": 57.1,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 7,
       "pastWin": 4,
-      "pastWinRate": 57.1
+      "pastLose": 3,
+      "pastWinRate": 57.1,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
+    },
+    {
+      "p1": "안성진",
+      "p2": "유동혁",
+      "games": 7,
+      "win": 4,
+      "lose": 3,
+      "winRate": 57.1,
+      "pastGames": 5,
+      "pastWin": 4,
+      "pastLose": 1,
+      "pastWinRate": 80.0,
+      "currentGames": 2,
+      "currentWin": 0,
+      "currentLose": 2,
+      "currentWinRate": 0.0
     },
     {
       "p1": "유탁영",
@@ -1837,12 +2617,30 @@ window.INITIAL_DATA = {
       "win": 4,
       "lose": 3,
       "winRate": 57.1,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 7,
       "pastWin": 4,
-      "pastWinRate": 57.1
+      "pastLose": 3,
+      "pastWinRate": 57.1,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
+    },
+    {
+      "p1": "송승훈",
+      "p2": "안성진",
+      "games": 25,
+      "win": 14,
+      "lose": 11,
+      "winRate": 56.0,
+      "pastGames": 16,
+      "pastWin": 11,
+      "pastLose": 5,
+      "pastWinRate": 68.8,
+      "currentGames": 9,
+      "currentWin": 3,
+      "currentLose": 6,
+      "currentWinRate": 33.3
     },
     {
       "p1": "김민서",
@@ -1851,12 +2649,14 @@ window.INITIAL_DATA = {
       "win": 10,
       "lose": 8,
       "winRate": 55.6,
-      "currentGames": 5,
-      "currentWin": 2,
-      "currentWinRate": 40.0,
-      "pastGames": 13,
+      "pastGames": 16,
       "pastWin": 8,
-      "pastWinRate": 61.5
+      "pastLose": 8,
+      "pastWinRate": 50.0,
+      "currentGames": 2,
+      "currentWin": 2,
+      "currentLose": 0,
+      "currentWinRate": 100.0
     },
     {
       "p1": "양현규",
@@ -1865,26 +2665,14 @@ window.INITIAL_DATA = {
       "win": 5,
       "lose": 4,
       "winRate": 55.6,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 9,
       "pastWin": 5,
-      "pastWinRate": 55.6
-    },
-    {
-      "p1": "안성진",
-      "p2": "지범준",
-      "games": 29,
-      "win": 16,
-      "lose": 13,
-      "winRate": 55.2,
-      "currentGames": 9,
-      "currentWin": 6,
-      "currentWinRate": 66.7,
-      "pastGames": 20,
-      "pastWin": 10,
-      "pastWinRate": 50.0
+      "pastLose": 4,
+      "pastWinRate": 55.6,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "김찬",
@@ -1893,12 +2681,14 @@ window.INITIAL_DATA = {
       "win": 6,
       "lose": 5,
       "winRate": 54.5,
-      "currentGames": 9,
-      "currentWin": 4,
-      "currentWinRate": 44.4,
-      "pastGames": 2,
-      "pastWin": 2,
-      "pastWinRate": 100.0
+      "pastGames": 6,
+      "pastWin": 5,
+      "pastLose": 1,
+      "pastWinRate": 83.3,
+      "currentGames": 5,
+      "currentWin": 1,
+      "currentLose": 4,
+      "currentWinRate": 20.0
     },
     {
       "p1": "이준헌",
@@ -1907,26 +2697,14 @@ window.INITIAL_DATA = {
       "win": 6,
       "lose": 5,
       "winRate": 54.5,
-      "currentGames": 8,
-      "currentWin": 5,
-      "currentWinRate": 62.5,
       "pastGames": 3,
       "pastWin": 1,
-      "pastWinRate": 33.3
-    },
-    {
-      "p1": "송승훈",
-      "p2": "안성진",
-      "games": 26,
-      "win": 14,
-      "lose": 12,
-      "winRate": 53.8,
-      "currentGames": 15,
-      "currentWin": 8,
-      "currentWinRate": 53.3,
-      "pastGames": 11,
-      "pastWin": 6,
-      "pastWinRate": 54.5
+      "pastLose": 2,
+      "pastWinRate": 33.3,
+      "currentGames": 8,
+      "currentWin": 5,
+      "currentLose": 3,
+      "currentWinRate": 62.5
     },
     {
       "p1": "김민서",
@@ -1935,12 +2713,14 @@ window.INITIAL_DATA = {
       "win": 7,
       "lose": 6,
       "winRate": 53.8,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 13,
       "pastWin": 7,
-      "pastWinRate": 53.8
+      "pastLose": 6,
+      "pastWinRate": 53.8,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "김민서",
@@ -1949,40 +2729,62 @@ window.INITIAL_DATA = {
       "win": 7,
       "lose": 6,
       "winRate": 53.8,
-      "currentGames": 5,
-      "currentWin": 3,
-      "currentWinRate": 60.0,
       "pastGames": 8,
       "pastWin": 4,
-      "pastWinRate": 50.0
+      "pastLose": 4,
+      "pastWinRate": 50.0,
+      "currentGames": 5,
+      "currentWin": 3,
+      "currentLose": 2,
+      "currentWinRate": 60.0
     },
     {
       "p1": "송승훈",
       "p2": "안태인",
-      "games": 22,
+      "games": 21,
       "win": 11,
-      "lose": 11,
-      "winRate": 50.0,
-      "currentGames": 7,
-      "currentWin": 3,
-      "currentWinRate": 42.9,
-      "pastGames": 15,
-      "pastWin": 8,
-      "pastWinRate": 53.3
+      "lose": 10,
+      "winRate": 52.4,
+      "pastGames": 16,
+      "pastWin": 9,
+      "pastLose": 7,
+      "pastWinRate": 56.2,
+      "currentGames": 5,
+      "currentWin": 2,
+      "currentLose": 3,
+      "currentWinRate": 40.0
     },
     {
       "p1": "안태인",
+      "p2": "이호재",
+      "games": 21,
+      "win": 11,
+      "lose": 10,
+      "winRate": 52.4,
+      "pastGames": 15,
+      "pastWin": 7,
+      "pastLose": 8,
+      "pastWinRate": 46.7,
+      "currentGames": 6,
+      "currentWin": 4,
+      "currentLose": 2,
+      "currentWinRate": 66.7
+    },
+    {
+      "p1": "김찬",
       "p2": "이호재",
       "games": 20,
       "win": 10,
       "lose": 10,
       "winRate": 50.0,
-      "currentGames": 13,
-      "currentWin": 7,
-      "currentWinRate": 53.8,
-      "pastGames": 7,
-      "pastWin": 3,
-      "pastWinRate": 42.9
+      "pastGames": 14,
+      "pastWin": 7,
+      "pastLose": 7,
+      "pastWinRate": 50.0,
+      "currentGames": 6,
+      "currentWin": 3,
+      "currentLose": 3,
+      "currentWinRate": 50.0
     },
     {
       "p1": "안태인",
@@ -1991,12 +2793,14 @@ window.INITIAL_DATA = {
       "win": 7,
       "lose": 7,
       "winRate": 50.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 14,
       "pastWin": 7,
-      "pastWinRate": 50.0
+      "pastLose": 7,
+      "pastWinRate": 50.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "안성진",
@@ -2005,12 +2809,14 @@ window.INITIAL_DATA = {
       "win": 6,
       "lose": 6,
       "winRate": 50.0,
-      "currentGames": 2,
-      "currentWin": 1,
-      "currentWinRate": 50.0,
-      "pastGames": 10,
-      "pastWin": 5,
-      "pastWinRate": 50.0
+      "pastGames": 12,
+      "pastWin": 6,
+      "pastLose": 6,
+      "pastWinRate": 50.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "김민서",
@@ -2019,12 +2825,14 @@ window.INITIAL_DATA = {
       "win": 5,
       "lose": 5,
       "winRate": 50.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 10,
       "pastWin": 5,
-      "pastWinRate": 50.0
+      "pastLose": 5,
+      "pastWinRate": 50.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "박준혁",
@@ -2033,12 +2841,14 @@ window.INITIAL_DATA = {
       "win": 5,
       "lose": 5,
       "winRate": 50.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 10,
       "pastWin": 5,
-      "pastWinRate": 50.0
+      "pastLose": 5,
+      "pastWinRate": 50.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "이권표",
@@ -2047,12 +2857,14 @@ window.INITIAL_DATA = {
       "win": 5,
       "lose": 5,
       "winRate": 50.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 10,
       "pastWin": 5,
-      "pastWinRate": 50.0
+      "pastLose": 5,
+      "pastWinRate": 50.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "이권표",
@@ -2061,26 +2873,14 @@ window.INITIAL_DATA = {
       "win": 5,
       "lose": 5,
       "winRate": 50.0,
-      "currentGames": 2,
-      "currentWin": 1,
-      "currentWinRate": 50.0,
-      "pastGames": 8,
-      "pastWin": 4,
-      "pastWinRate": 50.0
-    },
-    {
-      "p1": "안성진",
-      "p2": "유동혁",
-      "games": 8,
-      "win": 4,
-      "lose": 4,
-      "winRate": 50.0,
-      "currentGames": 7,
-      "currentWin": 4,
-      "currentWinRate": 57.1,
-      "pastGames": 1,
-      "pastWin": 0,
-      "pastWinRate": 0.0
+      "pastGames": 10,
+      "pastWin": 5,
+      "pastLose": 5,
+      "pastWinRate": 50.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "안태인",
@@ -2089,12 +2889,14 @@ window.INITIAL_DATA = {
       "win": 4,
       "lose": 4,
       "winRate": 50.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 8,
       "pastWin": 4,
-      "pastWinRate": 50.0
+      "pastLose": 4,
+      "pastWinRate": 50.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "김지우",
@@ -2103,12 +2905,30 @@ window.INITIAL_DATA = {
       "win": 3,
       "lose": 3,
       "winRate": 50.0,
-      "currentGames": 2,
-      "currentWin": 2,
-      "currentWinRate": 100.0,
+      "pastGames": 6,
+      "pastWin": 3,
+      "pastLose": 3,
+      "pastWinRate": 50.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
+    },
+    {
+      "p1": "안우진",
+      "p2": "유동혁",
+      "games": 6,
+      "win": 3,
+      "lose": 3,
+      "winRate": 50.0,
       "pastGames": 4,
-      "pastWin": 1,
-      "pastWinRate": 25.0
+      "pastWin": 3,
+      "pastLose": 1,
+      "pastWinRate": 75.0,
+      "currentGames": 2,
+      "currentWin": 0,
+      "currentLose": 2,
+      "currentWinRate": 0.0
     },
     {
       "p1": "김민서",
@@ -2117,12 +2937,14 @@ window.INITIAL_DATA = {
       "win": 2,
       "lose": 2,
       "winRate": 50.0,
-      "currentGames": 3,
-      "currentWin": 1,
-      "currentWinRate": 33.3,
-      "pastGames": 1,
-      "pastWin": 1,
-      "pastWinRate": 100.0
+      "pastGames": 4,
+      "pastWin": 2,
+      "pastLose": 2,
+      "pastWinRate": 50.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "김민서",
@@ -2131,12 +2953,14 @@ window.INITIAL_DATA = {
       "win": 2,
       "lose": 2,
       "winRate": 50.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 4,
       "pastWin": 2,
-      "pastWinRate": 50.0
+      "pastLose": 2,
+      "pastWinRate": 50.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "송승훈",
@@ -2145,12 +2969,14 @@ window.INITIAL_DATA = {
       "win": 2,
       "lose": 2,
       "winRate": 50.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 4,
       "pastWin": 2,
-      "pastWinRate": 50.0
+      "pastLose": 2,
+      "pastWinRate": 50.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "안성진",
@@ -2159,26 +2985,14 @@ window.INITIAL_DATA = {
       "win": 2,
       "lose": 2,
       "winRate": 50.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 4,
       "pastWin": 2,
-      "pastWinRate": 50.0
-    },
-    {
-      "p1": "안태인",
-      "p2": "유동혁",
-      "games": 4,
-      "win": 2,
-      "lose": 2,
-      "winRate": 50.0,
+      "pastLose": 2,
+      "pastWinRate": 50.0,
       "currentGames": 0,
       "currentWin": 0,
-      "currentWinRate": null,
-      "pastGames": 4,
-      "pastWin": 2,
-      "pastWinRate": 50.0
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "양현규",
@@ -2187,12 +3001,14 @@ window.INITIAL_DATA = {
       "win": 2,
       "lose": 2,
       "winRate": 50.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 4,
       "pastWin": 2,
-      "pastWinRate": 50.0
+      "pastLose": 2,
+      "pastWinRate": 50.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "양현규",
@@ -2201,12 +3017,14 @@ window.INITIAL_DATA = {
       "win": 2,
       "lose": 2,
       "winRate": 50.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 4,
       "pastWin": 2,
-      "pastWinRate": 50.0
+      "pastLose": 2,
+      "pastWinRate": 50.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "윤선용",
@@ -2215,12 +3033,14 @@ window.INITIAL_DATA = {
       "win": 2,
       "lose": 2,
       "winRate": 50.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 4,
       "pastWin": 2,
-      "pastWinRate": 50.0
+      "pastLose": 2,
+      "pastWinRate": 50.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "김시완",
@@ -2229,12 +3049,14 @@ window.INITIAL_DATA = {
       "win": 1,
       "lose": 1,
       "winRate": 50.0,
-      "currentGames": 2,
-      "currentWin": 1,
-      "currentWinRate": 50.0,
       "pastGames": 0,
       "pastWin": 0,
-      "pastWinRate": null
+      "pastLose": 0,
+      "pastWinRate": null,
+      "currentGames": 2,
+      "currentWin": 1,
+      "currentLose": 1,
+      "currentWinRate": 50.0
     },
     {
       "p1": "김지우",
@@ -2243,12 +3065,14 @@ window.INITIAL_DATA = {
       "win": 1,
       "lose": 1,
       "winRate": 50.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 2,
       "pastWin": 1,
-      "pastWinRate": 50.0
+      "pastLose": 1,
+      "pastWinRate": 50.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "송승훈",
@@ -2257,12 +3081,14 @@ window.INITIAL_DATA = {
       "win": 1,
       "lose": 1,
       "winRate": 50.0,
-      "currentGames": 2,
-      "currentWin": 1,
-      "currentWinRate": 50.0,
-      "pastGames": 0,
-      "pastWin": 0,
-      "pastWinRate": null
+      "pastGames": 2,
+      "pastWin": 1,
+      "pastLose": 1,
+      "pastWinRate": 50.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "윤선용",
@@ -2271,12 +3097,14 @@ window.INITIAL_DATA = {
       "win": 1,
       "lose": 1,
       "winRate": 50.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 2,
       "pastWin": 1,
-      "pastWinRate": 50.0
+      "pastLose": 1,
+      "pastWinRate": 50.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "윤선용",
@@ -2285,12 +3113,14 @@ window.INITIAL_DATA = {
       "win": 1,
       "lose": 1,
       "winRate": 50.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 2,
       "pastWin": 1,
-      "pastWinRate": 50.0
+      "pastLose": 1,
+      "pastWinRate": 50.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "윤준석",
@@ -2299,12 +3129,14 @@ window.INITIAL_DATA = {
       "win": 1,
       "lose": 1,
       "winRate": 50.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 2,
       "pastWin": 1,
-      "pastWinRate": 50.0
+      "pastLose": 1,
+      "pastWinRate": 50.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "조호진",
@@ -2313,12 +3145,14 @@ window.INITIAL_DATA = {
       "win": 1,
       "lose": 1,
       "winRate": 50.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 2,
       "pastWin": 1,
-      "pastWinRate": 50.0
+      "pastLose": 1,
+      "pastWinRate": 50.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "짱구",
@@ -2327,26 +3161,14 @@ window.INITIAL_DATA = {
       "win": 1,
       "lose": 1,
       "winRate": 50.0,
-      "currentGames": 2,
-      "currentWin": 1,
-      "currentWinRate": 50.0,
       "pastGames": 0,
       "pastWin": 0,
-      "pastWinRate": null
-    },
-    {
-      "p1": "김찬",
-      "p2": "이호재",
-      "games": 19,
-      "win": 9,
-      "lose": 10,
-      "winRate": 47.4,
-      "currentGames": 15,
-      "currentWin": 8,
-      "currentWinRate": 53.3,
-      "pastGames": 4,
-      "pastWin": 1,
-      "pastWinRate": 25.0
+      "pastLose": 0,
+      "pastWinRate": null,
+      "currentGames": 2,
+      "currentWin": 1,
+      "currentLose": 1,
+      "currentWinRate": 50.0
     },
     {
       "p1": "안성진",
@@ -2355,12 +3177,14 @@ window.INITIAL_DATA = {
       "win": 7,
       "lose": 8,
       "winRate": 46.7,
-      "currentGames": 2,
-      "currentWin": 0,
-      "currentWinRate": 0.0,
-      "pastGames": 13,
+      "pastGames": 15,
       "pastWin": 7,
-      "pastWinRate": 53.8
+      "pastLose": 8,
+      "pastWinRate": 46.7,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "안성진",
@@ -2369,12 +3193,30 @@ window.INITIAL_DATA = {
       "win": 6,
       "lose": 7,
       "winRate": 46.2,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 13,
       "pastWin": 6,
-      "pastWinRate": 46.2
+      "pastLose": 7,
+      "pastWinRate": 46.2,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
+    },
+    {
+      "p1": "안성진",
+      "p2": "안태인",
+      "games": 24,
+      "win": 11,
+      "lose": 13,
+      "winRate": 45.8,
+      "pastGames": 15,
+      "pastWin": 7,
+      "pastLose": 8,
+      "pastWinRate": 46.7,
+      "currentGames": 9,
+      "currentWin": 4,
+      "currentLose": 5,
+      "currentWinRate": 44.4
     },
     {
       "p1": "송승훈",
@@ -2383,12 +3225,14 @@ window.INITIAL_DATA = {
       "win": 4,
       "lose": 5,
       "winRate": 44.4,
-      "currentGames": 2,
-      "currentWin": 0,
-      "currentWinRate": 0.0,
-      "pastGames": 7,
+      "pastGames": 9,
       "pastWin": 4,
-      "pastWinRate": 57.1
+      "pastLose": 5,
+      "pastWinRate": 44.4,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "안태인",
@@ -2397,26 +3241,14 @@ window.INITIAL_DATA = {
       "win": 4,
       "lose": 5,
       "winRate": 44.4,
-      "currentGames": 2,
-      "currentWin": 0,
-      "currentWinRate": 0.0,
-      "pastGames": 7,
+      "pastGames": 9,
       "pastWin": 4,
-      "pastWinRate": 57.1
-    },
-    {
-      "p1": "안성진",
-      "p2": "안태인",
-      "games": 25,
-      "win": 11,
-      "lose": 14,
-      "winRate": 44.0,
-      "currentGames": 13,
-      "currentWin": 6,
-      "currentWinRate": 46.2,
-      "pastGames": 12,
-      "pastWin": 5,
-      "pastWinRate": 41.7
+      "pastLose": 5,
+      "pastWinRate": 44.4,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "김찬",
@@ -2425,12 +3257,30 @@ window.INITIAL_DATA = {
       "win": 12,
       "lose": 16,
       "winRate": 42.9,
-      "currentGames": 20,
-      "currentWin": 9,
-      "currentWinRate": 45.0,
-      "pastGames": 8,
+      "pastGames": 17,
+      "pastWin": 7,
+      "pastLose": 10,
+      "pastWinRate": 41.2,
+      "currentGames": 11,
+      "currentWin": 5,
+      "currentLose": 6,
+      "currentWinRate": 45.5
+    },
+    {
+      "p1": "송승훈",
+      "p2": "안우진",
+      "games": 14,
+      "win": 6,
+      "lose": 8,
+      "winRate": 42.9,
+      "pastGames": 4,
       "pastWin": 3,
-      "pastWinRate": 37.5
+      "pastLose": 1,
+      "pastWinRate": 75.0,
+      "currentGames": 10,
+      "currentWin": 3,
+      "currentLose": 7,
+      "currentWinRate": 30.0
     },
     {
       "p1": "박준혁",
@@ -2439,40 +3289,14 @@ window.INITIAL_DATA = {
       "win": 3,
       "lose": 4,
       "winRate": 42.9,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 7,
       "pastWin": 3,
-      "pastWinRate": 42.9
-    },
-    {
-      "p1": "안우진",
-      "p2": "유동혁",
-      "games": 7,
-      "win": 3,
-      "lose": 4,
-      "winRate": 42.9,
-      "currentGames": 6,
-      "currentWin": 3,
-      "currentWinRate": 50.0,
-      "pastGames": 1,
-      "pastWin": 0,
-      "pastWinRate": 0.0
-    },
-    {
-      "p1": "송승훈",
-      "p2": "안우진",
-      "games": 15,
-      "win": 6,
-      "lose": 9,
-      "winRate": 40.0,
-      "currentGames": 14,
-      "currentWin": 6,
-      "currentWinRate": 42.9,
-      "pastGames": 1,
-      "pastWin": 0,
-      "pastWinRate": 0.0
+      "pastLose": 4,
+      "pastWinRate": 42.9,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "김지우",
@@ -2481,12 +3305,14 @@ window.INITIAL_DATA = {
       "win": 2,
       "lose": 3,
       "winRate": 40.0,
-      "currentGames": 2,
-      "currentWin": 2,
-      "currentWinRate": 100.0,
-      "pastGames": 3,
-      "pastWin": 0,
-      "pastWinRate": 0.0
+      "pastGames": 5,
+      "pastWin": 2,
+      "pastLose": 3,
+      "pastWinRate": 40.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "김지우",
@@ -2495,12 +3321,14 @@ window.INITIAL_DATA = {
       "win": 2,
       "lose": 3,
       "winRate": 40.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 5,
       "pastWin": 2,
-      "pastWinRate": 40.0
+      "pastLose": 3,
+      "pastWinRate": 40.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "박명룡",
@@ -2509,12 +3337,14 @@ window.INITIAL_DATA = {
       "win": 2,
       "lose": 3,
       "winRate": 40.0,
-      "currentGames": 5,
-      "currentWin": 2,
-      "currentWinRate": 40.0,
       "pastGames": 0,
       "pastWin": 0,
-      "pastWinRate": null
+      "pastLose": 0,
+      "pastWinRate": null,
+      "currentGames": 5,
+      "currentWin": 2,
+      "currentLose": 3,
+      "currentWinRate": 40.0
     },
     {
       "p1": "박명룡",
@@ -2523,12 +3353,14 @@ window.INITIAL_DATA = {
       "win": 2,
       "lose": 3,
       "winRate": 40.0,
-      "currentGames": 5,
-      "currentWin": 2,
-      "currentWinRate": 40.0,
       "pastGames": 0,
       "pastWin": 0,
-      "pastWinRate": null
+      "pastLose": 0,
+      "pastWinRate": null,
+      "currentGames": 5,
+      "currentWin": 2,
+      "currentLose": 3,
+      "currentWinRate": 40.0
     },
     {
       "p1": "박준혁",
@@ -2537,12 +3369,14 @@ window.INITIAL_DATA = {
       "win": 2,
       "lose": 3,
       "winRate": 40.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 5,
       "pastWin": 2,
-      "pastWinRate": 40.0
+      "pastLose": 3,
+      "pastWinRate": 40.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "박준혁",
@@ -2551,12 +3385,14 @@ window.INITIAL_DATA = {
       "win": 2,
       "lose": 3,
       "winRate": 40.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 5,
       "pastWin": 2,
-      "pastWinRate": 40.0
+      "pastLose": 3,
+      "pastWinRate": 40.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "안우진",
@@ -2565,12 +3401,14 @@ window.INITIAL_DATA = {
       "win": 2,
       "lose": 3,
       "winRate": 40.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 5,
       "pastWin": 2,
-      "pastWinRate": 40.0
+      "pastLose": 3,
+      "pastWinRate": 40.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "윤준석",
@@ -2579,12 +3417,14 @@ window.INITIAL_DATA = {
       "win": 2,
       "lose": 3,
       "winRate": 40.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 5,
       "pastWin": 2,
-      "pastWinRate": 40.0
+      "pastLose": 3,
+      "pastWinRate": 40.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "이준헌",
@@ -2593,12 +3433,14 @@ window.INITIAL_DATA = {
       "win": 2,
       "lose": 3,
       "winRate": 40.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 5,
       "pastWin": 2,
-      "pastWinRate": 40.0
+      "pastLose": 3,
+      "pastWinRate": 40.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "안우진",
@@ -2607,12 +3449,14 @@ window.INITIAL_DATA = {
       "win": 5,
       "lose": 8,
       "winRate": 38.5,
-      "currentGames": 7,
-      "currentWin": 3,
-      "currentWinRate": 42.9,
       "pastGames": 6,
       "pastWin": 2,
-      "pastWinRate": 33.3
+      "pastLose": 4,
+      "pastWinRate": 33.3,
+      "currentGames": 7,
+      "currentWin": 3,
+      "currentLose": 4,
+      "currentWinRate": 42.9
     },
     {
       "p1": "김찬",
@@ -2621,12 +3465,14 @@ window.INITIAL_DATA = {
       "win": 7,
       "lose": 13,
       "winRate": 35.0,
-      "currentGames": 14,
-      "currentWin": 6,
-      "currentWinRate": 42.9,
-      "pastGames": 6,
-      "pastWin": 1,
-      "pastWinRate": 16.7
+      "pastGames": 9,
+      "pastWin": 3,
+      "pastLose": 6,
+      "pastWinRate": 33.3,
+      "currentGames": 11,
+      "currentWin": 4,
+      "currentLose": 7,
+      "currentWinRate": 36.4
     },
     {
       "p1": "김민서",
@@ -2635,12 +3481,14 @@ window.INITIAL_DATA = {
       "win": 3,
       "lose": 6,
       "winRate": 33.3,
-      "currentGames": 4,
-      "currentWin": 1,
-      "currentWinRate": 25.0,
-      "pastGames": 5,
-      "pastWin": 2,
-      "pastWinRate": 40.0
+      "pastGames": 9,
+      "pastWin": 3,
+      "pastLose": 6,
+      "pastWinRate": 33.3,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "김지우",
@@ -2649,12 +3497,14 @@ window.INITIAL_DATA = {
       "win": 2,
       "lose": 4,
       "winRate": 33.3,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 6,
       "pastWin": 2,
-      "pastWinRate": 33.3
+      "pastLose": 4,
+      "pastWinRate": 33.3,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "박명룡",
@@ -2663,12 +3513,14 @@ window.INITIAL_DATA = {
       "win": 2,
       "lose": 4,
       "winRate": 33.3,
-      "currentGames": 6,
-      "currentWin": 2,
-      "currentWinRate": 33.3,
       "pastGames": 0,
       "pastWin": 0,
-      "pastWinRate": null
+      "pastLose": 0,
+      "pastWinRate": null,
+      "currentGames": 6,
+      "currentWin": 2,
+      "currentLose": 4,
+      "currentWinRate": 33.3
     },
     {
       "p1": "이호재",
@@ -2677,12 +3529,14 @@ window.INITIAL_DATA = {
       "win": 2,
       "lose": 4,
       "winRate": 33.3,
-      "currentGames": 6,
-      "currentWin": 2,
-      "currentWinRate": 33.3,
-      "pastGames": 0,
-      "pastWin": 0,
-      "pastWinRate": null
+      "pastGames": 6,
+      "pastWin": 2,
+      "pastLose": 4,
+      "pastWinRate": 33.3,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "강원준",
@@ -2691,12 +3545,14 @@ window.INITIAL_DATA = {
       "win": 1,
       "lose": 2,
       "winRate": 33.3,
-      "currentGames": 3,
-      "currentWin": 1,
-      "currentWinRate": 33.3,
-      "pastGames": 0,
-      "pastWin": 0,
-      "pastWinRate": null
+      "pastGames": 3,
+      "pastWin": 1,
+      "pastLose": 2,
+      "pastWinRate": 33.3,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "김민서",
@@ -2705,12 +3561,14 @@ window.INITIAL_DATA = {
       "win": 1,
       "lose": 2,
       "winRate": 33.3,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 3,
       "pastWin": 1,
-      "pastWinRate": 33.3
+      "pastLose": 2,
+      "pastWinRate": 33.3,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "김지우",
@@ -2719,12 +3577,14 @@ window.INITIAL_DATA = {
       "win": 1,
       "lose": 2,
       "winRate": 33.3,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 3,
       "pastWin": 1,
-      "pastWinRate": 33.3
+      "pastLose": 2,
+      "pastWinRate": 33.3,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "김찬",
@@ -2733,12 +3593,14 @@ window.INITIAL_DATA = {
       "win": 1,
       "lose": 2,
       "winRate": 33.3,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 3,
       "pastWin": 1,
-      "pastWinRate": 33.3
+      "pastLose": 2,
+      "pastWinRate": 33.3,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "박명룡",
@@ -2747,12 +3609,14 @@ window.INITIAL_DATA = {
       "win": 1,
       "lose": 2,
       "winRate": 33.3,
-      "currentGames": 3,
-      "currentWin": 1,
-      "currentWinRate": 33.3,
       "pastGames": 0,
       "pastWin": 0,
-      "pastWinRate": null
+      "pastLose": 0,
+      "pastWinRate": null,
+      "currentGames": 3,
+      "currentWin": 1,
+      "currentLose": 2,
+      "currentWinRate": 33.3
     },
     {
       "p1": "박명룡",
@@ -2761,12 +3625,14 @@ window.INITIAL_DATA = {
       "win": 1,
       "lose": 2,
       "winRate": 33.3,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 3,
       "pastWin": 1,
-      "pastWinRate": 33.3
+      "pastLose": 2,
+      "pastWinRate": 33.3,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "박명룡",
@@ -2775,12 +3641,14 @@ window.INITIAL_DATA = {
       "win": 1,
       "lose": 2,
       "winRate": 33.3,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 3,
       "pastWin": 1,
-      "pastWinRate": 33.3
+      "pastLose": 2,
+      "pastWinRate": 33.3,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "유동혁",
@@ -2789,12 +3657,14 @@ window.INITIAL_DATA = {
       "win": 1,
       "lose": 2,
       "winRate": 33.3,
-      "currentGames": 3,
-      "currentWin": 1,
-      "currentWinRate": 33.3,
       "pastGames": 0,
       "pastWin": 0,
-      "pastWinRate": null
+      "pastLose": 0,
+      "pastWinRate": null,
+      "currentGames": 3,
+      "currentWin": 1,
+      "currentLose": 2,
+      "currentWinRate": 33.3
     },
     {
       "p1": "유탁영",
@@ -2803,40 +3673,46 @@ window.INITIAL_DATA = {
       "win": 1,
       "lose": 2,
       "winRate": 33.3,
-      "currentGames": 3,
-      "currentWin": 1,
-      "currentWinRate": 33.3,
-      "pastGames": 0,
-      "pastWin": 0,
-      "pastWinRate": null
-    },
-    {
-      "p1": "안우진",
-      "p2": "안태인",
-      "games": 20,
-      "win": 6,
-      "lose": 14,
-      "winRate": 30.0,
-      "currentGames": 13,
-      "currentWin": 4,
-      "currentWinRate": 30.8,
-      "pastGames": 7,
-      "pastWin": 2,
-      "pastWinRate": 28.6
+      "pastGames": 3,
+      "pastWin": 1,
+      "pastLose": 2,
+      "pastWinRate": 33.3,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "안성진",
       "p2": "안우진",
-      "games": 27,
+      "games": 25,
       "win": 8,
-      "lose": 19,
-      "winRate": 29.6,
-      "currentGames": 21,
-      "currentWin": 8,
-      "currentWinRate": 38.1,
-      "pastGames": 6,
-      "pastWin": 0,
-      "pastWinRate": 0.0
+      "lose": 17,
+      "winRate": 32.0,
+      "pastGames": 11,
+      "pastWin": 3,
+      "pastLose": 8,
+      "pastWinRate": 27.3,
+      "currentGames": 14,
+      "currentWin": 5,
+      "currentLose": 9,
+      "currentWinRate": 35.7
+    },
+    {
+      "p1": "안우진",
+      "p2": "안태인",
+      "games": 19,
+      "win": 6,
+      "lose": 13,
+      "winRate": 31.6,
+      "pastGames": 9,
+      "pastWin": 2,
+      "pastLose": 7,
+      "pastWinRate": 22.2,
+      "currentGames": 10,
+      "currentWin": 4,
+      "currentLose": 6,
+      "currentWinRate": 40.0
     },
     {
       "p1": "김찬",
@@ -2845,12 +3721,14 @@ window.INITIAL_DATA = {
       "win": 2,
       "lose": 5,
       "winRate": 28.6,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 7,
       "pastWin": 2,
-      "pastWinRate": 28.6
+      "pastLose": 5,
+      "pastWinRate": 28.6,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "김찬",
@@ -2859,12 +3737,14 @@ window.INITIAL_DATA = {
       "win": 2,
       "lose": 5,
       "winRate": 28.6,
-      "currentGames": 7,
-      "currentWin": 2,
-      "currentWinRate": 28.6,
-      "pastGames": 0,
-      "pastWin": 0,
-      "pastWinRate": null
+      "pastGames": 7,
+      "pastWin": 2,
+      "pastLose": 5,
+      "pastWinRate": 28.6,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "박명룡",
@@ -2873,12 +3753,14 @@ window.INITIAL_DATA = {
       "win": 2,
       "lose": 5,
       "winRate": 28.6,
-      "currentGames": 4,
-      "currentWin": 1,
-      "currentWinRate": 25.0,
       "pastGames": 3,
       "pastWin": 1,
-      "pastWinRate": 33.3
+      "pastLose": 2,
+      "pastWinRate": 33.3,
+      "currentGames": 4,
+      "currentWin": 1,
+      "currentLose": 3,
+      "currentWinRate": 25.0
     },
     {
       "p1": "박준혁",
@@ -2887,12 +3769,14 @@ window.INITIAL_DATA = {
       "win": 2,
       "lose": 5,
       "winRate": 28.6,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 7,
       "pastWin": 2,
-      "pastWinRate": 28.6
+      "pastLose": 5,
+      "pastWinRate": 28.6,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "강원준",
@@ -2901,12 +3785,14 @@ window.INITIAL_DATA = {
       "win": 1,
       "lose": 3,
       "winRate": 25.0,
-      "currentGames": 4,
-      "currentWin": 1,
-      "currentWinRate": 25.0,
-      "pastGames": 0,
-      "pastWin": 0,
-      "pastWinRate": null
+      "pastGames": 4,
+      "pastWin": 1,
+      "pastLose": 3,
+      "pastWinRate": 25.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "강원준",
@@ -2915,12 +3801,14 @@ window.INITIAL_DATA = {
       "win": 1,
       "lose": 3,
       "winRate": 25.0,
-      "currentGames": 4,
-      "currentWin": 1,
-      "currentWinRate": 25.0,
-      "pastGames": 0,
-      "pastWin": 0,
-      "pastWinRate": null
+      "pastGames": 4,
+      "pastWin": 1,
+      "pastLose": 3,
+      "pastWinRate": 25.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "김민서",
@@ -2929,12 +3817,14 @@ window.INITIAL_DATA = {
       "win": 1,
       "lose": 3,
       "winRate": 25.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 4,
       "pastWin": 1,
-      "pastWinRate": 25.0
+      "pastLose": 3,
+      "pastWinRate": 25.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "김찬",
@@ -2943,12 +3833,14 @@ window.INITIAL_DATA = {
       "win": 1,
       "lose": 3,
       "winRate": 25.0,
-      "currentGames": 1,
-      "currentWin": 0,
-      "currentWinRate": 0.0,
       "pastGames": 3,
       "pastWin": 1,
-      "pastWinRate": 33.3
+      "pastLose": 2,
+      "pastWinRate": 33.3,
+      "currentGames": 1,
+      "currentWin": 0,
+      "currentLose": 1,
+      "currentWinRate": 0.0
     },
     {
       "p1": "송승훈",
@@ -2957,12 +3849,14 @@ window.INITIAL_DATA = {
       "win": 1,
       "lose": 3,
       "winRate": 25.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 4,
       "pastWin": 1,
-      "pastWinRate": 25.0
+      "pastLose": 3,
+      "pastWinRate": 25.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "안성진",
@@ -2971,12 +3865,14 @@ window.INITIAL_DATA = {
       "win": 1,
       "lose": 3,
       "winRate": 25.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 4,
       "pastWin": 1,
-      "pastWinRate": 25.0
+      "pastLose": 3,
+      "pastWinRate": 25.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "이권표",
@@ -2985,12 +3881,14 @@ window.INITIAL_DATA = {
       "win": 1,
       "lose": 3,
       "winRate": 25.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 4,
       "pastWin": 1,
-      "pastWinRate": 25.0
+      "pastLose": 3,
+      "pastWinRate": 25.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "김찬",
@@ -2999,12 +3897,14 @@ window.INITIAL_DATA = {
       "win": 4,
       "lose": 14,
       "winRate": 22.2,
-      "currentGames": 12,
-      "currentWin": 3,
-      "currentWinRate": 25.0,
-      "pastGames": 6,
+      "pastGames": 8,
       "pastWin": 1,
-      "pastWinRate": 16.7
+      "pastLose": 7,
+      "pastWinRate": 12.5,
+      "currentGames": 10,
+      "currentWin": 3,
+      "currentLose": 7,
+      "currentWinRate": 30.0
     },
     {
       "p1": "안태인",
@@ -3013,12 +3913,14 @@ window.INITIAL_DATA = {
       "win": 2,
       "lose": 7,
       "winRate": 22.2,
-      "currentGames": 9,
-      "currentWin": 2,
-      "currentWinRate": 22.2,
-      "pastGames": 0,
-      "pastWin": 0,
-      "pastWinRate": null
+      "pastGames": 9,
+      "pastWin": 2,
+      "pastLose": 7,
+      "pastWinRate": 22.2,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "김민서",
@@ -3027,26 +3929,14 @@ window.INITIAL_DATA = {
       "win": 1,
       "lose": 4,
       "winRate": 20.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 5,
       "pastWin": 1,
-      "pastWinRate": 20.0
-    },
-    {
-      "p1": "안성진",
-      "p2": "윤선용",
-      "games": 4,
-      "win": 0,
-      "lose": 4,
-      "winRate": 0.0,
+      "pastLose": 4,
+      "pastWinRate": 20.0,
       "currentGames": 0,
       "currentWin": 0,
-      "currentWinRate": null,
-      "pastGames": 4,
-      "pastWin": 0,
-      "pastWinRate": 0.0
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "안우진",
@@ -3055,12 +3945,14 @@ window.INITIAL_DATA = {
       "win": 0,
       "lose": 4,
       "winRate": 0.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 4,
       "pastWin": 0,
-      "pastWinRate": 0.0
+      "pastLose": 4,
+      "pastWinRate": 0.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "이권표",
@@ -3069,12 +3961,14 @@ window.INITIAL_DATA = {
       "win": 0,
       "lose": 4,
       "winRate": 0.0,
-      "currentGames": 4,
-      "currentWin": 0,
-      "currentWinRate": 0.0,
-      "pastGames": 0,
+      "pastGames": 4,
       "pastWin": 0,
-      "pastWinRate": null
+      "pastLose": 4,
+      "pastWinRate": 0.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "강원준",
@@ -3083,12 +3977,14 @@ window.INITIAL_DATA = {
       "win": 0,
       "lose": 3,
       "winRate": 0.0,
-      "currentGames": 3,
-      "currentWin": 0,
-      "currentWinRate": 0.0,
-      "pastGames": 0,
+      "pastGames": 3,
       "pastWin": 0,
-      "pastWinRate": null
+      "pastLose": 3,
+      "pastWinRate": 0.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "김민서",
@@ -3097,12 +3993,14 @@ window.INITIAL_DATA = {
       "win": 0,
       "lose": 3,
       "winRate": 0.0,
-      "currentGames": 3,
-      "currentWin": 0,
-      "currentWinRate": 0.0,
-      "pastGames": 0,
+      "pastGames": 3,
       "pastWin": 0,
-      "pastWinRate": null
+      "pastLose": 3,
+      "pastWinRate": 0.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "김민서",
@@ -3111,12 +4009,14 @@ window.INITIAL_DATA = {
       "win": 0,
       "lose": 3,
       "winRate": 0.0,
-      "currentGames": 3,
-      "currentWin": 0,
-      "currentWinRate": 0.0,
-      "pastGames": 0,
+      "pastGames": 3,
       "pastWin": 0,
-      "pastWinRate": null
+      "pastLose": 3,
+      "pastWinRate": 0.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "김찬",
@@ -3125,12 +4025,30 @@ window.INITIAL_DATA = {
       "win": 0,
       "lose": 3,
       "winRate": 0.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 3,
       "pastWin": 0,
-      "pastWinRate": 0.0
+      "pastLose": 3,
+      "pastWinRate": 0.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
+    },
+    {
+      "p1": "안성진",
+      "p2": "윤선용",
+      "games": 3,
+      "win": 0,
+      "lose": 3,
+      "winRate": 0.0,
+      "pastGames": 3,
+      "pastWin": 0,
+      "pastLose": 3,
+      "pastWinRate": 0.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "안우진",
@@ -3139,12 +4057,14 @@ window.INITIAL_DATA = {
       "win": 0,
       "lose": 3,
       "winRate": 0.0,
-      "currentGames": 2,
-      "currentWin": 0,
-      "currentWinRate": 0.0,
-      "pastGames": 1,
+      "pastGames": 3,
       "pastWin": 0,
-      "pastWinRate": 0.0
+      "pastLose": 3,
+      "pastWinRate": 0.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "안우진",
@@ -3153,12 +4073,14 @@ window.INITIAL_DATA = {
       "win": 0,
       "lose": 3,
       "winRate": 0.0,
-      "currentGames": 3,
-      "currentWin": 0,
-      "currentWinRate": 0.0,
-      "pastGames": 0,
+      "pastGames": 3,
       "pastWin": 0,
-      "pastWinRate": null
+      "pastLose": 3,
+      "pastWinRate": 0.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "안태인",
@@ -3167,12 +4089,14 @@ window.INITIAL_DATA = {
       "win": 0,
       "lose": 3,
       "winRate": 0.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 3,
       "pastWin": 0,
-      "pastWinRate": 0.0
+      "pastLose": 3,
+      "pastWinRate": 0.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "김지우",
@@ -3181,12 +4105,14 @@ window.INITIAL_DATA = {
       "win": 0,
       "lose": 2,
       "winRate": 0.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 2,
       "pastWin": 0,
-      "pastWinRate": 0.0
+      "pastLose": 2,
+      "pastWinRate": 0.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "박준혁",
@@ -3195,12 +4121,14 @@ window.INITIAL_DATA = {
       "win": 0,
       "lose": 2,
       "winRate": 0.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 2,
       "pastWin": 0,
-      "pastWinRate": 0.0
+      "pastLose": 2,
+      "pastWinRate": 0.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "송승훈",
@@ -3209,12 +4137,14 @@ window.INITIAL_DATA = {
       "win": 0,
       "lose": 2,
       "winRate": 0.0,
-      "currentGames": 2,
-      "currentWin": 0,
-      "currentWinRate": 0.0,
-      "pastGames": 0,
+      "pastGames": 2,
       "pastWin": 0,
-      "pastWinRate": null
+      "pastLose": 2,
+      "pastWinRate": 0.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "안성진",
@@ -3223,12 +4153,14 @@ window.INITIAL_DATA = {
       "win": 0,
       "lose": 2,
       "winRate": 0.0,
-      "currentGames": 2,
-      "currentWin": 0,
-      "currentWinRate": 0.0,
-      "pastGames": 0,
+      "pastGames": 2,
       "pastWin": 0,
-      "pastWinRate": null
+      "pastLose": 2,
+      "pastWinRate": 0.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "안태인",
@@ -3237,12 +4169,14 @@ window.INITIAL_DATA = {
       "win": 0,
       "lose": 2,
       "winRate": 0.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 2,
       "pastWin": 0,
-      "pastWinRate": 0.0
+      "pastLose": 2,
+      "pastWinRate": 0.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "김지우",
@@ -3251,12 +4185,14 @@ window.INITIAL_DATA = {
       "win": 0,
       "lose": 1,
       "winRate": 0.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 1,
       "pastWin": 0,
-      "pastWinRate": 0.0
+      "pastLose": 1,
+      "pastWinRate": 0.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "김지우",
@@ -3265,12 +4201,14 @@ window.INITIAL_DATA = {
       "win": 0,
       "lose": 1,
       "winRate": 0.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 1,
       "pastWin": 0,
-      "pastWinRate": 0.0
+      "pastLose": 1,
+      "pastWinRate": 0.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "김찬",
@@ -3279,12 +4217,14 @@ window.INITIAL_DATA = {
       "win": 0,
       "lose": 1,
       "winRate": 0.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 1,
       "pastWin": 0,
-      "pastWinRate": 0.0
+      "pastLose": 1,
+      "pastWinRate": 0.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "김찬",
@@ -3293,12 +4233,14 @@ window.INITIAL_DATA = {
       "win": 0,
       "lose": 1,
       "winRate": 0.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 1,
       "pastWin": 0,
-      "pastWinRate": 0.0
+      "pastLose": 1,
+      "pastWinRate": 0.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "김찬",
@@ -3307,12 +4249,14 @@ window.INITIAL_DATA = {
       "win": 0,
       "lose": 1,
       "winRate": 0.0,
-      "currentGames": 1,
-      "currentWin": 0,
-      "currentWinRate": 0.0,
-      "pastGames": 0,
+      "pastGames": 1,
       "pastWin": 0,
-      "pastWinRate": null
+      "pastLose": 1,
+      "pastWinRate": 0.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "김찬",
@@ -3321,12 +4265,14 @@ window.INITIAL_DATA = {
       "win": 0,
       "lose": 1,
       "winRate": 0.0,
-      "currentGames": 1,
-      "currentWin": 0,
-      "currentWinRate": 0.0,
-      "pastGames": 0,
+      "pastGames": 1,
       "pastWin": 0,
-      "pastWinRate": null
+      "pastLose": 1,
+      "pastWinRate": 0.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "김찬",
@@ -3335,12 +4281,14 @@ window.INITIAL_DATA = {
       "win": 0,
       "lose": 1,
       "winRate": 0.0,
-      "currentGames": 1,
-      "currentWin": 0,
-      "currentWinRate": 0.0,
       "pastGames": 0,
       "pastWin": 0,
-      "pastWinRate": null
+      "pastLose": 0,
+      "pastWinRate": null,
+      "currentGames": 1,
+      "currentWin": 0,
+      "currentLose": 1,
+      "currentWinRate": 0.0
     },
     {
       "p1": "송승훈",
@@ -3349,12 +4297,78 @@ window.INITIAL_DATA = {
       "win": 0,
       "lose": 1,
       "winRate": 0.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 1,
       "pastWin": 0,
-      "pastWinRate": 0.0
+      "pastLose": 1,
+      "pastWinRate": 0.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
+    },
+    {
+      "p1": "송슿훈",
+      "p2": "안성진",
+      "games": 1,
+      "win": 0,
+      "lose": 1,
+      "winRate": 0.0,
+      "pastGames": 1,
+      "pastWin": 0,
+      "pastLose": 1,
+      "pastWinRate": 0.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
+    },
+    {
+      "p1": "송슿훈",
+      "p2": "안우진유동혁",
+      "games": 1,
+      "win": 0,
+      "lose": 1,
+      "winRate": 0.0,
+      "pastGames": 1,
+      "pastWin": 0,
+      "pastLose": 1,
+      "pastWinRate": 0.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
+    },
+    {
+      "p1": "송슿훈",
+      "p2": "안태인",
+      "games": 1,
+      "win": 0,
+      "lose": 1,
+      "winRate": 0.0,
+      "pastGames": 1,
+      "pastWin": 0,
+      "pastLose": 1,
+      "pastWinRate": 0.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
+    },
+    {
+      "p1": "안성진",
+      "p2": "안우진유동혁",
+      "games": 1,
+      "win": 0,
+      "lose": 1,
+      "winRate": 0.0,
+      "pastGames": 1,
+      "pastWin": 0,
+      "pastLose": 1,
+      "pastWinRate": 0.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "안성진",
@@ -3363,12 +4377,14 @@ window.INITIAL_DATA = {
       "win": 0,
       "lose": 1,
       "winRate": 0.0,
-      "currentGames": 1,
-      "currentWin": 0,
-      "currentWinRate": 0.0,
-      "pastGames": 0,
+      "pastGames": 1,
       "pastWin": 0,
-      "pastWinRate": null
+      "pastLose": 1,
+      "pastWinRate": 0.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "안성진",
@@ -3377,12 +4393,30 @@ window.INITIAL_DATA = {
       "win": 0,
       "lose": 1,
       "winRate": 0.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 1,
       "pastWin": 0,
-      "pastWinRate": 0.0
+      "pastLose": 1,
+      "pastWinRate": 0.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
+    },
+    {
+      "p1": "안우진",
+      "p2": "안정진",
+      "games": 1,
+      "win": 0,
+      "lose": 1,
+      "winRate": 0.0,
+      "pastGames": 1,
+      "pastWin": 0,
+      "pastLose": 1,
+      "pastWinRate": 0.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "안우진",
@@ -3391,12 +4425,14 @@ window.INITIAL_DATA = {
       "win": 0,
       "lose": 1,
       "winRate": 0.0,
-      "currentGames": 1,
-      "currentWin": 0,
-      "currentWinRate": 0.0,
-      "pastGames": 0,
+      "pastGames": 1,
       "pastWin": 0,
-      "pastWinRate": null
+      "pastLose": 1,
+      "pastWinRate": 0.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "안우진",
@@ -3405,12 +4441,14 @@ window.INITIAL_DATA = {
       "win": 0,
       "lose": 1,
       "winRate": 0.0,
-      "currentGames": 1,
-      "currentWin": 0,
-      "currentWinRate": 0.0,
-      "pastGames": 0,
+      "pastGames": 1,
       "pastWin": 0,
-      "pastWinRate": null
+      "pastLose": 1,
+      "pastWinRate": 0.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "안우진",
@@ -3419,12 +4457,78 @@ window.INITIAL_DATA = {
       "win": 0,
       "lose": 1,
       "winRate": 0.0,
-      "currentGames": 1,
-      "currentWin": 0,
-      "currentWinRate": 0.0,
       "pastGames": 0,
       "pastWin": 0,
-      "pastWinRate": null
+      "pastLose": 0,
+      "pastWinRate": null,
+      "currentGames": 1,
+      "currentWin": 0,
+      "currentLose": 1,
+      "currentWinRate": 0.0
+    },
+    {
+      "p1": "안우진유동혁",
+      "p2": "안태인",
+      "games": 1,
+      "win": 0,
+      "lose": 1,
+      "winRate": 0.0,
+      "pastGames": 1,
+      "pastWin": 0,
+      "pastLose": 1,
+      "pastWinRate": 0.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
+    },
+    {
+      "p1": "안정진",
+      "p2": "안태인",
+      "games": 1,
+      "win": 0,
+      "lose": 1,
+      "winRate": 0.0,
+      "pastGames": 1,
+      "pastWin": 0,
+      "pastLose": 1,
+      "pastWinRate": 0.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
+    },
+    {
+      "p1": "안정진",
+      "p2": "윤선용",
+      "games": 1,
+      "win": 0,
+      "lose": 1,
+      "winRate": 0.0,
+      "pastGames": 1,
+      "pastWin": 0,
+      "pastLose": 1,
+      "pastWinRate": 0.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
+    },
+    {
+      "p1": "안정진",
+      "p2": "지범준",
+      "games": 1,
+      "win": 0,
+      "lose": 1,
+      "winRate": 0.0,
+      "pastGames": 1,
+      "pastWin": 0,
+      "pastLose": 1,
+      "pastWinRate": 0.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "안태인",
@@ -3433,12 +4537,14 @@ window.INITIAL_DATA = {
       "win": 0,
       "lose": 1,
       "winRate": 0.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 1,
       "pastWin": 0,
-      "pastWinRate": 0.0
+      "pastLose": 1,
+      "pastWinRate": 0.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "안태인",
@@ -3447,12 +4553,14 @@ window.INITIAL_DATA = {
       "win": 0,
       "lose": 1,
       "winRate": 0.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 1,
       "pastWin": 0,
-      "pastWinRate": 0.0
+      "pastLose": 1,
+      "pastWinRate": 0.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "양현규",
@@ -3461,12 +4569,14 @@ window.INITIAL_DATA = {
       "win": 0,
       "lose": 1,
       "winRate": 0.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 1,
       "pastWin": 0,
-      "pastWinRate": 0.0
+      "pastLose": 1,
+      "pastWinRate": 0.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "양현규",
@@ -3475,12 +4585,14 @@ window.INITIAL_DATA = {
       "win": 0,
       "lose": 1,
       "winRate": 0.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 1,
       "pastWin": 0,
-      "pastWinRate": 0.0
+      "pastLose": 1,
+      "pastWinRate": 0.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "유탁영",
@@ -3489,12 +4601,14 @@ window.INITIAL_DATA = {
       "win": 0,
       "lose": 1,
       "winRate": 0.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 1,
       "pastWin": 0,
-      "pastWinRate": 0.0
+      "pastLose": 1,
+      "pastWinRate": 0.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "유탁영",
@@ -3503,12 +4617,14 @@ window.INITIAL_DATA = {
       "win": 0,
       "lose": 1,
       "winRate": 0.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 1,
       "pastWin": 0,
-      "pastWinRate": 0.0
+      "pastLose": 1,
+      "pastWinRate": 0.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "윤선용",
@@ -3517,12 +4633,14 @@ window.INITIAL_DATA = {
       "win": 0,
       "lose": 1,
       "winRate": 0.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 1,
       "pastWin": 0,
-      "pastWinRate": 0.0
+      "pastLose": 1,
+      "pastWinRate": 0.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "윤준석",
@@ -3531,12 +4649,14 @@ window.INITIAL_DATA = {
       "win": 0,
       "lose": 1,
       "winRate": 0.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 1,
       "pastWin": 0,
-      "pastWinRate": 0.0
+      "pastLose": 1,
+      "pastWinRate": 0.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "이승배",
@@ -3545,12 +4665,14 @@ window.INITIAL_DATA = {
       "win": 0,
       "lose": 1,
       "winRate": 0.0,
-      "currentGames": 1,
-      "currentWin": 0,
-      "currentWinRate": 0.0,
-      "pastGames": 0,
+      "pastGames": 1,
       "pastWin": 0,
-      "pastWinRate": null
+      "pastLose": 1,
+      "pastWinRate": 0.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "이호재",
@@ -3559,12 +4681,14 @@ window.INITIAL_DATA = {
       "win": 0,
       "lose": 1,
       "winRate": 0.0,
-      "currentGames": 0,
-      "currentWin": 0,
-      "currentWinRate": null,
       "pastGames": 1,
       "pastWin": 0,
-      "pastWinRate": 0.0
+      "pastLose": 1,
+      "pastWinRate": 0.0,
+      "currentGames": 0,
+      "currentWin": 0,
+      "currentLose": 0,
+      "currentWinRate": null
     },
     {
       "p1": "이호재",
@@ -3573,17 +4697,22 @@ window.INITIAL_DATA = {
       "win": 0,
       "lose": 1,
       "winRate": 0.0,
-      "currentGames": 1,
-      "currentWin": 0,
-      "currentWinRate": 0.0,
       "pastGames": 0,
       "pastWin": 0,
-      "pastWinRate": null
+      "pastLose": 0,
+      "pastWinRate": null,
+      "currentGames": 1,
+      "currentWin": 0,
+      "currentLose": 1,
+      "currentWinRate": 0.0
     }
   ],
   "recentMatches": [
     {
+      "source": "경기기록",
       "date": "26-06-01",
+      "dateSort": "2026-06-01",
+      "season": "season2",
       "prob": "77.1%",
       "baseDelta": "9.2",
       "winTeam": [
@@ -3611,7 +4740,8 @@ window.INITIAL_DATA = {
           "kda": 14.0,
           "oldElo": 2050.8442514921735,
           "newElo": 2069.1683388025335,
-          "delta": 18.324087310359893
+          "delta": 18.324087310359893,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -3623,7 +4753,8 @@ window.INITIAL_DATA = {
           "kda": 8.0,
           "oldElo": 1891.8556608043887,
           "newElo": 1928.5038354251085,
-          "delta": 36.648174620719786
+          "delta": 36.648174620719786,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -3635,7 +4766,8 @@ window.INITIAL_DATA = {
           "kda": 5.0,
           "oldElo": 1338.5753908717022,
           "newElo": 1356.899478182062,
-          "delta": 18.324087310359893
+          "delta": 18.324087310359893,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -3647,7 +4779,8 @@ window.INITIAL_DATA = {
           "kda": 1.75,
           "oldElo": 2218.1481699379665,
           "newElo": 2236.4722572483265,
-          "delta": 18.324087310359893
+          "delta": 18.324087310359893,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -3659,7 +4792,8 @@ window.INITIAL_DATA = {
           "kda": 3.33,
           "oldElo": 1653.5883994598596,
           "newElo": 1690.2365740805794,
-          "delta": 36.648174620719786
+          "delta": 36.648174620719786,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -3671,7 +4805,8 @@ window.INITIAL_DATA = {
           "kda": 0.0,
           "oldElo": 1507.5849424779608,
           "newElo": 1489.260855167601,
-          "delta": -18.324087310359893
+          "delta": -18.324087310359893,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -3683,7 +4818,8 @@ window.INITIAL_DATA = {
           "kda": 0.6,
           "oldElo": 1828.4565526962128,
           "newElo": 1810.132465385853,
-          "delta": -18.324087310359893
+          "delta": -18.324087310359893,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -3695,7 +4831,8 @@ window.INITIAL_DATA = {
           "kda": 1.0,
           "oldElo": 673.6431865343151,
           "newElo": 655.3190992239552,
-          "delta": -18.324087310359893
+          "delta": -18.324087310359893,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -3707,7 +4844,8 @@ window.INITIAL_DATA = {
           "kda": 1.33,
           "oldElo": 2153.891552167945,
           "newElo": 2117.2433775472255,
-          "delta": -36.648174620719786
+          "delta": -36.648174620719786,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -3719,12 +4857,16 @@ window.INITIAL_DATA = {
           "kda": 2.33,
           "oldElo": 1935.2491736166849,
           "newElo": 1916.925086306325,
-          "delta": -18.324087310359893
+          "delta": -18.324087310359893,
+          "hasDetail": true
         }
       ]
     },
     {
+      "source": "경기기록",
       "date": "26-06-01",
+      "dateSort": "2026-06-01",
+      "season": "season2",
       "prob": "70.2%",
       "baseDelta": "11.9",
       "winTeam": [
@@ -3752,7 +4894,8 @@ window.INITIAL_DATA = {
           "kda": 10.0,
           "oldElo": 2027.0048882129718,
           "newElo": 2050.8442514921735,
-          "delta": 23.839363279201955
+          "delta": 23.839363279201955,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -3764,7 +4907,8 @@ window.INITIAL_DATA = {
           "kda": 3.67,
           "oldElo": 1844.1769342459847,
           "newElo": 1891.8556608043887,
-          "delta": 47.67872655840391
+          "delta": 47.67872655840391,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -3776,7 +4920,8 @@ window.INITIAL_DATA = {
           "kda": 2.88,
           "oldElo": 1314.7360275925002,
           "newElo": 1338.5753908717022,
-          "delta": 23.839363279201955
+          "delta": 23.839363279201955,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -3788,7 +4933,8 @@ window.INITIAL_DATA = {
           "kda": 1.64,
           "oldElo": 2194.3088066587648,
           "newElo": 2218.1481699379665,
-          "delta": 23.839363279201955
+          "delta": 23.839363279201955,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -3800,7 +4946,8 @@ window.INITIAL_DATA = {
           "kda": 3.33,
           "oldElo": 1605.9096729014557,
           "newElo": 1653.5883994598596,
-          "delta": 47.67872655840391
+          "delta": 47.67872655840391,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -3812,7 +4959,8 @@ window.INITIAL_DATA = {
           "kda": 0.56,
           "oldElo": 1531.4243057571628,
           "newElo": 1507.5849424779608,
-          "delta": -23.839363279201955
+          "delta": -23.839363279201955,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -3824,7 +4972,8 @@ window.INITIAL_DATA = {
           "kda": 2.4,
           "oldElo": 1852.2959159754148,
           "newElo": 1828.4565526962128,
-          "delta": -23.839363279201955
+          "delta": -23.839363279201955,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -3836,7 +4985,8 @@ window.INITIAL_DATA = {
           "kda": 0.92,
           "oldElo": 697.482549813517,
           "newElo": 673.6431865343151,
-          "delta": -23.839363279201955
+          "delta": -23.839363279201955,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -3848,7 +4998,8 @@ window.INITIAL_DATA = {
           "kda": 2.09,
           "oldElo": 2201.570278726349,
           "newElo": 2153.891552167945,
-          "delta": -47.67872655840391
+          "delta": -47.67872655840391,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -3860,12 +5011,16 @@ window.INITIAL_DATA = {
           "kda": 5.0,
           "oldElo": 1959.0885368958868,
           "newElo": 1935.2491736166849,
-          "delta": -23.839363279201955
+          "delta": -23.839363279201955,
+          "hasDetail": true
         }
       ]
     },
     {
+      "source": "경기기록",
       "date": "26-06-01",
+      "dateSort": "2026-06-01",
+      "season": "season2",
       "prob": "38.5%",
       "baseDelta": "24.6",
       "winTeam": [
@@ -3893,7 +5048,8 @@ window.INITIAL_DATA = {
           "kda": 1.0,
           "oldElo": 648.2701406242936,
           "newElo": 697.482549813517,
-          "delta": 49.212409189223465
+          "delta": 49.212409189223465,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -3905,7 +5061,8 @@ window.INITIAL_DATA = {
           "kda": 4.4,
           "oldElo": 2145.0963974695414,
           "newElo": 2194.3088066587648,
-          "delta": 49.212409189223465
+          "delta": 49.212409189223465,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -3917,7 +5074,8 @@ window.INITIAL_DATA = {
           "kda": 4.5,
           "oldElo": 1909.8761277066633,
           "newElo": 1959.0885368958868,
-          "delta": 49.212409189223465
+          "delta": 49.212409189223465,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -3929,7 +5087,8 @@ window.INITIAL_DATA = {
           "kda": 5.75,
           "oldElo": 1803.0835067861913,
           "newElo": 1852.2959159754148,
-          "delta": 49.212409189223465
+          "delta": 49.212409189223465,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -3941,7 +5100,8 @@ window.INITIAL_DATA = {
           "kda": 3.0,
           "oldElo": 1977.7924790237482,
           "newElo": 2027.0048882129718,
-          "delta": 49.212409189223465
+          "delta": 49.212409189223465,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -3953,7 +5113,8 @@ window.INITIAL_DATA = {
           "kda": 1.67,
           "oldElo": 1363.9484367817238,
           "newElo": 1314.7360275925002,
-          "delta": -49.212409189223465
+          "delta": -49.212409189223465,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -3965,7 +5126,8 @@ window.INITIAL_DATA = {
           "kda": 2.43,
           "oldElo": 1704.3344912799025,
           "newElo": 1605.9096729014557,
-          "delta": -98.42481837844693
+          "delta": -98.42481837844693,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -3977,7 +5139,8 @@ window.INITIAL_DATA = {
           "kda": 2.0,
           "oldElo": 2299.995097104796,
           "newElo": 2201.570278726349,
-          "delta": -98.42481837844693
+          "delta": -98.42481837844693,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -3989,7 +5152,8 @@ window.INITIAL_DATA = {
           "kda": 0.91,
           "oldElo": 1942.6017526244316,
           "newElo": 1844.1769342459847,
-          "delta": -98.42481837844693
+          "delta": -98.42481837844693,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -4001,12 +5165,16 @@ window.INITIAL_DATA = {
           "kda": 1.38,
           "oldElo": 1580.6367149463863,
           "newElo": 1531.4243057571628,
-          "delta": -49.212409189223465
+          "delta": -49.212409189223465,
+          "hasDetail": true
         }
       ]
     },
     {
+      "source": "경기기록",
       "date": "26-06-01",
+      "dateSort": "2026-06-01",
+      "season": "season2",
       "prob": "19.2%",
       "baseDelta": "32.3",
       "winTeam": [
@@ -4034,7 +5202,8 @@ window.INITIAL_DATA = {
           "kda": 0.5,
           "oldElo": 583.6389595841744,
           "newElo": 648.2701406242936,
-          "delta": 64.63118104011923
+          "delta": 64.63118104011923,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -4046,7 +5215,8 @@ window.INITIAL_DATA = {
           "kda": 7.5,
           "oldElo": 2080.465216429422,
           "newElo": 2145.0963974695414,
-          "delta": 64.63118104011923
+          "delta": 64.63118104011923,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -4058,7 +5228,8 @@ window.INITIAL_DATA = {
           "kda": 9.0,
           "oldElo": 1845.2449466665441,
           "newElo": 1909.8761277066633,
-          "delta": 64.63118104011923
+          "delta": 64.63118104011923,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -4070,7 +5241,8 @@ window.INITIAL_DATA = {
           "kda": 5.33,
           "oldElo": 1738.4523257460721,
           "newElo": 1803.0835067861913,
-          "delta": 64.63118104011923
+          "delta": 64.63118104011923,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -4082,7 +5254,8 @@ window.INITIAL_DATA = {
           "kda": 7.5,
           "oldElo": 1913.161297983629,
           "newElo": 1977.7924790237482,
-          "delta": 64.63118104011923
+          "delta": 64.63118104011923,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -4094,7 +5267,8 @@ window.INITIAL_DATA = {
           "kda": 1.0,
           "oldElo": 1428.579617821843,
           "newElo": 1363.9484367817238,
-          "delta": -64.63118104011923
+          "delta": -64.63118104011923,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -4106,7 +5280,8 @@ window.INITIAL_DATA = {
           "kda": 1.25,
           "oldElo": 1833.596853360141,
           "newElo": 1704.3344912799025,
-          "delta": -129.26236208023846
+          "delta": -129.26236208023846,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -4118,7 +5293,8 @@ window.INITIAL_DATA = {
           "kda": 1.0,
           "oldElo": 2429.2574591850343,
           "newElo": 2299.995097104796,
-          "delta": -129.26236208023846
+          "delta": -129.26236208023846,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -4130,7 +5306,8 @@ window.INITIAL_DATA = {
           "kda": 1.25,
           "oldElo": 2071.86411470467,
           "newElo": 1942.6017526244316,
-          "delta": -129.26236208023846
+          "delta": -129.26236208023846,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -4142,12 +5319,16 @@ window.INITIAL_DATA = {
           "kda": 0.75,
           "oldElo": 1645.2678959865054,
           "newElo": 1580.6367149463863,
-          "delta": -64.63118104011923
+          "delta": -64.63118104011923,
+          "hasDetail": true
         }
       ]
     },
     {
+      "source": "경기기록",
       "date": "26-06-01",
+      "dateSort": "2026-06-01",
+      "season": "season2",
       "prob": "74.8%",
       "baseDelta": "10.1",
       "winTeam": [
@@ -4175,7 +5356,8 @@ window.INITIAL_DATA = {
           "kda": 12.0,
           "oldElo": 1388.2690572381025,
           "newElo": 1428.579617821843,
-          "delta": 40.31056058374047
+          "delta": 40.31056058374047,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -4187,7 +5369,8 @@ window.INITIAL_DATA = {
           "kda": 7.5,
           "oldElo": 1793.2862927764006,
           "newElo": 1833.596853360141,
-          "delta": 40.31056058374047
+          "delta": 40.31056058374047,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -4199,7 +5382,8 @@ window.INITIAL_DATA = {
           "kda": 3.67,
           "oldElo": 2388.946898601294,
           "newElo": 2429.2574591850343,
-          "delta": 40.31056058374047
+          "delta": 40.31056058374047,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -4211,7 +5395,8 @@ window.INITIAL_DATA = {
           "kda": 13.0,
           "oldElo": 2031.5535541209294,
           "newElo": 2071.86411470467,
-          "delta": 40.31056058374047
+          "delta": 40.31056058374047,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -4223,7 +5408,8 @@ window.INITIAL_DATA = {
           "kda": 3.5,
           "oldElo": 1625.1126156946352,
           "newElo": 1645.2678959865054,
-          "delta": 20.155280291870234
+          "delta": 20.155280291870234,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -4235,7 +5421,8 @@ window.INITIAL_DATA = {
           "kda": 0.2,
           "oldElo": 603.7942398760446,
           "newElo": 583.6389595841744,
-          "delta": -20.155280291870234
+          "delta": -20.155280291870234,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -4247,7 +5434,8 @@ window.INITIAL_DATA = {
           "kda": 0.56,
           "oldElo": 2100.6204967212925,
           "newElo": 2080.465216429422,
-          "delta": -20.155280291870234
+          "delta": -20.155280291870234,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -4259,7 +5447,8 @@ window.INITIAL_DATA = {
           "kda": 1.0,
           "oldElo": 1865.4002269584144,
           "newElo": 1845.2449466665441,
-          "delta": -20.155280291870234
+          "delta": -20.155280291870234,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -4271,7 +5460,8 @@ window.INITIAL_DATA = {
           "kda": 1.4,
           "oldElo": 1758.6076060379423,
           "newElo": 1738.4523257460721,
-          "delta": -20.155280291870234
+          "delta": -20.155280291870234,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -4283,12 +5473,16 @@ window.INITIAL_DATA = {
           "kda": 2.25,
           "oldElo": 1953.4718585673695,
           "newElo": 1913.161297983629,
-          "delta": -40.31056058374047
+          "delta": -40.31056058374047,
+          "hasDetail": true
         }
       ]
     },
     {
+      "source": "경기기록",
       "date": "26-05-24",
+      "dateSort": "2026-05-24",
+      "season": "season2",
       "prob": "51.4%",
       "baseDelta": "19.5",
       "winTeam": [
@@ -4316,7 +5510,8 @@ window.INITIAL_DATA = {
           "kda": 3.2,
           "oldElo": 1310.4394855278304,
           "newElo": 1388.2690572381025,
-          "delta": 77.82957171027223
+          "delta": 77.82957171027223,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -4328,7 +5523,8 @@ window.INITIAL_DATA = {
           "kda": 4.8,
           "oldElo": 1875.6422868570974,
           "newElo": 1953.4718585673695,
-          "delta": 77.82957171027223
+          "delta": 77.82957171027223,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -4340,7 +5536,8 @@ window.INITIAL_DATA = {
           "kda": 4.0,
           "oldElo": 1715.4567210661285,
           "newElo": 1793.2862927764006,
-          "delta": 77.82957171027223
+          "delta": 77.82957171027223,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -4352,7 +5549,8 @@ window.INITIAL_DATA = {
           "kda": 7.67,
           "oldElo": 1794.143185240382,
           "newElo": 1871.9727569506542,
-          "delta": 77.82957171027223
+          "delta": 77.82957171027223,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -4364,7 +5562,8 @@ window.INITIAL_DATA = {
           "kda": 8.0,
           "oldElo": 1694.143185240382,
           "newElo": 1771.9727569506542,
-          "delta": 77.82957171027223
+          "delta": 77.82957171027223,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -4376,7 +5575,8 @@ window.INITIAL_DATA = {
           "kda": 1.0,
           "oldElo": 681.6238115863168,
           "newElo": 603.7942398760446,
-          "delta": -77.82957171027223
+          "delta": -77.82957171027223,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -4388,7 +5588,8 @@ window.INITIAL_DATA = {
           "kda": 2.14,
           "oldElo": 1943.2297986686865,
           "newElo": 1865.4002269584144,
-          "delta": -77.82957171027223
+          "delta": -77.82957171027223,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -4400,7 +5601,8 @@ window.INITIAL_DATA = {
           "kda": 1.71,
           "oldElo": 2178.450068431565,
           "newElo": 2100.6204967212925,
-          "delta": -77.82957171027223
+          "delta": -77.82957171027223,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -4412,7 +5614,8 @@ window.INITIAL_DATA = {
           "kda": 1.18,
           "oldElo": 1836.4371777482145,
           "newElo": 1758.6076060379423,
-          "delta": -77.82957171027223
+          "delta": -77.82957171027223,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -4424,12 +5627,16 @@ window.INITIAL_DATA = {
           "kda": 1.22,
           "oldElo": 1702.9421874049074,
           "newElo": 1625.1126156946352,
-          "delta": -77.82957171027223
+          "delta": -77.82957171027223,
+          "hasDetail": true
         }
       ]
     },
     {
+      "source": "경기기록",
       "date": "26-05-24",
+      "dateSort": "2026-05-24",
+      "season": "season2",
       "prob": "17.0%",
       "baseDelta": "33.2",
       "winTeam": [
@@ -4457,7 +5664,8 @@ window.INITIAL_DATA = {
           "kda": 8.0,
           "oldElo": 548.8982525698748,
           "newElo": 681.6238115863168,
-          "delta": 132.72555901644202
+          "delta": 132.72555901644202,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -4469,7 +5677,8 @@ window.INITIAL_DATA = {
           "kda": 24.0,
           "oldElo": 1810.5042396522445,
           "newElo": 1943.2297986686865,
-          "delta": 132.72555901644202
+          "delta": 132.72555901644202,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -4481,7 +5690,8 @@ window.INITIAL_DATA = {
           "kda": 5.5,
           "oldElo": 2045.724509415123,
           "newElo": 2178.450068431565,
-          "delta": 132.72555901644202
+          "delta": 132.72555901644202,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -4493,7 +5703,8 @@ window.INITIAL_DATA = {
           "kda": 3.4,
           "oldElo": 1703.7116187317724,
           "newElo": 1836.4371777482145,
-          "delta": 132.72555901644202
+          "delta": 132.72555901644202,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -4505,7 +5716,8 @@ window.INITIAL_DATA = {
           "kda": 2.4,
           "oldElo": 1570.2166283884653,
           "newElo": 1702.9421874049074,
-          "delta": 132.72555901644202
+          "delta": 132.72555901644202,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -4517,7 +5729,8 @@ window.INITIAL_DATA = {
           "kda": 1.0,
           "oldElo": 1443.1650445442724,
           "newElo": 1310.4394855278304,
-          "delta": -132.72555901644202
+          "delta": -132.72555901644202,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -4529,7 +5742,8 @@ window.INITIAL_DATA = {
           "kda": 0.71,
           "oldElo": 1926.8687442568241,
           "newElo": 1794.143185240382,
-          "delta": -132.72555901644202
+          "delta": -132.72555901644202,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -4541,7 +5755,8 @@ window.INITIAL_DATA = {
           "kda": 0.75,
           "oldElo": 1848.1822800825705,
           "newElo": 1715.4567210661285,
-          "delta": -132.72555901644202
+          "delta": -132.72555901644202,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -4553,7 +5768,8 @@ window.INITIAL_DATA = {
           "kda": 2.0,
           "oldElo": 1826.8687442568241,
           "newElo": 1694.143185240382,
-          "delta": -132.72555901644202
+          "delta": -132.72555901644202,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -4565,12 +5781,16 @@ window.INITIAL_DATA = {
           "kda": 1.83,
           "oldElo": 2008.3678458735394,
           "newElo": 1875.6422868570974,
-          "delta": -132.72555901644202
+          "delta": -132.72555901644202,
+          "hasDetail": true
         }
       ]
     },
     {
+      "source": "경기기록",
       "date": "26-05-24",
+      "dateSort": "2026-05-24",
+      "season": "season2",
       "prob": "75.7%",
       "baseDelta": "9.7",
       "winTeam": [
@@ -4598,7 +5818,8 @@ window.INITIAL_DATA = {
           "kda": 5.5,
           "oldElo": 1404.214158639833,
           "newElo": 1443.1650445442724,
-          "delta": 38.95088590443937
+          "delta": 38.95088590443937,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -4610,7 +5831,8 @@ window.INITIAL_DATA = {
           "kda": 2.57,
           "oldElo": 1887.9178583523847,
           "newElo": 1926.8687442568241,
-          "delta": 38.95088590443937
+          "delta": 38.95088590443937,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -4622,7 +5844,8 @@ window.INITIAL_DATA = {
           "kda": 1.5,
           "oldElo": 1809.231394178131,
           "newElo": 1848.1822800825705,
-          "delta": 38.95088590443937
+          "delta": 38.95088590443937,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -4634,7 +5857,8 @@ window.INITIAL_DATA = {
           "kda": 2.14,
           "oldElo": 1787.9178583523847,
           "newElo": 1826.8687442568241,
-          "delta": 38.95088590443937
+          "delta": 38.95088590443937,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -4646,7 +5870,8 @@ window.INITIAL_DATA = {
           "kda": 4.75,
           "oldElo": 1969.4169599691,
           "newElo": 2008.3678458735394,
-          "delta": 38.95088590443937
+          "delta": 38.95088590443937,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -4658,7 +5883,8 @@ window.INITIAL_DATA = {
           "kda": 1.17,
           "oldElo": 587.8491384743141,
           "newElo": 548.8982525698748,
-          "delta": -38.95088590443937
+          "delta": -38.95088590443937,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -4670,7 +5896,8 @@ window.INITIAL_DATA = {
           "kda": 3.17,
           "oldElo": 1849.455125556684,
           "newElo": 1810.5042396522445,
-          "delta": -38.95088590443937
+          "delta": -38.95088590443937,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -4682,7 +5909,8 @@ window.INITIAL_DATA = {
           "kda": 1.18,
           "oldElo": 2084.6753953195625,
           "newElo": 2045.724509415123,
-          "delta": -38.95088590443937
+          "delta": -38.95088590443937,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -4694,7 +5922,8 @@ window.INITIAL_DATA = {
           "kda": 2.83,
           "oldElo": 1742.662504636212,
           "newElo": 1703.7116187317724,
-          "delta": -38.95088590443937
+          "delta": -38.95088590443937,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -4706,12 +5935,16 @@ window.INITIAL_DATA = {
           "kda": 3.2,
           "oldElo": 1609.1675142929048,
           "newElo": 1570.2166283884653,
-          "delta": -38.95088590443937
+          "delta": -38.95088590443937,
+          "hasDetail": true
         }
       ]
     },
     {
+      "source": "경기기록",
       "date": "26-05-24",
+      "dateSort": "2026-05-24",
+      "season": "season2",
       "prob": "76.3%",
       "baseDelta": "9.5",
       "winTeam": [
@@ -4739,7 +5972,8 @@ window.INITIAL_DATA = {
           "kda": 21.0,
           "oldElo": 1571.2496559405201,
           "newElo": 1609.1675142929048,
-          "delta": 37.91785835238475
+          "delta": 37.91785835238475,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -4751,7 +5985,8 @@ window.INITIAL_DATA = {
           "kda": 16.0,
           "oldElo": 1771.3135358257464,
           "newElo": 1809.231394178131,
-          "delta": 37.91785835238475
+          "delta": 37.91785835238475,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -4763,7 +5998,8 @@ window.INITIAL_DATA = {
           "kda": 22.0,
           "oldElo": 1850.0,
           "newElo": 1887.9178583523847,
-          "delta": 37.91785835238475
+          "delta": 37.91785835238475,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -4775,7 +6011,8 @@ window.INITIAL_DATA = {
           "kda": 4.4,
           "oldElo": 1750.0,
           "newElo": 1787.9178583523847,
-          "delta": 37.91785835238475
+          "delta": 37.91785835238475,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -4787,7 +6024,8 @@ window.INITIAL_DATA = {
           "kda": 3.67,
           "oldElo": 1931.4991016167153,
           "newElo": 1969.4169599691,
-          "delta": 37.91785835238475
+          "delta": 37.91785835238475,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -4799,7 +6037,8 @@ window.INITIAL_DATA = {
           "kda": 0.25,
           "oldElo": 625.7669968266989,
           "newElo": 587.8491384743141,
-          "delta": -37.91785835238475
+          "delta": -37.91785835238475,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -4811,7 +6050,8 @@ window.INITIAL_DATA = {
           "kda": 1.83,
           "oldElo": 1887.3729839090686,
           "newElo": 1849.455125556684,
-          "delta": -37.91785835238475
+          "delta": -37.91785835238475,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -4823,7 +6063,8 @@ window.INITIAL_DATA = {
           "kda": 0.18,
           "oldElo": 1442.1320169922176,
           "newElo": 1404.214158639833,
-          "delta": -37.91785835238475
+          "delta": -37.91785835238475,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -4835,7 +6076,8 @@ window.INITIAL_DATA = {
           "kda": 0.91,
           "oldElo": 2122.5932536719474,
           "newElo": 2084.6753953195625,
-          "delta": -37.91785835238475
+          "delta": -37.91785835238475,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -4847,12 +6089,16 @@ window.INITIAL_DATA = {
           "kda": 1.57,
           "oldElo": 1780.5803629885966,
           "newElo": 1742.662504636212,
-          "delta": -37.91785835238475
+          "delta": -37.91785835238475,
+          "hasDetail": true
         }
       ]
     },
     {
+      "source": "경기기록",
       "date": "26-05-23",
+      "dateSort": "2026-05-23",
+      "season": "season2",
       "prob": "41.8%",
       "baseDelta": "23.3",
       "winTeam": [
@@ -4880,7 +6126,8 @@ window.INITIAL_DATA = {
           "kda": 2.14,
           "oldElo": 1794.2112043800803,
           "newElo": 1887.3729839090686,
-          "delta": 93.16177952898829
+          "delta": 93.16177952898829,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -4892,7 +6139,8 @@ window.INITIAL_DATA = {
           "kda": 4.0,
           "oldElo": 1991.722828671362,
           "newElo": 2084.88460820035,
-          "delta": 93.16177952898829
+          "delta": 93.16177952898829,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -4904,7 +6152,8 @@ window.INITIAL_DATA = {
           "kda": 9.0,
           "oldElo": 1348.9702374632293,
           "newElo": 1442.1320169922176,
-          "delta": 93.16177952898829
+          "delta": 93.16177952898829,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -4916,7 +6165,8 @@ window.INITIAL_DATA = {
           "kda": 2.25,
           "oldElo": 1687.4185834596083,
           "newElo": 1780.5803629885966,
-          "delta": 93.16177952898829
+          "delta": 93.16177952898829,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -4928,7 +6178,8 @@ window.INITIAL_DATA = {
           "kda": 2.83,
           "oldElo": 1695.7169053777893,
           "newElo": 1788.8786849067776,
-          "delta": 93.16177952898829
+          "delta": 93.16177952898829,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -4940,7 +6191,8 @@ window.INITIAL_DATA = {
           "kda": 1.6,
           "oldElo": 1664.4114354695084,
           "newElo": 1571.2496559405201,
-          "delta": -93.16177952898829
+          "delta": -93.16177952898829,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -4952,7 +6204,8 @@ window.INITIAL_DATA = {
           "kda": 1.42,
           "oldElo": 2215.7550332009355,
           "newElo": 2122.5932536719474,
-          "delta": -93.16177952898829
+          "delta": -93.16177952898829,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -4964,7 +6217,8 @@ window.INITIAL_DATA = {
           "kda": 0.75,
           "oldElo": 718.9287763556872,
           "newElo": 625.7669968266989,
-          "delta": -93.16177952898829
+          "delta": -93.16177952898829,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -4976,7 +6230,8 @@ window.INITIAL_DATA = {
           "kda": 5.0,
           "oldElo": 2182.709427337713,
           "newElo": 2089.547647808725,
-          "delta": -93.16177952898829
+          "delta": -93.16177952898829,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -4988,12 +6243,16 @@ window.INITIAL_DATA = {
           "kda": 2.33,
           "oldElo": 2024.6608811457036,
           "newElo": 1931.4991016167153,
-          "delta": -93.16177952898829
+          "delta": -93.16177952898829,
+          "hasDetail": true
         }
       ]
     },
     {
+      "source": "경기기록",
       "date": "26-05-23",
+      "dateSort": "2026-05-23",
+      "season": "season2",
       "prob": "37.4%",
       "baseDelta": "25.0",
       "winTeam": [
@@ -5021,7 +6280,8 @@ window.INITIAL_DATA = {
           "kda": 7.33,
           "oldElo": 2115.6304784254785,
           "newElo": 2215.7550332009355,
-          "delta": 100.12455477545693
+          "delta": 100.12455477545693,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -5033,7 +6293,8 @@ window.INITIAL_DATA = {
           "kda": 5.67,
           "oldElo": 1891.598273895905,
           "newElo": 1991.722828671362,
-          "delta": 100.12455477545693
+          "delta": 100.12455477545693,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -5045,7 +6306,8 @@ window.INITIAL_DATA = {
           "kda": 5.0,
           "oldElo": 1248.8456826877723,
           "newElo": 1348.9702374632293,
-          "delta": 100.12455477545693
+          "delta": 100.12455477545693,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -5057,7 +6319,8 @@ window.INITIAL_DATA = {
           "kda": 2.6,
           "oldElo": 1587.2940286841513,
           "newElo": 1687.4185834596083,
-          "delta": 100.12455477545693
+          "delta": 100.12455477545693,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -5069,7 +6332,8 @@ window.INITIAL_DATA = {
           "kda": 23.0,
           "oldElo": 1595.5923506023323,
           "newElo": 1695.7169053777893,
-          "delta": 100.12455477545693
+          "delta": 100.12455477545693,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -5081,7 +6345,8 @@ window.INITIAL_DATA = {
           "kda": 0.6,
           "oldElo": 1764.5359902449654,
           "newElo": 1664.4114354695084,
-          "delta": -100.12455477545693
+          "delta": -100.12455477545693,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -5093,7 +6358,8 @@ window.INITIAL_DATA = {
           "kda": 0.7,
           "oldElo": 1894.3357591555373,
           "newElo": 1794.2112043800803,
-          "delta": -100.12455477545693
+          "delta": -100.12455477545693,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -5105,7 +6371,8 @@ window.INITIAL_DATA = {
           "kda": 0.75,
           "oldElo": 819.0533311311441,
           "newElo": 718.9287763556872,
-          "delta": -100.12455477545693
+          "delta": -100.12455477545693,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -5117,7 +6384,8 @@ window.INITIAL_DATA = {
           "kda": 1.33,
           "oldElo": 2282.83398211317,
           "newElo": 2182.709427337713,
-          "delta": -100.12455477545693
+          "delta": -100.12455477545693,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -5129,12 +6397,16 @@ window.INITIAL_DATA = {
           "kda": 1.12,
           "oldElo": 2124.7854359211606,
           "newElo": 2024.6608811457036,
-          "delta": -100.12455477545693
+          "delta": -100.12455477545693,
+          "hasDetail": true
         }
       ]
     },
     {
+      "source": "경기기록",
       "date": "26-05-23",
+      "dateSort": "2026-05-23",
+      "season": "season2",
       "prob": "32.6%",
       "baseDelta": "27.0",
       "winTeam": [
@@ -5162,7 +6434,8 @@ window.INITIAL_DATA = {
           "kda": 4.0,
           "oldElo": 1656.6326705049019,
           "newElo": 1764.5359902449654,
-          "delta": 107.90331974006368
+          "delta": 107.90331974006368,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -5174,7 +6447,8 @@ window.INITIAL_DATA = {
           "kda": 13.0,
           "oldElo": 1786.4324394154737,
           "newElo": 1894.3357591555373,
-          "delta": 107.90331974006368
+          "delta": 107.90331974006368,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -5186,7 +6460,8 @@ window.INITIAL_DATA = {
           "kda": 3.0,
           "oldElo": 711.1500113910804,
           "newElo": 819.0533311311441,
-          "delta": 107.90331974006368
+          "delta": 107.90331974006368,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -5198,7 +6473,8 @@ window.INITIAL_DATA = {
           "kda": 17.0,
           "oldElo": 2174.9306623731063,
           "newElo": 2282.83398211317,
-          "delta": 107.90331974006368
+          "delta": 107.90331974006368,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -5210,7 +6486,8 @@ window.INITIAL_DATA = {
           "kda": 5.5,
           "oldElo": 2016.882116181097,
           "newElo": 2124.7854359211606,
-          "delta": 107.90331974006368
+          "delta": 107.90331974006368,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -5222,7 +6499,8 @@ window.INITIAL_DATA = {
           "kda": 0.33,
           "oldElo": 2223.533798165542,
           "newElo": 2115.6304784254785,
-          "delta": -107.90331974006368
+          "delta": -107.90331974006368,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -5234,7 +6512,8 @@ window.INITIAL_DATA = {
           "kda": 0.5,
           "oldElo": 1999.5015936359687,
           "newElo": 1891.598273895905,
-          "delta": -107.90331974006368
+          "delta": -107.90331974006368,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -5246,7 +6525,8 @@ window.INITIAL_DATA = {
           "kda": 0.5,
           "oldElo": 1356.7490024278359,
           "newElo": 1248.8456826877723,
-          "delta": -107.90331974006368
+          "delta": -107.90331974006368,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -5258,7 +6538,8 @@ window.INITIAL_DATA = {
           "kda": 0.25,
           "oldElo": 1695.1973484242149,
           "newElo": 1587.2940286841513,
-          "delta": -107.90331974006368
+          "delta": -107.90331974006368,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -5270,12 +6551,16 @@ window.INITIAL_DATA = {
           "kda": 0.33,
           "oldElo": 1703.495670342396,
           "newElo": 1595.5923506023323,
-          "delta": -107.90331974006368
+          "delta": -107.90331974006368,
+          "hasDetail": true
         }
       ]
     },
     {
+      "source": "경기기록",
       "date": "26-05-23",
+      "dateSort": "2026-05-23",
+      "season": "season2",
       "prob": "41.2%",
       "baseDelta": "23.5",
       "winTeam": [
@@ -5303,7 +6588,8 @@ window.INITIAL_DATA = {
           "kda": 3.6,
           "oldElo": 2129.502944976145,
           "newElo": 2223.533798165542,
-          "delta": 94.03085318939708
+          "delta": 94.03085318939708,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -5315,7 +6601,8 @@ window.INITIAL_DATA = {
           "kda": 3.0,
           "oldElo": 1905.4707404465717,
           "newElo": 1999.5015936359687,
-          "delta": 94.03085318939708
+          "delta": 94.03085318939708,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -5327,7 +6614,8 @@ window.INITIAL_DATA = {
           "kda": 1.25,
           "oldElo": 1262.7181492384389,
           "newElo": 1356.7490024278359,
-          "delta": 94.03085318939708
+          "delta": 94.03085318939708,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -5339,7 +6627,8 @@ window.INITIAL_DATA = {
           "kda": 6.0,
           "oldElo": 1601.1664952348178,
           "newElo": 1695.1973484242149,
-          "delta": 94.03085318939708
+          "delta": 94.03085318939708,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -5351,7 +6640,8 @@ window.INITIAL_DATA = {
           "kda": 1.38,
           "oldElo": 1609.4648171529989,
           "newElo": 1703.495670342396,
-          "delta": 94.03085318939708
+          "delta": 94.03085318939708,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -5363,7 +6653,8 @@ window.INITIAL_DATA = {
           "kda": 0.88,
           "oldElo": 1750.6635236942989,
           "newElo": 1656.6326705049019,
-          "delta": -94.03085318939708
+          "delta": -94.03085318939708,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -5375,7 +6666,8 @@ window.INITIAL_DATA = {
           "kda": 2.33,
           "oldElo": 1880.4632926048707,
           "newElo": 1786.4324394154737,
-          "delta": -94.03085318939708
+          "delta": -94.03085318939708,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -5387,7 +6679,8 @@ window.INITIAL_DATA = {
           "kda": 4.0,
           "oldElo": 805.1808645804774,
           "newElo": 711.1500113910804,
-          "delta": -94.03085318939708
+          "delta": -94.03085318939708,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -5399,7 +6692,8 @@ window.INITIAL_DATA = {
           "kda": 2.0,
           "oldElo": 2268.9615155625033,
           "newElo": 2174.9306623731063,
-          "delta": -94.03085318939708
+          "delta": -94.03085318939708,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -5411,12 +6705,16 @@ window.INITIAL_DATA = {
           "kda": 3.4,
           "oldElo": 2110.912969370494,
           "newElo": 2016.882116181097,
-          "delta": -94.03085318939708
+          "delta": -94.03085318939708,
+          "hasDetail": true
         }
       ]
     },
     {
+      "source": "경기기록",
       "date": "26-05-23",
+      "dateSort": "2026-05-23",
+      "season": "season2",
       "prob": "37.2%",
       "baseDelta": "25.1",
       "winTeam": [
@@ -5444,7 +6742,8 @@ window.INITIAL_DATA = {
           "kda": 1.4,
           "oldElo": 2029.0618285992582,
           "newElo": 2129.502944976145,
-          "delta": 100.44111637688695
+          "delta": 100.44111637688695,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -5456,7 +6755,8 @@ window.INITIAL_DATA = {
           "kda": 3.0,
           "oldElo": 1780.022176227984,
           "newElo": 1880.4632926048707,
-          "delta": 100.44111637688695
+          "delta": 100.44111637688695,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -5468,7 +6768,8 @@ window.INITIAL_DATA = {
           "kda": 3.71,
           "oldElo": 704.7397482035905,
           "newElo": 805.1808645804774,
-          "delta": 100.44111637688695
+          "delta": 100.44111637688695,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -5480,7 +6781,8 @@ window.INITIAL_DATA = {
           "kda": 11.0,
           "oldElo": 2168.5203991856165,
           "newElo": 2268.9615155625033,
-          "delta": 100.44111637688695
+          "delta": 100.44111637688695,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -5492,7 +6794,8 @@ window.INITIAL_DATA = {
           "kda": 7.25,
           "oldElo": 1650.222407317412,
           "newElo": 1750.6635236942989,
-          "delta": 100.44111637688695
+          "delta": 100.44111637688695,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -5504,7 +6807,8 @@ window.INITIAL_DATA = {
           "kda": 4.4,
           "oldElo": 2005.9118568234585,
           "newElo": 1905.4707404465717,
-          "delta": -100.44111637688695
+          "delta": -100.44111637688695,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -5516,7 +6820,8 @@ window.INITIAL_DATA = {
           "kda": 2.36,
           "oldElo": 2005.9118568234585,
           "newElo": 1905.4707404465717,
-          "delta": -100.44111637688695
+          "delta": -100.44111637688695,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -5528,7 +6833,8 @@ window.INITIAL_DATA = {
           "kda": 1.0,
           "oldElo": 1363.1592656153257,
           "newElo": 1262.7181492384389,
-          "delta": -100.44111637688695
+          "delta": -100.44111637688695,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -5540,7 +6846,8 @@ window.INITIAL_DATA = {
           "kda": 1.45,
           "oldElo": 1709.9059335298857,
           "newElo": 1609.4648171529989,
-          "delta": -100.44111637688695
+          "delta": -100.44111637688695,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -5552,12 +6859,16 @@ window.INITIAL_DATA = {
           "kda": 1.15,
           "oldElo": 1701.6076116117047,
           "newElo": 1601.1664952348178,
-          "delta": -100.44111637688695
+          "delta": -100.44111637688695,
+          "hasDetail": true
         }
       ]
     },
     {
+      "source": "경기기록",
       "date": "26-05-23",
+      "dateSort": "2026-05-23",
+      "season": "season2",
       "prob": "65.1%",
       "baseDelta": "14.0",
       "winTeam": [
@@ -5585,7 +6896,8 @@ window.INITIAL_DATA = {
           "kda": 4.25,
           "oldElo": 1950.0,
           "newElo": 2005.9118568234585,
-          "delta": 55.91185682345859
+          "delta": 55.91185682345859,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -5597,7 +6909,8 @@ window.INITIAL_DATA = {
           "kda": 15.0,
           "oldElo": 1950.0,
           "newElo": 2005.9118568234585,
-          "delta": 55.91185682345859
+          "delta": 55.91185682345859,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -5609,7 +6922,8 @@ window.INITIAL_DATA = {
           "kda": 6.0,
           "oldElo": 1594.3105504939535,
           "newElo": 1650.222407317412,
-          "delta": 55.91185682345859
+          "delta": 55.91185682345859,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -5621,7 +6935,8 @@ window.INITIAL_DATA = {
           "kda": 6.0,
           "oldElo": 1653.9940767064272,
           "newElo": 1709.9059335298857,
-          "delta": 55.91185682345859
+          "delta": 55.91185682345859,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -5633,7 +6948,8 @@ window.INITIAL_DATA = {
           "kda": 11.5,
           "oldElo": 2055.0011125470355,
           "newElo": 2110.912969370494,
-          "delta": 55.91185682345859
+          "delta": 55.91185682345859,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -5645,7 +6961,8 @@ window.INITIAL_DATA = {
           "kda": 0.78,
           "oldElo": 2084.9736854227167,
           "newElo": 2029.0618285992582,
-          "delta": -55.91185682345859
+          "delta": -55.91185682345859,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -5657,7 +6974,8 @@ window.INITIAL_DATA = {
           "kda": 0.75,
           "oldElo": 1835.9340330514424,
           "newElo": 1780.022176227984,
-          "delta": -55.91185682345859
+          "delta": -55.91185682345859,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -5669,7 +6987,8 @@ window.INITIAL_DATA = {
           "kda": 0.78,
           "oldElo": 760.6516050270491,
           "newElo": 704.7397482035905,
-          "delta": -55.91185682345859
+          "delta": -55.91185682345859,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -5681,7 +7000,8 @@ window.INITIAL_DATA = {
           "kda": 0.86,
           "oldElo": 2224.432256009075,
           "newElo": 2168.5203991856165,
-          "delta": -55.91185682345859
+          "delta": -55.91185682345859,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -5693,12 +7013,18 @@ window.INITIAL_DATA = {
           "kda": 0.86,
           "oldElo": 1757.5194684351632,
           "newElo": 1701.6076116117047,
-          "delta": -55.91185682345859
+          "delta": -55.91185682345859,
+          "hasDetail": true
         }
       ]
-    },
+    }
+  ],
+  "recentMatchesSeason1": [
     {
+      "source": "경기기록",
       "date": "26-05-05",
+      "dateSort": "2026-05-05",
+      "season": "season1",
       "prob": "26.7%",
       "baseDelta": "29.3",
       "winTeam": [
@@ -5726,7 +7052,8 @@ window.INITIAL_DATA = {
           "kda": 1.0,
           "oldElo": 462.68900379224203,
           "newElo": 521.303210054098,
-          "delta": 58.61420626185597
+          "delta": 58.61420626185597,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -5738,7 +7065,8 @@ window.INITIAL_DATA = {
           "kda": 12.0,
           "oldElo": 2519.279590940732,
           "newElo": 2577.893797202588,
-          "delta": 58.61420626185597
+          "delta": 58.61420626185597,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -5750,7 +7078,8 @@ window.INITIAL_DATA = {
           "kda": 2.8,
           "oldElo": 1742.560962971957,
           "newElo": 1771.868066102885,
-          "delta": 29.307103130927985
+          "delta": 29.307103130927985,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -5762,7 +7091,8 @@ window.INITIAL_DATA = {
           "kda": 8.0,
           "oldElo": 1297.4636187418616,
           "newElo": 1414.6920312655736,
-          "delta": 117.22841252371194
+          "delta": 117.22841252371194,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -5774,7 +7104,8 @@ window.INITIAL_DATA = {
           "kda": 21.0,
           "oldElo": 1709.3139978569793,
           "newElo": 1738.6211009879073,
-          "delta": 29.307103130927985
+          "delta": 29.307103130927985,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -5786,7 +7117,8 @@ window.INITIAL_DATA = {
           "kda": 1.4,
           "oldElo": 1265.4218434702057,
           "newElo": 1148.1934309464937,
-          "delta": -117.22841252371194
+          "delta": -117.22841252371194,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -5798,7 +7130,8 @@ window.INITIAL_DATA = {
           "kda": 0.43,
           "oldElo": 1999.254473976361,
           "newElo": 1969.947370845433,
-          "delta": -29.307103130927985
+          "delta": -29.307103130927985,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -5810,7 +7143,8 @@ window.INITIAL_DATA = {
           "kda": 0.56,
           "oldElo": 2142.4142113727867,
           "newElo": 2113.107108241859,
-          "delta": -29.307103130927985
+          "delta": -29.307103130927985,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -5822,7 +7156,8 @@ window.INITIAL_DATA = {
           "kda": 0.14,
           "oldElo": 1644.3460400012546,
           "newElo": 1615.0389368703266,
-          "delta": -29.307103130927985
+          "delta": -29.307103130927985,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -5834,12 +7169,16 @@ window.INITIAL_DATA = {
           "kda": 0.43,
           "oldElo": 1555.6256343615796,
           "newElo": 1526.3185312306516,
-          "delta": -29.307103130927985
+          "delta": -29.307103130927985,
+          "hasDetail": true
         }
       ]
     },
     {
+      "source": "경기기록",
       "date": "26-05-05",
+      "dateSort": "2026-05-05",
+      "season": "season1",
       "prob": "15.3%",
       "baseDelta": "33.9",
       "winTeam": [
@@ -5867,7 +7206,8 @@ window.INITIAL_DATA = {
           "kda": 3.2,
           "oldElo": 394.9395577336532,
           "newElo": 462.68900379224203,
-          "delta": 67.74944605858884
+          "delta": 67.74944605858884,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -5879,7 +7219,8 @@ window.INITIAL_DATA = {
           "kda": 3.09,
           "oldElo": 2451.530144882143,
           "newElo": 2519.279590940732,
-          "delta": 67.74944605858884
+          "delta": 67.74944605858884,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -5891,7 +7232,8 @@ window.INITIAL_DATA = {
           "kda": 6.25,
           "oldElo": 1708.6862399426625,
           "newElo": 1742.560962971957,
-          "delta": 33.87472302929442
+          "delta": 33.87472302929442,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -5903,7 +7245,8 @@ window.INITIAL_DATA = {
           "kda": 3.29,
           "oldElo": 1161.9647266246839,
           "newElo": 1297.4636187418616,
-          "delta": 135.4988921171777
+          "delta": 135.4988921171777,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -5915,7 +7258,8 @@ window.INITIAL_DATA = {
           "kda": 3.86,
           "oldElo": 1675.4392748276848,
           "newElo": 1709.3139978569793,
-          "delta": 33.87472302929442
+          "delta": 33.87472302929442,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -5927,7 +7271,8 @@ window.INITIAL_DATA = {
           "kda": 0.5,
           "oldElo": 1400.9207355873834,
           "newElo": 1265.4218434702057,
-          "delta": -135.4988921171777
+          "delta": -135.4988921171777,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -5939,7 +7284,8 @@ window.INITIAL_DATA = {
           "kda": 2.33,
           "oldElo": 2033.1291970056554,
           "newElo": 1999.254473976361,
-          "delta": -33.87472302929442
+          "delta": -33.87472302929442,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -5951,7 +7297,8 @@ window.INITIAL_DATA = {
           "kda": 1.29,
           "oldElo": 1589.5003573908741,
           "newElo": 1555.6256343615796,
-          "delta": -33.87472302929442
+          "delta": -33.87472302929442,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -5963,7 +7310,8 @@ window.INITIAL_DATA = {
           "kda": 2.71,
           "oldElo": 1678.220763030549,
           "newElo": 1644.3460400012546,
-          "delta": -33.87472302929442
+          "delta": -33.87472302929442,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -5975,12 +7323,16 @@ window.INITIAL_DATA = {
           "kda": 1.27,
           "oldElo": 2176.288934402081,
           "newElo": 2142.4142113727867,
-          "delta": -33.87472302929442
+          "delta": -33.87472302929442,
+          "hasDetail": true
         }
       ]
     },
     {
+      "source": "경기기록",
       "date": "26-05-05",
+      "dateSort": "2026-05-05",
+      "season": "season1",
       "prob": "54.7%",
       "baseDelta": "18.1",
       "winTeam": [
@@ -6008,7 +7360,8 @@ window.INITIAL_DATA = {
           "kda": 14.0,
           "oldElo": 1553.2936034865552,
           "newElo": 1589.5003573908741,
-          "delta": 36.20675390431883
+          "delta": 36.20675390431883,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -6020,7 +7373,8 @@ window.INITIAL_DATA = {
           "kda": 23.0,
           "oldElo": 2015.025820053496,
           "newElo": 2033.1291970056554,
-          "delta": 18.103376952159415
+          "delta": 18.103376952159415,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -6032,7 +7386,8 @@ window.INITIAL_DATA = {
           "kda": 1.67,
           "oldElo": 1328.5072277787458,
           "newElo": 1400.9207355873834,
-          "delta": 72.41350780863766
+          "delta": 72.41350780863766,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -6044,7 +7399,8 @@ window.INITIAL_DATA = {
           "kda": 12.5,
           "oldElo": 1660.1173860783897,
           "newElo": 1678.220763030549,
-          "delta": 18.103376952159415
+          "delta": 18.103376952159415,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -6056,7 +7412,8 @@ window.INITIAL_DATA = {
           "kda": 12.0,
           "oldElo": 2141.8988481419115,
           "newElo": 2160.002225094071,
-          "delta": 18.103376952159415
+          "delta": 18.103376952159415,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -6068,7 +7425,8 @@ window.INITIAL_DATA = {
           "kda": 0.14,
           "oldElo": 431.146311637972,
           "newElo": 394.9395577336532,
-          "delta": -36.20675390431883
+          "delta": -36.20675390431883,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -6080,7 +7438,8 @@ window.INITIAL_DATA = {
           "kda": 1.0,
           "oldElo": 1726.7896168948218,
           "newElo": 1708.6862399426625,
-          "delta": -18.103376952159415
+          "delta": -18.103376952159415,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -6092,7 +7451,8 @@ window.INITIAL_DATA = {
           "kda": 0.5,
           "oldElo": 2487.7368987864616,
           "newElo": 2451.530144882143,
-          "delta": -36.20675390431883
+          "delta": -36.20675390431883,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -6104,7 +7464,8 @@ window.INITIAL_DATA = {
           "kda": 0.56,
           "oldElo": 2194.3923113542405,
           "newElo": 2176.288934402081,
-          "delta": -18.103376952159415
+          "delta": -18.103376952159415,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -6116,12 +7477,16 @@ window.INITIAL_DATA = {
           "kda": 0.86,
           "oldElo": 1693.5426517798442,
           "newElo": 1675.4392748276848,
-          "delta": -18.103376952159415
+          "delta": -18.103376952159415,
+          "hasDetail": true
         }
       ]
     },
     {
+      "source": "경기기록",
       "date": "26-05-04",
+      "dateSort": "2026-05-04",
+      "season": "season1",
       "prob": "32.0%",
       "baseDelta": "27.2",
       "winTeam": [
@@ -6149,7 +7514,8 @@ window.INITIAL_DATA = {
           "kda": 2.4,
           "oldElo": 376.7434452898379,
           "newElo": 431.146311637972,
-          "delta": 54.40286634813413
+          "delta": 54.40286634813413,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -6161,7 +7527,8 @@ window.INITIAL_DATA = {
           "kda": 6.0,
           "oldElo": 1699.5881837207548,
           "newElo": 1726.7896168948218,
-          "delta": 27.201433174067066
+          "delta": 27.201433174067066,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -6173,7 +7540,8 @@ window.INITIAL_DATA = {
           "kda": 3.4,
           "oldElo": 2378.931166090193,
           "newElo": 2487.7368987864616,
-          "delta": 108.80573269626827
+          "delta": 108.80573269626827,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -6185,7 +7553,8 @@ window.INITIAL_DATA = {
           "kda": 4.6,
           "oldElo": 2167.1908781801735,
           "newElo": 2194.3923113542405,
-          "delta": 27.201433174067066
+          "delta": 27.201433174067066,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -6197,7 +7566,8 @@ window.INITIAL_DATA = {
           "kda": 4.5,
           "oldElo": 1666.3412186057772,
           "newElo": 1693.5426517798442,
-          "delta": 27.201433174067066
+          "delta": 27.201433174067066,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -6209,7 +7579,8 @@ window.INITIAL_DATA = {
           "kda": 0.83,
           "oldElo": 1607.6964698346894,
           "newElo": 1553.2936034865552,
-          "delta": -54.40286634813413
+          "delta": -54.40286634813413,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -6221,7 +7592,8 @@ window.INITIAL_DATA = {
           "kda": 2.0,
           "oldElo": 2042.227253227563,
           "newElo": 2015.025820053496,
-          "delta": -27.201433174067066
+          "delta": -27.201433174067066,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -6233,7 +7605,8 @@ window.INITIAL_DATA = {
           "kda": 1.29,
           "oldElo": 1437.312960475014,
           "newElo": 1328.5072277787458,
-          "delta": -108.80573269626827
+          "delta": -108.80573269626827,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -6245,7 +7618,8 @@ window.INITIAL_DATA = {
           "kda": 1.12,
           "oldElo": 1687.3188192524567,
           "newElo": 1660.1173860783897,
-          "delta": -27.201433174067066
+          "delta": -27.201433174067066,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -6257,12 +7631,16 @@ window.INITIAL_DATA = {
           "kda": 4.33,
           "oldElo": 2169.1002813159785,
           "newElo": 2141.8988481419115,
-          "delta": -27.201433174067066
+          "delta": -27.201433174067066,
+          "hasDetail": true
         }
       ]
     },
     {
+      "source": "경기기록",
       "date": "26-05-04",
+      "dateSort": "2026-05-04",
+      "season": "season1",
       "prob": "91.5%",
       "baseDelta": "3.4",
       "winTeam": [
@@ -6290,7 +7668,8 @@ window.INITIAL_DATA = {
           "kda": 2.0,
           "oldElo": 1600.8762535591172,
           "newElo": 1607.6964698346894,
-          "delta": 6.820216275572237
+          "delta": 6.820216275572237,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -6302,7 +7681,8 @@ window.INITIAL_DATA = {
           "kda": 2.5,
           "oldElo": 1662.931110467991,
           "newElo": 1666.3412186057772,
-          "delta": 3.4101081377861187
+          "delta": 3.4101081377861187,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -6314,7 +7694,8 @@ window.INITIAL_DATA = {
           "kda": 2.25,
           "oldElo": 2165.6901731781923,
           "newElo": 2169.1002813159785,
-          "delta": 3.4101081377861187
+          "delta": 3.4101081377861187,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -6326,7 +7707,8 @@ window.INITIAL_DATA = {
           "kda": 7.75,
           "oldElo": 2365.2907335390487,
           "newElo": 2378.931166090193,
-          "delta": 13.640432551144475
+          "delta": 13.640432551144475,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -6338,7 +7720,8 @@ window.INITIAL_DATA = {
           "kda": 4.83,
           "oldElo": 1683.9087111146705,
           "newElo": 1687.3188192524567,
-          "delta": 3.4101081377861187
+          "delta": 3.4101081377861187,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -6350,7 +7733,8 @@ window.INITIAL_DATA = {
           "kda": 3.67,
           "oldElo": 383.56366156541014,
           "newElo": 376.7434452898379,
-          "delta": -6.820216275572237
+          "delta": -6.820216275572237,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -6362,7 +7746,8 @@ window.INITIAL_DATA = {
           "kda": 1.3,
           "oldElo": 2045.6373613653493,
           "newElo": 2042.227253227563,
-          "delta": -3.4101081377861187
+          "delta": -3.4101081377861187,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -6374,7 +7759,8 @@ window.INITIAL_DATA = {
           "kda": 4.0,
           "oldElo": 1450.9533930261584,
           "newElo": 1437.312960475014,
-          "delta": -13.640432551144475
+          "delta": -13.640432551144475,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -6386,7 +7772,8 @@ window.INITIAL_DATA = {
           "kda": 1.27,
           "oldElo": 1834.3583243022208,
           "newElo": 1827.5381080266486,
-          "delta": -6.820216275572237
+          "delta": -6.820216275572237,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -6398,12 +7785,16 @@ window.INITIAL_DATA = {
           "kda": 2.12,
           "oldElo": 1702.998291858541,
           "newElo": 1699.5881837207548,
-          "delta": -3.4101081377861187
+          "delta": -3.4101081377861187,
+          "hasDetail": true
         }
       ]
     },
     {
+      "source": "경기기록",
       "date": "26-05-04",
+      "dateSort": "2026-05-04",
+      "season": "season1",
       "prob": "90.8%",
       "baseDelta": "3.7",
       "winTeam": [
@@ -6431,7 +7822,8 @@ window.INITIAL_DATA = {
           "kda": 1.33,
           "oldElo": 1593.5383832486802,
           "newElo": 1600.8762535591172,
-          "delta": 7.33787031043688
+          "delta": 7.33787031043688,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -6443,7 +7835,8 @@ window.INITIAL_DATA = {
           "kda": 1.6,
           "oldElo": 1659.2621753127726,
           "newElo": 1662.931110467991,
-          "delta": 3.66893515521844
+          "delta": 3.66893515521844,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -6455,7 +7848,8 @@ window.INITIAL_DATA = {
           "kda": 3.0,
           "oldElo": 2162.0212380229736,
           "newElo": 2165.6901731781923,
-          "delta": 3.66893515521844
+          "delta": 3.66893515521844,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -6467,7 +7861,8 @@ window.INITIAL_DATA = {
           "kda": 9.67,
           "oldElo": 2350.6149929181747,
           "newElo": 2365.2907335390487,
-          "delta": 14.67574062087376
+          "delta": 14.67574062087376,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -6479,7 +7874,8 @@ window.INITIAL_DATA = {
           "kda": 4.0,
           "oldElo": 1680.2397759594521,
           "newElo": 1683.9087111146705,
-          "delta": 3.66893515521844
+          "delta": 3.66893515521844,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -6491,7 +7887,8 @@ window.INITIAL_DATA = {
           "kda": 0.6,
           "oldElo": 390.901531875847,
           "newElo": 383.56366156541014,
-          "delta": -7.33787031043688
+          "delta": -7.33787031043688,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -6503,7 +7900,8 @@ window.INITIAL_DATA = {
           "kda": 2.57,
           "oldElo": 2049.3062965205677,
           "newElo": 2045.6373613653493,
-          "delta": -3.66893515521844
+          "delta": -3.66893515521844,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -6515,7 +7913,8 @@ window.INITIAL_DATA = {
           "kda": 2.0,
           "oldElo": 1465.6291336470322,
           "newElo": 1450.9533930261584,
-          "delta": -14.67574062087376
+          "delta": -14.67574062087376,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -6527,7 +7926,8 @@ window.INITIAL_DATA = {
           "kda": 1.1,
           "oldElo": 1841.6961946126578,
           "newElo": 1834.3583243022208,
-          "delta": -7.33787031043688
+          "delta": -7.33787031043688,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -6539,12 +7939,16 @@ window.INITIAL_DATA = {
           "kda": 2.86,
           "oldElo": 1706.6672270137594,
           "newElo": 1702.998291858541,
-          "delta": -3.66893515521844
+          "delta": -3.66893515521844,
+          "hasDetail": true
         }
       ]
     },
     {
+      "source": "경기기록",
       "date": "26-05-04",
+      "dateSort": "2026-05-04",
+      "season": "season1",
       "prob": "89.8%",
       "baseDelta": "4.1",
       "winTeam": [
@@ -6572,7 +7976,8 @@ window.INITIAL_DATA = {
           "kda": 6.0,
           "oldElo": 1449.3760503490819,
           "newElo": 1465.6291336470322,
-          "delta": 16.253083297950326
+          "delta": 16.253083297950326,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -6584,7 +7989,8 @@ window.INITIAL_DATA = {
           "kda": 4.14,
           "oldElo": 1655.198904488285,
           "newElo": 1659.2621753127726,
-          "delta": 4.0632708244875815
+          "delta": 4.0632708244875815,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -6596,7 +8002,8 @@ window.INITIAL_DATA = {
           "kda": 8.33,
           "oldElo": 2157.957967198486,
           "newElo": 2162.0212380229736,
-          "delta": 4.0632708244875815
+          "delta": 4.0632708244875815,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -6608,7 +8015,8 @@ window.INITIAL_DATA = {
           "kda": 6.75,
           "oldElo": 1833.5696529636825,
           "newElo": 1841.6961946126578,
-          "delta": 8.126541648975163
+          "delta": 8.126541648975163,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -6620,7 +8028,8 @@ window.INITIAL_DATA = {
           "kda": 4.17,
           "oldElo": 1424.2725115236258,
           "newElo": 1440.525594821576,
-          "delta": 16.253083297950326
+          "delta": 16.253083297950326,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -6632,7 +8041,8 @@ window.INITIAL_DATA = {
           "kda": 0.43,
           "oldElo": 399.02807352482216,
           "newElo": 390.901531875847,
-          "delta": -8.126541648975163
+          "delta": -8.126541648975163,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -6644,7 +8054,8 @@ window.INITIAL_DATA = {
           "kda": 2.29,
           "oldElo": 1710.730497838247,
           "newElo": 1706.6672270137594,
-          "delta": -4.0632708244875815
+          "delta": -4.0632708244875815,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -6656,7 +8067,8 @@ window.INITIAL_DATA = {
           "kda": 1.86,
           "oldElo": 1684.3030467839396,
           "newElo": 1680.2397759594521,
-          "delta": -4.0632708244875815
+          "delta": -4.0632708244875815,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -6668,7 +8080,8 @@ window.INITIAL_DATA = {
           "kda": 1.8,
           "oldElo": 1246.466146043691,
           "newElo": 1238.3396043947157,
-          "delta": -8.126541648975163
+          "delta": -8.126541648975163,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -6680,12 +8093,16 @@ window.INITIAL_DATA = {
           "kda": 1.22,
           "oldElo": 1586.5217684920992,
           "newElo": 1570.268685194149,
-          "delta": -16.253083297950326
+          "delta": -16.253083297950326,
+          "hasDetail": true
         }
       ]
     },
     {
+      "source": "경기기록",
       "date": "26-05-04",
+      "dateSort": "2026-05-04",
+      "season": "season1",
       "prob": "86.5%",
       "baseDelta": "5.4",
       "winTeam": [
@@ -6713,7 +8130,8 @@ window.INITIAL_DATA = {
           "kda": 3.0,
           "oldElo": 1582.7727332458903,
           "newElo": 1593.5383832486802,
-          "delta": 10.765650002789942
+          "delta": 10.765650002789942,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -6725,7 +8143,8 @@ window.INITIAL_DATA = {
           "kda": 3.57,
           "oldElo": 2329.083692912595,
           "newElo": 2350.6149929181747,
-          "delta": 21.531300005579883
+          "delta": 21.531300005579883,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -6737,7 +8156,8 @@ window.INITIAL_DATA = {
           "kda": 2.83,
           "oldElo": 1649.81607948689,
           "newElo": 1655.198904488285,
-          "delta": 5.382825001394971
+          "delta": 5.382825001394971,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -6749,7 +8169,8 @@ window.INITIAL_DATA = {
           "kda": 4.2,
           "oldElo": 2152.5751421970913,
           "newElo": 2157.957967198486,
-          "delta": 5.382825001394971
+          "delta": 5.382825001394971,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -6761,7 +8182,8 @@ window.INITIAL_DATA = {
           "kda": 6.25,
           "oldElo": 1705.3476728368519,
           "newElo": 1710.730497838247,
-          "delta": 5.382825001394971
+          "delta": 5.382825001394971,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -6773,7 +8195,8 @@ window.INITIAL_DATA = {
           "kda": 0.57,
           "oldElo": 409.7937235276121,
           "newElo": 399.02807352482216,
-          "delta": -10.765650002789942
+          "delta": -10.765650002789942,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -6785,7 +8208,8 @@ window.INITIAL_DATA = {
           "kda": 2.12,
           "oldElo": 2054.6891215219625,
           "newElo": 2049.3062965205677,
-          "delta": -5.382825001394971
+          "delta": -5.382825001394971,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -6797,7 +8221,8 @@ window.INITIAL_DATA = {
           "kda": 2.4,
           "oldElo": 1470.9073503546617,
           "newElo": 1449.3760503490819,
-          "delta": -21.531300005579883
+          "delta": -21.531300005579883,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -6809,7 +8234,8 @@ window.INITIAL_DATA = {
           "kda": 1.56,
           "oldElo": 1695.0686967867296,
           "newElo": 1684.3030467839396,
-          "delta": -10.765650002789942
+          "delta": -10.765650002789942,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -6821,12 +8247,16 @@ window.INITIAL_DATA = {
           "kda": 2.25,
           "oldElo": 2172.5737031815684,
           "newElo": 2167.1908781801735,
-          "delta": -5.382825001394971
+          "delta": -5.382825001394971,
+          "hasDetail": true
         }
       ]
     },
     {
+      "source": "경기기록",
       "date": "26-05-04",
+      "dateSort": "2026-05-04",
+      "season": "season1",
       "prob": "45.2%",
       "baseDelta": "21.9",
       "winTeam": [
@@ -6854,7 +8284,8 @@ window.INITIAL_DATA = {
           "kda": 3.4,
           "oldElo": 2130.6374564392095,
           "newElo": 2152.5751421970913,
-          "delta": 21.937685757881617
+          "delta": 21.937685757881617,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -6866,7 +8297,8 @@ window.INITIAL_DATA = {
           "kda": 9.5,
           "oldElo": 1683.4099870789703,
           "newElo": 1705.3476728368519,
-          "delta": 21.937685757881617
+          "delta": 21.937685757881617,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -6878,7 +8310,8 @@ window.INITIAL_DATA = {
           "kda": 3.14,
           "oldElo": 1336.5217684920992,
           "newElo": 1424.2725115236258,
-          "delta": 87.75074303152647
+          "delta": 87.75074303152647,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -6890,7 +8323,8 @@ window.INITIAL_DATA = {
           "kda": 3.14,
           "oldElo": 1202.5907745279278,
           "newElo": 1246.466146043691,
-          "delta": 43.875371515763234
+          "delta": 43.875371515763234,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -6902,7 +8336,8 @@ window.INITIAL_DATA = {
           "kda": 2.75,
           "oldElo": 2150.6360174236866,
           "newElo": 2172.5737031815684,
-          "delta": 21.937685757881617
+          "delta": 21.937685757881617,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -6914,7 +8349,8 @@ window.INITIAL_DATA = {
           "kda": 0.8,
           "oldElo": 1626.6481047616535,
           "newElo": 1582.7727332458903,
-          "delta": -43.875371515763234
+          "delta": -43.875371515763234,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -6926,7 +8362,8 @@ window.INITIAL_DATA = {
           "kda": 1.43,
           "oldElo": 1738.9440683024927,
           "newElo": 1695.0686967867296,
-          "delta": -43.875371515763234
+          "delta": -43.875371515763234,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -6938,7 +8375,8 @@ window.INITIAL_DATA = {
           "kda": 2.0,
           "oldElo": 1558.6580933861883,
           "newElo": 1470.9073503546617,
-          "delta": -87.75074303152647
+          "delta": -87.75074303152647,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -6950,7 +8388,8 @@ window.INITIAL_DATA = {
           "kda": 1.22,
           "oldElo": 2076.6268072798443,
           "newElo": 2054.6891215219625,
-          "delta": -21.937685757881617
+          "delta": -21.937685757881617,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -6962,12 +8401,16 @@ window.INITIAL_DATA = {
           "kda": 2.0,
           "oldElo": 1671.7537652447716,
           "newElo": 1649.81607948689,
-          "delta": -21.937685757881617
+          "delta": -21.937685757881617,
+          "hasDetail": true
         }
       ]
     },
     {
+      "source": "경기기록",
       "date": "26-05-04",
+      "dateSort": "2026-05-04",
+      "season": "season1",
       "prob": "50.4%",
       "baseDelta": "19.8",
       "winTeam": [
@@ -6995,7 +8438,8 @@ window.INITIAL_DATA = {
           "kda": 2.43,
           "oldElo": 1586.9568242258738,
           "newElo": 1626.6481047616535,
-          "delta": 39.69128053577967
+          "delta": 39.69128053577967,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -7007,7 +8451,8 @@ window.INITIAL_DATA = {
           "kda": 2.56,
           "oldElo": 1663.5643468110804,
           "newElo": 1683.4099870789703,
-          "delta": 19.845640267889834
+          "delta": 19.845640267889834,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -7019,7 +8464,8 @@ window.INITIAL_DATA = {
           "kda": 2.86,
           "oldElo": 2056.7811670119545,
           "newElo": 2076.6268072798443,
-          "delta": 19.845640267889834
+          "delta": 19.845640267889834,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -7031,7 +8477,8 @@ window.INITIAL_DATA = {
           "kda": 5.6,
           "oldElo": 1699.252787766713,
           "newElo": 1738.9440683024927,
-          "delta": 39.69128053577967
+          "delta": 39.69128053577967,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -7043,7 +8490,8 @@ window.INITIAL_DATA = {
           "kda": 3.33,
           "oldElo": 1651.9081249768817,
           "newElo": 1671.7537652447716,
-          "delta": 19.845640267889834
+          "delta": 19.845640267889834,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -7055,7 +8503,8 @@ window.INITIAL_DATA = {
           "kda": 3.14,
           "oldElo": 2150.4830967070993,
           "newElo": 2130.6374564392095,
-          "delta": -19.845640267889834
+          "delta": -19.845640267889834,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -7067,7 +8516,8 @@ window.INITIAL_DATA = {
           "kda": 2.22,
           "oldElo": 2170.4816576915764,
           "newElo": 2150.6360174236866,
-          "delta": -19.845640267889834
+          "delta": -19.845640267889834,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -7079,7 +8529,8 @@ window.INITIAL_DATA = {
           "kda": 3.4,
           "oldElo": 1415.9043295636586,
           "newElo": 1336.5217684920992,
-          "delta": -79.38256107155934
+          "delta": -79.38256107155934,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -7091,7 +8542,8 @@ window.INITIAL_DATA = {
           "kda": 1.4,
           "oldElo": 1242.2820550637075,
           "newElo": 1202.5907745279278,
-          "delta": -39.69128053577967
+          "delta": -39.69128053577967,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -7103,12 +8555,16 @@ window.INITIAL_DATA = {
           "kda": 1.18,
           "oldElo": 1665.9043295636586,
           "newElo": 1586.5217684920992,
-          "delta": -79.38256107155934
+          "delta": -79.38256107155934,
+          "hasDetail": true
         }
       ]
     },
     {
+      "source": "경기기록",
       "date": "26-05-04",
+      "dateSort": "2026-05-04",
+      "season": "season1",
       "prob": "84.1%",
       "baseDelta": "6.4",
       "winTeam": [
@@ -7136,7 +8592,8 @@ window.INITIAL_DATA = {
           "kda": 4.33,
           "oldElo": 2137.7643081820224,
           "newElo": 2144.123702444561,
-          "delta": 6.359394262538274
+          "delta": 6.359394262538274,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -7148,7 +8605,8 @@ window.INITIAL_DATA = {
           "kda": 1.2,
           "oldElo": 2050.421772749416,
           "newElo": 2056.7811670119545,
-          "delta": 6.359394262538274
+          "delta": 6.359394262538274,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -7160,7 +8618,8 @@ window.INITIAL_DATA = {
           "kda": 4.0,
           "oldElo": 1657.2049525485422,
           "newElo": 1663.5643468110804,
-          "delta": 6.359394262538274
+          "delta": 6.359394262538274,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -7172,7 +8631,8 @@ window.INITIAL_DATA = {
           "kda": 2.0,
           "oldElo": 1686.5339992416364,
           "newElo": 1699.252787766713,
-          "delta": 12.718788525076548
+          "delta": 12.718788525076548,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -7184,7 +8644,8 @@ window.INITIAL_DATA = {
           "kda": 0.71,
           "oldElo": 2144.123702444561,
           "newElo": 2150.4830967070993,
-          "delta": 6.359394262538274
+          "delta": 6.359394262538274,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -7196,7 +8657,8 @@ window.INITIAL_DATA = {
           "kda": 0.56,
           "oldElo": 1658.26751923942,
           "newElo": 1651.9081249768817,
-          "delta": -6.359394262538274
+          "delta": -6.359394262538274,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -7208,7 +8670,8 @@ window.INITIAL_DATA = {
           "kda": 4.0,
           "oldElo": 1441.3419066138117,
           "newElo": 1415.9043295636586,
-          "delta": -25.437577050153095
+          "delta": -25.437577050153095,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -7220,7 +8683,8 @@ window.INITIAL_DATA = {
           "kda": 1.57,
           "oldElo": 2176.841051954115,
           "newElo": 2170.4816576915764,
-          "delta": -6.359394262538274
+          "delta": -6.359394262538274,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -7232,7 +8696,8 @@ window.INITIAL_DATA = {
           "kda": 3.67,
           "oldElo": 1255.0008435887842,
           "newElo": 1242.2820550637075,
-          "delta": -12.718788525076548
+          "delta": -12.718788525076548,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -7244,12 +8709,16 @@ window.INITIAL_DATA = {
           "kda": 2.75,
           "oldElo": 1691.3419066138117,
           "newElo": 1665.9043295636586,
-          "delta": -25.437577050153095
+          "delta": -25.437577050153095,
+          "hasDetail": true
         }
       ]
     },
     {
+      "source": "경기기록",
       "date": "26-05-04",
+      "dateSort": "2026-05-04",
+      "season": "season1",
       "prob": "63.3%",
       "baseDelta": "14.7",
       "winTeam": [
@@ -7277,7 +8746,8 @@ window.INITIAL_DATA = {
           "kda": 6.33,
           "oldElo": 1557.6277775327796,
           "newElo": 1586.9568242258738,
-          "delta": 29.329046693094114
+          "delta": 29.329046693094114,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -7289,7 +8759,8 @@ window.INITIAL_DATA = {
           "kda": 2.7,
           "oldElo": 2035.757249402869,
           "newElo": 2050.421772749416,
-          "delta": 14.664523346547057
+          "delta": 14.664523346547057,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -7301,7 +8772,8 @@ window.INITIAL_DATA = {
           "kda": 1.8,
           "oldElo": 1500.0,
           "newElo": 1558.6580933861883,
-          "delta": 58.65809338618823
+          "delta": 58.65809338618823,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -7313,7 +8785,8 @@ window.INITIAL_DATA = {
           "kda": 3.5,
           "oldElo": 1657.2049525485422,
           "newElo": 1686.5339992416364,
-          "delta": 29.329046693094114
+          "delta": 29.329046693094114,
+          "hasDetail": true
         },
         {
           "result": "승리",
@@ -7325,7 +8798,8 @@ window.INITIAL_DATA = {
           "kda": 8.33,
           "oldElo": 2123.0997848354755,
           "newElo": 2137.7643081820224,
-          "delta": 14.664523346547057
+          "delta": 14.664523346547057,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -7337,7 +8811,8 @@ window.INITIAL_DATA = {
           "kda": 1.38,
           "oldElo": 1672.9320425859669,
           "newElo": 1658.26751923942,
-          "delta": -14.664523346547057
+          "delta": -14.664523346547057,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -7349,7 +8824,8 @@ window.INITIAL_DATA = {
           "kda": 3.0,
           "oldElo": 1500.0,
           "newElo": 1441.3419066138117,
-          "delta": -58.65809338618823
+          "delta": -58.65809338618823,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -7361,7 +8837,8 @@ window.INITIAL_DATA = {
           "kda": 2.56,
           "oldElo": 2191.505575300662,
           "newElo": 2176.841051954115,
-          "delta": -14.664523346547057
+          "delta": -14.664523346547057,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -7373,7 +8850,8 @@ window.INITIAL_DATA = {
           "kda": 2.67,
           "oldElo": 1284.3298902818783,
           "newElo": 1255.0008435887842,
-          "delta": -29.329046693094114
+          "delta": -29.329046693094114,
+          "hasDetail": true
         },
         {
           "result": "패배",
@@ -7385,15 +8863,17620 @@ window.INITIAL_DATA = {
           "kda": 1.44,
           "oldElo": 1750.0,
           "newElo": 1691.3419066138117,
-          "delta": -58.65809338618823
+          "delta": -58.65809338618823,
+          "hasDetail": true
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #41",
+      "dateSort": "past-041",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "안성진",
+        "이준헌",
+        "양현규",
+        "김민서",
+        "조호진"
+      ],
+      "loseTeam": [
+        "이권표",
+        "송승훈",
+        "지범준",
+        "안태인",
+        "박준혁"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이준헌",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "양현규",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "조호진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "이권표",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "송승훈",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "박준혁",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #40",
+      "dateSort": "past-040",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "안성진",
+        "이준헌",
+        "양현규",
+        "김민서",
+        "조호진"
+      ],
+      "loseTeam": [
+        "이권표",
+        "송승훈",
+        "지범준",
+        "안태인",
+        "박준혁"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이준헌",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "양현규",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "조호진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "이권표",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "송승훈",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "박준혁",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #39",
+      "dateSort": "past-039",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "이권표",
+        "송승훈",
+        "지범준",
+        "안태인",
+        "박준혁"
+      ],
+      "loseTeam": [
+        "안성진",
+        "이준헌",
+        "양현규",
+        "김민서",
+        "조호진"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이권표",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "송승훈",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "박준혁",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "이준헌",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "양현규",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "조호진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #38",
+      "dateSort": "past-038",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "송승훈",
+        "안성진",
+        "양현규",
+        "이준헌",
+        "지범준"
+      ],
+      "loseTeam": [
+        "조호진",
+        "안태인",
+        "박준혁",
+        "김민서",
+        "이권표"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "송승훈",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "양현규",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이준헌",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "조호진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "박준혁",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "이권표",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #37",
+      "dateSort": "past-037",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "이권표",
+        "김민서",
+        "안태인",
+        "조호진",
+        "박준혁"
+      ],
+      "loseTeam": [
+        "송승훈",
+        "안성진",
+        "양현규",
+        "지범준",
+        "이준헌"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이권표",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "조호진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "박준혁",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "송승훈",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "양현규",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "이준헌",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #36",
+      "dateSort": "past-036",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "송승훈",
+        "안성진",
+        "양현규",
+        "이준헌",
+        "지범준"
+      ],
+      "loseTeam": [
+        "조호진",
+        "안태인",
+        "박준혁",
+        "김민서",
+        "이권표"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "송승훈",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "양현규",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이준헌",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "조호진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "박준혁",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "이권표",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #35",
+      "dateSort": "past-035",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "송승훈",
+        "양현규",
+        "지범준",
+        "김민서",
+        "박준혁"
+      ],
+      "loseTeam": [
+        "이준헌",
+        "안태인",
+        "이권표",
+        "조호진",
+        "안성진"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "송승훈",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "양현규",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "박준혁",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "이준헌",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "이권표",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "조호진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #34",
+      "dateSort": "past-034",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "양현규",
+        "지범준",
+        "송승훈",
+        "조호진",
+        "안태인"
+      ],
+      "loseTeam": [
+        "김민서",
+        "이준헌",
+        "안성진",
+        "박준혁",
+        "이권표"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "양현규",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "송승훈",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "조호진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "이준헌",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "박준혁",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "이권표",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #33",
+      "dateSort": "past-033",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "양현규",
+        "안성진",
+        "안태인",
+        "송승훈",
+        "이권표"
+      ],
+      "loseTeam": [
+        "김민서",
+        "조호진",
+        "박준혁",
+        "지범준",
+        "이준헌"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "양현규",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "송승훈",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이권표",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "조호진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "박준혁",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "이준헌",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #32",
+      "dateSort": "past-032",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "안태인",
+        "송승훈",
+        "김민서",
+        "박준혁",
+        "조호진"
+      ],
+      "loseTeam": [
+        "이권표",
+        "양현규",
+        "안성진",
+        "지범준",
+        "이준헌"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "송승훈",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "박준혁",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "조호진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "이권표",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "양현규",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "이준헌",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #31",
+      "dateSort": "past-031",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "안태인",
+        "송승훈",
+        "김민서",
+        "박준혁",
+        "조호진"
+      ],
+      "loseTeam": [
+        "이권표",
+        "양현규",
+        "안성진",
+        "지범준",
+        "이준헌"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "송승훈",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "박준혁",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "조호진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "이권표",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "양현규",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "이준헌",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #30",
+      "dateSort": "past-030",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "이권표",
+        "양현규",
+        "안성진",
+        "지범준",
+        "이준헌"
+      ],
+      "loseTeam": [
+        "안태인",
+        "송승훈",
+        "김민서",
+        "박준혁",
+        "조호진"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이권표",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "양현규",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이준헌",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "송승훈",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "박준혁",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "조호진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #29",
+      "dateSort": "past-029",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "송승훈",
+        "김민서",
+        "김찬",
+        "유동혁",
+        "양현규"
+      ],
+      "loseTeam": [
+        "안성진",
+        "윤선용",
+        "유탁영",
+        "안우진",
+        "안태인"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "송승훈",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김찬",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "유동혁",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "양현규",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "윤선용",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "유탁영",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안우진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #28",
+      "dateSort": "past-028",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "앙현규",
+        "김찬",
+        "송승훈",
+        "김민서",
+        "유동혁"
+      ],
+      "loseTeam": [
+        "지범준",
+        "안태인",
+        "안정진",
+        "안우진",
+        "윤선용"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "앙현규",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김찬",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "송승훈",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "유동혁",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안정진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안우진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "윤선용",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #27",
+      "dateSort": "past-027",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "지범준",
+        "양현규",
+        "김찬",
+        "김민서",
+        "윤선용"
+      ],
+      "loseTeam": [
+        "송슿훈",
+        "안우진유동혁",
+        "안태인",
+        "안성진"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "양현규",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김찬",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "윤선용",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "송슿훈",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안우진유동혁",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #26",
+      "dateSort": "past-026",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "안태인",
+        "유동혁",
+        "김시완",
+        "김찬",
+        "외부인"
+      ],
+      "loseTeam": [
+        "지범준",
+        "송승훈",
+        "김민서",
+        "유탁영",
+        "안성진"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "유동혁",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김시완",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김찬",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "외부인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "송승훈",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "유탁영",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #25",
+      "dateSort": "past-025",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "지범준",
+        "송승훈",
+        "김민서",
+        "유탁영",
+        "안성진"
+      ],
+      "loseTeam": [
+        "안태인",
+        "유동혁",
+        "김시완",
+        "김찬",
+        "외부인"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "송승훈",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "유탁영",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "유동혁",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김시완",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김찬",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "외부인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #24",
+      "dateSort": "past-024",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "안태인",
+        "유동혁",
+        "김시완",
+        "김찬",
+        "외부인"
+      ],
+      "loseTeam": [
+        "지범준",
+        "송승훈",
+        "김민서",
+        "유탁영",
+        "안성진"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "유동혁",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김시완",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김찬",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "외부인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "송승훈",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "유탁영",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #23",
+      "dateSort": "past-023",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "유탁영",
+        "안성진",
+        "박준혁",
+        "김민서",
+        "이호재"
+      ],
+      "loseTeam": [
+        "지범준",
+        "이준헌",
+        "김찬",
+        "안우진",
+        "안태인"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "유탁영",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "박준혁",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이호재",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "이준헌",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김찬",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안우진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #22",
+      "dateSort": "past-022",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "지범준",
+        "이준헌",
+        "안우진",
+        "김민서",
+        "안태인"
+      ],
+      "loseTeam": [
+        "김찬",
+        "유탁영",
+        "이호재",
+        "박준혁",
+        "안성진"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이준헌",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안우진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김찬",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "유탁영",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "이호재",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "박준혁",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #21",
+      "dateSort": "past-021",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "유탁영",
+        "안성진",
+        "박준혁",
+        "김민서",
+        "이호재"
+      ],
+      "loseTeam": [
+        "지범준",
+        "이준헌",
+        "김찬",
+        "안우진",
+        "안태인"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "유탁영",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "박준혁",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이호재",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "이준헌",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김찬",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안우진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #20",
+      "dateSort": "past-020",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "지범준",
+        "이준헌",
+        "김찬",
+        "안우진",
+        "안태인"
+      ],
+      "loseTeam": [
+        "유탁영",
+        "안성진",
+        "박준혁",
+        "김민서",
+        "이호재"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이준헌",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김찬",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안우진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "유탁영",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "박준혁",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "이호재",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #19",
+      "dateSort": "past-019",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "안태인",
+        "김민서",
+        "이호재",
+        "박준혁",
+        "유탁영"
+      ],
+      "loseTeam": [
+        "지범준",
+        "안우진",
+        "김찬",
+        "안성진",
+        "이준헌"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이호재",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "박준혁",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "유탁영",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안우진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김찬",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "이준헌",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #18",
+      "dateSort": "past-018",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "이준헌",
+        "안태인",
+        "이권표",
+        "허원석",
+        "송승훈"
+      ],
+      "loseTeam": [
+        "지범준",
+        "윤준석",
+        "김지우",
+        "김민서",
+        "안성진"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이준헌",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이권표",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "허원석",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "송승훈",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "윤준석",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김지우",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #17",
+      "dateSort": "past-017",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "이준헌",
+        "안태인",
+        "이권표",
+        "허원석",
+        "송승훈"
+      ],
+      "loseTeam": [
+        "지범준",
+        "윤준석",
+        "김지우",
+        "김민서",
+        "안성진"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이준헌",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이권표",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "허원석",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "송승훈",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "윤준석",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김지우",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #16",
+      "dateSort": "past-016",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "지범준",
+        "윤준석",
+        "김지우",
+        "김민서",
+        "안성진"
+      ],
+      "loseTeam": [
+        "이준헌",
+        "안태인",
+        "이권표",
+        "허원석",
+        "송승훈"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "윤준석",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김지우",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "이준헌",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "이권표",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "허원석",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "송승훈",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #15",
+      "dateSort": "past-015",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "지범준",
+        "이준헌",
+        "윤준석",
+        "김지우",
+        "허원석"
+      ],
+      "loseTeam": [
+        "안태인",
+        "윤선용",
+        "이호재",
+        "김민서",
+        "송승훈"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이준헌",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "윤준석",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김지우",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "허원석",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "윤선용",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "이호재",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "송승훈",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #14",
+      "dateSort": "past-014",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "이권표",
+        "이호재",
+        "허원석",
+        "김민서",
+        "안성진"
+      ],
+      "loseTeam": [
+        "지범준",
+        "윤선용",
+        "윤준석",
+        "김지우",
+        "송승훈"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이권표",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이호재",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "허원석",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "윤선용",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "윤준석",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김지우",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "송승훈",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #13",
+      "dateSort": "past-013",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "이준헌",
+        "이권표",
+        "윤선용",
+        "윤준석",
+        "허원석"
+      ],
+      "loseTeam": [
+        "안태인",
+        "이호재",
+        "김지우",
+        "송승훈",
+        "안성진"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이준헌",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이권표",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "윤선용",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "윤준석",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "허원석",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "이호재",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김지우",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "송승훈",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #12",
+      "dateSort": "past-012",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "지범준",
+        "안태인",
+        "이권표",
+        "이호재",
+        "안성진"
+      ],
+      "loseTeam": [
+        "이준헌",
+        "윤준석",
+        "김지우",
+        "허원석",
+        "김민서"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이권표",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이호재",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "이준헌",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "윤준석",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김지우",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "허원석",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #11",
+      "dateSort": "past-011",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "지범준",
+        "이준헌",
+        "윤선용",
+        "김민서",
+        "송승훈"
+      ],
+      "loseTeam": [
+        "안태인",
+        "이권표",
+        "이호재",
+        "윤준석",
+        "안성진"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이준헌",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "윤선용",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "송승훈",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "이권표",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "이호재",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "윤준석",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #10",
+      "dateSort": "past-010",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "지범준",
+        "이준헌",
+        "안태인",
+        "이권표",
+        "안성진"
+      ],
+      "loseTeam": [
+        "윤선용",
+        "김지우",
+        "허원석",
+        "김민서",
+        "송승훈"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이준헌",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이권표",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "윤선용",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김지우",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "허원석",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "송승훈",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #9",
+      "dateSort": "past-009",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "지범준",
+        "이호재",
+        "김민서",
+        "송승훈",
+        "최유진"
+      ],
+      "loseTeam": [
+        "윤선용",
+        "안성진",
+        "김찬",
+        "안우진",
+        "외부인"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이호재",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "송승훈",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "최유진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "윤선용",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김찬",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안우진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "외부인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #8",
+      "dateSort": "past-008",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "지범준",
+        "이호재",
+        "김민서",
+        "송승훈",
+        "최유진"
+      ],
+      "loseTeam": [
+        "윤선용",
+        "안성진",
+        "김찬",
+        "안우진",
+        "외부인"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이호재",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "송승훈",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "최유진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "윤선용",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김찬",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안우진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "외부인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #7",
+      "dateSort": "past-007",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "지범준",
+        "이준헌",
+        "이호재",
+        "김찬",
+        "박명룡"
+      ],
+      "loseTeam": [
+        "안태인",
+        "김민서",
+        "안성진",
+        "양현규",
+        "유탁영"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이준헌",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이호재",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김찬",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "박명룡",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "양현규",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "유탁영",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #6",
+      "dateSort": "past-006",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "안태인",
+        "김민서",
+        "안성진",
+        "양현규",
+        "유탁영"
+      ],
+      "loseTeam": [
+        "지범준",
+        "이준헌",
+        "이호재",
+        "김찬",
+        "박명룡"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "양현규",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "유탁영",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "이준헌",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "이호재",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김찬",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "박명룡",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #5",
+      "dateSort": "past-005",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "안태인",
+        "김민서",
+        "안성진",
+        "양현규",
+        "유탁영"
+      ],
+      "loseTeam": [
+        "지범준",
+        "이준헌",
+        "이호재",
+        "김찬",
+        "박명룡"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "양현규",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "유탁영",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "이준헌",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "이호재",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김찬",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "박명룡",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #4",
+      "dateSort": "past-004",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "지범준",
+        "김민서",
+        "안성진",
+        "김시완",
+        "김찬"
+      ],
+      "loseTeam": [
+        "안태인",
+        "이호재",
+        "전준형",
+        "양현규",
+        "유탁영"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김시완",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김찬",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "이호재",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "전준형",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "양현규",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "유탁영",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #3",
+      "dateSort": "past-003",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "안태인",
+        "이호재",
+        "김민서",
+        "송승훈",
+        "유탁영"
+      ],
+      "loseTeam": [
+        "지범준",
+        "안성진",
+        "김찬",
+        "최유진",
+        "외부인"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이호재",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "송승훈",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "유탁영",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김찬",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "최유진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "외부인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #2",
+      "dateSort": "past-002",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "지범준",
+        "김민서",
+        "송승훈",
+        "안성진",
+        "유탁영"
+      ],
+      "loseTeam": [
+        "안태인",
+        "김찬",
+        "최유진",
+        "외부인"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "송승훈",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "유탁영",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김찬",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "최유진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "외부인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #1",
+      "dateSort": "past-001",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "지범준",
+        "김민서",
+        "송승훈",
+        "안성진",
+        "유탁영"
+      ],
+      "loseTeam": [
+        "안태인",
+        "김찬",
+        "최유진",
+        "외부인"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "송승훈",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "유탁영",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김찬",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "최유진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "외부인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
         }
       ]
     }
   ],
-  "recentMatchesSeason1": [],
+  "recentMatchesTotal": [
+    {
+      "source": "경기기록",
+      "date": "26-06-01",
+      "dateSort": "2026-06-01",
+      "season": "season2",
+      "prob": "77.1%",
+      "baseDelta": "9.2",
+      "winTeam": [
+        "지범준",
+        "김민서",
+        "이호재",
+        "안태인",
+        "이준헌"
+      ],
+      "loseTeam": [
+        "송승훈",
+        "김찬",
+        "안우진",
+        "유동혁",
+        "안성진"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "탑",
+          "name": "지범준",
+          "k": 12,
+          "d": 1,
+          "a": 2,
+          "kda": 14.0,
+          "oldElo": 2050.8442514921735,
+          "newElo": 2069.1683388025335,
+          "delta": 18.324087310359893,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "정글",
+          "name": "김민서",
+          "k": 10,
+          "d": 2,
+          "a": 6,
+          "kda": 8.0,
+          "oldElo": 1891.8556608043887,
+          "newElo": 1928.5038354251085,
+          "delta": 36.648174620719786,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "미드",
+          "name": "이호재",
+          "k": 6,
+          "d": 2,
+          "a": 4,
+          "kda": 5.0,
+          "oldElo": 1338.5753908717022,
+          "newElo": 1356.899478182062,
+          "delta": 18.324087310359893,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "원딜",
+          "name": "안태인",
+          "k": 2,
+          "d": 4,
+          "a": 5,
+          "kda": 1.75,
+          "oldElo": 2218.1481699379665,
+          "newElo": 2236.4722572483265,
+          "delta": 18.324087310359893,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "서폿",
+          "name": "이준헌",
+          "k": 1,
+          "d": 3,
+          "a": 9,
+          "kda": 3.33,
+          "oldElo": 1653.5883994598596,
+          "newElo": 1690.2365740805794,
+          "delta": 36.648174620719786,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "탑",
+          "name": "송승훈",
+          "k": 0,
+          "d": 13,
+          "a": 0,
+          "kda": 0.0,
+          "oldElo": 1507.5849424779608,
+          "newElo": 1489.260855167601,
+          "delta": -18.324087310359893,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "정글",
+          "name": "김찬",
+          "k": 1,
+          "d": 5,
+          "a": 2,
+          "kda": 0.6,
+          "oldElo": 1828.4565526962128,
+          "newElo": 1810.132465385853,
+          "delta": -18.324087310359893,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "미드",
+          "name": "안우진",
+          "k": 4,
+          "d": 4,
+          "a": 0,
+          "kda": 1.0,
+          "oldElo": 673.6431865343151,
+          "newElo": 655.3190992239552,
+          "delta": -18.324087310359893,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "원딜",
+          "name": "유동혁",
+          "k": 6,
+          "d": 6,
+          "a": 2,
+          "kda": 1.33,
+          "oldElo": 2153.891552167945,
+          "newElo": 2117.2433775472255,
+          "delta": -36.648174620719786,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "서폿",
+          "name": "안성진",
+          "k": 1,
+          "d": 3,
+          "a": 6,
+          "kda": 2.33,
+          "oldElo": 1935.2491736166849,
+          "newElo": 1916.925086306325,
+          "delta": -18.324087310359893,
+          "hasDetail": true
+        }
+      ]
+    },
+    {
+      "source": "경기기록",
+      "date": "26-06-01",
+      "dateSort": "2026-06-01",
+      "season": "season2",
+      "prob": "70.2%",
+      "baseDelta": "11.9",
+      "winTeam": [
+        "지범준",
+        "김민서",
+        "이호재",
+        "안태인",
+        "이준헌"
+      ],
+      "loseTeam": [
+        "송승훈",
+        "김찬",
+        "안우진",
+        "유동혁",
+        "안성진"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "탑",
+          "name": "지범준",
+          "k": 20,
+          "d": 3,
+          "a": 10,
+          "kda": 10.0,
+          "oldElo": 2027.0048882129718,
+          "newElo": 2050.8442514921735,
+          "delta": 23.839363279201955,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "정글",
+          "name": "김민서",
+          "k": 11,
+          "d": 6,
+          "a": 11,
+          "kda": 3.67,
+          "oldElo": 1844.1769342459847,
+          "newElo": 1891.8556608043887,
+          "delta": 47.67872655840391,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "미드",
+          "name": "이호재",
+          "k": 8,
+          "d": 8,
+          "a": 15,
+          "kda": 2.88,
+          "oldElo": 1314.7360275925002,
+          "newElo": 1338.5753908717022,
+          "delta": 23.839363279201955,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "원딜",
+          "name": "안태인",
+          "k": 6,
+          "d": 11,
+          "a": 12,
+          "kda": 1.64,
+          "oldElo": 2194.3088066587648,
+          "newElo": 2218.1481699379665,
+          "delta": 23.839363279201955,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "서폿",
+          "name": "이준헌",
+          "k": 3,
+          "d": 6,
+          "a": 17,
+          "kda": 3.33,
+          "oldElo": 1605.9096729014557,
+          "newElo": 1653.5883994598596,
+          "delta": 47.67872655840391,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "탑",
+          "name": "송승훈",
+          "k": 3,
+          "d": 9,
+          "a": 2,
+          "kda": 0.56,
+          "oldElo": 1531.4243057571628,
+          "newElo": 1507.5849424779608,
+          "delta": -23.839363279201955,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "정글",
+          "name": "김찬",
+          "k": 12,
+          "d": 10,
+          "a": 12,
+          "kda": 2.4,
+          "oldElo": 1852.2959159754148,
+          "newElo": 1828.4565526962128,
+          "delta": -23.839363279201955,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "미드",
+          "name": "안우진",
+          "k": 1,
+          "d": 13,
+          "a": 11,
+          "kda": 0.92,
+          "oldElo": 697.482549813517,
+          "newElo": 673.6431865343151,
+          "delta": -23.839363279201955,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "원딜",
+          "name": "유동혁",
+          "k": 15,
+          "d": 11,
+          "a": 8,
+          "kda": 2.09,
+          "oldElo": 2201.570278726349,
+          "newElo": 2153.891552167945,
+          "delta": -47.67872655840391,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "서폿",
+          "name": "안성진",
+          "k": 3,
+          "d": 5,
+          "a": 22,
+          "kda": 5.0,
+          "oldElo": 1959.0885368958868,
+          "newElo": 1935.2491736166849,
+          "delta": -23.839363279201955,
+          "hasDetail": true
+        }
+      ]
+    },
+    {
+      "source": "경기기록",
+      "date": "26-06-01",
+      "dateSort": "2026-06-01",
+      "season": "season2",
+      "prob": "38.5%",
+      "baseDelta": "24.6",
+      "winTeam": [
+        "안우진",
+        "안태인",
+        "안성진",
+        "김찬",
+        "지범준"
+      ],
+      "loseTeam": [
+        "이호재",
+        "이준헌",
+        "유동혁",
+        "김민서",
+        "송승훈"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "탑",
+          "name": "안우진",
+          "k": 4,
+          "d": 7,
+          "a": 3,
+          "kda": 1.0,
+          "oldElo": 648.2701406242936,
+          "newElo": 697.482549813517,
+          "delta": 49.212409189223465,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "정글",
+          "name": "안태인",
+          "k": 13,
+          "d": 5,
+          "a": 9,
+          "kda": 4.4,
+          "oldElo": 2145.0963974695414,
+          "newElo": 2194.3088066587648,
+          "delta": 49.212409189223465,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "미드",
+          "name": "안성진",
+          "k": 8,
+          "d": 4,
+          "a": 10,
+          "kda": 4.5,
+          "oldElo": 1909.8761277066633,
+          "newElo": 1959.0885368958868,
+          "delta": 49.212409189223465,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "원딜",
+          "name": "김찬",
+          "k": 12,
+          "d": 4,
+          "a": 11,
+          "kda": 5.75,
+          "oldElo": 1803.0835067861913,
+          "newElo": 1852.2959159754148,
+          "delta": 49.212409189223465,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "서폿",
+          "name": "지범준",
+          "k": 7,
+          "d": 9,
+          "a": 20,
+          "kda": 3.0,
+          "oldElo": 1977.7924790237482,
+          "newElo": 2027.0048882129718,
+          "delta": 49.212409189223465,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "탑",
+          "name": "이호재",
+          "k": 4,
+          "d": 6,
+          "a": 6,
+          "kda": 1.67,
+          "oldElo": 1363.9484367817238,
+          "newElo": 1314.7360275925002,
+          "delta": -49.212409189223465,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "정글",
+          "name": "이준헌",
+          "k": 5,
+          "d": 7,
+          "a": 12,
+          "kda": 2.43,
+          "oldElo": 1704.3344912799025,
+          "newElo": 1605.9096729014557,
+          "delta": -98.42481837844693,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "미드",
+          "name": "유동혁",
+          "k": 10,
+          "d": 7,
+          "a": 4,
+          "kda": 2.0,
+          "oldElo": 2299.995097104796,
+          "newElo": 2201.570278726349,
+          "delta": -98.42481837844693,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "원딜",
+          "name": "김민서",
+          "k": 1,
+          "d": 11,
+          "a": 9,
+          "kda": 0.91,
+          "oldElo": 1942.6017526244316,
+          "newElo": 1844.1769342459847,
+          "delta": -98.42481837844693,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "서폿",
+          "name": "송승훈",
+          "k": 9,
+          "d": 13,
+          "a": 9,
+          "kda": 1.38,
+          "oldElo": 1580.6367149463863,
+          "newElo": 1531.4243057571628,
+          "delta": -49.212409189223465,
+          "hasDetail": true
+        }
+      ]
+    },
+    {
+      "source": "경기기록",
+      "date": "26-06-01",
+      "dateSort": "2026-06-01",
+      "season": "season2",
+      "prob": "19.2%",
+      "baseDelta": "32.3",
+      "winTeam": [
+        "안우진",
+        "안태인",
+        "안성진",
+        "김찬",
+        "지범준"
+      ],
+      "loseTeam": [
+        "이호재",
+        "이준헌",
+        "유동혁",
+        "김민서",
+        "송승훈"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "탑",
+          "name": "안우진",
+          "k": 0,
+          "d": 2,
+          "a": 1,
+          "kda": 0.5,
+          "oldElo": 583.6389595841744,
+          "newElo": 648.2701406242936,
+          "delta": 64.63118104011923,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "정글",
+          "name": "안태인",
+          "k": 8,
+          "d": 2,
+          "a": 7,
+          "kda": 7.5,
+          "oldElo": 2080.465216429422,
+          "newElo": 2145.0963974695414,
+          "delta": 64.63118104011923,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "미드",
+          "name": "안성진",
+          "k": 5,
+          "d": 1,
+          "a": 4,
+          "kda": 9.0,
+          "oldElo": 1845.2449466665441,
+          "newElo": 1909.8761277066633,
+          "delta": 64.63118104011923,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "원딜",
+          "name": "김찬",
+          "k": 9,
+          "d": 3,
+          "a": 7,
+          "kda": 5.33,
+          "oldElo": 1738.4523257460721,
+          "newElo": 1803.0835067861913,
+          "delta": 64.63118104011923,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "서폿",
+          "name": "지범준",
+          "k": 1,
+          "d": 2,
+          "a": 14,
+          "kda": 7.5,
+          "oldElo": 1913.161297983629,
+          "newElo": 1977.7924790237482,
+          "delta": 64.63118104011923,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "탑",
+          "name": "이호재",
+          "k": 2,
+          "d": 2,
+          "a": 0,
+          "kda": 1.0,
+          "oldElo": 1428.579617821843,
+          "newElo": 1363.9484367817238,
+          "delta": -64.63118104011923,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "정글",
+          "name": "이준헌",
+          "k": 1,
+          "d": 4,
+          "a": 4,
+          "kda": 1.25,
+          "oldElo": 1833.596853360141,
+          "newElo": 1704.3344912799025,
+          "delta": -129.26236208023846,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "미드",
+          "name": "유동혁",
+          "k": 2,
+          "d": 5,
+          "a": 3,
+          "kda": 1.0,
+          "oldElo": 2429.2574591850343,
+          "newElo": 2299.995097104796,
+          "delta": -129.26236208023846,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "원딜",
+          "name": "김민서",
+          "k": 3,
+          "d": 4,
+          "a": 2,
+          "kda": 1.25,
+          "oldElo": 2071.86411470467,
+          "newElo": 1942.6017526244316,
+          "delta": -129.26236208023846,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "서폿",
+          "name": "송승훈",
+          "k": 2,
+          "d": 8,
+          "a": 4,
+          "kda": 0.75,
+          "oldElo": 1645.2678959865054,
+          "newElo": 1580.6367149463863,
+          "delta": -64.63118104011923,
+          "hasDetail": true
+        }
+      ]
+    },
+    {
+      "source": "경기기록",
+      "date": "26-06-01",
+      "dateSort": "2026-06-01",
+      "season": "season2",
+      "prob": "74.8%",
+      "baseDelta": "10.1",
+      "winTeam": [
+        "이호재",
+        "이준헌",
+        "유동혁",
+        "김민서",
+        "송승훈"
+      ],
+      "loseTeam": [
+        "안우진",
+        "안태인",
+        "안성진",
+        "김찬",
+        "지범준"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "탑",
+          "name": "이호재",
+          "k": 8,
+          "d": 1,
+          "a": 4,
+          "kda": 12.0,
+          "oldElo": 1388.2690572381025,
+          "newElo": 1428.579617821843,
+          "delta": 40.31056058374047,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "정글",
+          "name": "이준헌",
+          "k": 2,
+          "d": 2,
+          "a": 13,
+          "kda": 7.5,
+          "oldElo": 1793.2862927764006,
+          "newElo": 1833.596853360141,
+          "delta": 40.31056058374047,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "미드",
+          "name": "유동혁",
+          "k": 9,
+          "d": 3,
+          "a": 2,
+          "kda": 3.67,
+          "oldElo": 2388.946898601294,
+          "newElo": 2429.2574591850343,
+          "delta": 40.31056058374047,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "원딜",
+          "name": "김민서",
+          "k": 6,
+          "d": 1,
+          "a": 7,
+          "kda": 13.0,
+          "oldElo": 2031.5535541209294,
+          "newElo": 2071.86411470467,
+          "delta": 40.31056058374047,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "서폿",
+          "name": "송승훈",
+          "k": 3,
+          "d": 4,
+          "a": 11,
+          "kda": 3.5,
+          "oldElo": 1625.1126156946352,
+          "newElo": 1645.2678959865054,
+          "delta": 20.155280291870234,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "탑",
+          "name": "안우진",
+          "k": 1,
+          "d": 5,
+          "a": 0,
+          "kda": 0.2,
+          "oldElo": 603.7942398760446,
+          "newElo": 583.6389595841744,
+          "delta": -20.155280291870234,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "정글",
+          "name": "안태인",
+          "k": 4,
+          "d": 9,
+          "a": 1,
+          "kda": 0.56,
+          "oldElo": 2100.6204967212925,
+          "newElo": 2080.465216429422,
+          "delta": -20.155280291870234,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "미드",
+          "name": "안성진",
+          "k": 1,
+          "d": 6,
+          "a": 5,
+          "kda": 1.0,
+          "oldElo": 1865.4002269584144,
+          "newElo": 1845.2449466665441,
+          "delta": -20.155280291870234,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "원딜",
+          "name": "김찬",
+          "k": 3,
+          "d": 5,
+          "a": 4,
+          "kda": 1.4,
+          "oldElo": 1758.6076060379423,
+          "newElo": 1738.4523257460721,
+          "delta": -20.155280291870234,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "서폿",
+          "name": "지범준",
+          "k": 2,
+          "d": 4,
+          "a": 7,
+          "kda": 2.25,
+          "oldElo": 1953.4718585673695,
+          "newElo": 1913.161297983629,
+          "delta": -40.31056058374047,
+          "hasDetail": true
+        }
+      ]
+    },
+    {
+      "source": "경기기록",
+      "date": "26-05-24",
+      "dateSort": "2026-05-24",
+      "season": "season2",
+      "prob": "51.4%",
+      "baseDelta": "19.5",
+      "winTeam": [
+        "이호재",
+        "지범준",
+        "이준헌",
+        "김기중",
+        "김민준"
+      ],
+      "loseTeam": [
+        "안우진",
+        "안성진",
+        "안태인",
+        "김찬",
+        "송승훈"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "탑",
+          "name": "이호재",
+          "k": 7,
+          "d": 5,
+          "a": 9,
+          "kda": 3.2,
+          "oldElo": 1310.4394855278304,
+          "newElo": 1388.2690572381025,
+          "delta": 77.82957171027223,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "정글",
+          "name": "지범준",
+          "k": 9,
+          "d": 5,
+          "a": 15,
+          "kda": 4.8,
+          "oldElo": 1875.6422868570974,
+          "newElo": 1953.4718585673695,
+          "delta": 77.82957171027223,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "미드",
+          "name": "이준헌",
+          "k": 9,
+          "d": 6,
+          "a": 15,
+          "kda": 4.0,
+          "oldElo": 1715.4567210661285,
+          "newElo": 1793.2862927764006,
+          "delta": 77.82957171027223,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "원딜",
+          "name": "김기중",
+          "k": 4,
+          "d": 3,
+          "a": 19,
+          "kda": 7.67,
+          "oldElo": 1794.143185240382,
+          "newElo": 1871.9727569506542,
+          "delta": 77.82957171027223,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "서폿",
+          "name": "김민준",
+          "k": 15,
+          "d": 4,
+          "a": 17,
+          "kda": 8.0,
+          "oldElo": 1694.143185240382,
+          "newElo": 1771.9727569506542,
+          "delta": 77.82957171027223,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "탑",
+          "name": "안우진",
+          "k": 4,
+          "d": 10,
+          "a": 6,
+          "kda": 1.0,
+          "oldElo": 681.6238115863168,
+          "newElo": 603.7942398760446,
+          "delta": -77.82957171027223,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "정글",
+          "name": "안성진",
+          "k": 4,
+          "d": 7,
+          "a": 11,
+          "kda": 2.14,
+          "oldElo": 1943.2297986686865,
+          "newElo": 1865.4002269584144,
+          "delta": -77.82957171027223,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "미드",
+          "name": "안태인",
+          "k": 8,
+          "d": 7,
+          "a": 4,
+          "kda": 1.71,
+          "oldElo": 2178.450068431565,
+          "newElo": 2100.6204967212925,
+          "delta": -77.82957171027223,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "원딜",
+          "name": "김찬",
+          "k": 7,
+          "d": 11,
+          "a": 6,
+          "kda": 1.18,
+          "oldElo": 1836.4371777482145,
+          "newElo": 1758.6076060379423,
+          "delta": -77.82957171027223,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "서폿",
+          "name": "송승훈",
+          "k": 0,
+          "d": 9,
+          "a": 11,
+          "kda": 1.22,
+          "oldElo": 1702.9421874049074,
+          "newElo": 1625.1126156946352,
+          "delta": -77.82957171027223,
+          "hasDetail": true
+        }
+      ]
+    },
+    {
+      "source": "경기기록",
+      "date": "26-05-24",
+      "dateSort": "2026-05-24",
+      "season": "season2",
+      "prob": "17.0%",
+      "baseDelta": "33.2",
+      "winTeam": [
+        "안우진",
+        "안성진",
+        "안태인",
+        "김찬",
+        "송승훈"
+      ],
+      "loseTeam": [
+        "이호재",
+        "김기중",
+        "이준헌",
+        "김민준",
+        "지범준"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "탑",
+          "name": "안우진",
+          "k": 0,
+          "d": 1,
+          "a": 8,
+          "kda": 8.0,
+          "oldElo": 548.8982525698748,
+          "newElo": 681.6238115863168,
+          "delta": 132.72555901644202,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "정글",
+          "name": "안성진",
+          "k": 4,
+          "d": 0,
+          "a": 20,
+          "kda": 24.0,
+          "oldElo": 1810.5042396522445,
+          "newElo": 1943.2297986686865,
+          "delta": 132.72555901644202,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "미드",
+          "name": "안태인",
+          "k": 19,
+          "d": 4,
+          "a": 3,
+          "kda": 5.5,
+          "oldElo": 2045.724509415123,
+          "newElo": 2178.450068431565,
+          "delta": 132.72555901644202,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "원딜",
+          "name": "김찬",
+          "k": 3,
+          "d": 5,
+          "a": 14,
+          "kda": 3.4,
+          "oldElo": 1703.7116187317724,
+          "newElo": 1836.4371777482145,
+          "delta": 132.72555901644202,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "서폿",
+          "name": "송승훈",
+          "k": 3,
+          "d": 5,
+          "a": 9,
+          "kda": 2.4,
+          "oldElo": 1570.2166283884653,
+          "newElo": 1702.9421874049074,
+          "delta": 132.72555901644202,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "탑",
+          "name": "이호재",
+          "k": 1,
+          "d": 3,
+          "a": 2,
+          "kda": 1.0,
+          "oldElo": 1443.1650445442724,
+          "newElo": 1310.4394855278304,
+          "delta": -132.72555901644202,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "정글",
+          "name": "김기중",
+          "k": 2,
+          "d": 7,
+          "a": 3,
+          "kda": 0.71,
+          "oldElo": 1926.8687442568241,
+          "newElo": 1794.143185240382,
+          "delta": -132.72555901644202,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "미드",
+          "name": "이준헌",
+          "k": 3,
+          "d": 8,
+          "a": 3,
+          "kda": 0.75,
+          "oldElo": 1848.1822800825705,
+          "newElo": 1715.4567210661285,
+          "delta": -132.72555901644202,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "원딜",
+          "name": "김민준",
+          "k": 8,
+          "d": 5,
+          "a": 2,
+          "kda": 2.0,
+          "oldElo": 1826.8687442568241,
+          "newElo": 1694.143185240382,
+          "delta": -132.72555901644202,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "서폿",
+          "name": "지범준",
+          "k": 1,
+          "d": 6,
+          "a": 10,
+          "kda": 1.83,
+          "oldElo": 2008.3678458735394,
+          "newElo": 1875.6422868570974,
+          "delta": -132.72555901644202,
+          "hasDetail": true
+        }
+      ]
+    },
+    {
+      "source": "경기기록",
+      "date": "26-05-24",
+      "dateSort": "2026-05-24",
+      "season": "season2",
+      "prob": "75.7%",
+      "baseDelta": "9.7",
+      "winTeam": [
+        "이호재",
+        "김기중",
+        "이준헌",
+        "김민준",
+        "지범준"
+      ],
+      "loseTeam": [
+        "안우진",
+        "안성진",
+        "안태인",
+        "김찬",
+        "송승훈"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "탑",
+          "name": "이호재",
+          "k": 8,
+          "d": 2,
+          "a": 3,
+          "kda": 5.5,
+          "oldElo": 1404.214158639833,
+          "newElo": 1443.1650445442724,
+          "delta": 38.95088590443937,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "정글",
+          "name": "김기중",
+          "k": 13,
+          "d": 7,
+          "a": 5,
+          "kda": 2.57,
+          "oldElo": 1887.9178583523847,
+          "newElo": 1926.8687442568241,
+          "delta": 38.95088590443937,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "미드",
+          "name": "이준헌",
+          "k": 6,
+          "d": 10,
+          "a": 9,
+          "kda": 1.5,
+          "oldElo": 1809.231394178131,
+          "newElo": 1848.1822800825705,
+          "delta": 38.95088590443937,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "원딜",
+          "name": "김민준",
+          "k": 6,
+          "d": 7,
+          "a": 9,
+          "kda": 2.14,
+          "oldElo": 1787.9178583523847,
+          "newElo": 1826.8687442568241,
+          "delta": 38.95088590443937,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "서폿",
+          "name": "지범준",
+          "k": 1,
+          "d": 4,
+          "a": 18,
+          "kda": 4.75,
+          "oldElo": 1969.4169599691,
+          "newElo": 2008.3678458735394,
+          "delta": 38.95088590443937,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "탑",
+          "name": "안우진",
+          "k": 1,
+          "d": 6,
+          "a": 6,
+          "kda": 1.17,
+          "oldElo": 587.8491384743141,
+          "newElo": 548.8982525698748,
+          "delta": -38.95088590443937,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "정글",
+          "name": "안성진",
+          "k": 9,
+          "d": 6,
+          "a": 10,
+          "kda": 3.17,
+          "oldElo": 1849.455125556684,
+          "newElo": 1810.5042396522445,
+          "delta": -38.95088590443937,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "미드",
+          "name": "안태인",
+          "k": 12,
+          "d": 11,
+          "a": 1,
+          "kda": 1.18,
+          "oldElo": 2084.6753953195625,
+          "newElo": 2045.724509415123,
+          "delta": -38.95088590443937,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "원딜",
+          "name": "김찬",
+          "k": 6,
+          "d": 6,
+          "a": 11,
+          "kda": 2.83,
+          "oldElo": 1742.662504636212,
+          "newElo": 1703.7116187317724,
+          "delta": -38.95088590443937,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "서폿",
+          "name": "송승훈",
+          "k": 2,
+          "d": 5,
+          "a": 14,
+          "kda": 3.2,
+          "oldElo": 1609.1675142929048,
+          "newElo": 1570.2166283884653,
+          "delta": -38.95088590443937,
+          "hasDetail": true
+        }
+      ]
+    },
+    {
+      "source": "경기기록",
+      "date": "26-05-24",
+      "dateSort": "2026-05-24",
+      "season": "season2",
+      "prob": "76.3%",
+      "baseDelta": "9.5",
+      "winTeam": [
+        "송승훈",
+        "이준헌",
+        "김기중",
+        "김민준",
+        "지범준"
+      ],
+      "loseTeam": [
+        "안우진",
+        "안성진",
+        "이호재",
+        "안태인",
+        "김찬"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "탑",
+          "name": "송승훈",
+          "k": 6,
+          "d": 1,
+          "a": 15,
+          "kda": 21.0,
+          "oldElo": 1571.2496559405201,
+          "newElo": 1609.1675142929048,
+          "delta": 37.91785835238475,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "정글",
+          "name": "이준헌",
+          "k": 6,
+          "d": 1,
+          "a": 10,
+          "kda": 16.0,
+          "oldElo": 1771.3135358257464,
+          "newElo": 1809.231394178131,
+          "delta": 37.91785835238475,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "미드",
+          "name": "김기중",
+          "k": 16,
+          "d": 0,
+          "a": 6,
+          "kda": 22.0,
+          "oldElo": 1850.0,
+          "newElo": 1887.9178583523847,
+          "delta": 37.91785835238475,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "원딜",
+          "name": "김민준",
+          "k": 10,
+          "d": 5,
+          "a": 12,
+          "kda": 4.4,
+          "oldElo": 1750.0,
+          "newElo": 1787.9178583523847,
+          "delta": 37.91785835238475,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "서폿",
+          "name": "지범준",
+          "k": 5,
+          "d": 6,
+          "a": 17,
+          "kda": 3.67,
+          "oldElo": 1931.4991016167153,
+          "newElo": 1969.4169599691,
+          "delta": 37.91785835238475,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "탑",
+          "name": "안우진",
+          "k": 0,
+          "d": 8,
+          "a": 2,
+          "kda": 0.25,
+          "oldElo": 625.7669968266989,
+          "newElo": 587.8491384743141,
+          "delta": -37.91785835238475,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "정글",
+          "name": "안성진",
+          "k": 7,
+          "d": 6,
+          "a": 4,
+          "kda": 1.83,
+          "oldElo": 1887.3729839090686,
+          "newElo": 1849.455125556684,
+          "delta": -37.91785835238475,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "미드",
+          "name": "이호재",
+          "k": 0,
+          "d": 11,
+          "a": 2,
+          "kda": 0.18,
+          "oldElo": 1442.1320169922176,
+          "newElo": 1404.214158639833,
+          "delta": -37.91785835238475,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "원딜",
+          "name": "안태인",
+          "k": 5,
+          "d": 11,
+          "a": 5,
+          "kda": 0.91,
+          "oldElo": 2122.5932536719474,
+          "newElo": 2084.6753953195625,
+          "delta": -37.91785835238475,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "서폿",
+          "name": "김찬",
+          "k": 1,
+          "d": 7,
+          "a": 10,
+          "kda": 1.57,
+          "oldElo": 1780.5803629885966,
+          "newElo": 1742.662504636212,
+          "delta": -37.91785835238475,
+          "hasDetail": true
+        }
+      ]
+    },
+    {
+      "source": "경기기록",
+      "date": "26-05-23",
+      "dateSort": "2026-05-23",
+      "season": "season2",
+      "prob": "41.8%",
+      "baseDelta": "23.3",
+      "winTeam": [
+        "안성진",
+        "최진우",
+        "이호재",
+        "김찬",
+        "김시완"
+      ],
+      "loseTeam": [
+        "송승훈",
+        "안태인",
+        "안우진",
+        "박명룡",
+        "지범준"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "탑",
+          "name": "안성진",
+          "k": 9,
+          "d": 7,
+          "a": 6,
+          "kda": 2.14,
+          "oldElo": 1794.2112043800803,
+          "newElo": 1887.3729839090686,
+          "delta": 93.16177952898829,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "정글",
+          "name": "최진우",
+          "k": 8,
+          "d": 5,
+          "a": 12,
+          "kda": 4.0,
+          "oldElo": 1991.722828671362,
+          "newElo": 2084.88460820035,
+          "delta": 93.16177952898829,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "미드",
+          "name": "이호재",
+          "k": 4,
+          "d": 2,
+          "a": 14,
+          "kda": 9.0,
+          "oldElo": 1348.9702374632293,
+          "newElo": 1442.1320169922176,
+          "delta": 93.16177952898829,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "원딜",
+          "name": "김찬",
+          "k": 12,
+          "d": 8,
+          "a": 6,
+          "kda": 2.25,
+          "oldElo": 1687.4185834596083,
+          "newElo": 1780.5803629885966,
+          "delta": 93.16177952898829,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "서폿",
+          "name": "김시완",
+          "k": 1,
+          "d": 6,
+          "a": 16,
+          "kda": 2.83,
+          "oldElo": 1695.7169053777893,
+          "newElo": 1788.8786849067776,
+          "delta": 93.16177952898829,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "탑",
+          "name": "송승훈",
+          "k": 3,
+          "d": 5,
+          "a": 5,
+          "kda": 1.6,
+          "oldElo": 1664.4114354695084,
+          "newElo": 1571.2496559405201,
+          "delta": -93.16177952898829,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "정글",
+          "name": "안태인",
+          "k": 14,
+          "d": 12,
+          "a": 3,
+          "kda": 1.42,
+          "oldElo": 2215.7550332009355,
+          "newElo": 2122.5932536719474,
+          "delta": -93.16177952898829,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "미드",
+          "name": "안우진",
+          "k": 1,
+          "d": 8,
+          "a": 5,
+          "kda": 0.75,
+          "oldElo": 718.9287763556872,
+          "newElo": 625.7669968266989,
+          "delta": -93.16177952898829,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "원딜",
+          "name": "박명룡",
+          "k": 2,
+          "d": 3,
+          "a": 13,
+          "kda": 5.0,
+          "oldElo": 2182.709427337713,
+          "newElo": 2089.547647808725,
+          "delta": -93.16177952898829,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "서폿",
+          "name": "지범준",
+          "k": 8,
+          "d": 6,
+          "a": 6,
+          "kda": 2.33,
+          "oldElo": 2024.6608811457036,
+          "newElo": 1931.4991016167153,
+          "delta": -93.16177952898829,
+          "hasDetail": true
+        }
+      ]
+    },
+    {
+      "source": "경기기록",
+      "date": "26-05-23",
+      "dateSort": "2026-05-23",
+      "season": "season2",
+      "prob": "37.4%",
+      "baseDelta": "25.0",
+      "winTeam": [
+        "안태인",
+        "최진우",
+        "이호재",
+        "김찬",
+        "김시완"
+      ],
+      "loseTeam": [
+        "송승훈",
+        "안성진",
+        "안우진",
+        "박명룡",
+        "지범준"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "탑",
+          "name": "안태인",
+          "k": 18,
+          "d": 3,
+          "a": 4,
+          "kda": 7.33,
+          "oldElo": 2115.6304784254785,
+          "newElo": 2215.7550332009355,
+          "delta": 100.12455477545693,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "정글",
+          "name": "최진우",
+          "k": 9,
+          "d": 3,
+          "a": 8,
+          "kda": 5.67,
+          "oldElo": 1891.598273895905,
+          "newElo": 1991.722828671362,
+          "delta": 100.12455477545693,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "미드",
+          "name": "이호재",
+          "k": 3,
+          "d": 2,
+          "a": 7,
+          "kda": 5.0,
+          "oldElo": 1248.8456826877723,
+          "newElo": 1348.9702374632293,
+          "delta": 100.12455477545693,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "원딜",
+          "name": "김찬",
+          "k": 2,
+          "d": 5,
+          "a": 11,
+          "kda": 2.6,
+          "oldElo": 1587.2940286841513,
+          "newElo": 1687.4185834596083,
+          "delta": 100.12455477545693,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "서폿",
+          "name": "김시완",
+          "k": 1,
+          "d": 1,
+          "a": 22,
+          "kda": 23.0,
+          "oldElo": 1595.5923506023323,
+          "newElo": 1695.7169053777893,
+          "delta": 100.12455477545693,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "탑",
+          "name": "송승훈",
+          "k": 1,
+          "d": 5,
+          "a": 2,
+          "kda": 0.6,
+          "oldElo": 1764.5359902449654,
+          "newElo": 1664.4114354695084,
+          "delta": -100.12455477545693,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "정글",
+          "name": "안성진",
+          "k": 6,
+          "d": 10,
+          "a": 1,
+          "kda": 0.7,
+          "oldElo": 1894.3357591555373,
+          "newElo": 1794.2112043800803,
+          "delta": -100.12455477545693,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "미드",
+          "name": "안우진",
+          "k": 0,
+          "d": 4,
+          "a": 3,
+          "kda": 0.75,
+          "oldElo": 819.0533311311441,
+          "newElo": 718.9287763556872,
+          "delta": -100.12455477545693,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "원딜",
+          "name": "박명룡",
+          "k": 2,
+          "d": 6,
+          "a": 6,
+          "kda": 1.33,
+          "oldElo": 2282.83398211317,
+          "newElo": 2182.709427337713,
+          "delta": -100.12455477545693,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "서폿",
+          "name": "지범준",
+          "k": 5,
+          "d": 8,
+          "a": 4,
+          "kda": 1.12,
+          "oldElo": 2124.7854359211606,
+          "newElo": 2024.6608811457036,
+          "delta": -100.12455477545693,
+          "hasDetail": true
+        }
+      ]
+    },
+    {
+      "source": "경기기록",
+      "date": "26-05-23",
+      "dateSort": "2026-05-23",
+      "season": "season2",
+      "prob": "32.6%",
+      "baseDelta": "27.0",
+      "winTeam": [
+        "송승훈",
+        "안성진",
+        "안우진",
+        "박명룡",
+        "지범준"
+      ],
+      "loseTeam": [
+        "안태인",
+        "최진우",
+        "이호재",
+        "김찬",
+        "김시완"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "탑",
+          "name": "송승훈",
+          "k": 5,
+          "d": 2,
+          "a": 3,
+          "kda": 4.0,
+          "oldElo": 1656.6326705049019,
+          "newElo": 1764.5359902449654,
+          "delta": 107.90331974006368,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "정글",
+          "name": "안성진",
+          "k": 9,
+          "d": 0,
+          "a": 4,
+          "kda": 13.0,
+          "oldElo": 1786.4324394154737,
+          "newElo": 1894.3357591555373,
+          "delta": 107.90331974006368,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "미드",
+          "name": "안우진",
+          "k": 1,
+          "d": 3,
+          "a": 8,
+          "kda": 3.0,
+          "oldElo": 711.1500113910804,
+          "newElo": 819.0533311311441,
+          "delta": 107.90331974006368,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "원딜",
+          "name": "박명룡",
+          "k": 14,
+          "d": 0,
+          "a": 3,
+          "kda": 17.0,
+          "oldElo": 2174.9306623731063,
+          "newElo": 2282.83398211317,
+          "delta": 107.90331974006368,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "서폿",
+          "name": "지범준",
+          "k": 3,
+          "d": 2,
+          "a": 8,
+          "kda": 5.5,
+          "oldElo": 2016.882116181097,
+          "newElo": 2124.7854359211606,
+          "delta": 107.90331974006368,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "탑",
+          "name": "안태인",
+          "k": 2,
+          "d": 6,
+          "a": 0,
+          "kda": 0.33,
+          "oldElo": 2223.533798165542,
+          "newElo": 2115.6304784254785,
+          "delta": -107.90331974006368,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "정글",
+          "name": "최진우",
+          "k": 1,
+          "d": 6,
+          "a": 2,
+          "kda": 0.5,
+          "oldElo": 1999.5015936359687,
+          "newElo": 1891.598273895905,
+          "delta": -107.90331974006368,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "미드",
+          "name": "이호재",
+          "k": 2,
+          "d": 6,
+          "a": 1,
+          "kda": 0.5,
+          "oldElo": 1356.7490024278359,
+          "newElo": 1248.8456826877723,
+          "delta": -107.90331974006368,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "원딜",
+          "name": "김찬",
+          "k": 2,
+          "d": 8,
+          "a": 0,
+          "kda": 0.25,
+          "oldElo": 1695.1973484242149,
+          "newElo": 1587.2940286841513,
+          "delta": -107.90331974006368,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "서폿",
+          "name": "김시완",
+          "k": 0,
+          "d": 6,
+          "a": 2,
+          "kda": 0.33,
+          "oldElo": 1703.495670342396,
+          "newElo": 1595.5923506023323,
+          "delta": -107.90331974006368,
+          "hasDetail": true
+        }
+      ]
+    },
+    {
+      "source": "경기기록",
+      "date": "26-05-23",
+      "dateSort": "2026-05-23",
+      "season": "season2",
+      "prob": "41.2%",
+      "baseDelta": "23.5",
+      "winTeam": [
+        "안태인",
+        "최진우",
+        "이호재",
+        "김찬",
+        "김시완"
+      ],
+      "loseTeam": [
+        "송승훈",
+        "안성진",
+        "안우진",
+        "박명룡",
+        "지범준"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "탑",
+          "name": "안태인",
+          "k": 16,
+          "d": 5,
+          "a": 2,
+          "kda": 3.6,
+          "oldElo": 2129.502944976145,
+          "newElo": 2223.533798165542,
+          "delta": 94.03085318939708,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "정글",
+          "name": "최진우",
+          "k": 3,
+          "d": 3,
+          "a": 6,
+          "kda": 3.0,
+          "oldElo": 1905.4707404465717,
+          "newElo": 1999.5015936359687,
+          "delta": 94.03085318939708,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "미드",
+          "name": "이호재",
+          "k": 3,
+          "d": 4,
+          "a": 2,
+          "kda": 1.25,
+          "oldElo": 1262.7181492384389,
+          "newElo": 1356.7490024278359,
+          "delta": 94.03085318939708,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "원딜",
+          "name": "김찬",
+          "k": 6,
+          "d": 2,
+          "a": 6,
+          "kda": 6.0,
+          "oldElo": 1601.1664952348178,
+          "newElo": 1695.1973484242149,
+          "delta": 94.03085318939708,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "서폿",
+          "name": "김시완",
+          "k": 0,
+          "d": 8,
+          "a": 11,
+          "kda": 1.38,
+          "oldElo": 1609.4648171529989,
+          "newElo": 1703.495670342396,
+          "delta": 94.03085318939708,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "탑",
+          "name": "송승훈",
+          "k": 5,
+          "d": 8,
+          "a": 2,
+          "kda": 0.88,
+          "oldElo": 1750.6635236942989,
+          "newElo": 1656.6326705049019,
+          "delta": -94.03085318939708,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "정글",
+          "name": "안성진",
+          "k": 4,
+          "d": 6,
+          "a": 10,
+          "kda": 2.33,
+          "oldElo": 1880.4632926048707,
+          "newElo": 1786.4324394154737,
+          "delta": -94.03085318939708,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "미드",
+          "name": "안우진",
+          "k": 2,
+          "d": 2,
+          "a": 6,
+          "kda": 4.0,
+          "oldElo": 805.1808645804774,
+          "newElo": 711.1500113910804,
+          "delta": -94.03085318939708,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "원딜",
+          "name": "박명룡",
+          "k": 8,
+          "d": 7,
+          "a": 6,
+          "kda": 2.0,
+          "oldElo": 2268.9615155625033,
+          "newElo": 2174.9306623731063,
+          "delta": -94.03085318939708,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "서폿",
+          "name": "지범준",
+          "k": 3,
+          "d": 5,
+          "a": 14,
+          "kda": 3.4,
+          "oldElo": 2110.912969370494,
+          "newElo": 2016.882116181097,
+          "delta": -94.03085318939708,
+          "hasDetail": true
+        }
+      ]
+    },
+    {
+      "source": "경기기록",
+      "date": "26-05-23",
+      "dateSort": "2026-05-23",
+      "season": "season2",
+      "prob": "37.2%",
+      "baseDelta": "25.1",
+      "winTeam": [
+        "안태인",
+        "안성진",
+        "안우진",
+        "박명룡",
+        "송승훈"
+      ],
+      "loseTeam": [
+        "짱구",
+        "최진우",
+        "이호재",
+        "김시완",
+        "김찬"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "탑",
+          "name": "안태인",
+          "k": 7,
+          "d": 10,
+          "a": 7,
+          "kda": 1.4,
+          "oldElo": 2029.0618285992582,
+          "newElo": 2129.502944976145,
+          "delta": 100.44111637688695,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "정글",
+          "name": "안성진",
+          "k": 14,
+          "d": 8,
+          "a": 10,
+          "kda": 3.0,
+          "oldElo": 1780.022176227984,
+          "newElo": 1880.4632926048707,
+          "delta": 100.44111637688695,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "미드",
+          "name": "안우진",
+          "k": 6,
+          "d": 7,
+          "a": 20,
+          "kda": 3.71,
+          "oldElo": 704.7397482035905,
+          "newElo": 805.1808645804774,
+          "delta": 100.44111637688695,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "원딜",
+          "name": "박명룡",
+          "k": 21,
+          "d": 3,
+          "a": 12,
+          "kda": 11.0,
+          "oldElo": 2168.5203991856165,
+          "newElo": 2268.9615155625033,
+          "delta": 100.44111637688695,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "서폿",
+          "name": "송승훈",
+          "k": 3,
+          "d": 4,
+          "a": 26,
+          "kda": 7.25,
+          "oldElo": 1650.222407317412,
+          "newElo": 1750.6635236942989,
+          "delta": 100.44111637688695,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "탑",
+          "name": "짱구",
+          "k": 7,
+          "d": 5,
+          "a": 15,
+          "kda": 4.4,
+          "oldElo": 2005.9118568234585,
+          "newElo": 1905.4707404465717,
+          "delta": -100.44111637688695,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "정글",
+          "name": "최진우",
+          "k": 20,
+          "d": 11,
+          "a": 6,
+          "kda": 2.36,
+          "oldElo": 2005.9118568234585,
+          "newElo": 1905.4707404465717,
+          "delta": -100.44111637688695,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "미드",
+          "name": "이호재",
+          "k": 2,
+          "d": 11,
+          "a": 9,
+          "kda": 1.0,
+          "oldElo": 1363.1592656153257,
+          "newElo": 1262.7181492384389,
+          "delta": -100.44111637688695,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "원딜",
+          "name": "김시완",
+          "k": 2,
+          "d": 11,
+          "a": 14,
+          "kda": 1.45,
+          "oldElo": 1709.9059335298857,
+          "newElo": 1609.4648171529989,
+          "delta": -100.44111637688695,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "서폿",
+          "name": "김찬",
+          "k": 1,
+          "d": 13,
+          "a": 14,
+          "kda": 1.15,
+          "oldElo": 1701.6076116117047,
+          "newElo": 1601.1664952348178,
+          "delta": -100.44111637688695,
+          "hasDetail": true
+        }
+      ]
+    },
+    {
+      "source": "경기기록",
+      "date": "26-05-23",
+      "dateSort": "2026-05-23",
+      "season": "season2",
+      "prob": "65.1%",
+      "baseDelta": "14.0",
+      "winTeam": [
+        "짱구",
+        "최진우",
+        "송승훈",
+        "김시완",
+        "지범준"
+      ],
+      "loseTeam": [
+        "안태인",
+        "안성진",
+        "안우진",
+        "박명룡",
+        "김찬"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "탑",
+          "name": "짱구",
+          "k": 4,
+          "d": 4,
+          "a": 13,
+          "kda": 4.25,
+          "oldElo": 1950.0,
+          "newElo": 2005.9118568234585,
+          "delta": 55.91185682345859,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "정글",
+          "name": "최진우",
+          "k": 22,
+          "d": 2,
+          "a": 8,
+          "kda": 15.0,
+          "oldElo": 1950.0,
+          "newElo": 2005.9118568234585,
+          "delta": 55.91185682345859,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "미드",
+          "name": "송승훈",
+          "k": 6,
+          "d": 3,
+          "a": 12,
+          "kda": 6.0,
+          "oldElo": 1594.3105504939535,
+          "newElo": 1650.222407317412,
+          "delta": 55.91185682345859,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "원딜",
+          "name": "김시완",
+          "k": 6,
+          "d": 3,
+          "a": 12,
+          "kda": 6.0,
+          "oldElo": 1653.9940767064272,
+          "newElo": 1709.9059335298857,
+          "delta": 55.91185682345859,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "서폿",
+          "name": "지범준",
+          "k": 0,
+          "d": 2,
+          "a": 23,
+          "kda": 11.5,
+          "oldElo": 2055.0011125470355,
+          "newElo": 2110.912969370494,
+          "delta": 55.91185682345859,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "탑",
+          "name": "안태인",
+          "k": 5,
+          "d": 9,
+          "a": 2,
+          "kda": 0.78,
+          "oldElo": 2084.9736854227167,
+          "newElo": 2029.0618285992582,
+          "delta": -55.91185682345859,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "정글",
+          "name": "안성진",
+          "k": 2,
+          "d": 8,
+          "a": 4,
+          "kda": 0.75,
+          "oldElo": 1835.9340330514424,
+          "newElo": 1780.022176227984,
+          "delta": -55.91185682345859,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "미드",
+          "name": "안우진",
+          "k": 3,
+          "d": 9,
+          "a": 4,
+          "kda": 0.78,
+          "oldElo": 760.6516050270491,
+          "newElo": 704.7397482035905,
+          "delta": -55.91185682345859,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "원딜",
+          "name": "박명룡",
+          "k": 3,
+          "d": 7,
+          "a": 3,
+          "kda": 0.86,
+          "oldElo": 2224.432256009075,
+          "newElo": 2168.5203991856165,
+          "delta": -55.91185682345859,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "서폿",
+          "name": "김찬",
+          "k": 2,
+          "d": 7,
+          "a": 4,
+          "kda": 0.86,
+          "oldElo": 1757.5194684351632,
+          "newElo": 1701.6076116117047,
+          "delta": -55.91185682345859,
+          "hasDetail": true
+        }
+      ]
+    },
+    {
+      "source": "경기기록",
+      "date": "26-05-05",
+      "dateSort": "2026-05-05",
+      "season": "season1",
+      "prob": "26.7%",
+      "baseDelta": "29.3",
+      "winTeam": [
+        "안우진",
+        "유동혁",
+        "안성진",
+        "김지우",
+        "송승훈"
+      ],
+      "loseTeam": [
+        "정도영",
+        "안태인",
+        "김민서",
+        "김찬",
+        "이호재"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "탑",
+          "name": "안우진",
+          "k": 2,
+          "d": 4,
+          "a": 2,
+          "kda": 1.0,
+          "oldElo": 462.68900379224203,
+          "newElo": 521.303210054098,
+          "delta": 58.61420626185597,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "정글",
+          "name": "유동혁",
+          "k": 16,
+          "d": 2,
+          "a": 8,
+          "kda": 12.0,
+          "oldElo": 2519.279590940732,
+          "newElo": 2577.893797202588,
+          "delta": 58.61420626185597,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "미드",
+          "name": "안성진",
+          "k": 5,
+          "d": 5,
+          "a": 9,
+          "kda": 2.8,
+          "oldElo": 1742.560962971957,
+          "newElo": 1771.868066102885,
+          "delta": 29.307103130927985,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "원딜",
+          "name": "김지우",
+          "k": 9,
+          "d": 2,
+          "a": 7,
+          "kda": 8.0,
+          "oldElo": 1297.4636187418616,
+          "newElo": 1414.6920312655736,
+          "delta": 117.22841252371194,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "서폿",
+          "name": "송승훈",
+          "k": 3,
+          "d": 1,
+          "a": 18,
+          "kda": 21.0,
+          "oldElo": 1709.3139978569793,
+          "newElo": 1738.6211009879073,
+          "delta": 29.307103130927985,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "탑",
+          "name": "정도영",
+          "k": 5,
+          "d": 5,
+          "a": 2,
+          "kda": 1.4,
+          "oldElo": 1265.4218434702057,
+          "newElo": 1148.1934309464937,
+          "delta": -117.22841252371194,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "정글",
+          "name": "안태인",
+          "k": 3,
+          "d": 7,
+          "a": 0,
+          "kda": 0.43,
+          "oldElo": 1999.254473976361,
+          "newElo": 1969.947370845433,
+          "delta": -29.307103130927985,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "미드",
+          "name": "김민서",
+          "k": 5,
+          "d": 9,
+          "a": 0,
+          "kda": 0.56,
+          "oldElo": 2142.4142113727867,
+          "newElo": 2113.107108241859,
+          "delta": -29.307103130927985,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "원딜",
+          "name": "김찬",
+          "k": 0,
+          "d": 7,
+          "a": 1,
+          "kda": 0.14,
+          "oldElo": 1644.3460400012546,
+          "newElo": 1615.0389368703266,
+          "delta": -29.307103130927985,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "서폿",
+          "name": "이호재",
+          "k": 1,
+          "d": 7,
+          "a": 2,
+          "kda": 0.43,
+          "oldElo": 1555.6256343615796,
+          "newElo": 1526.3185312306516,
+          "delta": -29.307103130927985,
+          "hasDetail": true
+        }
+      ]
+    },
+    {
+      "source": "경기기록",
+      "date": "26-05-05",
+      "dateSort": "2026-05-05",
+      "season": "season1",
+      "prob": "15.3%",
+      "baseDelta": "33.9",
+      "winTeam": [
+        "안우진",
+        "유동혁",
+        "안성진",
+        "김지우",
+        "송승훈"
+      ],
+      "loseTeam": [
+        "정도영",
+        "안태인",
+        "이호재",
+        "김찬",
+        "김민서"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "탑",
+          "name": "안우진",
+          "k": 3,
+          "d": 5,
+          "a": 13,
+          "kda": 3.2,
+          "oldElo": 394.9395577336532,
+          "newElo": 462.68900379224203,
+          "delta": 67.74944605858884,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "정글",
+          "name": "유동혁",
+          "k": 21,
+          "d": 11,
+          "a": 13,
+          "kda": 3.09,
+          "oldElo": 2451.530144882143,
+          "newElo": 2519.279590940732,
+          "delta": 67.74944605858884,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "미드",
+          "name": "안성진",
+          "k": 5,
+          "d": 4,
+          "a": 20,
+          "kda": 6.25,
+          "oldElo": 1708.6862399426625,
+          "newElo": 1742.560962971957,
+          "delta": 33.87472302929442,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "원딜",
+          "name": "김지우",
+          "k": 11,
+          "d": 7,
+          "a": 12,
+          "kda": 3.29,
+          "oldElo": 1161.9647266246839,
+          "newElo": 1297.4636187418616,
+          "delta": 135.4988921171777,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "서폿",
+          "name": "송승훈",
+          "k": 2,
+          "d": 7,
+          "a": 25,
+          "kda": 3.86,
+          "oldElo": 1675.4392748276848,
+          "newElo": 1709.3139978569793,
+          "delta": 33.87472302929442,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "탑",
+          "name": "정도영",
+          "k": 1,
+          "d": 8,
+          "a": 3,
+          "kda": 0.5,
+          "oldElo": 1400.9207355873834,
+          "newElo": 1265.4218434702057,
+          "delta": -135.4988921171777,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "정글",
+          "name": "안태인",
+          "k": 14,
+          "d": 9,
+          "a": 7,
+          "kda": 2.33,
+          "oldElo": 2033.1291970056554,
+          "newElo": 1999.254473976361,
+          "delta": -33.87472302929442,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "미드",
+          "name": "이호재",
+          "k": 1,
+          "d": 7,
+          "a": 8,
+          "kda": 1.29,
+          "oldElo": 1589.5003573908741,
+          "newElo": 1555.6256343615796,
+          "delta": -33.87472302929442,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "원딜",
+          "name": "김찬",
+          "k": 14,
+          "d": 7,
+          "a": 5,
+          "kda": 2.71,
+          "oldElo": 1678.220763030549,
+          "newElo": 1644.3460400012546,
+          "delta": -33.87472302929442,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "서폿",
+          "name": "김민서",
+          "k": 4,
+          "d": 11,
+          "a": 10,
+          "kda": 1.27,
+          "oldElo": 2176.288934402081,
+          "newElo": 2142.4142113727867,
+          "delta": -33.87472302929442,
+          "hasDetail": true
+        }
+      ]
+    },
+    {
+      "source": "경기기록",
+      "date": "26-05-05",
+      "dateSort": "2026-05-05",
+      "season": "season1",
+      "prob": "54.7%",
+      "baseDelta": "18.1",
+      "winTeam": [
+        "이호재",
+        "안태인",
+        "정도영",
+        "김찬",
+        "지범준"
+      ],
+      "loseTeam": [
+        "안우진",
+        "안성진",
+        "유동혁",
+        "김민서",
+        "송승훈"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "탑",
+          "name": "이호재",
+          "k": 4,
+          "d": 1,
+          "a": 10,
+          "kda": 14.0,
+          "oldElo": 1553.2936034865552,
+          "newElo": 1589.5003573908741,
+          "delta": 36.20675390431883,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "정글",
+          "name": "안태인",
+          "k": 9,
+          "d": 0,
+          "a": 14,
+          "kda": 23.0,
+          "oldElo": 2015.025820053496,
+          "newElo": 2033.1291970056554,
+          "delta": 18.103376952159415,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "미드",
+          "name": "정도영",
+          "k": 1,
+          "d": 3,
+          "a": 4,
+          "kda": 1.67,
+          "oldElo": 1328.5072277787458,
+          "newElo": 1400.9207355873834,
+          "delta": 72.41350780863766,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "원딜",
+          "name": "김찬",
+          "k": 19,
+          "d": 2,
+          "a": 6,
+          "kda": 12.5,
+          "oldElo": 1660.1173860783897,
+          "newElo": 1678.220763030549,
+          "delta": 18.103376952159415,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "서폿",
+          "name": "지범준",
+          "k": 0,
+          "d": 2,
+          "a": 24,
+          "kda": 12.0,
+          "oldElo": 2141.8988481419115,
+          "newElo": 2160.002225094071,
+          "delta": 18.103376952159415,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "탑",
+          "name": "안우진",
+          "k": 1,
+          "d": 7,
+          "a": 0,
+          "kda": 0.14,
+          "oldElo": 431.146311637972,
+          "newElo": 394.9395577336532,
+          "delta": -36.20675390431883,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "정글",
+          "name": "안성진",
+          "k": 1,
+          "d": 4,
+          "a": 3,
+          "kda": 1.0,
+          "oldElo": 1726.7896168948218,
+          "newElo": 1708.6862399426625,
+          "delta": -18.103376952159415,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "미드",
+          "name": "유동혁",
+          "k": 3,
+          "d": 6,
+          "a": 0,
+          "kda": 0.5,
+          "oldElo": 2487.7368987864616,
+          "newElo": 2451.530144882143,
+          "delta": -36.20675390431883,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "원딜",
+          "name": "김민서",
+          "k": 2,
+          "d": 9,
+          "a": 3,
+          "kda": 0.56,
+          "oldElo": 2194.3923113542405,
+          "newElo": 2176.288934402081,
+          "delta": -18.103376952159415,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "서폿",
+          "name": "송승훈",
+          "k": 1,
+          "d": 7,
+          "a": 5,
+          "kda": 0.86,
+          "oldElo": 1693.5426517798442,
+          "newElo": 1675.4392748276848,
+          "delta": -18.103376952159415,
+          "hasDetail": true
+        }
+      ]
+    },
+    {
+      "source": "경기기록",
+      "date": "26-05-04",
+      "dateSort": "2026-05-04",
+      "season": "season1",
+      "prob": "32.0%",
+      "baseDelta": "27.2",
+      "winTeam": [
+        "안우진",
+        "안성진",
+        "유동혁",
+        "김민서",
+        "송승훈"
+      ],
+      "loseTeam": [
+        "이호재",
+        "안태인",
+        "정도영",
+        "김찬",
+        "지범준"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "탑",
+          "name": "안우진",
+          "k": 6,
+          "d": 5,
+          "a": 6,
+          "kda": 2.4,
+          "oldElo": 376.7434452898379,
+          "newElo": 431.146311637972,
+          "delta": 54.40286634813413,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "정글",
+          "name": "안성진",
+          "k": 6,
+          "d": 3,
+          "a": 12,
+          "kda": 6.0,
+          "oldElo": 1699.5881837207548,
+          "newElo": 1726.7896168948218,
+          "delta": 27.201433174067066,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "미드",
+          "name": "유동혁",
+          "k": 3,
+          "d": 5,
+          "a": 14,
+          "kda": 3.4,
+          "oldElo": 2378.931166090193,
+          "newElo": 2487.7368987864616,
+          "delta": 108.80573269626827,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "원딜",
+          "name": "김민서",
+          "k": 14,
+          "d": 5,
+          "a": 9,
+          "kda": 4.6,
+          "oldElo": 2167.1908781801735,
+          "newElo": 2194.3923113542405,
+          "delta": 27.201433174067066,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "서폿",
+          "name": "송승훈",
+          "k": 4,
+          "d": 4,
+          "a": 14,
+          "kda": 4.5,
+          "oldElo": 1666.3412186057772,
+          "newElo": 1693.5426517798442,
+          "delta": 27.201433174067066,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "탑",
+          "name": "이호재",
+          "k": 2,
+          "d": 6,
+          "a": 3,
+          "kda": 0.83,
+          "oldElo": 1607.6964698346894,
+          "newElo": 1553.2936034865552,
+          "delta": -54.40286634813413,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "정글",
+          "name": "안태인",
+          "k": 8,
+          "d": 8,
+          "a": 8,
+          "kda": 2.0,
+          "oldElo": 2042.227253227563,
+          "newElo": 2015.025820053496,
+          "delta": -27.201433174067066,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "미드",
+          "name": "정도영",
+          "k": 7,
+          "d": 7,
+          "a": 2,
+          "kda": 1.29,
+          "oldElo": 1437.312960475014,
+          "newElo": 1328.5072277787458,
+          "delta": -108.80573269626827,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "원딜",
+          "name": "김찬",
+          "k": 4,
+          "d": 8,
+          "a": 5,
+          "kda": 1.12,
+          "oldElo": 1687.3188192524567,
+          "newElo": 1660.1173860783897,
+          "delta": -27.201433174067066,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "서폿",
+          "name": "지범준",
+          "k": 1,
+          "d": 3,
+          "a": 12,
+          "kda": 4.33,
+          "oldElo": 2169.1002813159785,
+          "newElo": 2141.8988481419115,
+          "delta": -27.201433174067066,
+          "hasDetail": true
+        }
+      ]
+    },
+    {
+      "source": "경기기록",
+      "date": "26-05-04",
+      "dateSort": "2026-05-04",
+      "season": "season1",
+      "prob": "91.5%",
+      "baseDelta": "3.4",
+      "winTeam": [
+        "이호재",
+        "송승훈",
+        "지범준",
+        "유동혁",
+        "김찬"
+      ],
+      "loseTeam": [
+        "안우진",
+        "안태인",
+        "정도영",
+        "유탁영",
+        "안성진"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "탑",
+          "name": "이호재",
+          "k": 3,
+          "d": 4,
+          "a": 5,
+          "kda": 2.0,
+          "oldElo": 1600.8762535591172,
+          "newElo": 1607.6964698346894,
+          "delta": 6.820216275572237,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "정글",
+          "name": "송승훈",
+          "k": 5,
+          "d": 4,
+          "a": 5,
+          "kda": 2.5,
+          "oldElo": 1662.931110467991,
+          "newElo": 1666.3412186057772,
+          "delta": 3.4101081377861187,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "미드",
+          "name": "지범준",
+          "k": 5,
+          "d": 8,
+          "a": 13,
+          "kda": 2.25,
+          "oldElo": 2165.6901731781923,
+          "newElo": 2169.1002813159785,
+          "delta": 3.4101081377861187,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "원딜",
+          "name": "유동혁",
+          "k": 22,
+          "d": 4,
+          "a": 9,
+          "kda": 7.75,
+          "oldElo": 2365.2907335390487,
+          "newElo": 2378.931166090193,
+          "delta": 13.640432551144475,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "서폿",
+          "name": "김찬",
+          "k": 1,
+          "d": 6,
+          "a": 28,
+          "kda": 4.83,
+          "oldElo": 1683.9087111146705,
+          "newElo": 1687.3188192524567,
+          "delta": 3.4101081377861187,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "탑",
+          "name": "안우진",
+          "k": 2,
+          "d": 3,
+          "a": 9,
+          "kda": 3.67,
+          "oldElo": 383.56366156541014,
+          "newElo": 376.7434452898379,
+          "delta": -6.820216275572237,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "정글",
+          "name": "안태인",
+          "k": 5,
+          "d": 10,
+          "a": 8,
+          "kda": 1.3,
+          "oldElo": 2045.6373613653493,
+          "newElo": 2042.227253227563,
+          "delta": -3.4101081377861187,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "미드",
+          "name": "정도영",
+          "k": 11,
+          "d": 5,
+          "a": 9,
+          "kda": 4.0,
+          "oldElo": 1450.9533930261584,
+          "newElo": 1437.312960475014,
+          "delta": -13.640432551144475,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "원딜",
+          "name": "유탁영",
+          "k": 4,
+          "d": 11,
+          "a": 10,
+          "kda": 1.27,
+          "oldElo": 1834.3583243022208,
+          "newElo": 1827.5381080266486,
+          "delta": -6.820216275572237,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "서폿",
+          "name": "안성진",
+          "k": 4,
+          "d": 8,
+          "a": 13,
+          "kda": 2.12,
+          "oldElo": 1702.998291858541,
+          "newElo": 1699.5881837207548,
+          "delta": -3.4101081377861187,
+          "hasDetail": true
+        }
+      ]
+    },
+    {
+      "source": "경기기록",
+      "date": "26-05-04",
+      "dateSort": "2026-05-04",
+      "season": "season1",
+      "prob": "90.8%",
+      "baseDelta": "3.7",
+      "winTeam": [
+        "이호재",
+        "송승훈",
+        "지범준",
+        "유동혁",
+        "김찬"
+      ],
+      "loseTeam": [
+        "안우진",
+        "안태인",
+        "정도영",
+        "유탁영",
+        "안성진"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "탑",
+          "name": "이호재",
+          "k": 1,
+          "d": 6,
+          "a": 7,
+          "kda": 1.33,
+          "oldElo": 1593.5383832486802,
+          "newElo": 1600.8762535591172,
+          "delta": 7.33787031043688,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "정글",
+          "name": "송승훈",
+          "k": 5,
+          "d": 5,
+          "a": 3,
+          "kda": 1.6,
+          "oldElo": 1659.2621753127726,
+          "newElo": 1662.931110467991,
+          "delta": 3.66893515521844,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "미드",
+          "name": "지범준",
+          "k": 6,
+          "d": 5,
+          "a": 9,
+          "kda": 3.0,
+          "oldElo": 2162.0212380229736,
+          "newElo": 2165.6901731781923,
+          "delta": 3.66893515521844,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "원딜",
+          "name": "유동혁",
+          "k": 20,
+          "d": 3,
+          "a": 9,
+          "kda": 9.67,
+          "oldElo": 2350.6149929181747,
+          "newElo": 2365.2907335390487,
+          "delta": 14.67574062087376,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "서폿",
+          "name": "김찬",
+          "k": 2,
+          "d": 6,
+          "a": 22,
+          "kda": 4.0,
+          "oldElo": 1680.2397759594521,
+          "newElo": 1683.9087111146705,
+          "delta": 3.66893515521844,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "탑",
+          "name": "안우진",
+          "k": 1,
+          "d": 5,
+          "a": 2,
+          "kda": 0.6,
+          "oldElo": 390.901531875847,
+          "newElo": 383.56366156541014,
+          "delta": -7.33787031043688,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "정글",
+          "name": "안태인",
+          "k": 15,
+          "d": 7,
+          "a": 3,
+          "kda": 2.57,
+          "oldElo": 2049.3062965205677,
+          "newElo": 2045.6373613653493,
+          "delta": -3.66893515521844,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "미드",
+          "name": "정도영",
+          "k": 5,
+          "d": 6,
+          "a": 7,
+          "kda": 2.0,
+          "oldElo": 1465.6291336470322,
+          "newElo": 1450.9533930261584,
+          "delta": -14.67574062087376,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "원딜",
+          "name": "유탁영",
+          "k": 2,
+          "d": 10,
+          "a": 9,
+          "kda": 1.1,
+          "oldElo": 1841.6961946126578,
+          "newElo": 1834.3583243022208,
+          "delta": -7.33787031043688,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "서폿",
+          "name": "안성진",
+          "k": 2,
+          "d": 7,
+          "a": 18,
+          "kda": 2.86,
+          "oldElo": 1706.6672270137594,
+          "newElo": 1702.998291858541,
+          "delta": -3.66893515521844,
+          "hasDetail": true
+        }
+      ]
+    },
+    {
+      "source": "경기기록",
+      "date": "26-05-04",
+      "dateSort": "2026-05-04",
+      "season": "season1",
+      "prob": "89.8%",
+      "baseDelta": "4.1",
+      "winTeam": [
+        "정도영",
+        "송승훈",
+        "지범준",
+        "유탁영",
+        "강원준"
+      ],
+      "loseTeam": [
+        "안우진",
+        "안성진",
+        "김찬",
+        "이권표",
+        "이승배"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "탑",
+          "name": "정도영",
+          "k": 4,
+          "d": 3,
+          "a": 14,
+          "kda": 6.0,
+          "oldElo": 1449.3760503490819,
+          "newElo": 1465.6291336470322,
+          "delta": 16.253083297950326,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "정글",
+          "name": "송승훈",
+          "k": 9,
+          "d": 7,
+          "a": 20,
+          "kda": 4.14,
+          "oldElo": 1655.198904488285,
+          "newElo": 1659.2621753127726,
+          "delta": 4.0632708244875815,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "미드",
+          "name": "지범준",
+          "k": 2,
+          "d": 3,
+          "a": 23,
+          "kda": 8.33,
+          "oldElo": 2157.957967198486,
+          "newElo": 2162.0212380229736,
+          "delta": 4.0632708244875815,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "원딜",
+          "name": "유탁영",
+          "k": 19,
+          "d": 4,
+          "a": 8,
+          "kda": 6.75,
+          "oldElo": 1833.5696529636825,
+          "newElo": 1841.6961946126578,
+          "delta": 8.126541648975163,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "서폿",
+          "name": "강원준",
+          "k": 1,
+          "d": 6,
+          "a": 24,
+          "kda": 4.17,
+          "oldElo": 1424.2725115236258,
+          "newElo": 1440.525594821576,
+          "delta": 16.253083297950326,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "탑",
+          "name": "안우진",
+          "k": 1,
+          "d": 7,
+          "a": 2,
+          "kda": 0.43,
+          "oldElo": 399.02807352482216,
+          "newElo": 390.901531875847,
+          "delta": -8.126541648975163,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "정글",
+          "name": "안성진",
+          "k": 6,
+          "d": 7,
+          "a": 10,
+          "kda": 2.29,
+          "oldElo": 1710.730497838247,
+          "newElo": 1706.6672270137594,
+          "delta": -4.0632708244875815,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "미드",
+          "name": "김찬",
+          "k": 7,
+          "d": 7,
+          "a": 6,
+          "kda": 1.86,
+          "oldElo": 1684.3030467839396,
+          "newElo": 1680.2397759594521,
+          "delta": -4.0632708244875815,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "원딜",
+          "name": "이권표",
+          "k": 5,
+          "d": 5,
+          "a": 4,
+          "kda": 1.8,
+          "oldElo": 1246.466146043691,
+          "newElo": 1238.3396043947157,
+          "delta": -8.126541648975163,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "서폿",
+          "name": "이승배",
+          "k": 3,
+          "d": 9,
+          "a": 8,
+          "kda": 1.22,
+          "oldElo": 1586.5217684920992,
+          "newElo": 1570.268685194149,
+          "delta": -16.253083297950326,
+          "hasDetail": true
+        }
+      ]
+    },
+    {
+      "source": "경기기록",
+      "date": "26-05-04",
+      "dateSort": "2026-05-04",
+      "season": "season1",
+      "prob": "86.5%",
+      "baseDelta": "5.4",
+      "winTeam": [
+        "이호재",
+        "유동혁",
+        "송승훈",
+        "지범준",
+        "안성진"
+      ],
+      "loseTeam": [
+        "안우진",
+        "안태인",
+        "정도영",
+        "김찬",
+        "김민서"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "탑",
+          "name": "이호재",
+          "k": 6,
+          "d": 5,
+          "a": 9,
+          "kda": 3.0,
+          "oldElo": 1582.7727332458903,
+          "newElo": 1593.5383832486802,
+          "delta": 10.765650002789942,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "정글",
+          "name": "유동혁",
+          "k": 12,
+          "d": 7,
+          "a": 13,
+          "kda": 3.57,
+          "oldElo": 2329.083692912595,
+          "newElo": 2350.6149929181747,
+          "delta": 21.531300005579883,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "미드",
+          "name": "송승훈",
+          "k": 7,
+          "d": 6,
+          "a": 10,
+          "kda": 2.83,
+          "oldElo": 1649.81607948689,
+          "newElo": 1655.198904488285,
+          "delta": 5.382825001394971,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "원딜",
+          "name": "지범준",
+          "k": 8,
+          "d": 5,
+          "a": 13,
+          "kda": 4.2,
+          "oldElo": 2152.5751421970913,
+          "newElo": 2157.957967198486,
+          "delta": 5.382825001394971,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "서폿",
+          "name": "안성진",
+          "k": 4,
+          "d": 4,
+          "a": 21,
+          "kda": 6.25,
+          "oldElo": 1705.3476728368519,
+          "newElo": 1710.730497838247,
+          "delta": 5.382825001394971,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "탑",
+          "name": "안우진",
+          "k": 0,
+          "d": 7,
+          "a": 4,
+          "kda": 0.57,
+          "oldElo": 409.7937235276121,
+          "newElo": 399.02807352482216,
+          "delta": -10.765650002789942,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "정글",
+          "name": "안태인",
+          "k": 8,
+          "d": 8,
+          "a": 9,
+          "kda": 2.12,
+          "oldElo": 2054.6891215219625,
+          "newElo": 2049.3062965205677,
+          "delta": -5.382825001394971,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "미드",
+          "name": "정도영",
+          "k": 7,
+          "d": 5,
+          "a": 5,
+          "kda": 2.4,
+          "oldElo": 1470.9073503546617,
+          "newElo": 1449.3760503490819,
+          "delta": -21.531300005579883,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "원딜",
+          "name": "김찬",
+          "k": 9,
+          "d": 9,
+          "a": 5,
+          "kda": 1.56,
+          "oldElo": 1695.0686967867296,
+          "newElo": 1684.3030467839396,
+          "delta": -10.765650002789942,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "서폿",
+          "name": "김민서",
+          "k": 3,
+          "d": 8,
+          "a": 15,
+          "kda": 2.25,
+          "oldElo": 2172.5737031815684,
+          "newElo": 2167.1908781801735,
+          "delta": -5.382825001394971,
+          "hasDetail": true
+        }
+      ]
+    },
+    {
+      "source": "경기기록",
+      "date": "26-05-04",
+      "dateSort": "2026-05-04",
+      "season": "season1",
+      "prob": "45.2%",
+      "baseDelta": "21.9",
+      "winTeam": [
+        "지범준",
+        "안성진",
+        "강원준",
+        "이권표",
+        "김민서"
+      ],
+      "loseTeam": [
+        "이호재",
+        "김찬",
+        "정도영",
+        "안태인",
+        "송승훈"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "탑",
+          "name": "지범준",
+          "k": 7,
+          "d": 5,
+          "a": 10,
+          "kda": 3.4,
+          "oldElo": 2130.6374564392095,
+          "newElo": 2152.5751421970913,
+          "delta": 21.937685757881617,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "정글",
+          "name": "안성진",
+          "k": 11,
+          "d": 2,
+          "a": 8,
+          "kda": 9.5,
+          "oldElo": 1683.4099870789703,
+          "newElo": 1705.3476728368519,
+          "delta": 21.937685757881617,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "미드",
+          "name": "강원준",
+          "k": 6,
+          "d": 7,
+          "a": 16,
+          "kda": 3.14,
+          "oldElo": 1336.5217684920992,
+          "newElo": 1424.2725115236258,
+          "delta": 87.75074303152647,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "원딜",
+          "name": "이권표",
+          "k": 6,
+          "d": 7,
+          "a": 16,
+          "kda": 3.14,
+          "oldElo": 1202.5907745279278,
+          "newElo": 1246.466146043691,
+          "delta": 43.875371515763234,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "서폿",
+          "name": "김민서",
+          "k": 9,
+          "d": 8,
+          "a": 13,
+          "kda": 2.75,
+          "oldElo": 2150.6360174236866,
+          "newElo": 2172.5737031815684,
+          "delta": 21.937685757881617,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "탑",
+          "name": "이호재",
+          "k": 4,
+          "d": 10,
+          "a": 4,
+          "kda": 0.8,
+          "oldElo": 1626.6481047616535,
+          "newElo": 1582.7727332458903,
+          "delta": -43.875371515763234,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "정글",
+          "name": "김찬",
+          "k": 5,
+          "d": 7,
+          "a": 5,
+          "kda": 1.43,
+          "oldElo": 1738.9440683024927,
+          "newElo": 1695.0686967867296,
+          "delta": -43.875371515763234,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "미드",
+          "name": "정도영",
+          "k": 6,
+          "d": 6,
+          "a": 6,
+          "kda": 2.0,
+          "oldElo": 1558.6580933861883,
+          "newElo": 1470.9073503546617,
+          "delta": -87.75074303152647,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "원딜",
+          "name": "안태인",
+          "k": 6,
+          "d": 9,
+          "a": 5,
+          "kda": 1.22,
+          "oldElo": 2076.6268072798443,
+          "newElo": 2054.6891215219625,
+          "delta": -21.937685757881617,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "서폿",
+          "name": "송승훈",
+          "k": 3,
+          "d": 7,
+          "a": 11,
+          "kda": 2.0,
+          "oldElo": 1671.7537652447716,
+          "newElo": 1649.81607948689,
+          "delta": -21.937685757881617,
+          "hasDetail": true
+        }
+      ]
+    },
+    {
+      "source": "경기기록",
+      "date": "26-05-04",
+      "dateSort": "2026-05-04",
+      "season": "season1",
+      "prob": "50.4%",
+      "baseDelta": "19.8",
+      "winTeam": [
+        "이호재",
+        "안성진",
+        "안태인",
+        "김찬",
+        "송승훈"
+      ],
+      "loseTeam": [
+        "지범준",
+        "김민서",
+        "강원준",
+        "이권표",
+        "이승배"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "탑",
+          "name": "이호재",
+          "k": 2,
+          "d": 7,
+          "a": 15,
+          "kda": 2.43,
+          "oldElo": 1586.9568242258738,
+          "newElo": 1626.6481047616535,
+          "delta": 39.69128053577967,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "정글",
+          "name": "안성진",
+          "k": 6,
+          "d": 9,
+          "a": 17,
+          "kda": 2.56,
+          "oldElo": 1663.5643468110804,
+          "newElo": 1683.4099870789703,
+          "delta": 19.845640267889834,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "미드",
+          "name": "안태인",
+          "k": 13,
+          "d": 7,
+          "a": 7,
+          "kda": 2.86,
+          "oldElo": 2056.7811670119545,
+          "newElo": 2076.6268072798443,
+          "delta": 19.845640267889834,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "원딜",
+          "name": "김찬",
+          "k": 14,
+          "d": 5,
+          "a": 14,
+          "kda": 5.6,
+          "oldElo": 1699.252787766713,
+          "newElo": 1738.9440683024927,
+          "delta": 39.69128053577967,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "서폿",
+          "name": "송승훈",
+          "k": 7,
+          "d": 9,
+          "a": 23,
+          "kda": 3.33,
+          "oldElo": 1651.9081249768817,
+          "newElo": 1671.7537652447716,
+          "delta": 19.845640267889834,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "탑",
+          "name": "지범준",
+          "k": 12,
+          "d": 7,
+          "a": 10,
+          "kda": 3.14,
+          "oldElo": 2150.4830967070993,
+          "newElo": 2130.6374564392095,
+          "delta": -19.845640267889834,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "정글",
+          "name": "김민서",
+          "k": 10,
+          "d": 9,
+          "a": 10,
+          "kda": 2.22,
+          "oldElo": 2170.4816576915764,
+          "newElo": 2150.6360174236866,
+          "delta": -19.845640267889834,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "미드",
+          "name": "강원준",
+          "k": 8,
+          "d": 5,
+          "a": 9,
+          "kda": 3.4,
+          "oldElo": 1415.9043295636586,
+          "newElo": 1336.5217684920992,
+          "delta": -79.38256107155934,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "원딜",
+          "name": "이권표",
+          "k": 4,
+          "d": 10,
+          "a": 10,
+          "kda": 1.4,
+          "oldElo": 1242.2820550637075,
+          "newElo": 1202.5907745279278,
+          "delta": -39.69128053577967,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "서폿",
+          "name": "이승배",
+          "k": 3,
+          "d": 11,
+          "a": 10,
+          "kda": 1.18,
+          "oldElo": 1665.9043295636586,
+          "newElo": 1586.5217684920992,
+          "delta": -79.38256107155934,
+          "hasDetail": true
+        }
+      ]
+    },
+    {
+      "source": "경기기록",
+      "date": "26-05-04",
+      "dateSort": "2026-05-04",
+      "season": "season1",
+      "prob": "84.1%",
+      "baseDelta": "6.4",
+      "winTeam": [
+        "이호재",
+        "안태인",
+        "안성진",
+        "김찬",
+        "지범준"
+      ],
+      "loseTeam": [
+        "송승훈",
+        "강원준",
+        "김민서",
+        "이권표",
+        "이승배"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "탑",
+          "name": "이호재",
+          "k": 10,
+          "d": 3,
+          "a": 3,
+          "kda": 4.33,
+          "oldElo": 2137.7643081820224,
+          "newElo": 2144.123702444561,
+          "delta": 6.359394262538274,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "정글",
+          "name": "안태인",
+          "k": 2,
+          "d": 5,
+          "a": 4,
+          "kda": 1.2,
+          "oldElo": 2050.421772749416,
+          "newElo": 2056.7811670119545,
+          "delta": 6.359394262538274,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "미드",
+          "name": "안성진",
+          "k": 9,
+          "d": 3,
+          "a": 3,
+          "kda": 4.0,
+          "oldElo": 1657.2049525485422,
+          "newElo": 1663.5643468110804,
+          "delta": 6.359394262538274,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "원딜",
+          "name": "김찬",
+          "k": 4,
+          "d": 4,
+          "a": 4,
+          "kda": 2.0,
+          "oldElo": 1686.5339992416364,
+          "newElo": 1699.252787766713,
+          "delta": 12.718788525076548,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "서폿",
+          "name": "지범준",
+          "k": 1,
+          "d": 7,
+          "a": 4,
+          "kda": 0.71,
+          "oldElo": 2144.123702444561,
+          "newElo": 2150.4830967070993,
+          "delta": 6.359394262538274,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "탑",
+          "name": "송승훈",
+          "k": 1,
+          "d": 9,
+          "a": 4,
+          "kda": 0.56,
+          "oldElo": 1658.26751923942,
+          "newElo": 1651.9081249768817,
+          "delta": -6.359394262538274,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "정글",
+          "name": "강원준",
+          "k": 6,
+          "d": 3,
+          "a": 6,
+          "kda": 4.0,
+          "oldElo": 1441.3419066138117,
+          "newElo": 1415.9043295636586,
+          "delta": -25.437577050153095,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "미드",
+          "name": "김민서",
+          "k": 6,
+          "d": 7,
+          "a": 5,
+          "kda": 1.57,
+          "oldElo": 2176.841051954115,
+          "newElo": 2170.4816576915764,
+          "delta": -6.359394262538274,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "원딜",
+          "name": "이권표",
+          "k": 7,
+          "d": 3,
+          "a": 4,
+          "kda": 3.67,
+          "oldElo": 1255.0008435887842,
+          "newElo": 1242.2820550637075,
+          "delta": -12.718788525076548,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "서폿",
+          "name": "이승배",
+          "k": 2,
+          "d": 4,
+          "a": 9,
+          "kda": 2.75,
+          "oldElo": 1691.3419066138117,
+          "newElo": 1665.9043295636586,
+          "delta": -25.437577050153095,
+          "hasDetail": true
+        }
+      ]
+    },
+    {
+      "source": "경기기록",
+      "date": "26-05-04",
+      "dateSort": "2026-05-04",
+      "season": "season1",
+      "prob": "63.3%",
+      "baseDelta": "14.7",
+      "winTeam": [
+        "이호재",
+        "안태인",
+        "정도영",
+        "김찬",
+        "지범준"
+      ],
+      "loseTeam": [
+        "송승훈",
+        "강원준",
+        "김민서",
+        "이권표",
+        "이승배"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "탑",
+          "name": "이호재",
+          "k": 7,
+          "d": 3,
+          "a": 12,
+          "kda": 6.33,
+          "oldElo": 1557.6277775327796,
+          "newElo": 1586.9568242258738,
+          "delta": 29.329046693094114,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "정글",
+          "name": "안태인",
+          "k": 15,
+          "d": 10,
+          "a": 12,
+          "kda": 2.7,
+          "oldElo": 2035.757249402869,
+          "newElo": 2050.421772749416,
+          "delta": 14.664523346547057,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "미드",
+          "name": "정도영",
+          "k": 7,
+          "d": 10,
+          "a": 11,
+          "kda": 1.8,
+          "oldElo": 1500.0,
+          "newElo": 1558.6580933861883,
+          "delta": 58.65809338618823,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "원딜",
+          "name": "김찬",
+          "k": 7,
+          "d": 6,
+          "a": 14,
+          "kda": 3.5,
+          "oldElo": 1657.2049525485422,
+          "newElo": 1686.5339992416364,
+          "delta": 29.329046693094114,
+          "hasDetail": true
+        },
+        {
+          "result": "승리",
+          "position": "서폿",
+          "name": "지범준",
+          "k": 1,
+          "d": 3,
+          "a": 24,
+          "kda": 8.33,
+          "oldElo": 2123.0997848354755,
+          "newElo": 2137.7643081820224,
+          "delta": 14.664523346547057,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "탑",
+          "name": "송승훈",
+          "k": 3,
+          "d": 8,
+          "a": 8,
+          "kda": 1.38,
+          "oldElo": 1672.9320425859669,
+          "newElo": 1658.26751923942,
+          "delta": -14.664523346547057,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "정글",
+          "name": "강원준",
+          "k": 3,
+          "d": 5,
+          "a": 12,
+          "kda": 3.0,
+          "oldElo": 1500.0,
+          "newElo": 1441.3419066138117,
+          "delta": -58.65809338618823,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "미드",
+          "name": "김민서",
+          "k": 15,
+          "d": 9,
+          "a": 8,
+          "kda": 2.56,
+          "oldElo": 2191.505575300662,
+          "newElo": 2176.841051954115,
+          "delta": -14.664523346547057,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "원딜",
+          "name": "이권표",
+          "k": 10,
+          "d": 6,
+          "a": 6,
+          "kda": 2.67,
+          "oldElo": 1284.3298902818783,
+          "newElo": 1255.0008435887842,
+          "delta": -29.329046693094114,
+          "hasDetail": true
+        },
+        {
+          "result": "패배",
+          "position": "서폿",
+          "name": "이승배",
+          "k": 1,
+          "d": 9,
+          "a": 12,
+          "kda": 1.44,
+          "oldElo": 1750.0,
+          "newElo": 1691.3419066138117,
+          "delta": -58.65809338618823,
+          "hasDetail": true
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #41",
+      "dateSort": "past-041",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "안성진",
+        "이준헌",
+        "양현규",
+        "김민서",
+        "조호진"
+      ],
+      "loseTeam": [
+        "이권표",
+        "송승훈",
+        "지범준",
+        "안태인",
+        "박준혁"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이준헌",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "양현규",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "조호진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "이권표",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "송승훈",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "박준혁",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #40",
+      "dateSort": "past-040",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "안성진",
+        "이준헌",
+        "양현규",
+        "김민서",
+        "조호진"
+      ],
+      "loseTeam": [
+        "이권표",
+        "송승훈",
+        "지범준",
+        "안태인",
+        "박준혁"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이준헌",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "양현규",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "조호진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "이권표",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "송승훈",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "박준혁",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #39",
+      "dateSort": "past-039",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "이권표",
+        "송승훈",
+        "지범준",
+        "안태인",
+        "박준혁"
+      ],
+      "loseTeam": [
+        "안성진",
+        "이준헌",
+        "양현규",
+        "김민서",
+        "조호진"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이권표",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "송승훈",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "박준혁",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "이준헌",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "양현규",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "조호진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #38",
+      "dateSort": "past-038",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "송승훈",
+        "안성진",
+        "양현규",
+        "이준헌",
+        "지범준"
+      ],
+      "loseTeam": [
+        "조호진",
+        "안태인",
+        "박준혁",
+        "김민서",
+        "이권표"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "송승훈",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "양현규",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이준헌",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "조호진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "박준혁",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "이권표",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #37",
+      "dateSort": "past-037",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "이권표",
+        "김민서",
+        "안태인",
+        "조호진",
+        "박준혁"
+      ],
+      "loseTeam": [
+        "송승훈",
+        "안성진",
+        "양현규",
+        "지범준",
+        "이준헌"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이권표",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "조호진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "박준혁",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "송승훈",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "양현규",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "이준헌",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #36",
+      "dateSort": "past-036",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "송승훈",
+        "안성진",
+        "양현규",
+        "이준헌",
+        "지범준"
+      ],
+      "loseTeam": [
+        "조호진",
+        "안태인",
+        "박준혁",
+        "김민서",
+        "이권표"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "송승훈",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "양현규",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이준헌",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "조호진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "박준혁",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "이권표",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #35",
+      "dateSort": "past-035",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "송승훈",
+        "양현규",
+        "지범준",
+        "김민서",
+        "박준혁"
+      ],
+      "loseTeam": [
+        "이준헌",
+        "안태인",
+        "이권표",
+        "조호진",
+        "안성진"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "송승훈",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "양현규",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "박준혁",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "이준헌",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "이권표",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "조호진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #34",
+      "dateSort": "past-034",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "양현규",
+        "지범준",
+        "송승훈",
+        "조호진",
+        "안태인"
+      ],
+      "loseTeam": [
+        "김민서",
+        "이준헌",
+        "안성진",
+        "박준혁",
+        "이권표"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "양현규",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "송승훈",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "조호진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "이준헌",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "박준혁",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "이권표",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #33",
+      "dateSort": "past-033",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "양현규",
+        "안성진",
+        "안태인",
+        "송승훈",
+        "이권표"
+      ],
+      "loseTeam": [
+        "김민서",
+        "조호진",
+        "박준혁",
+        "지범준",
+        "이준헌"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "양현규",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "송승훈",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이권표",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "조호진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "박준혁",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "이준헌",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #32",
+      "dateSort": "past-032",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "안태인",
+        "송승훈",
+        "김민서",
+        "박준혁",
+        "조호진"
+      ],
+      "loseTeam": [
+        "이권표",
+        "양현규",
+        "안성진",
+        "지범준",
+        "이준헌"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "송승훈",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "박준혁",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "조호진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "이권표",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "양현규",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "이준헌",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #31",
+      "dateSort": "past-031",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "안태인",
+        "송승훈",
+        "김민서",
+        "박준혁",
+        "조호진"
+      ],
+      "loseTeam": [
+        "이권표",
+        "양현규",
+        "안성진",
+        "지범준",
+        "이준헌"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "송승훈",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "박준혁",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "조호진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "이권표",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "양현규",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "이준헌",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #30",
+      "dateSort": "past-030",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "이권표",
+        "양현규",
+        "안성진",
+        "지범준",
+        "이준헌"
+      ],
+      "loseTeam": [
+        "안태인",
+        "송승훈",
+        "김민서",
+        "박준혁",
+        "조호진"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이권표",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "양현규",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이준헌",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "송승훈",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "박준혁",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "조호진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #29",
+      "dateSort": "past-029",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "송승훈",
+        "김민서",
+        "김찬",
+        "유동혁",
+        "양현규"
+      ],
+      "loseTeam": [
+        "안성진",
+        "윤선용",
+        "유탁영",
+        "안우진",
+        "안태인"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "송승훈",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김찬",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "유동혁",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "양현규",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "윤선용",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "유탁영",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안우진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #28",
+      "dateSort": "past-028",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "앙현규",
+        "김찬",
+        "송승훈",
+        "김민서",
+        "유동혁"
+      ],
+      "loseTeam": [
+        "지범준",
+        "안태인",
+        "안정진",
+        "안우진",
+        "윤선용"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "앙현규",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김찬",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "송승훈",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "유동혁",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안정진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안우진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "윤선용",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #27",
+      "dateSort": "past-027",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "지범준",
+        "양현규",
+        "김찬",
+        "김민서",
+        "윤선용"
+      ],
+      "loseTeam": [
+        "송슿훈",
+        "안우진유동혁",
+        "안태인",
+        "안성진"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "양현규",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김찬",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "윤선용",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "송슿훈",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안우진유동혁",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #26",
+      "dateSort": "past-026",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "안태인",
+        "유동혁",
+        "김시완",
+        "김찬",
+        "외부인"
+      ],
+      "loseTeam": [
+        "지범준",
+        "송승훈",
+        "김민서",
+        "유탁영",
+        "안성진"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "유동혁",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김시완",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김찬",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "외부인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "송승훈",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "유탁영",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #25",
+      "dateSort": "past-025",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "지범준",
+        "송승훈",
+        "김민서",
+        "유탁영",
+        "안성진"
+      ],
+      "loseTeam": [
+        "안태인",
+        "유동혁",
+        "김시완",
+        "김찬",
+        "외부인"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "송승훈",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "유탁영",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "유동혁",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김시완",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김찬",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "외부인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #24",
+      "dateSort": "past-024",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "안태인",
+        "유동혁",
+        "김시완",
+        "김찬",
+        "외부인"
+      ],
+      "loseTeam": [
+        "지범준",
+        "송승훈",
+        "김민서",
+        "유탁영",
+        "안성진"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "유동혁",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김시완",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김찬",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "외부인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "송승훈",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "유탁영",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #23",
+      "dateSort": "past-023",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "유탁영",
+        "안성진",
+        "박준혁",
+        "김민서",
+        "이호재"
+      ],
+      "loseTeam": [
+        "지범준",
+        "이준헌",
+        "김찬",
+        "안우진",
+        "안태인"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "유탁영",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "박준혁",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이호재",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "이준헌",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김찬",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안우진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #22",
+      "dateSort": "past-022",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "지범준",
+        "이준헌",
+        "안우진",
+        "김민서",
+        "안태인"
+      ],
+      "loseTeam": [
+        "김찬",
+        "유탁영",
+        "이호재",
+        "박준혁",
+        "안성진"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이준헌",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안우진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김찬",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "유탁영",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "이호재",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "박준혁",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #21",
+      "dateSort": "past-021",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "유탁영",
+        "안성진",
+        "박준혁",
+        "김민서",
+        "이호재"
+      ],
+      "loseTeam": [
+        "지범준",
+        "이준헌",
+        "김찬",
+        "안우진",
+        "안태인"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "유탁영",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "박준혁",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이호재",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "이준헌",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김찬",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안우진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #20",
+      "dateSort": "past-020",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "지범준",
+        "이준헌",
+        "김찬",
+        "안우진",
+        "안태인"
+      ],
+      "loseTeam": [
+        "유탁영",
+        "안성진",
+        "박준혁",
+        "김민서",
+        "이호재"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이준헌",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김찬",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안우진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "유탁영",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "박준혁",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "이호재",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #19",
+      "dateSort": "past-019",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "안태인",
+        "김민서",
+        "이호재",
+        "박준혁",
+        "유탁영"
+      ],
+      "loseTeam": [
+        "지범준",
+        "안우진",
+        "김찬",
+        "안성진",
+        "이준헌"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이호재",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "박준혁",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "유탁영",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안우진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김찬",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "이준헌",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #18",
+      "dateSort": "past-018",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "이준헌",
+        "안태인",
+        "이권표",
+        "허원석",
+        "송승훈"
+      ],
+      "loseTeam": [
+        "지범준",
+        "윤준석",
+        "김지우",
+        "김민서",
+        "안성진"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이준헌",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이권표",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "허원석",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "송승훈",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "윤준석",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김지우",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #17",
+      "dateSort": "past-017",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "이준헌",
+        "안태인",
+        "이권표",
+        "허원석",
+        "송승훈"
+      ],
+      "loseTeam": [
+        "지범준",
+        "윤준석",
+        "김지우",
+        "김민서",
+        "안성진"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이준헌",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이권표",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "허원석",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "송승훈",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "윤준석",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김지우",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #16",
+      "dateSort": "past-016",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "지범준",
+        "윤준석",
+        "김지우",
+        "김민서",
+        "안성진"
+      ],
+      "loseTeam": [
+        "이준헌",
+        "안태인",
+        "이권표",
+        "허원석",
+        "송승훈"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "윤준석",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김지우",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "이준헌",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "이권표",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "허원석",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "송승훈",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #15",
+      "dateSort": "past-015",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "지범준",
+        "이준헌",
+        "윤준석",
+        "김지우",
+        "허원석"
+      ],
+      "loseTeam": [
+        "안태인",
+        "윤선용",
+        "이호재",
+        "김민서",
+        "송승훈"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이준헌",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "윤준석",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김지우",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "허원석",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "윤선용",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "이호재",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "송승훈",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #14",
+      "dateSort": "past-014",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "이권표",
+        "이호재",
+        "허원석",
+        "김민서",
+        "안성진"
+      ],
+      "loseTeam": [
+        "지범준",
+        "윤선용",
+        "윤준석",
+        "김지우",
+        "송승훈"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이권표",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이호재",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "허원석",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "윤선용",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "윤준석",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김지우",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "송승훈",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #13",
+      "dateSort": "past-013",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "이준헌",
+        "이권표",
+        "윤선용",
+        "윤준석",
+        "허원석"
+      ],
+      "loseTeam": [
+        "안태인",
+        "이호재",
+        "김지우",
+        "송승훈",
+        "안성진"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이준헌",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이권표",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "윤선용",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "윤준석",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "허원석",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "이호재",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김지우",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "송승훈",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #12",
+      "dateSort": "past-012",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "지범준",
+        "안태인",
+        "이권표",
+        "이호재",
+        "안성진"
+      ],
+      "loseTeam": [
+        "이준헌",
+        "윤준석",
+        "김지우",
+        "허원석",
+        "김민서"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이권표",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이호재",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "이준헌",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "윤준석",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김지우",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "허원석",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #11",
+      "dateSort": "past-011",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "지범준",
+        "이준헌",
+        "윤선용",
+        "김민서",
+        "송승훈"
+      ],
+      "loseTeam": [
+        "안태인",
+        "이권표",
+        "이호재",
+        "윤준석",
+        "안성진"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이준헌",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "윤선용",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "송승훈",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "이권표",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "이호재",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "윤준석",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #10",
+      "dateSort": "past-010",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "지범준",
+        "이준헌",
+        "안태인",
+        "이권표",
+        "안성진"
+      ],
+      "loseTeam": [
+        "윤선용",
+        "김지우",
+        "허원석",
+        "김민서",
+        "송승훈"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이준헌",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이권표",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "윤선용",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김지우",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "허원석",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "송승훈",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #9",
+      "dateSort": "past-009",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "지범준",
+        "이호재",
+        "김민서",
+        "송승훈",
+        "최유진"
+      ],
+      "loseTeam": [
+        "윤선용",
+        "안성진",
+        "김찬",
+        "안우진",
+        "외부인"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이호재",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "송승훈",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "최유진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "윤선용",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김찬",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안우진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "외부인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #8",
+      "dateSort": "past-008",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "지범준",
+        "이호재",
+        "김민서",
+        "송승훈",
+        "최유진"
+      ],
+      "loseTeam": [
+        "윤선용",
+        "안성진",
+        "김찬",
+        "안우진",
+        "외부인"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이호재",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "송승훈",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "최유진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "윤선용",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김찬",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안우진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "외부인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #7",
+      "dateSort": "past-007",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "지범준",
+        "이준헌",
+        "이호재",
+        "김찬",
+        "박명룡"
+      ],
+      "loseTeam": [
+        "안태인",
+        "김민서",
+        "안성진",
+        "양현규",
+        "유탁영"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이준헌",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이호재",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김찬",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "박명룡",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "양현규",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "유탁영",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #6",
+      "dateSort": "past-006",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "안태인",
+        "김민서",
+        "안성진",
+        "양현규",
+        "유탁영"
+      ],
+      "loseTeam": [
+        "지범준",
+        "이준헌",
+        "이호재",
+        "김찬",
+        "박명룡"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "양현규",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "유탁영",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "이준헌",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "이호재",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김찬",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "박명룡",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #5",
+      "dateSort": "past-005",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "안태인",
+        "김민서",
+        "안성진",
+        "양현규",
+        "유탁영"
+      ],
+      "loseTeam": [
+        "지범준",
+        "이준헌",
+        "이호재",
+        "김찬",
+        "박명룡"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "양현규",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "유탁영",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "이준헌",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "이호재",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김찬",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "박명룡",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #4",
+      "dateSort": "past-004",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "지범준",
+        "김민서",
+        "안성진",
+        "김시완",
+        "김찬"
+      ],
+      "loseTeam": [
+        "안태인",
+        "이호재",
+        "전준형",
+        "양현규",
+        "유탁영"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김시완",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김찬",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "이호재",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "전준형",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "양현규",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "유탁영",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #3",
+      "dateSort": "past-003",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "안태인",
+        "이호재",
+        "김민서",
+        "송승훈",
+        "유탁영"
+      ],
+      "loseTeam": [
+        "지범준",
+        "안성진",
+        "김찬",
+        "최유진",
+        "외부인"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "이호재",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "송승훈",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "유탁영",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김찬",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "최유진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "외부인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #2",
+      "dateSort": "past-002",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "지범준",
+        "김민서",
+        "송승훈",
+        "안성진",
+        "유탁영"
+      ],
+      "loseTeam": [
+        "안태인",
+        "김찬",
+        "최유진",
+        "외부인"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "송승훈",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "유탁영",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김찬",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "최유진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "외부인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "source": "과거데이터",
+      "date": "과거데이터 #1",
+      "dateSort": "past-001",
+      "season": "season1",
+      "prob": "-",
+      "baseDelta": "-",
+      "winTeam": [
+        "지범준",
+        "김민서",
+        "송승훈",
+        "안성진",
+        "유탁영"
+      ],
+      "loseTeam": [
+        "안태인",
+        "김찬",
+        "최유진",
+        "외부인"
+      ],
+      "details": [
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "지범준",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "김민서",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "송승훈",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "안성진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "승리",
+          "position": "-",
+          "name": "유탁영",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "안태인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "김찬",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "최유진",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        },
+        {
+          "result": "패배",
+          "position": "-",
+          "name": "외부인",
+          "k": null,
+          "d": null,
+          "a": null,
+          "kda": null,
+          "oldElo": null,
+          "newElo": null,
+          "delta": null,
+          "hasDetail": false
+        }
+      ]
+    }
+  ],
   "positionStats": {
-    "season1": {},
+    "season1": {
+      "이호재": [
+        {
+          "games": 9,
+          "win": 7,
+          "lose": 2,
+          "k": 39,
+          "d": 45,
+          "a": 68,
+          "position": "탑",
+          "winRate": 77.8,
+          "kda": 2.38
+        },
+        {
+          "games": 1,
+          "win": 0,
+          "lose": 1,
+          "k": 1,
+          "d": 7,
+          "a": 8,
+          "position": "미드",
+          "winRate": 0.0,
+          "kda": 1.29
+        },
+        {
+          "games": 1,
+          "win": 0,
+          "lose": 1,
+          "k": 1,
+          "d": 7,
+          "a": 2,
+          "position": "서폿",
+          "winRate": 0.0,
+          "kda": 0.43
+        }
+      ],
+      "안태인": [
+        {
+          "games": 9,
+          "win": 3,
+          "lose": 6,
+          "k": 79,
+          "d": 64,
+          "a": 65,
+          "position": "정글",
+          "winRate": 33.3,
+          "kda": 2.25
+        },
+        {
+          "games": 1,
+          "win": 1,
+          "lose": 0,
+          "k": 13,
+          "d": 7,
+          "a": 7,
+          "position": "미드",
+          "winRate": 100.0,
+          "kda": 2.86
+        },
+        {
+          "games": 1,
+          "win": 0,
+          "lose": 1,
+          "k": 6,
+          "d": 9,
+          "a": 5,
+          "position": "원딜",
+          "winRate": 0.0,
+          "kda": 1.22
+        }
+      ],
+      "정도영": [
+        {
+          "games": 3,
+          "win": 1,
+          "lose": 2,
+          "k": 10,
+          "d": 16,
+          "a": 19,
+          "position": "탑",
+          "winRate": 33.3,
+          "kda": 1.81
+        },
+        {
+          "games": 7,
+          "win": 2,
+          "lose": 5,
+          "k": 44,
+          "d": 42,
+          "a": 44,
+          "position": "미드",
+          "winRate": 28.6,
+          "kda": 2.1
+        }
+      ],
+      "김찬": [
+        {
+          "games": 1,
+          "win": 0,
+          "lose": 1,
+          "k": 5,
+          "d": 7,
+          "a": 5,
+          "position": "정글",
+          "winRate": 0.0,
+          "kda": 1.43
+        },
+        {
+          "games": 1,
+          "win": 0,
+          "lose": 1,
+          "k": 7,
+          "d": 7,
+          "a": 6,
+          "position": "미드",
+          "winRate": 0.0,
+          "kda": 1.86
+        },
+        {
+          "games": 8,
+          "win": 4,
+          "lose": 4,
+          "k": 71,
+          "d": 48,
+          "a": 54,
+          "position": "원딜",
+          "winRate": 50.0,
+          "kda": 2.6
+        },
+        {
+          "games": 2,
+          "win": 2,
+          "lose": 0,
+          "k": 3,
+          "d": 12,
+          "a": 50,
+          "position": "서폿",
+          "winRate": 100.0,
+          "kda": 4.42
+        }
+      ],
+      "지범준": [
+        {
+          "games": 2,
+          "win": 1,
+          "lose": 1,
+          "k": 19,
+          "d": 12,
+          "a": 20,
+          "position": "탑",
+          "winRate": 50.0,
+          "kda": 3.25
+        },
+        {
+          "games": 3,
+          "win": 3,
+          "lose": 0,
+          "k": 13,
+          "d": 16,
+          "a": 45,
+          "position": "미드",
+          "winRate": 100.0,
+          "kda": 3.62
+        },
+        {
+          "games": 1,
+          "win": 1,
+          "lose": 0,
+          "k": 8,
+          "d": 5,
+          "a": 13,
+          "position": "원딜",
+          "winRate": 100.0,
+          "kda": 4.2
+        },
+        {
+          "games": 4,
+          "win": 3,
+          "lose": 1,
+          "k": 3,
+          "d": 15,
+          "a": 64,
+          "position": "서폿",
+          "winRate": 75.0,
+          "kda": 4.47
+        }
+      ],
+      "송승훈": [
+        {
+          "games": 2,
+          "win": 0,
+          "lose": 2,
+          "k": 4,
+          "d": 17,
+          "a": 12,
+          "position": "탑",
+          "winRate": 0.0,
+          "kda": 0.94
+        },
+        {
+          "games": 3,
+          "win": 3,
+          "lose": 0,
+          "k": 19,
+          "d": 16,
+          "a": 28,
+          "position": "정글",
+          "winRate": 100.0,
+          "kda": 2.94
+        },
+        {
+          "games": 1,
+          "win": 1,
+          "lose": 0,
+          "k": 7,
+          "d": 6,
+          "a": 10,
+          "position": "미드",
+          "winRate": 100.0,
+          "kda": 2.83
+        },
+        {
+          "games": 6,
+          "win": 4,
+          "lose": 2,
+          "k": 20,
+          "d": 35,
+          "a": 96,
+          "position": "서폿",
+          "winRate": 66.7,
+          "kda": 3.31
+        }
+      ],
+      "강원준": [
+        {
+          "games": 2,
+          "win": 0,
+          "lose": 2,
+          "k": 9,
+          "d": 8,
+          "a": 18,
+          "position": "정글",
+          "winRate": 0.0,
+          "kda": 3.38
+        },
+        {
+          "games": 2,
+          "win": 1,
+          "lose": 1,
+          "k": 14,
+          "d": 12,
+          "a": 25,
+          "position": "미드",
+          "winRate": 50.0,
+          "kda": 3.25
+        },
+        {
+          "games": 1,
+          "win": 1,
+          "lose": 0,
+          "k": 1,
+          "d": 6,
+          "a": 24,
+          "position": "서폿",
+          "winRate": 100.0,
+          "kda": 4.17
+        }
+      ],
+      "김민서": [
+        {
+          "games": 1,
+          "win": 0,
+          "lose": 1,
+          "k": 10,
+          "d": 9,
+          "a": 10,
+          "position": "정글",
+          "winRate": 0.0,
+          "kda": 2.22
+        },
+        {
+          "games": 3,
+          "win": 0,
+          "lose": 3,
+          "k": 26,
+          "d": 25,
+          "a": 13,
+          "position": "미드",
+          "winRate": 0.0,
+          "kda": 1.56
+        },
+        {
+          "games": 2,
+          "win": 1,
+          "lose": 1,
+          "k": 16,
+          "d": 14,
+          "a": 12,
+          "position": "원딜",
+          "winRate": 50.0,
+          "kda": 2.0
+        },
+        {
+          "games": 3,
+          "win": 1,
+          "lose": 2,
+          "k": 16,
+          "d": 27,
+          "a": 38,
+          "position": "서폿",
+          "winRate": 33.3,
+          "kda": 2.0
+        }
+      ],
+      "이권표": [
+        {
+          "games": 5,
+          "win": 1,
+          "lose": 4,
+          "k": 32,
+          "d": 31,
+          "a": 40,
+          "position": "원딜",
+          "winRate": 20.0,
+          "kda": 2.32
+        }
+      ],
+      "이승배": [
+        {
+          "games": 4,
+          "win": 0,
+          "lose": 4,
+          "k": 9,
+          "d": 33,
+          "a": 39,
+          "position": "서폿",
+          "winRate": 0.0,
+          "kda": 1.45
+        }
+      ],
+      "안성진": [
+        {
+          "games": 5,
+          "win": 3,
+          "lose": 2,
+          "k": 30,
+          "d": 25,
+          "a": 50,
+          "position": "정글",
+          "winRate": 60.0,
+          "kda": 3.2
+        },
+        {
+          "games": 3,
+          "win": 3,
+          "lose": 0,
+          "k": 19,
+          "d": 12,
+          "a": 32,
+          "position": "미드",
+          "winRate": 100.0,
+          "kda": 4.25
+        },
+        {
+          "games": 3,
+          "win": 1,
+          "lose": 2,
+          "k": 10,
+          "d": 19,
+          "a": 52,
+          "position": "서폿",
+          "winRate": 33.3,
+          "kda": 3.26
+        }
+      ],
+      "유동혁": [
+        {
+          "games": 3,
+          "win": 3,
+          "lose": 0,
+          "k": 49,
+          "d": 20,
+          "a": 34,
+          "position": "정글",
+          "winRate": 100.0,
+          "kda": 4.15
+        },
+        {
+          "games": 2,
+          "win": 1,
+          "lose": 1,
+          "k": 6,
+          "d": 11,
+          "a": 14,
+          "position": "미드",
+          "winRate": 50.0,
+          "kda": 1.82
+        },
+        {
+          "games": 2,
+          "win": 2,
+          "lose": 0,
+          "k": 42,
+          "d": 7,
+          "a": 18,
+          "position": "원딜",
+          "winRate": 100.0,
+          "kda": 8.57
+        }
+      ],
+      "안우진": [
+        {
+          "games": 8,
+          "win": 3,
+          "lose": 5,
+          "k": 16,
+          "d": 43,
+          "a": 38,
+          "position": "탑",
+          "winRate": 37.5,
+          "kda": 1.26
+        }
+      ],
+      "유탁영": [
+        {
+          "games": 3,
+          "win": 1,
+          "lose": 2,
+          "k": 25,
+          "d": 25,
+          "a": 27,
+          "position": "원딜",
+          "winRate": 33.3,
+          "kda": 2.08
+        }
+      ],
+      "김지우": [
+        {
+          "games": 2,
+          "win": 2,
+          "lose": 0,
+          "k": 20,
+          "d": 9,
+          "a": 19,
+          "position": "원딜",
+          "winRate": 100.0,
+          "kda": 4.33
+        }
+      ]
+    },
     "season2": {
+      "짱구": [
+        {
+          "games": 2,
+          "win": 1,
+          "lose": 1,
+          "k": 11,
+          "d": 9,
+          "a": 28,
+          "position": "탑",
+          "winRate": 50.0,
+          "kda": 4.33
+        }
+      ],
+      "최진우": [
+        {
+          "games": 6,
+          "win": 4,
+          "lose": 2,
+          "k": 63,
+          "d": 30,
+          "a": 42,
+          "position": "정글",
+          "winRate": 66.7,
+          "kda": 3.5
+        }
+      ],
+      "송승훈": [
+        {
+          "games": 7,
+          "win": 2,
+          "lose": 5,
+          "k": 23,
+          "d": 43,
+          "a": 29,
+          "position": "탑",
+          "winRate": 28.6,
+          "kda": 1.21
+        },
+        {
+          "games": 1,
+          "win": 1,
+          "lose": 0,
+          "k": 6,
+          "d": 3,
+          "a": 12,
+          "position": "미드",
+          "winRate": 100.0,
+          "kda": 6.0
+        },
+        {
+          "games": 7,
+          "win": 3,
+          "lose": 4,
+          "k": 22,
+          "d": 48,
+          "a": 84,
+          "position": "서폿",
+          "winRate": 42.9,
+          "kda": 2.21
+        }
+      ],
+      "김시완": [
+        {
+          "games": 2,
+          "win": 1,
+          "lose": 1,
+          "k": 8,
+          "d": 14,
+          "a": 26,
+          "position": "원딜",
+          "winRate": 50.0,
+          "kda": 2.43
+        },
+        {
+          "games": 4,
+          "win": 3,
+          "lose": 1,
+          "k": 2,
+          "d": 21,
+          "a": 51,
+          "position": "서폿",
+          "winRate": 75.0,
+          "kda": 2.52
+        }
+      ],
+      "지범준": [
+        {
+          "games": 2,
+          "win": 2,
+          "lose": 0,
+          "k": 32,
+          "d": 4,
+          "a": 12,
+          "position": "탑",
+          "winRate": 100.0,
+          "kda": 11.0
+        },
+        {
+          "games": 1,
+          "win": 1,
+          "lose": 0,
+          "k": 9,
+          "d": 5,
+          "a": 15,
+          "position": "정글",
+          "winRate": 100.0,
+          "kda": 4.8
+        },
+        {
+          "games": 11,
+          "win": 6,
+          "lose": 5,
+          "k": 36,
+          "d": 54,
+          "a": 141,
+          "position": "서폿",
+          "winRate": 54.5,
+          "kda": 3.28
+        }
+      ],
+      "안태인": [
+        {
+          "games": 5,
+          "win": 3,
+          "lose": 2,
+          "k": 48,
+          "d": 33,
+          "a": 15,
+          "position": "탑",
+          "winRate": 60.0,
+          "kda": 1.91
+        },
+        {
+          "games": 4,
+          "win": 2,
+          "lose": 2,
+          "k": 39,
+          "d": 28,
+          "a": 20,
+          "position": "정글",
+          "winRate": 50.0,
+          "kda": 2.11
+        },
+        {
+          "games": 3,
+          "win": 1,
+          "lose": 2,
+          "k": 39,
+          "d": 22,
+          "a": 8,
+          "position": "미드",
+          "winRate": 33.3,
+          "kda": 2.14
+        },
+        {
+          "games": 3,
+          "win": 2,
+          "lose": 1,
+          "k": 13,
+          "d": 26,
+          "a": 22,
+          "position": "원딜",
+          "winRate": 66.7,
+          "kda": 1.35
+        }
+      ],
+      "안성진": [
+        {
+          "games": 1,
+          "win": 1,
+          "lose": 0,
+          "k": 9,
+          "d": 7,
+          "a": 6,
+          "position": "탑",
+          "winRate": 100.0,
+          "kda": 2.14
+        },
+        {
+          "games": 9,
+          "win": 3,
+          "lose": 6,
+          "k": 59,
+          "d": 51,
+          "a": 74,
+          "position": "정글",
+          "winRate": 33.3,
+          "kda": 2.61
+        },
+        {
+          "games": 3,
+          "win": 2,
+          "lose": 1,
+          "k": 14,
+          "d": 11,
+          "a": 19,
+          "position": "미드",
+          "winRate": 66.7,
+          "kda": 3.0
+        },
+        {
+          "games": 2,
+          "win": 0,
+          "lose": 2,
+          "k": 4,
+          "d": 8,
+          "a": 28,
+          "position": "서폿",
+          "winRate": 0.0,
+          "kda": 4.0
+        }
+      ],
+      "안우진": [
+        {
+          "games": 7,
+          "win": 3,
+          "lose": 4,
+          "k": 10,
+          "d": 39,
+          "a": 26,
+          "position": "탑",
+          "winRate": 42.9,
+          "kda": 0.92
+        },
+        {
+          "games": 8,
+          "win": 2,
+          "lose": 6,
+          "k": 18,
+          "d": 50,
+          "a": 57,
+          "position": "미드",
+          "winRate": 25.0,
+          "kda": 1.5
+        }
+      ],
+      "박명룡": [
+        {
+          "games": 6,
+          "win": 2,
+          "lose": 4,
+          "k": 50,
+          "d": 26,
+          "a": 43,
+          "position": "원딜",
+          "winRate": 33.3,
+          "kda": 3.58
+        }
+      ],
+      "김찬": [
+        {
+          "games": 2,
+          "win": 0,
+          "lose": 2,
+          "k": 13,
+          "d": 15,
+          "a": 14,
+          "position": "정글",
+          "winRate": 0.0,
+          "kda": 1.8
+        },
+        {
+          "games": 10,
+          "win": 6,
+          "lose": 4,
+          "k": 62,
+          "d": 57,
+          "a": 76,
+          "position": "원딜",
+          "winRate": 60.0,
+          "kda": 2.42
+        },
+        {
+          "games": 3,
+          "win": 0,
+          "lose": 3,
+          "k": 4,
+          "d": 27,
+          "a": 28,
+          "position": "서폿",
+          "winRate": 0.0,
+          "kda": 1.19
+        }
+      ],
+      "이호재": [
+        {
+          "games": 6,
+          "win": 3,
+          "lose": 3,
+          "k": 30,
+          "d": 19,
+          "a": 24,
+          "position": "탑",
+          "winRate": 50.0,
+          "kda": 2.84
+        },
+        {
+          "games": 8,
+          "win": 5,
+          "lose": 3,
+          "k": 28,
+          "d": 46,
+          "a": 54,
+          "position": "미드",
+          "winRate": 62.5,
+          "kda": 1.78
+        }
+      ],
+      "이준헌": [
+        {
+          "games": 4,
+          "win": 2,
+          "lose": 2,
+          "k": 14,
+          "d": 14,
+          "a": 39,
+          "position": "정글",
+          "winRate": 50.0,
+          "kda": 3.79
+        },
+        {
+          "games": 3,
+          "win": 2,
+          "lose": 1,
+          "k": 18,
+          "d": 24,
+          "a": 27,
+          "position": "미드",
+          "winRate": 66.7,
+          "kda": 1.88
+        },
+        {
+          "games": 2,
+          "win": 2,
+          "lose": 0,
+          "k": 4,
+          "d": 9,
+          "a": 26,
+          "position": "서폿",
+          "winRate": 100.0,
+          "kda": 3.33
+        }
+      ],
+      "김기중": [
+        {
+          "games": 2,
+          "win": 1,
+          "lose": 1,
+          "k": 15,
+          "d": 14,
+          "a": 8,
+          "position": "정글",
+          "winRate": 50.0,
+          "kda": 1.64
+        },
+        {
+          "games": 1,
+          "win": 1,
+          "lose": 0,
+          "k": 16,
+          "d": 0,
+          "a": 6,
+          "position": "미드",
+          "winRate": 100.0,
+          "kda": 22
+        },
+        {
+          "games": 1,
+          "win": 1,
+          "lose": 0,
+          "k": 4,
+          "d": 3,
+          "a": 19,
+          "position": "원딜",
+          "winRate": 100.0,
+          "kda": 7.67
+        }
+      ],
+      "김민준": [
+        {
+          "games": 3,
+          "win": 2,
+          "lose": 1,
+          "k": 24,
+          "d": 17,
+          "a": 23,
+          "position": "원딜",
+          "winRate": 66.7,
+          "kda": 2.76
+        },
+        {
+          "games": 1,
+          "win": 1,
+          "lose": 0,
+          "k": 15,
+          "d": 4,
+          "a": 17,
+          "position": "서폿",
+          "winRate": 100.0,
+          "kda": 8.0
+        }
+      ],
+      "유동혁": [
+        {
+          "games": 3,
+          "win": 1,
+          "lose": 2,
+          "k": 21,
+          "d": 15,
+          "a": 9,
+          "position": "미드",
+          "winRate": 33.3,
+          "kda": 2.0
+        },
+        {
+          "games": 2,
+          "win": 0,
+          "lose": 2,
+          "k": 21,
+          "d": 17,
+          "a": 10,
+          "position": "원딜",
+          "winRate": 0.0,
+          "kda": 1.82
+        }
+      ],
+      "김민서": [
+        {
+          "games": 2,
+          "win": 2,
+          "lose": 0,
+          "k": 21,
+          "d": 8,
+          "a": 17,
+          "position": "정글",
+          "winRate": 100.0,
+          "kda": 4.75
+        },
+        {
+          "games": 3,
+          "win": 1,
+          "lose": 2,
+          "k": 10,
+          "d": 16,
+          "a": 18,
+          "position": "원딜",
+          "winRate": 33.3,
+          "kda": 1.75
+        }
+      ]
+    },
+    "total": {
       "이호재": [
         {
           "games": 15,
@@ -8044,5 +27127,11 @@ window.INITIAL_DATA = {
         }
       ]
     }
+  },
+  "seasonMeta": {
+    "season1": "과거데이터 + 경기기록 시트 2026-05-23 이전 경기",
+    "season2From": "2026-05-23",
+    "pastDataRows": 41,
+    "mainRecordRows": 27
   }
 };
