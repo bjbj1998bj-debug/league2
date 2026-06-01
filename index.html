@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LoL 내전 ELO</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="brand-icon">🎮</span> LoL 내전 ELO</div>
+    <nav class="nav">
+      <button class="nav-btn active" data-tab="dashboard">⌚ 대시보드</button>
+      <button class="nav-btn" data-tab="match">✎ 경기 입력</button>
+      <button class="nav-btn" data-tab="ranking">🏆 랭킹표</button>
+      <button class="nav-btn" data-tab="pair">👥 페어 승률</button>
+      <button class="nav-btn" data-tab="records">📜 경기 기록</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="season-switch">
+      <button class="season-btn" data-season="season1">시즌1</button>
+      <button class="season-btn active" data-season="season2">시즌2</button>
+    </div>
+
+    <section id="dashboard" class="page active"></section>
+    <section id="match" class="page"></section>
+    <section id="ranking" class="page"></section>
+    <section id="pair" class="page"></section>
+    <section id="records" class="page"></section>
+  </main>
+
+  <template id="empty-state">
+    <div class="empty">데이터가 없습니다.</div>
+  </template>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
